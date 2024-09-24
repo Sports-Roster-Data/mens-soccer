@@ -88,8 +88,6 @@ def scrape_roster(team_name, season, roster_url, division):
                         'url': profile_url
                     })
 
-                print(player_data)
-
                 return player_data
             else:
                 print(f"No player data found for {team_name}.")
