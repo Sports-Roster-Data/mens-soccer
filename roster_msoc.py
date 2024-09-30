@@ -35,7 +35,7 @@ def extract_value_by_label(row, label):
     return None
 
 # Function to extract roster information from a specific row
-def extract_roster(soup, team_name, division, season, er):
+def extract_roster(soup, team_name, division, season, er, ncaa_id):
     roster = []
 
     # Locate the table containing the roster
@@ -58,7 +58,6 @@ def extract_roster(soup, team_name, division, season, er):
             full_name = name_link.get_text() if name_link else None
             player['name'] = clean_text(full_name) if full_name else None
             player['url'] = f"https://www.{er.domain}.{er.suffix}{name_link['href']}" if name_link else None
-#            player['url'] = name_link['href'] if name_link else None
         else:
             player['name'] = None
             player['url'] = None
@@ -83,6 +82,9 @@ def extract_roster(soup, team_name, division, season, er):
         player['team'] = team_name
         player['division'] = division
         player['season'] = season
+        player['ncaa_id'] = ncaa_id
+        player['height'] = None
+        player['major'] = None
 
         roster.append(player)
 
@@ -101,6 +103,7 @@ def process_teams_csv(csv_file_path, season=2024):
             team_name = row['team']
             team_url = row['url']
             division = row['division']
+            ncaa_id = row['ncaa_id']
 
             # Only process rows with URLs that contain '/msoc/index'
             if '/msoc/index' in team_url:
@@ -113,12 +116,21 @@ def process_teams_csv(csv_file_path, season=2024):
                     response = requests.get(roster_url, headers=headers)  # Include the headers with user-agent
                     if response.status_code == 200:
                         soup = BeautifulSoup(response.content, 'html.parser')
-                        roster = extract_roster(soup, team_name, division, season, er)
+                        roster = extract_roster(soup, team_name, division, season, er, ncaa_id)
                         rosters.extend(roster)
                     else:
-                        print(f"Failed to retrieve the page for {team_name}. Status code: {response.status_code}")
+                        roster_url = team_url.replace('/index', '/roster/2024')
+                        response = requests.get(roster_url, headers=headers)
+                        if response.status_code == 200:
+                            soup = BeautifulSoup(response.content, 'html.parser')
+                            roster = extract_roster(soup, team_name, division, season, er, ncaa_id)
+                            rosters.extend(roster)
+                        else:
+                            print(f"Failed to retrieve the page for {team_name}. Status code: {response.status_code}")
+                          
                 except Exception as e:
                     print(f"Error processing {team_name}: {e}")
+                    raise
 
     # Save the rosters to a JSON file
     with open('rosters_msoc.json', 'w') as outfile:

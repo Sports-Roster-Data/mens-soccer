@@ -19,7 +19,7 @@ American,https://aueagles.com/sports/mens-soccer,23,American,I
 American Int'l,https://www.aicyellowjackets.com/sports/msoc/index,588199,,II
 Amherst,https://athletics.amherst.edu/sports/mens-soccer,,,III
 Anderson (IN),https://aua.prestosports.com/sports/msoc/index,939,,III
-Anderson (SC),https://www.autrojans.com/sports/msoc/index,13028,Anderson (SC),II
+Anderson (SC),https://autrojans.com/sports/mens-soccer,13028,Anderson (SC),II
 Anna Maria,https://www.goamcats.com/sports/msoc/index,,,III
 Arcadia,https://arcadiaknights.com/sports/mens-soccer,966,,III
 Army,https://goarmywestpoint.com/sports/mens-soccer,725,Army West Point,I
@@ -34,7 +34,7 @@ Austin,https://acroos.com/sports/msoc/index,,,III
 Averett,https://averettcougars.com/sports/mens-soccer,44,,III
 Azusa Pacific,https://athletics.apu.edu/sports/mens-soccer,588168,,II
 Babson,https://babsonathletics.com/sports/mens-soccer,45,,III
-Baldwin Wallace,https://www.bwyellowjackets.com/sports/msoc/index,46,,III
+Baldwin Wallace,https://bwyellowjackets.com/sports/mens-soccer,46,,III
 Bard,https://bardathletics.com/sports/mens-soccer,962,Bard,III
 Barry,https://gobarrybucs.com/sports/mens-soccer,49,Barry,II
 Barton,https://bartonbulldogs.com/sports/mens-soccer,588139,,II
@@ -46,7 +46,7 @@ Belmont,https://belmontbruins.com/sports/mens-soccer,14927,,I
 Belmont Abbey,https://abbeyathletics.com/sports/mens-soccer,2683,Belmont Abbey,II
 Beloit,https://beloitcollegeathletics.com/sports/mens-soccer,,,III
 Benedictine (IL),https://benueagles.com/sports/mens-soccer,296,Benedictine (IL),III
-Bentley,https://www.bentleyfalcons.com/sports/msoc/index,56,,II
+Bentley,https://bentleyfalcons.com/sports/mens-soccer,56,,II
 Berea,https://bereaathletics.com/sports/mens-soccer,30171,Berea,III
 Berry,https://www.berryvikings.com/sports/mens-soccer,973,,III
 Bethany (WV),https://www.bethanybison.com/sports/msoc/index,,,III
@@ -213,7 +213,7 @@ Embry-Riddle (FL),https://erauathletics.com/sports/mens-soccer,9680,,II
 Emerson,https://emersonlions.com/sports/mens-soccer,214,,III
 Emmanuel (GA),https://goeulions.com/sports/mens-soccer,,Emmanuel (GA),II
 Emmanuel (MA),https://www.goecsaints.com/sports/mens-soccer,215,,III
-Emory,https://www.emoryathletics.com/sports/msoc/index,217,,III
+Emory,https://emoryathletics.com/sports/mens-soccer,217,,III
 Emory & Henry,https://www.gowasps.com/sports/msoc/index,,Emory & Henry,II
 Endicott,https://www.ecgulls.com/sports/msoc/index,,,III
 Erskine,https://erskinesports.com/sports/mens-soccer,1072,Erskine,II
@@ -276,7 +276,7 @@ Gwynedd Mercy,https://gwyneddathletics.com/sports/mens-soccer,,,III
 Hamilton,https://athletics.hamilton.edu/sports/mens-soccer,267,Hamilton College,III
 Hamline,https://hamlineathletics.com/sports/mens-soccer,268,Hamline University,III
 Hampden-Sydney,https://hscathletics.com/sports/mens-soccer,,,III
-Hanover,https://athletics.hanover.edu/sports/msoc/index1115,Hanover,III
+Hanover,https://athletics.hanover.edu/sports/msoc/index,1115,Hanover,III
 Hardin-Simmons,https://hsuathletics.com/sports/mens-soccer,271,,III
 Harding,https://hardingsports.com/sports/mens-soccer,1116,Harding,II
 Hartford,https://hartfordhawks.com/sports/mens-soccer,272,Hartford,III
@@ -295,7 +295,7 @@ Hofstra,https://gohofstra.com/sports/mens-soccer,283,Hofstra,I
 Holy Cross,https://goholycross.com/sports/mens-soccer,285,Holy Cross,I
 Holy Family,https://athletics.holyfamily.edu/sports/mens-soccer,1126,Holy Family,II
 Hood,https://hoodathletics.com/sports/mens-soccer,8404,Hood,III
-Hope,https://athletics.hope.edu/sports/msoc/index286,,III
+Hope,https://athletics.hope.edu/sports/msoc/index,286,,III
 Houghton,https://athletics.houghton.edu/sports/mens-soccer,30160,Houghton,III
 Houston Christian,https://hcuhuskies.com/sports/mens-soccer,287,,I
 Howard,https://hubison.com/sports/mens-soccer,290,Howard,I
@@ -327,7 +327,7 @@ Kalamazoo,https://hornets.kzoo.edu/sports/msoc/index,326,,III
 Kansas City,https://kcroos.com/sports/mens-soccer,2707,Kansas City,I
 Kean,https://keanathletics.com/sports/mens-soccer,,,III
 Keene St.,https://keeneowls.com/sports/mens-soccer,330,Keene St.,III
-Kentucky,https://ukathletics.com/sports/msoc/index334,Kentucky,I
+Kentucky,https://ukathletics.com/sports/msoc/index,334,Kentucky,I
 Kenyon,https://athletics.kenyon.edu/sports/mens-soccer,335,Kenyon,III
 Keuka,https://keukaathletics.com/sports/mens-soccer,1159,,III
 Keystone,https://www.gokcgiants.com/sports/mens-soccer,30047,,III
@@ -343,7 +343,7 @@ Lake Erie,https://lakeeriestorm.com/sports/mens-soccer,2746,,II
 Lake Forest,https://goforesters.com/sports/mens-soccer,344,,III
 Lakeland,https://lakelandmuskies.com/sports/mens-soccer,,,III
 Lancaster Bible,https://lbcchargers.com/sports/mens-soccer,30085,,III
-Lander,https://landerbearcats.com/sports/msoc/index1167,,II
+Lander,https://landerbearcats.com/sports/msoc/index,1167,,II
 LaSalle,https://goexplorers.com/sports/mens-soccer,340,La Salle,I
 Lasell,https://laserpride.lasell.edu/sports/msoc/index,,,III
 Lawrence,https://vikings.lawrence.edu/sports/mens-soccer,348,Lawrence University,III
@@ -421,7 +421,7 @@ Messiah,https://gomessiah.com/sports/mens-soccer,411,,III
 Methodist,https://mumonarchs.com/sports/mens-soccer,,,III
 Michigan,https://mgoblue.com/sports/mens-soccer,418,Michigan,I
 Michigan State,https://msuspartans.com/sports/mens-soccer,416,Michigan St.,I
-Middlebury,https://athletics.middlebury.edu/sports/msoc/index420,,III
+Middlebury,https://athletics.middlebury.edu/sports/msoc/index,420,,III
 Midwestern St.,https://msumustangs.com/sports/mens-soccer,,Midwestern St.,II
 Millersville,https://millersvilleathletics.com/sports/mens-soccer,423,Millersville,II
 Millikin,https://athletics.millikin.edu/sports/mens-soccer,424,Millikin,III
@@ -532,7 +532,7 @@ Plattsburgh St.,https://gocardinalsports.com/sports/mens-soccer,,,III
 Plymouth St.,https://athletics.plymouth.edu/sports/mens-soccer,,,III
 Point Loma,https://plnusealions.com/sports/mens-soccer,30149,Point Loma,II
 Point Park,https://pointparksports.com/sports/msoc/index,,Point Park,II
-Pomona-Pitzer,https://sagehens.com/sports/msoc/index549,,III
+Pomona-Pitzer,https://sagehens.com/sports/msoc/index,549,,III
 Portland,https://portlandpilots.com/sports/mens-soccer,551,Portland,I
 Post,https://posteagles.com/sports/mens-soccer,1318,Post,II
 Pratt,https://goprattgo.com/sports/mens-soccer,,,III
@@ -624,7 +624,7 @@ SIUE,https://siuecougars.com/sports/mens-soccer,660,Siue,I
 Skidmore,https://skidmoreathletics.com/sports/mens-soccer,642,Skidmore College,III
 Slippery Rock,https://rockathletics.com/sports/mens-soccer,,Slippery Rock,II
 Sonoma St.,https://sonomaseawolves.com/sports/mens-soccer,645,Sonoma St.,II
-South Carolina,https://gamecocksonline.com/sports/msoc/index648,South Carolina,I
+South Carolina,https://gamecocksonline.com/sports/msoc/index,648,South Carolina,I
 South Dakota Mines,https://gorockers.com/sports/mens-soccer,30139,South Dakota Mines,II
 South Florida,https://gousfbulls.com/sports/mens-soccer,651,South Fla.,I
 Southern Conn. St.,https://scsuowls.com/sports/mens-soccer,658,Southern Conn. St.,II
@@ -673,7 +673,7 @@ SUNY Brockport,https://gobrockport.com/sports/mens-soccer,,,III
 SUNY Canton,https://rooathletics.com/sports/mens-soccer,30165,SUNY Canton,III
 SUNY Cobleskill,https://fightingtigers.cobleskill.edu/sports/mens-soccer,,,III
 SUNY Delhi,https://delhibroncos.com/sports/msoc/index,,,III
-SUNY Geneseo,https://geneseoknights.com/sports/msoc/index247,,III
+SUNY Geneseo,https://geneseoknights.com/sports/msoc/index,247,,III
 SUNY Maritime,https://maritimeathletics.com/sports/mens-soccer,,,III
 SUNY Morrisville,https://morrisvillemustangs.com/sports/mens-soccer,30067,,III
 SUNY New Paltz,https://nphawks.com/sports/mens-soccer,,,III
@@ -683,7 +683,7 @@ SUNY Potsdam,https://potsdambears.com/sports/mens-soccer,552,,III
 Susquehanna,https://suriverhawks.com/sports/mens-soccer,685,,III
 Swarthmore,https://swarthmoreathletics.com/sports/mens-soccer,686,,III
 Syracuse,https://cuse.com/sports/mens-soccer,688,Syracuse,I
-Tampa,https://www.tampaspartans.com/sports/msoc/index,,Tampa,II
+Tampa,https://www.tampaspartans.com/sports/msoc/,,Tampa,II
 TCNJ,https://tcnjathletics.com/sports/mens-soccer,712,,III
 Temple,https://owlsports.com/sports/mens-soccer,690,Temple,I
 Texas A&M International,https://godustdevils.com/sports/mens-soccer,,Tex. A&M-Int'l,II
@@ -741,7 +741,7 @@ Vanguard,https://vanguardlions.com/sports/mens-soccer,,Vanguard,II
 Vassar,https://www.vassarathletics.com/sports/mens-soccer,737,Vassar College,III
 Vermont,https://uvmathletics.com/sports/mens-soccer,738,Vermont,I
 Villanova,https://villanova.com/sports/mens-soccer,739,Villanova,I
-Virginia,https://virginiasports.com/sports/msoc/index746,Virginia,I
+Virginia,https://virginiasports.com/sports/msoc,746,Virginia,I
 Virginia Commonwealth,https://vcuathletics.com/sports/mens-soccer,740,Vcu,I
 Virginia State,https://govsutrojans.com/sports/mens-soccer,,Virginia St.,II
 Virginia Tech,https://hokiesports.com/sports/mens-soccer,742,Virginia Tech,I
