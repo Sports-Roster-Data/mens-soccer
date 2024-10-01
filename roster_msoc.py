@@ -46,7 +46,15 @@ def extract_roster(soup, team_name, division, season, er, ncaa_id):
 
     for row in rows:
         player = {}
-
+        
+        # Add team name, division, and season to the player data
+        player['team'] = team_name
+        player['division'] = division
+        player['season'] = season
+        player['ncaa_id'] = ncaa_id
+        player['height'] = None
+        player['major'] = None
+        
         # Extract the jersey number from the class 'number'
         number_cell = row.find('td', class_='number')
         player['jersey'] = number_cell.get_text(strip=True).replace("No.:", "") if number_cell else None
@@ -77,15 +85,7 @@ def extract_roster(soup, team_name, division, season, er, ncaa_id):
         else:
             player['hometown'] = None
             player['high_school'] = None
-
-        # Add team name, division, and season to the player data
-        player['team'] = team_name
-        player['division'] = division
-        player['season'] = season
-        player['ncaa_id'] = ncaa_id
-        player['height'] = None
-        player['major'] = None
-
+            
         roster.append(player)
 
     return roster
