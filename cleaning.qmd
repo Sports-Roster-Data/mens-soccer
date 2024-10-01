@@ -23,5 +23,7 @@ write_csv(combined_rosters, "combined_rosters_2024.csv")
 
 ```{r}
 adds <- read_csv("adds.csv")
+
+combined_with_adds <- bind_rows(combined_rosters, adds)
 ```
 
