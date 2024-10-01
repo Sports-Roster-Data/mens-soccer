@@ -16,5 +16,7 @@ unique_roster_teams <- combined_rosters |> distinct(ncaa_id)
 
 need_rosters <- teams |> anti_join(unique_roster_teams)
 
+write_csv(combined_rosters, "combined_rosters_2024.csv")
+
 ```
 
