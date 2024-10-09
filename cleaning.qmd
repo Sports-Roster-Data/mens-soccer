@@ -22,12 +22,17 @@ write_csv(combined_rosters, "combined_rosters_2024.csv")
 
 
 ```{r}
+
+rosters <- read_csv("combined_rosters_2024.csv")
+
 adds <- read_csv("adds.csv")
 
-combined_with_adds3 <- bind_rows(combined_with_adds2, adds)
+combined_with_adds <- bind_rows(rosters, adds)
 
-unique_roster_teams <- combined_with_adds3 |> distinct(ncaa_id)
+unique_roster_teams <- combined_with_adds |> distinct(ncaa_id)
 
 need_rosters <- teams |> anti_join(unique_roster_teams)
+
+write_csv(combined_rosters, "combined_rosters_2024.csv")
 ```
 

@@ -1,343 +1,530 @@
 ncaa_id,team,season,division,jersey,name,position,height,class,major,hometown,high_school,previous_school,url
-509,Northwestern,2024,I,0,Dominic Pereira,GK,6' 5'',Fy.,,"Las Vegas, Nev.",SAI Academy,,https://nusports.com/sports/mens-soccer/roster/dominic-pereira/11782
-509,Northwestern,2024,I,1,Rafael Ponce de León,GK,6' 3'',Jr.,,"Pennington, N.J.",Pennington School,Villanova,https://nusports.com/sports/mens-soccer/roster/rafael-ponce-de-len/11764
-509,Northwestern,2024,I,2,Brandon Clagette,D,5' 8'',Gr.,,"Atlanta, Ga.",Woodward Academy,Pitt,https://nusports.com/sports/mens-soccer/roster/brandon-clagette/11755
-509,Northwestern,2024,I,3,Ibrahim Obeid,D,6' 0'',Sr.,,"Dearborn, Mich.",Dearborn HS,,https://nusports.com/sports/mens-soccer/roster/ibrahim-obeid/11763
-509,Northwestern,2024,I,4,Collin McCamy,M,6' 2'',Sr.,,"Wake Forest, N.C.",Crossroads Flex HS,,https://nusports.com/sports/mens-soccer/roster/collin-mccamy/11761
-509,Northwestern,2024,I,5,Reese Mayer,D,6' 2'',Gr.,,"Owings Mills, Md.",McDonogh School,Notre Dame,https://nusports.com/sports/mens-soccer/roster/reese-mayer/11760
-509,Northwestern,2024,I,6,Jason Gajadhar,M,5' 10'',Jr.,,"Toronto, Ontario",Bill Crothers Secondary,,https://nusports.com/sports/mens-soccer/roster/jason-gajadhar/11757
-509,Northwestern,2024,I,7,Paul Son,M,5' 10'',Sr.,,"Irvine, Calif.",Northwood HS,,https://nusports.com/sports/mens-soccer/roster/paul-son/11769
-509,Northwestern,2024,I,8,Joe Suchecki,M,6' 4'',Gr.,,"New York, N.Y.",NEST+m,Maryland,https://nusports.com/sports/mens-soccer/roster/joe-suchecki/11786
-509,Northwestern,2024,I,9,Christopher Thaggard,F,5' 10'',Jr.,,"Harrisburg, N.C.",Cabarrus County Schools,,https://nusports.com/sports/mens-soccer/roster/christopher-thaggard/11771
-509,Northwestern,2024,I,10,Thaddaeus Dewing,F,5' 11'',Gr.,,"Colorado Springs, Colo.",Air Academy,Air Force,https://nusports.com/sports/mens-soccer/roster/thaddaeus-dewing/11776
-509,Northwestern,2024,I,11,Jayvin Van Deventer,M,5' 9'',Jr.,,"Lee's Summit, Mo.",Blue Springs South HS,,https://nusports.com/sports/mens-soccer/roster/jayvin-van-deventer/11773
-509,Northwestern,2024,I,12,Nigel Prince,D,6' 2'',Jr.,,"Atlanta, Ga.",Forsyth Academy,,https://nusports.com/sports/mens-soccer/roster/nigel-prince/11765
-509,Northwestern,2024,I,13,Luke Shreiner,D,6' 4'',Fy.,,"Dallas, Texas",Lake Highlands,,https://nusports.com/sports/mens-soccer/roster/luke-shreiner/11784
-509,Northwestern,2024,I,14,Bryce LeBel,D,5' 11'',Gr.,,"Sparta, N.J.",Sparta,Louisville,https://nusports.com/sports/mens-soccer/roster/bryce-lebel/11779
-509,Northwestern,2024,I,16,Peter Riesz,M,6' 3'',So.,,"Budapest, Hungary",Alternative Economics Secondary School,,https://nusports.com/sports/mens-soccer/roster/peter-riesz/11768
-509,Northwestern,2024,I,17,Akinjide Awujo,F,6' 0'',R-Sr.,,"Atlanta, Ga.",Woodward Academy,Villanova,https://nusports.com/sports/mens-soccer/roster/akinjide-awujo/11775
-509,Northwestern,2024,I,19,Fritz Volmar,D,6' 0'',So.,,"Peoria, Ill.",Laurel Springs HS,,https://nusports.com/sports/mens-soccer/roster/fritz-volmar/11774
-509,Northwestern,2024,I,20,Henri Richter,M,6' 0'',Jr.,,"Newton, Mass.",Milton Academy,,https://nusports.com/sports/mens-soccer/roster/henri-richter/11767
-509,Northwestern,2024,I,21,James Spatzek,M,5' 9'',So.,,"Glencoe, Ill.",New Trier HS,,https://nusports.com/sports/mens-soccer/roster/james-spatzek/11770
-509,Northwestern,2024,I,22,Aidan O'Neill,M,5' 10'',Fy.,,"Wilmette, Ill.",New Trier,,https://nusports.com/sports/mens-soccer/roster/aidan-oneill/11780
-509,Northwestern,2024,I,23,Italo Addimandi,F,5' 10'',So.,,"Miami, Fla.",Academy for Innovative Education,,https://nusports.com/sports/mens-soccer/roster/italo-addimandi/11753
-509,Northwestern,2024,I,24,Michael Ramirez,F,5' 10'',Fy.,,"Chicago, Ill.",SAI Academy,,https://nusports.com/sports/mens-soccer/roster/michael-ramirez/11783
-509,Northwestern,2024,I,25,Gregory Cook,F,5' 11'',So.,,"Las Vegas, Nev.",Nevada Learning Academy,,https://nusports.com/sports/mens-soccer/roster/gregory-cook/11756
-509,Northwestern,2024,I,26,Bryant Mayer,D,6' 1'',So.,,"Owings Mills, Md.",McDonogh School,,https://nusports.com/sports/mens-soccer/roster/bryant-mayer/11759
-509,Northwestern,2024,I,27,Jude Bosshardt,GK,6' 4'',So.,,"San Antonio, Texas",George Washington University Online HS,,https://nusports.com/sports/mens-soccer/roster/jude-bosshardt/11754
-509,Northwestern,2024,I,28,Tyler Glassberg,M,6' 0'',So.,,"Melville, N.Y.",Half Hollow Hills HS East,,https://nusports.com/sports/mens-soccer/roster/tyler-glassberg/11758
-509,Northwestern,2024,I,29,Danh Tran,M,5' 11'',Sr.,,"Happy Valley, Ore.",Clackamas HS,,https://nusports.com/sports/mens-soccer/roster/danh-tran/11772
-690,Temple,2024,I,1,Andrew Kempe,GK,6' 6'',Gr.,,"Warwick, Bermuda",The Brooks School,"Dickinson College, Rhode Island",https://owlsports.com/sports/mens-soccer/roster/andrew-kempe/17414
-690,Temple,2024,I,2,Erick Hernandez,D,5' 9'',So.,,"Santa Barbara, Calif.",Santa Barbara High School,,https://owlsports.com/sports/mens-soccer/roster/erick-hernandez/17412
-690,Temple,2024,I,3,Nikolai Zapolskikh,D,6' 0'',So.,,"San Juan, Puerto Rico",Florida Virtual School,,https://owlsports.com/sports/mens-soccer/roster/nikolai-zapolskikh/17421
-690,Temple,2024,I,4,Diego Diaz,D,6' 1'',So.,,"Jalisco, Guadalajara, Mexico",,Penn State,https://owlsports.com/sports/mens-soccer/roster/diego-diaz/17434
-690,Temple,2024,I,5,Jayden Jackson,M,5' 11'',So.,,"Edison, N.J.",Edison High School,,https://owlsports.com/sports/mens-soccer/roster/jayden-jackson/17413
-690,Temple,2024,I,6,Kemali Green,M,6' 2'',Gr.,,"Philadelphia, Pa.",,Lock Haven,https://owlsports.com/sports/mens-soccer/roster/kemali-green/17409
-690,Temple,2024,I,7,Xavier Rimpel,F,5' 11'',Sr.,,"Ajax, Ontario",Pickering High School,,https://owlsports.com/sports/mens-soccer/roster/xavier-rimpel/17420
-690,Temple,2024,I,8,Lukas Egarter,M,5' 9'',So.,,"Feffernitz, Austria","BORG Klagenfurt, Alpen Adria University",,https://owlsports.com/sports/mens-soccer/roster/lukas-egarter/17408
-690,Temple,2024,I,9,Juan Zepeda,F,6' 3'',So.,,"Jalisco, Mexico",Instituto de Ciencias,,https://owlsports.com/sports/mens-soccer/roster/juan-zepeda/17422
-690,Temple,2024,I,10,Teo Strand,M,5' 11'',Fr.,,"Tau, Norway",,,https://owlsports.com/sports/mens-soccer/roster/teo-strand/17431
-690,Temple,2024,I,11,Rocco Haeufgloeckner,M/D,5' 9'',Jr.,,"Kirchzell, Germany",IGS Mainz-Bretzenheim,,https://owlsports.com/sports/mens-soccer/roster/rocco-haeufgloeckner/17410
-690,Temple,2024,I,12,Anthony Perez,M,5' 8'',Fr.,,"Monroe Twp, N.J.",Monroe Township,,https://owlsports.com/sports/mens-soccer/roster/anthony-perez/17432
-690,Temple,2024,I,13,Tessho Kobayashi,M,5' 6'',Sr.,,"Kanagawa, Japan",Clubmed Academy,,https://owlsports.com/sports/mens-soccer/roster/tessho-kobayashi/17415
-690,Temple,2024,I,14,Elias Betancourt,M,5' 9'',So.,,"Bala Cynwyd, Pa.",Lower Merion High School,,https://owlsports.com/sports/mens-soccer/roster/elias-betancourt/17405
-690,Temple,2024,I,15,Elliot Rigbert,F,5' 11'',Fr.,,"Vaxholm, Sweden",Tibble Gymnasium Täby,,https://owlsports.com/sports/mens-soccer/roster/elliot-rigbert/17423
-690,Temple,2024,I,17,Alex Champagne,M,5' 10'',So.,,"Pembroke Pines, Fla.",Pembroke Pines Charter High School,,https://owlsports.com/sports/mens-soccer/roster/alex-champagne/17406
-690,Temple,2024,I,18,Chase Jackson,M/F,5' 11'',Fr.,,"Phoenix, Ariz.",,,https://owlsports.com/sports/mens-soccer/roster/chase-jackson/17427
-690,Temple,2024,I,19,Charlie Votel,F,6' 0'',Fr.,,"San Leandro, Calif.",Bishop O'Dowd,,https://owlsports.com/sports/mens-soccer/roster/charlie-votel/17430
-690,Temple,2024,I,20,Nathan Brown,F,5' 9'',Fr.,,"Collegeville, Pa",Perkiomen Valley,,https://owlsports.com/sports/mens-soccer/roster/nathan-brown/17425
-690,Temple,2024,I,21,Aaron Markowitz,D,6' 1'',Sr.,,"Plantation, Fla.",Western High School,Florida Gulf Coast,https://owlsports.com/sports/mens-soccer/roster/aaron-markowitz/17416
-690,Temple,2024,I,22,Cohen Williams,M,5' 8'',Fr.,,"Goffstown, N.H.",St. Paul's School,,https://owlsports.com/sports/mens-soccer/roster/cohen-williams/17424
-690,Temple,2024,I,23,Paolo Kampula,D,6' 0'',Jr.,,"Philadelphia, Pa.",La Salle,,https://owlsports.com/sports/mens-soccer/roster/paolo-kampula/17433
-690,Temple,2024,I,24,George Medill,M,5' 10'',Jr.,,"Overland Park, Kan.",Olathe East,,https://owlsports.com/sports/mens-soccer/roster/george-medill/17417
-690,Temple,2024,I,27,Edgar Bazan,M,5' 8'',Fr.,,"Overland Park, Kan.",Olathe East,,https://owlsports.com/sports/mens-soccer/roster/edgar-bazan/17426
-690,Temple,2024,I,28,Diego Dauzier,GK,6' 2'',Fr.,,"Montclair, N.J.",Seton Hall Prep,,https://owlsports.com/sports/mens-soccer/roster/diego-dauzier/17429
-690,Temple,2024,I,29,Harrison Dandridge,M,6' 0'',So.,,"Roanoke, Va.",Patrick Henry High School,,https://owlsports.com/sports/mens-soccer/roster/harrison-dandridge/17407
-690,Temple,2024,I,30,Flannan Riley,GK,6' 0'',Gr.,,"Doylestown, Pa.",Central Bucks West,"St. Francis Brooklyn, Presbyterian",https://owlsports.com/sports/mens-soccer/roster/flannan-riley/17419
-690,Temple,2024,I,31,Zain Hameed,GK,6' 0'',Jr.,,"Falls Church, Va.",George Mason High School,Old Dominion,https://owlsports.com/sports/mens-soccer/roster/zain-hameed/17411
-690,Temple,2024,I,33,Alex O'Leary,D,6' 1'',Sr.,,"West Chester, Pa.",Unionville High School,,https://owlsports.com/sports/mens-soccer/roster/alex-oleary/17418
-690,Temple,2024,I,34,Michael Siravo,D,6' 3'',Fr.,,"Jenkintown, Pa.",Abington Senior,,https://owlsports.com/sports/mens-soccer/roster/michael-siravo/17428
-719,Tulsa,2024,I,0,Carlito Saylon,Goalkeeper,6' 0'',Fr.,,"Brighton, Mi.",Olathe East HS,,https://tulsahurricane.com/sports/mens-soccer/roster/carlito-saylon/11800
-719,Tulsa,2024,I,1,Alex Lopez,Goalkeeper,5' 10'',Sr.,,"Madrid, Spain",IES Ortega Y Gasset,,https://tulsahurricane.com/sports/mens-soccer/roster/alex-lopez/11790
-719,Tulsa,2024,I,2,Nils Orywol,Defender,5' 10'',Sr.,,"Geinhausen, Germany",,Virginia,https://tulsahurricane.com/sports/mens-soccer/roster/nils-orywol/11794
-719,Tulsa,2024,I,3,Wes Bottenburg,Defender,6' 0'',Jr.,,"Utrecht, The Netherlands",Oosterlicht College,,https://tulsahurricane.com/sports/mens-soccer/roster/wes-bottenburg/11783
-719,Tulsa,2024,I,4,Kevin Thallinger,Defender,,Jr.,,,,, https://tulsahurricane.com/sports/mens-soccer/roster/kevin-thallinger/11992
-719,Tulsa,2024,I,5,Larsen Rogers,Defender,5' 7'',Sr.,,"Albuquerque, N.M.",Volcano Vista,,https://tulsahurricane.com/sports/mens-soccer/roster/larsen-rogers/11795
-719,Tulsa,2024,I,6,Jared Aguilar,Midfielder,5' 9'',So.,,"Denton, Texas",Lone Star,,https://tulsahurricane.com/sports/mens-soccer/roster/jared-aguilar/11781
-719,Tulsa,2024,I,7,Ander Bengoetxea,Midfielder,5' 9'',Gr.,,"Eibar, Spain",Mendebaldea BHI,,https://tulsahurricane.com/sports/mens-soccer/roster/ander-bengoetxea/11801
-719,Tulsa,2024,I,8,Alex Cunningham,Defender,5' 10'',Fr.,,"Springfield, Mo.",Kansas City Christian School,,https://tulsahurricane.com/sports/mens-soccer/roster/alex-cunningham/11802
-719,Tulsa,2024,I,9,Gijs Hovius,Forward,,Jr.,,,,, https://tulsahurricane.com/sports/mens-soccer/roster/gijs-hovius/11993
-719,Tulsa,2024,I,10,Gyuwon Chong,Midfielder,5' 10'',Jr.,,"Kansas City, Mo.",North Kansas City HS,,https://tulsahurricane.com/sports/mens-soccer/roster/gyuwon-chong/11803
-719,Tulsa,2024,I,11,Yuki Sekiguchi,Midfielder,5' 6'',Sr.,,"Hitachi, Japan",,Cowley CC,https://tulsahurricane.com/sports/mens-soccer/roster/yuki-sekiguchi/11797
-719,Tulsa,2024,I,12,Jose Vilela,Forward,,Fr.,,,,, https://tulsahurricane.com/sports/mens-soccer/roster/jose-vilela/11804
-719,Tulsa,2024,I,13,John Dalby,Midfielder,6' 0'',Jr.,,"Lantana, Texas",John H. Guyer,,https://tulsahurricane.com/sports/mens-soccer/roster/john-dalby/11784
-719,Tulsa,2024,I,14,Will Edwards,Forward,5' 7'',Gr.,,"Jenks, Okla.",Jenks,,https://tulsahurricane.com/sports/mens-soccer/roster/will-edwards/11785
-719,Tulsa,2024,I,16,Muharif Abdul-Kadir,Defender,6' 2'',Fr.,,"Accra, Ghana",Yeji Senior High Technical School,,https://tulsahurricane.com/sports/mens-soccer/roster/muharif-abdulkadir/11805
-719,Tulsa,2024,I,17,Clement Badger,Forward,6' 3'',Jr.,,"Accra, Ghana",Only Believe Senior HS,,https://tulsahurricane.com/sports/mens-soccer/roster/clement-badger/11806
-719,Tulsa,2024,I,18,Cooper King,Defender,5' 10'',Sr.,,"Tulsa, Okla.",Bishop Kelley,,https://tulsahurricane.com/sports/mens-soccer/roster/cooper-king/11789
-719,Tulsa,2024,I,19,Bowen McCloud,Midfielder,6' 0'',So.,,"Wheaton, Ill.",Alpha Omega Academy,,https://tulsahurricane.com/sports/mens-soccer/roster/bowen-mccloud/11791
-719,Tulsa,2024,I,20,Alvaro Torrijos,Midfielder,5' 9'',Gr.,,"Valencia, Spain",IES Lluis Vives,,https://tulsahurricane.com/sports/mens-soccer/roster/alvaro-torrijos/11798
-719,Tulsa,2024,I,21,Aimar Membrila,Midfielder,5' 10'',So.,,"Tulsa, Okla.",Tulsa Soccer Academy,,https://tulsahurricane.com/sports/mens-soccer/roster/aimar-membrila/11793
-719,Tulsa,2024,I,22,Marc Escuderos,Midfielder,6' 1'',Jr.,,"Villarreal, Spain",,Iowa Western CC,https://tulsahurricane.com/sports/mens-soccer/roster/marc-escuderos/11786
-719,Tulsa,2024,I,23,Camilo Vargas,Defender,5' 9'',Sr.,,"Madrid, Spain",,Richland CC,https://tulsahurricane.com/sports/mens-soccer/roster/camilo-vargas/11799
-719,Tulsa,2024,I,24,Ty Sanchez,Forward,5' 10'',Sr.,,"Sterrett, Ala.",,Salt Lake CC,https://tulsahurricane.com/sports/mens-soccer/roster/ty-sanchez/11796
-719,Tulsa,2024,I,25,Will Applegate,Midfielder,5' 10'',So.,,"Tulsa, Okla.",Bishop Kelley,,https://tulsahurricane.com/sports/mens-soccer/roster/will-applegate/11782
-719,Tulsa,2024,I,26,Trajan Wormington,Forward,6' 1'',Fr.,,"Springfield, Mo.",Kansas City Christian School,,https://tulsahurricane.com/sports/mens-soccer/roster/trajan-wormington/11807
-719,Tulsa,2024,I,27,Ian McIntosh,Midfielder,5' 9'',Jr.,,"Tulsa, Okla.",Bishop Kelley,,https://tulsahurricane.com/sports/mens-soccer/roster/ian-mcintosh/11792
-719,Tulsa,2024,I,28,Eli Berry,Forward,6' 2'',Fr.,,"Edmond, Okla.",Deer Creek HS,,https://tulsahurricane.com/sports/mens-soccer/roster/eli-berry/11808
-719,Tulsa,2024,I,29,Luke Adams,Defender,6' 4'',So.,,"McKinney, Texas",McKinney North,,https://tulsahurricane.com/sports/mens-soccer/roster/luke-adams/11780
-719,Tulsa,2024,I,30,Dylan Janoski,Goalkeeper,,Fr.,,,,, https://tulsahurricane.com/sports/mens-soccer/roster/dylan-janoski/11994
-719,Tulsa,2024,I,31,Brandon Flores,Goalkeeper,6' 3'',So.,,"Cicero, Ill.",J. Sterling Morton East,,https://tulsahurricane.com/sports/mens-soccer/roster/brandon-flores/11787
-719,Tulsa,2024,I,32,Ian Belong,Forward,6' 2'',Fr.,,"Bartlesville, Okla.",Bartlesville HS,,https://tulsahurricane.com/sports/mens-soccer/roster/ian-belong/11809
-719,Tulsa,2024,I,35,Chris Nezianya,Forward,,Fr.,,,,, https://tulsahurricane.com/sports/mens-soccer/roster/chris-nezianya/11995
-9,UAB,2024,I,1,Philip Oesterbaek,GK,,So.,,"Soenderborg, Denmark",Erhvervsakademi Sydvest,,https://uabsports.com/sports/mens-soccer/roster/philip-oesterbaek/10819
-9,UAB,2024,I,2,César Ripa,D,,Gr.,,"Pau, Catalunya, Spain",,Temple,https://uabsports.com/sports/mens-soccer/roster/csar-ripa/10815
-9,UAB,2024,I,3,Chris McKenna,D,,Gr.,,"Glasgow, Scotland",,East Tennessee State,https://uabsports.com/sports/mens-soccer/roster/chris-mckenna/10820
-9,UAB,2024,I,4,Mathis Richter,D,,Fr.,,"Bremen, Germany",Gymnasium Damme,,https://uabsports.com/sports/mens-soccer/roster/mathis-richter/10821
-9,UAB,2024,I,5,Benedikt Erhard,M,,Jr.,,"Kostendorf, Austria",Christian Doppler Gymnasium,,https://uabsports.com/sports/mens-soccer/roster/benedikt-erhard/10805
-9,UAB,2024,I,6,Gustavo Barbosa,D,,Jr.,,"Salvador, Brazil",Montverde Academy,,https://uabsports.com/sports/mens-soccer/roster/gustavo-barbosa/10801
-9,UAB,2024,I,7,Tony Kim,F,,So.,,"Busan, South Korea",Point,,https://uabsports.com/sports/mens-soccer/roster/tony-kim/10810
-9,UAB,2024,I,8,Ivan Jolivet,M,,Gr.,,"Paris, France",,University of Mobile,https://uabsports.com/sports/mens-soccer/roster/ivan-jolivet/10822
-9,UAB,2024,I,9,Coleman Jennings,F,,Gr.,,"Vestavia Hills, Ala.",,Birmingham Southern,https://uabsports.com/sports/mens-soccer/roster/coleman-jennings/10823
-9,UAB,2024,I,10,Isaac Calderon,F,,So.,,"North Las Vegas, Nev.",Ohio Virtual Academy,,https://uabsports.com/sports/mens-soccer/roster/isaac-calderon/10802
-9,UAB,2024,I,11,Humphrey Doh,F,,So.,,"Madina, Ghana",University of Ghana,,https://uabsports.com/sports/mens-soccer/roster/humphrey-doh/10804
-9,UAB,2024,I,12,Edy Gael,D,,Jr.,,"Muyovozi, Tanzania",Davidson,Holmes CC,https://uabsports.com/sports/mens-soccer/roster/edy-gael/10806
-9,UAB,2024,I,13,Garrett Olson,GK,,Sr.,,"Raleigh, N.C.",Leesville Road,,https://uabsports.com/sports/mens-soccer/roster/garrett-olson/10814
-9,UAB,2024,I,14,Alan Melendez,M,,Jr.,,"Birmingham, Ala.",Spain Park,,https://uabsports.com/sports/mens-soccer/roster/alan-melendez/10812
-9,UAB,2024,I,15,Ole Jessen,D,,Fr.,,"Aarhus, Denmark",Marselisborg Gymnasium,,https://uabsports.com/sports/mens-soccer/roster/ole-jessen/10824
-9,UAB,2024,I,16,Mathias Love Groth,M,,Jr.,,"Asker, Norway",Sandvika Videregaaende,,https://uabsports.com/sports/mens-soccer/roster/mathias-love-groth/10811
-9,UAB,2024,I,17,Lucas Rizzo,F,,So.,,"Montgomery, Ala.",Montgomery Academy,,https://uabsports.com/sports/mens-soccer/roster/lucas-rizzo/10816
-9,UAB,2024,I,18,Simon Helt,M,,Fr.,,"Esbjerg, Denmark",,,https://uabsports.com/sports/mens-soccer/roster/simon-helt/10942
-9,UAB,2024,I,19,Patrik Fagan,F,,Fr.,,"Austin, Texas",Weiss,,https://uabsports.com/sports/mens-soccer/roster/patrik-fagan/10826
-9,UAB,2024,I,20,Jacob Jowers,M,,Sr.,,"Hoover, Ala.",Spain Park,,https://uabsports.com/sports/mens-soccer/roster/jacob-jowers/10808
-9,UAB,2024,I,21,Tommy Case,M,,Gr.,,"Eugene, Ore.",Eugene HS,UMass,https://uabsports.com/sports/mens-soccer/roster/tommy-case/10803
-9,UAB,2024,I,22,Kaleb Jowers,D,,Jr.,,"Hoover, Ala.",Spain Park,,https://uabsports.com/sports/mens-soccer/roster/kaleb-jowers/10809
-9,UAB,2024,I,23,Joshwa Campbell,F,,Fr.,,"George Town, Cayman Islands",Darlington School,,https://uabsports.com/sports/mens-soccer/roster/joshwa-campbell/10827
-9,UAB,2024,I,24,Jake Jiwon Han,D,,So.,,"Daejeon, South Korea",Springwood School,,https://uabsports.com/sports/mens-soccer/roster/jake-jiwon-han/10807
-9,UAB,2024,I,25,Gui Gragnano,F,,So.,,"Sao Paulo, Brazil",,Barry,https://uabsports.com/sports/mens-soccer/roster/gui-gragnano/10828
-9,UAB,2024,I,26,Judson Anderson,M,,Fr.,,"Austin, Texas",Anderson,,https://uabsports.com/sports/mens-soccer/roster/judson-anderson/10829
-9,UAB,2024,I,28,Carson Brice,D,,Fr.,,"Kershaw, S.C.",Andrew Jackson,,https://uabsports.com/sports/mens-soccer/roster/carson-brice/10831
-9,UAB,2024,I,30,Jonathan Munteanu,GK,,So.,,"Columbia, S.C.",Connections Academy,,https://uabsports.com/sports/mens-soccer/roster/jonathan-munteanu/10813
-9,UAB,2024,I,31,Brock Marlow,GK,,Fr.,,"Chelsea, Ala.",Chelsea,,https://uabsports.com/sports/mens-soccer/roster/brock-marlow/10833
-9,UAB,2024,I,32,Jake Kellerhals,D,,Fr.,,"Rossville, Ga.",Baylor School,East Tennessee State,https://uabsports.com/sports/mens-soccer/roster/jake-kellerhals/10834
-110,UCLA,2024,I,1,Sam Joseph,GK,6' 4'',Jr.,,"San Diego, Calif.",Saint Augustine High School,NY Red Bulls II,https://uclabruins.com/sports/mens-soccer/roster/sam-joseph/14304
-110,UCLA,2024,I,2,Tre Wright,D,6' 2'',So.,,"Austin, Tex.",Lake Travis HS,Capital City SC,https://uclabruins.com/sports/mens-soccer/roster/tre-wright/14314
-110,UCLA,2024,I,3,Youri Senden,D,6' 2'',Gr.,,"Voerendaal, Netherlands",Sintermeerten College,,https://uclabruins.com/sports/mens-soccer/roster/youri-senden/14530
-110,UCLA,2024,I,4,Pietro Grassi,D,6' 1'',Sr.,,"Milan, Italy",Pontificio Collegio Gallio,A.C. Milan,https://uclabruins.com/sports/mens-soccer/roster/pietro-grassi/14302
-110,UCLA,2024,I,5,JC Cortez,D,6' 0'',Jr.,,"Ridgewood, N.J.",Ridgewood HS,NY Red Bulls II,https://uclabruins.com/sports/mens-soccer/roster/jc-cortez/14299
-110,UCLA,2024,I,6,Tarun Karumanchi,MF,5' 11'',Jr.,,"San Ramon, Calif.",Dougherty Valley HS,SJ Earthquakes Academy,https://uclabruins.com/sports/mens-soccer/roster/tarun-karumanchi/14305
-110,UCLA,2024,I,7,Edrey Caceres,MF,5' 6'',Gr.,,"Houston, Texas",Senior MacArthurt High School,Houston Dynamo Academy,https://uclabruins.com/sports/mens-soccer/roster/edrey-caceres/14523
-110,UCLA,2024,I,8,Andre Ochoa,F,5' 9'',Sr.,,"Anaheim, Calif.",San Diego State,LA Galaxy Academy,https://uclabruins.com/sports/mens-soccer/roster/andre-ochoa/14309
-110,UCLA,2024,I,9,Jose Contell,F,5' 9'',R-Sr.,,"Valencia, Spain",Catholic University of Valencia,Valencia CF,https://uclabruins.com/sports/mens-soccer/roster/jose-contell/14298
-110,UCLA,2024,I,10,Sveinn Hauksson,MF/F,6' 2'',Gr.,,"Dalvik, Iceland",University of Iceland,KA Akureyri,https://uclabruins.com/sports/mens-soccer/roster/sveinn-hauksson/14526
-110,UCLA,2024,I,11,Cam Wilkerson,MF,6' 0'',Jr.,,"Richmond, Calif.",Baker Academy,Colorado Rapids Academy,https://uclabruins.com/sports/mens-soccer/roster/cam-wilkerson/14313
-110,UCLA,2024,I,12,Tamir Ratoviz,MF,5' 11'',Fr.,,"Los Angeles, Calif.",Oak Park High School,LAFC Academy,https://uclabruins.com/sports/mens-soccer/roster/tamir-ratoviz/14529
-110,UCLA,2024,I,13,Pablo Greenlee,D,5' 11'',Sr.,,"Hollywood, Calif.",Harvard-Westlake HS,LA Breakers,https://uclabruins.com/sports/mens-soccer/roster/pablo-greenlee/14303
-110,UCLA,2024,I,14,Philip Naef,D,5' 11'',So.,,"Copenhagen, Denmark",IS Berne,BSC Young Boys,https://uclabruins.com/sports/mens-soccer/roster/philip-naef/14306
-110,UCLA,2024,I,15,Amjot Narang,MF,6' 1'',Jr.,,"El Dorado Hills, Calif.",Oak Ridge HS,Sac Republic FC,https://uclabruins.com/sports/mens-soccer/roster/amjot-narang/14307
-110,UCLA,2024,I,16,Sebastian Rincon,MF,5' 6'',Jr.,,"Culver City, Calif.",Palisades Charter HS,FRAM SC,https://uclabruins.com/sports/mens-soccer/roster/sebastian-rincon/14311
-110,UCLA,2024,I,17,Sam Scott,F,6' 0'',So.,,"Frisco, Tex.",Rick Reedy HS,Solar SC ,https://uclabruins.com/sports/mens-soccer/roster/sam-scott/14312
-110,UCLA,2024,I,18,Lucca Adams,GK,6' 1'',Fr.,,"Manhattan Beach, Calif.",California Connections Academy,LA Galaxy Academy,https://uclabruins.com/sports/mens-soccer/roster/lucca-adams/14522
-110,UCLA,2024,I,19,Nikolai Rojel,F,6' 2'',Jr.,,"Copenhagen, Denmark",Wofford College,Hellerup IK,https://uclabruins.com/sports/mens-soccer/roster/nikolai-rojel/14332
-110,UCLA,2024,I,20,Mateo Pinilla,D,6' 1'',So.,,"Houston, Tex.",Acellus Academy,Houston Dynamo Academy,https://uclabruins.com/sports/mens-soccer/roster/mateo-pinilla/14310
-110,UCLA,2024,I,21,Shakir Nixon,D,5' 11'',Fr.,,"Cerritos, Calif.",Cerritos High School,LAFC Academy,https://uclabruins.com/sports/mens-soccer/roster/shakir-nixon/14528
-110,UCLA,2024,I,22,Wyatt Nelson,GK,6' 3'',So.,,"Seattle, Wash.",Roosevelt HS,Seattle Sounders Academy,https://uclabruins.com/sports/mens-soccer/roster/wyatt-nelson/14308
-110,UCLA,2024,I,23,Oshea Foster,F,5' 9'',Jr.,,"Pasadena, Calif.",San Diego,LA Surf,https://uclabruins.com/sports/mens-soccer/roster/oshea-foster/14301
-110,UCLA,2024,I,24,Nicholas Cavallo,D,6' 1'',Gr.,,"Richmond, Va.",Davidson College,Davidson,https://uclabruins.com/sports/mens-soccer/roster/nicholas-cavallo/14524
-110,UCLA,2024,I,25,Allan Legaspi,D,5' 9'',Fr.,,"Pico Rivera, Calif.",California Connections Academy,LA Galaxy Academy,https://uclabruins.com/sports/mens-soccer/roster/allan-legaspi/14527
-110,UCLA,2024,I,26,Jacob Diaz,F,6' 1'',So.,,"Torrance, Calif.",South Torrance HS,LAFC Academy,https://uclabruins.com/sports/mens-soccer/roster/jacob-diaz/14300
-110,UCLA,2024,I,27,Artem Vovk,F,5' 9'',Fr.,,"Rivne, Ukraine","Foothill High School (Sacramento, Calif.)",Elk Grove Sporting,https://uclabruins.com/sports/mens-soccer/roster/artem-vovk/14531
-456,UNC Asheville,2024,I,0,Adrian Najarro,Goalkeeper,6' 0'',R-Fr.,,"Boca Raton, Fla.",South Florida Football Academy,,https://uncabulldogs.com/sports/mens-soccer/roster/adrian-najarro/4254
-456,UNC Asheville,2024,I,1,Charlie Farrar,Goalkeeper,6' 4'',Sr.,,"Wakefield, United Kingdom",,Chowan,https://uncabulldogs.com/sports/mens-soccer/roster/charlie-farrar/4241
-456,UNC Asheville,2024,I,2,Heath Flathau,Defender/Midfielder,5' 9'',Sr.,,"Hattiesburg, Miss.",,UAB,https://uncabulldogs.com/sports/mens-soccer/roster/heath-flathau/4243
-456,UNC Asheville,2024,I,3,Conrad Ryu Eriksson,Defender,5' 10'',Jr.,,"Tokyo, Japan",,West Virginia Tech,https://uncabulldogs.com/sports/mens-soccer/roster/conrad-ryu-eriksson/4266
-456,UNC Asheville,2024,I,4,Tyler Leonard,Defender,6' 2'',Fr.,,"Prior Lake, Minn.",Minnesota United Academy,,https://uncabulldogs.com/sports/mens-soccer/roster/tyler-leonard/4267
-456,UNC Asheville,2024,I,5,Roger Sanguinetti,Defender/Midfielder,5' 11'',Sr.,,"Katy, Texas",,Grand Canyon,https://uncabulldogs.com/sports/mens-soccer/roster/roger-sanguinetti/4258
-456,UNC Asheville,2024,I,6,Louis Beckett,Midfielder,5' 11'',Jr.,,"Bridlington, United Kingdom",,Old Dominion,https://uncabulldogs.com/sports/mens-soccer/roster/louis-beckett/4236
-456,UNC Asheville,2024,I,7,Michael Wilkerson,Forward/Midfielder,6' 0'',Sr.,,"Asheville, N.C.",,San Diego,https://uncabulldogs.com/sports/mens-soccer/roster/michael-wilkerson/4261
-456,UNC Asheville,2024,I,8,Jack Steel,Midfielder,5' 10'',So.,,"Surrey, United Kingdom",Aldershot Town FC,,https://uncabulldogs.com/sports/mens-soccer/roster/jack-steel/4259
-456,UNC Asheville,2024,I,9,Sergio Báguena,Forward,6' 0'',Sr.,,"Alicante, Spain",,Bethel University,https://uncabulldogs.com/sports/mens-soccer/roster/sergio-bguena/4235
-456,UNC Asheville,2024,I,10,Brendan Herb,Midfielder,5' 11'',5th,,"Corvallis, Ore.",,Oregon State,https://uncabulldogs.com/sports/mens-soccer/roster/brendan-herb/4265
-456,UNC Asheville,2024,I,11,Seth Hammond,Midfielder/Forward,5' 7'',Sr.,,"Winchester, Va.",,Elon,https://uncabulldogs.com/sports/mens-soccer/roster/seth-hammond/4248
-456,UNC Asheville,2024,I,12,Miller Hayden,Defender/Midfielder,5' 9'',R-Jr.,,"Hattiesburg, Miss.",,UAB,https://uncabulldogs.com/sports/mens-soccer/roster/miller-hayden/4249
-456,UNC Asheville,2024,I,13,Rinta Takagi,Midfielder,5' 7'',Jr.,,"Gifu, Japan",Shizuoka Gakuen HS,Southern Nazarene,https://uncabulldogs.com/sports/mens-soccer/roster/rinta-takagi/4260
-456,UNC Asheville,2024,I,14,Aysa Hamid,Forward,6' 0'',Jr.,,"Scottsdale, Ariz.",,UNC Wilmington,https://uncabulldogs.com/sports/mens-soccer/roster/aysa-hamid/4247
-456,UNC Asheville,2024,I,15,Aiden Gummer,Midfielder,5' 10'',R-Fr.,,"Indian Land. S.C.",Charlotte Independence Pro Academy,,https://uncabulldogs.com/sports/mens-soccer/roster/aiden-gummer/4246
-456,UNC Asheville,2024,I,16,Jaden Berman,Defender/Midfielder,5' 10'',Sr.,,"Winchester, Va.",,George Mason,https://uncabulldogs.com/sports/mens-soccer/roster/jaden-berman/4239
-456,UNC Asheville,2024,I,17,Keegan Peat,Midfielder,5' 8'',Jr.,,"Wilmington, N.C.",Wilmington Hammerheads FC,,https://uncabulldogs.com/sports/mens-soccer/roster/keegan-peat/4256
-456,UNC Asheville,2024,I,18,Sam Howe,Midfielder,5' 9'',Fr.,,"Charlotte, N.C.",Charlotte Eagles Academy,,https://uncabulldogs.com/sports/mens-soccer/roster/sam-howe/4268
-456,UNC Asheville,2024,I,19,Hunter Wilson,Defender,6' 3'',R-Fr.,,"Wellington, New Zealand",Miramar Rangers,,https://uncabulldogs.com/sports/mens-soccer/roster/hunter-wilson/4262
-456,UNC Asheville,2024,I,20,Owen Lagerwey,Midfielder,6' 2'',Fr.,,"Mahanttan Beach, Calif.",Beach FC ECNL,,https://uncabulldogs.com/sports/mens-soccer/roster/owen-lagerwey/4269
-456,UNC Asheville,2024,I,21,Emilio Figueroa,Defender,6' 1'',Sr.,,"Mexico City, Mexico",,Davis & Elkins,https://uncabulldogs.com/sports/mens-soccer/roster/emilio-figueroa/4242
-456,UNC Asheville,2024,I,22,Jackson Minneci,Midfielder,5' 8'',R-Fr.,,"Wilmington, N.C.",Wilmington Hammerheads FC,,https://uncabulldogs.com/sports/mens-soccer/roster/jackson-minneci/4251
-456,UNC Asheville,2024,I,23,Xander Naguib,Midfielder,5' 10'',R-So.,,"Frisco, Texas",,Tulsa,https://uncabulldogs.com/sports/mens-soccer/roster/xander-naguib/4253
-456,UNC Asheville,2024,I,24,Charlie Wood,Midfielder,6' 0'',Fr.,,"Addingham, United Kingdom",Bradford City FC,,https://uncabulldogs.com/sports/mens-soccer/roster/charlie-wood/4263
-456,UNC Asheville,2024,I,25,Benian Yao,Defender,6' 4'',Sr.,,"Waxhaw, N.C.",,Viterbo University,https://uncabulldogs.com/sports/mens-soccer/roster/benian-yao/4264
-456,UNC Asheville,2024,I,26,Viðar Ragnarsson,Defender,6' 1'',Jr.,,"Reykjanesbær, Iceland",,Presbyterian,https://uncabulldogs.com/sports/mens-soccer/roster/viar-ragnarsson/4257
-456,UNC Asheville,2024,I,27,Conor Behan,Midfielder,5' 8'',Sr.,,"Dublin, Republic of Ireland",Bray Wanderers,,https://uncabulldogs.com/sports/mens-soccer/roster/conor-behan/4237
-456,UNC Asheville,2024,I,29,Pablo Obrador,Midfielder,5' 10'',Jr.,,"Talca, Chile",,Coastal Carolina,https://uncabulldogs.com/sports/mens-soccer/roster/pablo-obrador/4255
-456,UNC Asheville,2024,I,30,Lucca Barros,Goalkeeper,6' 2'',Fr.,,"Mint Hill, N.C.",Charlotte SA ECNL National Academy,,https://uncabulldogs.com/sports/mens-soccer/roster/lucca-barros/4270
-456,UNC Asheville,2024,I,31,A.J. Bengds,Goalkeeper,6' 7'',R-So.,,"Raleigh, N.C.",North Carolina FC,,https://uncabulldogs.com/sports/mens-soccer/roster/aj-bengds/4238
-456,UNC Asheville,2024,I,32,Jack Kenyon,Midfielder,5' 9'',Fr.,,"London, United Kingdom",East Grinstead Town/Harris Crystal Palace,,https://uncabulldogs.com/sports/mens-soccer/roster/jack-kenyon/4271
-456,UNC Asheville,2024,I,33,Myles Edmondson,Defender,5' 9'',Sr.,,"Oldham, Manchester, United Kingdom",Bolton Wanderers FC,,https://uncabulldogs.com/sports/mens-soccer/roster/myles-edmondson/4240
-456,UNC Asheville,2024,I,34,Edvin Grolimund,Midfielder,6' 1'',Sr.,,"Arlesheim, BL, Switzerland",,Cardinal Stritch,https://uncabulldogs.com/sports/mens-soccer/roster/edvin-grolimund/4245
-456,UNC Asheville,2024,I,35,Nathan Montini,Defender,6' 2'',R-So.,,"Brasilton, Ga.",,George Mason,https://uncabulldogs.com/sports/mens-soccer/roster/nathan-montini/4252
-456,UNC Asheville,2024,I,36,Logan Smith,Defender,5' 9'',Fr.,,"Raleigh, N.C.",NCFC Academy,,https://uncabulldogs.com/sports/mens-soccer/roster/logan-smith/4272
-456,UNC Asheville,2024,I,45,Ian McGill,Goalkeeper,6' 2'',Sr.,,"Jamestown, N.C.",PTFC,,https://uncabulldogs.com/sports/mens-soccer/roster/ian-mcgill/4250
-746,Virginia,2024,I,00,Caleb Tunks,GK,6-0,Sophomore,,"Kailua-Kona, Hawaii",Solar SC,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/caleb-tunks/
-746,Virginia,2024,I,0,Tom Miles,GK,6-1,Graduate Student,,"London, United Kingdom",Crystal Palace,Lubbock Christian(Division II),https://virginiasports.com/sports/msoc/roster/season/2024-25/player/tom-miles/
-746,Virginia,2024,I,1,Joey Batrouni,GK,6-1,Senior,,"San Antonio, Texas",,Coastal Carolina,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/joey-batrouni/
-746,Virginia,2024,I,2,Nick Dang,D,6-2,Junior,,"Brentwood, Tenn.",Ravenwood,Lipscomb,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/nick-dang/
-746,Virginia,2024,I,3,Max Talley,M,5-10,Sophomore,,"Memphis, Tennessee",Memphis 901,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/max-talley/
-746,Virginia,2024,I,4,Paul Wiese,D,5-8,Senior,,"Rostock, Germany",Rostock-Mecklenburg Pomerania,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/paul-wiese/
-746,Virginia,2024,I,5,Austin Rome,D,6-3,Redshirt Senior,,"Bowie, Md.",,Providence,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/austin-rome/
-746,Virginia,2024,I,6,Umberto Pelà,M,5-11,Junior,,"Milan, Italy",International School of Milan,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/umberto-pela/
-746,Virginia,2024,I,7,Hayes Wood,F,6-2,Graduate Student,,"Chattanooga, Tenn.",,Lipscomb,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/hayes-wood/
-746,Virginia,2024,I,8,Brendan Lambe,M,5-6,Sophomore,,"Apex, N.C.",Atlanta United 2,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/brendan-lambe/
-746,Virginia,2024,I,9,AJ Smith,F,6-4,Sophomore,,"Høje Taastup, Denmark",Fremad Amager (Denmark),,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/aj-smith/
-746,Virginia,2024,I,10,Daniel Mangarov,M,5-7,Fifth Year,,"Duluth, Ga.",Gwinett Online Campus School,UNC Greensboro,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/daniel-mangarov-2/
-746,Virginia,2024,I,11,Joaquín Brizuela,F,6-2,Freshman,,"Mendoza, Argentina",ISMA/ISEP,Godoy Cruz,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/joaquin-brizuela/
-746,Virginia,2024,I,12,Albin Gashi,M,5-11,Junior,,"Vargarda, Sweden",Alstromergymnasiet,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/albin-gashi/
-746,Virginia,2024,I,13,Cesar Cordova,F,5-7,Sophomore,,"Houston, Texas",Houston Dynamo 2,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/cesar-cordova/
-746,Virginia,2024,I,15,Triton Beauvois,F,5-9,Junior,,"Boston, Mass.",Milton Academy,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/triton-beauvois/
-746,Virginia,2024,I,16,Willem Ebbinge,F/M,6-1,Graduate Student,,"Queenstown, New Zealand",,Harvard,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/willem-ebbinge/
-746,Virginia,2024,I,17,Victor Akoum,D,6-3,Sophomore,,"Edmonton, Canada",Vancouver Whitecaps,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/victor-akoum/
-746,Virginia,2024,I,18,Kome Ubogu,F,6-1,Senior,,"Hoover, Ala.",Indian Springs School,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/kome-ubogu/
-746,Virginia,2024,I,19,Reese Miller,D,6-0,Junior,,"Houston, Texas",Houston Dynamo 2,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/reese-miller/
-746,Virginia,2024,I,20,Ignacio Alem,F,5-10,Sophomore,,"Potomac, Md.",D.C. United Academy,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/ignacio-alem/
-746,Virginia,2024,I,21,Luc Mikula,D,6-2,Senior,,"State College, Pa.",Northwood,Coastal Carolina,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/luc-mikula/
-746,Virginia,2024,I,22,Drew Serafino,F/M,5-8,Junior,,"East Longmeadow, Mass.",Suffield Academy,Boston College,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/drew-serafino/
-746,Virginia,2024,I,23,David Okorie,F,5-7,Junior,,"Alexandria, Va.",Pecsi Leowey Klara Gimnazium,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/david-okorie/
-746,Virginia,2024,I,24,Garrett Socas,M,6-2,Graduate Student,,"McLean, Va.",Bethesda Academy,Dartmouth,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/garrrett-socas/
-746,Virginia,2024,I,25,Donovan Maryat,D,6-5,Sophomore,,"Brooklyn, N.Y.",Met Oval,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/donovan-maryat/
-746,Virginia,2024,I,26,Amari Salley,M,5-6,Junior,,"Harrisburg, NC",Marietta High School,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/amari-salley/
-746,Virginia,2024,I,27,Cameron Yriondo,M,6-3,Sophomore,,"Sammamish, Wash.",Skyline HS,Seattle Pacific University,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/cameron-yriondo/
-746,Virginia,2024,I,28,Matthew Thissell,,5-10,Sophomore,,"Ashburn, Va.",Bethesda Academy,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/matthew-thissell/
-746,Virginia,2024,I,29,Yassine Rhoumar,D/M,6-0,Junior,,"Alexandria, Va.",Hayfield Secondary School,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/yassine-rhoumar/
-746,Virginia,2024,I,30,Colin Gallagher,GK,6-1,Junior,,"Safety Harbor, Fla.",Calvary Christian High School,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/colin-gallagher-2/
-746,Virginia,2024,I,31,Luke Burns,M,6-0,Freshman,,"Scottsdale, Ariz.",Brophy College Preparatory,Phoenix Rising FC,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/luke-burns/
-746,Virginia,2024,I,32,Parker Sloan,D,5-8,Junior,,"Cartersville, Va.",Powhatan High School,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/parker-sloan/
-746,Virginia,2024,I,33,Grant Howard,D,5-10,Junior,,"Atlanta, Ga.",Woodward Academy,Virginia Tech,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/grant-howard/
-746,Virginia,2024,I,34,Miguel Kobby Adoboe,M,5-8,Junior,,"Sachse, Tx.",Sachse High School,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/miguel-kobbe-adobe/
-746,Virginia,2024,I,35,Michael Howard,F/M,6-0,Freshman,,"Apex, N.C.",Atlanta International School,Atlanta United,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/michael-howard-2/
-746,Virginia,2024,I,36,Anthony Faupel,F,5-8,Freshman,,"St. Louis, Mo.",Francis Howell High School,St. Louis CITY2,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/anthony-faupel/
-746,Virginia,2024,I,37,Alex Parvu,D,6-2,Freshman,,"Cumberland, R.I.",Cumberland,New England Revolution Academy,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/alex-parvu/
-746,Virginia,2024,I,38,Baka Kante,M,5-11,Freshman,,"Overland Park, Kan.",Rockhurst,Kansas Rush,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/baka-kante/
-746,Virginia,2024,I,39,Jed Akwaboah,D,6-1,Freshman,,"Short Hills, N.J.",Millburn High School,Cedar Stars Bergen,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/jed-akwaboah/
-746,Virginia,2024,I,46,Matthew Hunter,D,6-2,Senior,,"Midlothian, Va.",Midlothian,,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/matthew-hunter/
-746,Virginia,2024,I,99,Spencer Sanderson,GK,6-1,Freshman,,"Austin, Texas",Westlake High School/SAI Academy,Austin FC,https://virginiasports.com/sports/msoc/roster/season/2024-25/player/spencer-sanderson/
-742,Virginia Tech,2024,I,0,Jake Jacobi,Goalkeeper,6-4,Freshman,,"Weston, Vt.",Stratton Mountain School,,https://hokiesports.com/sports/mens-soccer/roster/player/jake-jacobi
-742,Virginia Tech,2024,I,1,Mark Hyan,Goalkeeper,6-3,Freshman,,"Los Angeles, Calif.",Loyola,,https://hokiesports.com/sports/mens-soccer/roster/player/mark-hyan
-742,Virginia Tech,2024,I,2,Olafur Floki Stephensen,Defender,6-4,Freshman,,"Garðabaer, Iceland",Fjolbrautarskolinn í Garðabae,,https://hokiesports.com/sports/mens-soccer/roster/player/olafur-floki-stephensen
-742,Virginia Tech,2024,I,3,Trey Gardiner,Defender,6-5,Senior,,"Richmond, Va.",Maggie Walker,Davidson,https://hokiesports.com/sports/mens-soccer/roster/player/trey-gardiner
-742,Virginia Tech,2024,I,4,Evan Schroeder,Defender,6-1,Junior,,"Atlanta, Ga.",Druid Hills,Georgia State,https://hokiesports.com/sports/mens-soccer/roster/player/evan-schroeder
-742,Virginia Tech,2024,I,6,Tino Vasquez,Midfielder,5-8,Freshman,,"Barrington, Ill.",Brightmont Academy,,https://hokiesports.com/sports/mens-soccer/roster/player/tino-vasquez
-742,Virginia Tech,2024,I,7,Declan Quill,Forward,6-2,Senior,,"Falls Church, Va.",George Mason High School,,https://hokiesports.com/sports/mens-soccer/roster/player/declan-quill
-742,Virginia Tech,2024,I,8,Samy Kolby,Midfielder,5-9,Junior,,"Charlotte, N.C.",Carmel Christian School,Charlotte,https://hokiesports.com/sports/mens-soccer/roster/player/samy-kolby
-742,Virginia Tech,2024,I,9,Alex Perez,Midfielder,5-10,Freshman,,"Las Vegas, Nev.",YSC Academy,,https://hokiesports.com/sports/mens-soccer/roster/player/mens-soccer-alex-perez
-742,Virginia Tech,2024,I,10,Marcos Escoe,Forward,6-0,Sophomore,,"Heredia, Costa Rica",,,https://hokiesports.com/sports/mens-soccer/roster/player/marcos-escoe
-742,Virginia Tech,2024,I,11,Oliver Roche,Forward,6-3,Sophomore,,"Odense, Denmark",Tietgen Handelsgymnasium,,https://hokiesports.com/sports/mens-soccer/roster/player/oliver-roche
-742,Virginia Tech,2024,I,12,CJ Coppola,Forward,6-1,Junior,,"Des Moines, Iowa",Waukee,Saint Louis,https://hokiesports.com/sports/mens-soccer/roster/player/cj-coppola
-742,Virginia Tech,2024,I,13,Nick Laffey,Forward,6-0,Sophomore,,"Germantown, Md.",St. John's College,,https://hokiesports.com/sports/mens-soccer/roster/player/nick-laffey
-742,Virginia Tech,2024,I,15,Andy Sullins,Forward,6-1,Junior,,"Athens, Tenn.",Marietta,Virginia,https://hokiesports.com/sports/mens-soccer/roster/player/andy-sullins
-742,Virginia Tech,2024,I,16,Mathias Yohannes,Midfielder,6-0,Junior,,"South Riding, Va.",Freedom High School,Kentucky,https://hokiesports.com/sports/mens-soccer/roster/player/mathias-yohannes
-742,Virginia Tech,2024,I,17,Ethan Hackenberg,Forward/Midfielder,5-9,Senior,,"Pittsburgh, Pa.",Seneca Valley,CCBC-Essex,https://hokiesports.com/sports/mens-soccer/roster/player/ethan-hackenberg
-742,Virginia Tech,2024,I,18,Willie Cardona,Defender,5-9,Senior,,"Fort Mill, S.C.",SC Whitmore School,Winthrop,https://hokiesports.com/sports/mens-soccer/roster/player/willie-cardona
-742,Virginia Tech,2024,I,20,Malick Thiaw,Forward,6-0,Junior,,"Marseille, France",Cours Sainte Marie de Hann,,https://hokiesports.com/sports/mens-soccer/roster/player/malick-thiaw
-742,Virginia Tech,2024,I,21,Noe Uwimana,Defender,5-8,Sophomore,,"Austin, Texas",YSC Academy,,https://hokiesports.com/sports/mens-soccer/roster/player/noe-uwimana
-742,Virginia Tech,2024,I,22,Yonis Kireh,Midfielder/Defender,6-3,Sophomore,,"Marseille , France",,,https://hokiesports.com/sports/mens-soccer/roster/player/yonis-kireh
-742,Virginia Tech,2024,I,23,Sergios Feneridis,Defender,6-0,Sophomore,,"Nicosia, Cyprus",Pascal English School,APOEL Nicosia,https://hokiesports.com/sports/mens-soccer/roster/player/sergios-feneridis
-742,Virginia Tech,2024,I,24,Ian Marcano,Midfielder,5-4,Freshman,,"Gaithersburg, Md.",European International school of Barcelona,,https://hokiesports.com/sports/mens-soccer/roster/player/ian-marcano
-742,Virginia Tech,2024,I,25,Cooper Wenzel,Goalkeeper,6-2,Senior,,"Fresno, Calif.",Clovis North High School,CSUN,https://hokiesports.com/sports/mens-soccer/roster/player/cooper-wenzel
-742,Virginia Tech,2024,I,26,Harry Neill,Defender,5-8,Sophomore,,"Montclair, N.J.",Seton Hall Prep,,https://hokiesports.com/sports/mens-soccer/roster/player/harry-neill
-742,Virginia Tech,2024,I,27,Timi Adams,Goalkeeper,6-7,Senior,,"Atlanta, Ga.",Riverwood International Charter School,NASA Tophat,https://hokiesports.com/sports/mens-soccer/roster/player/timi-adams
-742,Virginia Tech,2024,I,29,Carter Hensley,Midfielder,6-2,Senior,,"Charlotte, N.C.",Myers Park,Charlotte Soccer Academy,https://hokiesports.com/sports/mens-soccer/roster/player/carter-hensley
-742,Virginia Tech,2024,I,31,Harrison Krieg,Midfielder,5-9,Junior,,"Irvington, N.Y.",Irvington,,https://hokiesports.com/sports/mens-soccer/roster/player/harrison-krieg
-742,Virginia Tech,2024,I,32,Zach Glesius,Goalkeeper,6-0,Junior,,"Avon Lake, Ohio",Avon Lake,,https://hokiesports.com/sports/mens-soccer/roster/player/zach-glesius
-749,Wake Forest,2024,I,0,Jonah Mednard,Goalkeeper,6' 2'',R-Fr.,,"Congers, N.Y.",Clarkstown High School North,,https://godeacs.com/sports/mens-soccer/roster/jonah-mednard/7908
-749,Wake Forest,2024,I,1,Trace Alphin,Goalkeeper,6' 2'',Sr.,,"Raleigh, N.C.",Crossroads FLEX,,https://godeacs.com/sports/mens-soccer/roster/trace-alphin/7898
-749,Wake Forest,2024,I,2,Bo Cummins,Defender,5' 10'',Sr.,,"Port Huron, Mich.",,,https://godeacs.com/sports/mens-soccer/roster/bo-cummins/7900
-749,Wake Forest,2024,I,3,Travis Smith Jr.,Defender,6' 1'',So.,,"Louisville, Ky.",duPont Manual,,https://godeacs.com/sports/mens-soccer/roster/travis-smith-jr/7914
-749,Wake Forest,2024,I,4,Amoni Thomas,Defender,,,,"Edmonton, Canada",University Hill Secondary School,,https://godeacs.com/sports/mens-soccer/roster/amoni-thomas/8270
-749,Wake Forest,2024,I,5,Daniel Krueger,Defender,6' 1'',Fr.,,"Philadelphia, Pa.",YSC Academy,,https://godeacs.com/sports/mens-soccer/roster/daniel-krueger/7920
-749,Wake Forest,2024,I,6,Liam O'Gara,Midfielder,6' 3'',So.,,"Winston-Salem, N.C.",Mount Tabor,,https://godeacs.com/sports/mens-soccer/roster/liam-ogara/7910
-749,Wake Forest,2024,I,7,Nico Rabiu,Midfielder,5' 10'',R-So.,,"Schenectady, N.Y.",Bergen Catholic,,https://godeacs.com/sports/mens-soccer/roster/nico-rabiu/7913
-749,Wake Forest,2024,I,8,Dylan Borso,Midfielder,5' 11'',Fr.,,"Chicago, Ill.",Metea Valley HS,,https://godeacs.com/sports/mens-soccer/roster/dylan-borso/8242
-749,Wake Forest,2024,I,9,Pariss Mitchell,Forward,6' 0'',Fr.,,"Ajax, Canada",Bill Crothers,,https://godeacs.com/sports/mens-soccer/roster/pariss-mitchell/7919
-749,Wake Forest,2024,I,10,Babacar Niang,Midfielder,5' 11'',Sr.,,"Dakar, Senegal",The Pennington School,,https://godeacs.com/sports/mens-soccer/roster/babacar-niang/7909
-749,Wake Forest,2024,I,11,Sidney Paris,Defender,5' 11'',Gr.,,"Oakville, Ontario",,Navy,https://godeacs.com/sports/mens-soccer/roster/sidney-paris/7911
-749,Wake Forest,2024,I,12,Jose Perez,Midfielder,5' 8'',So.,,"Antioch, Ill.",Shattuck St. Mary's School,,https://godeacs.com/sports/mens-soccer/roster/jose-perez/7912
-749,Wake Forest,2024,I,13,Jeffrey White,Midfielder,5' 10'',So.,,"Tampa, Fla.",River Ridge,,https://godeacs.com/sports/mens-soccer/roster/jeffrey-white/7917
-749,Wake Forest,2024,I,14,Ryan Belal,Forward,6' 0'',Fr.,,"Baltimore, Md.",Calvert Hall,,https://godeacs.com/sports/mens-soccer/roster/ryan-belal/8244
-749,Wake Forest,2024,I,15,Jojo Davila,Defender,5' 10'',Fr.,,"Valrico, Fla.",Bloomingdale Senior HS,,https://godeacs.com/sports/mens-soccer/roster/jojo-davila/8250
-749,Wake Forest,2024,I,16,Joel Torbic,Midfielder,6' 0'',Fr.,,"State College, Pa.",Barca Residency Academy,,https://godeacs.com/sports/mens-soccer/roster/joel-torbic/8245
-749,Wake Forest,2024,I,17,Pierce Bateson,Midfielder,5' 9'',So.,,"Madison, N.J.",Madison,,https://godeacs.com/sports/mens-soccer/roster/pierce-bateson/7918
-749,Wake Forest,2024,I,18,Cooper Flax,Midfielder,6' 0'',Jr.,,"Dix Hills, N.Y.",Half Hollow Hills HS East,,https://godeacs.com/sports/mens-soccer/roster/cooper-flax/7904
-749,Wake Forest,2024,I,19,Cristian Escribano,Defender,5' 10'',Gr.,,"Frisco, Texas",Legacy Christian Academy,,https://godeacs.com/sports/mens-soccer/roster/cristian-escribano/7902
-749,Wake Forest,2024,I,20,Ryan Fessler,Midfielder,5' 9'',Sr.,,"Charlotte, N.C.",Blue Valley West,,https://godeacs.com/sports/mens-soccer/roster/ryan-fessler/7903
-749,Wake Forest,2024,I,21,Julian Kennedy,Forward,6' 1'',Sr.,,"Orlando, Fla.",,,https://godeacs.com/sports/mens-soccer/roster/julian-kennedy/7906
-749,Wake Forest,2024,I,22,Basit Umar,Midfielder,5' 8'',Jr.,,"Kumasi, Ghana",Right To Dream Academy,,https://godeacs.com/sports/mens-soccer/roster/basit-umar/8193
-749,Wake Forest,2024,I,23,Vlad Walent,Midfielder,5' 9'',Jr.,,"Lafayette, Colo.",Connection Academy,,https://godeacs.com/sports/mens-soccer/roster/vlad-walent/7916
-749,Wake Forest,2024,I,24,Mason Sullivan,Defender,6' 5'',Fr.,,"West Roxbury, Mass.",Buckingham Browne & Nichols,,https://godeacs.com/sports/mens-soccer/roster/mason-sullivan/8248
-749,Wake Forest,2024,I,25,Will Jackson,Defender,5' 10'',Fr.,,"Homewood, Ala.",Homewood HS,,https://godeacs.com/sports/mens-soccer/roster/will-jackson/8249
-749,Wake Forest,2024,I,26,Colin Thomas,Midfielder,5' 7'',Gr.,,"Canton, Ga.",Creekview HS,,https://godeacs.com/sports/mens-soccer/roster/colin-thomas/7915
-749,Wake Forest,2024,I,27,Prince Amponsah,Defender,5' 11'',Gr.,,"Bronx, N.Y.",Manhattan Hunter Science HS,,https://godeacs.com/sports/mens-soccer/roster/prince-amponsah/7899
-749,Wake Forest,2024,I,28,Nicolas Mancilla,Defender,5' 9'',Sr.,,"Osorno, Chile",Colegio Futuro,,https://godeacs.com/sports/mens-soccer/roster/nicolas-mancilla/7907
-749,Wake Forest,2024,I,30,Owen Barnett,Goalkeeper,6' 2'',Fr.,,"Athens, Ga.",Clarke Central HS,,https://godeacs.com/sports/mens-soccer/roster/owen-barnett/8246
-812,Xavier,2024,I,0,Landon Friend,GK,6' 2'',R-Fr.,,"Fort Worth, Texas",Keller Timber Creek,,https://goxavier.com/sports/mens-soccer/roster/landon-friend/12006
-812,Xavier,2024,I,1,Jonny Mennell,GK,6' 5'',Jr.,,"Asheville, N.C.",K12 Private Academy,,https://goxavier.com/sports/mens-soccer/roster/jonny-mennell/12009
-812,Xavier,2024,I,2,Ernest Mensah Jr.,D,5' 10'',Jr.,,"Naperville, Ill.",Naperville Central,,https://goxavier.com/sports/mens-soccer/roster/ernest-mensah-jr/12010
-812,Xavier,2024,I,3,Nolan Brice,D,6' 4'',Fr.,,"Crestwood, Ky.",South Oldham,,https://goxavier.com/sports/mens-soccer/roster/nolan-brice/12021
-812,Xavier,2024,I,4,Aron Snaer Gudbjornsson,D,6' 2'',Fr.,,"Reykjavík, Iceland",Menntaskólinn við Sund,,https://goxavier.com/sports/mens-soccer/roster/aron-snaer-gudbjornsson/12025
-812,Xavier,2024,I,5,Eli Dulle,MF,6' 1'',Gr.,,"Upper Arlington, Ohio",The Wellington School,,https://goxavier.com/sports/mens-soccer/roster/eli-dulle/12003
-812,Xavier,2024,I,6,George Waites,MF,5' 11'',Jr.,,"Redcar, England",Bydales,,https://goxavier.com/sports/mens-soccer/roster/george-waites/12019
-812,Xavier,2024,I,7,Nathan Trickett,MF,6' 1'',So.,,"Independence, Ohio",St. Ignatius,,https://goxavier.com/sports/mens-soccer/roster/nathan-trickett/12017
-812,Xavier,2024,I,8,Cooper Forcellini,MF,6' 1'',Jr.,,"Olathe, Kan.",Blue Valley West,,https://goxavier.com/sports/mens-soccer/roster/cooper-forcellini/12005
-812,Xavier,2024,I,9,Taylor Rhinehart,F,5' 11'',Sr.,,"Fort Wayne, Ind.",Homestead,,https://goxavier.com/sports/mens-soccer/roster/taylor-rhinehart/12013
-812,Xavier,2024,I,10,Guilherme Vivaldini,F,6' 2'',Jr.,,"Itupeva, Brazil",The McCallie School (Tenn.),,https://goxavier.com/sports/mens-soccer/roster/guilherme-vivaldini/12018
-812,Xavier,2024,I,11,Paul Bogarin,MF,6' 0'',Gr.,,"Hammond, Ind.",Morton,,https://goxavier.com/sports/mens-soccer/roster/paul-bogarin/12001
-812,Xavier,2024,I,12,Michael Rogalski,D,6' 0'',Sr.,,"Park Ridge, Ill.",Maine South,,https://goxavier.com/sports/mens-soccer/roster/michael-rogalski/12014
-812,Xavier,2024,I,13,Cannon Scretchen,MF,6' 1'',Fr.,,"Nashville, Tenn.",University School of Nashville,,https://goxavier.com/sports/mens-soccer/roster/cannon-scretchen/12029
-812,Xavier,2024,I,14,Jabari De Coteau,D,6' 1'',So.,,"Brooklyn, N.Y.",Williston Northampton School,,https://goxavier.com/sports/mens-soccer/roster/jabari-de-coteau/12002
-812,Xavier,2024,I,15,Emeric Nicol,MF,5' 10'',Fr.,,"Derwood, Md.",Colonel Zadok Magruder,,https://goxavier.com/sports/mens-soccer/roster/emeric-nicol/12027
-812,Xavier,2024,I,16,Ishmael Mensah,MF,5' 9'',Fr.,,"Cape Coast, Ghana",Andrews Osborne Academy,,https://goxavier.com/sports/mens-soccer/roster/ishmael-mensah/12026
-812,Xavier,2024,I,17,Fabrizio Bernal de la Garza,F,5' 10'',Sr.,,"Monterrey, Mexico",Ronald Reagan,,https://goxavier.com/sports/mens-soccer/roster/fabrizio-bernal-de-la-garza/12000
-812,Xavier,2024,I,18,Matthew Senanou,D,6' 4'',Jr.,,"Chicago, Ill.",Neuqua Valley,,https://goxavier.com/sports/mens-soccer/roster/matthew-senanou/12015
-812,Xavier,2024,I,20,Mason Cooper,MF,6' 2'',Fr.,,"Cincinnati, Ohio",Archbishop Moeller,,https://goxavier.com/sports/mens-soccer/roster/mason-cooper/12022
-812,Xavier,2024,I,21,Nicolas Fonseca,D,6' 2'',So.,,"Mexico City, Mexico",Williston Northampton School,,https://goxavier.com/sports/mens-soccer/roster/nicolas-fonseca/12004
-812,Xavier,2024,I,22,Daryl-Oscar Dikoum,F,6' 3'',R-Fr.,,"Bethesda, Md.",Walter Johnson,,https://goxavier.com/sports/mens-soccer/roster/daryloscar-dikoum/12030
-812,Xavier,2024,I,23,Tyler Coleman,MF,5' 9'',Fr.,,"Columbia, Md.",Howard,,https://goxavier.com/sports/mens-soccer/roster/tyler-coleman/12023
-812,Xavier,2024,I,24,Dylan Kropp,D,6' 2'',Jr.,,"Columbus, Ohio",Olentangy Liberty,,https://goxavier.com/sports/mens-soccer/roster/dylan-kropp/12007
-812,Xavier,2024,I,25,Jack Bilyeu,MF,6' 2'',Fr.,,"Indianapolis, Ind.",Lawrence Central,,https://goxavier.com/sports/mens-soccer/roster/jack-bilyeu/12020
-812,Xavier,2024,I,26,Jai Dindiyal,D,6' 0'',Fr.,,"Mooresville, Ind.",Mooresville,,https://goxavier.com/sports/mens-soccer/roster/jai-dindiyal/12024
-812,Xavier,2024,I,27,Brandon Osterholt,MF,6' 0'',Sr.,,"Springfield, Ohio",Carroll,,https://goxavier.com/sports/mens-soccer/roster/brandon-osterholt/12012
-812,Xavier,2024,I,28,Ekene Okeke,D,6' 1'',Sr.,,"Houston, Texas",Texas Connections Academy,,https://goxavier.com/sports/mens-soccer/roster/ekene-okeke/12011
-812,Xavier,2024,I,30,Ryan Sullivan,GK,6' 0'',Jr.,,"Cincinnati, Ohio",Anderson,,https://goxavier.com/sports/mens-soccer/roster/ryan-sullivan/12016
-812,Xavier,2024,I,31,Gabriel Kuffel,GK,6' 3'',Jr.,,"Blaine, Minn.",Shattuck-St.Mary's,,https://goxavier.com/sports/mens-soccer/roster/gabriel-kuffel/12008
-813,Yale,2024,I,0,Chris Edwards,GK,6-1,Sr.,,"Benbrook, Texas",Fort Worth Country Day,,https://yalebulldogs.com/sports/mens-soccer/roster/chris-edwards/20552
-813,Yale,2024,I,1,Constantin Jung,GK,6-6,So.,,"Kassel, Germany",Northfield Mount Hermon,,https://yalebulldogs.com/sports/mens-soccer/roster/constantin-jung/20556
-813,Yale,2024,I,2,Sven Meacham,D,5-11,Fy.,,"Bethesda, Md.",Walter Johnson,,https://yalebulldogs.com/sports/mens-soccer/roster/sven-meacham/20569
-813,Yale,2024,I,3,Ryan Cote,M,5-11,Sr.,,"Highlands Ranch, Colo.",Arapahoe,,https://yalebulldogs.com/sports/mens-soccer/roster/ryan-cote/20509
-813,Yale,2024,I,4,Nick Miller,D,5-8,So.,,"Hopkinton, N.H.",St. Paul's School,,https://yalebulldogs.com/sports/mens-soccer/roster/nick-miller/20558
-813,Yale,2024,I,6,Jamie Orson,D,6-3,Sr.,,"Atlanta, Ga.",Druid Hills,,https://yalebulldogs.com/sports/mens-soccer/roster/jamie-orson/20560
-813,Yale,2024,I,7,Alex Umana,F,6-0,Jr.,,"Lincoln, Neb.",Olathe South,,https://yalebulldogs.com/sports/mens-soccer/roster/alex-umana/20525
-813,Yale,2024,I,8,Jonathan Seidman,M,5-11,Sr.,,"Chappaqua, N.Y.",Horace Greeley,,https://yalebulldogs.com/sports/mens-soccer/roster/jonathan-seidman/20544
-813,Yale,2024,I,9,Joseph Farouz,F,6-0,So.,,"Katy, Texas",University Prep,,https://yalebulldogs.com/sports/mens-soccer/roster/joseph-farouz/20532
-813,Yale,2024,I,10,Quanah Brayboy,M,5-7,Sr.,,"Phoenix, Ariz.",Phoenix Country Day School,,https://yalebulldogs.com/sports/mens-soccer/roster/quanah-brayboy/20550
-813,Yale,2024,I,11,Aydin Jay,F/M,5-10,Jr.,,"Boxford, Mass.",Milton Academy,,https://yalebulldogs.com/sports/mens-soccer/roster/aydin-jay/20513
-813,Yale,2024,I,12,Vaughan Osga,D,6-3,Fy.,,"River Forest, Ill.",Oak Park River Forest,,https://yalebulldogs.com/sports/mens-soccer/roster/vaughan-osga/20570
-813,Yale,2024,I,13,Jorik Dammann,F,6-2,Fy.,,"Austin, Texas",St. Stephen's Episcopal,,https://yalebulldogs.com/sports/mens-soccer/roster/jorik-dammann/20571
-813,Yale,2024,I,15,Owen Bull,F,6-4,Fy.,,"Trumbull, Conn.",Trumbull,,https://yalebulldogs.com/sports/mens-soccer/roster/owen-bull/20572
-813,Yale,2024,I,16,Teague McCammon,M,6-2,Fy.,,"Bedford, Texas",Braswell,,https://yalebulldogs.com/sports/mens-soccer/roster/teague-mccammon/20573
-813,Yale,2024,I,17,Felipe Schwartz,M,6-0,Jr.,,"Sao Paulo, Brazil",St. Paul's School,,https://yalebulldogs.com/sports/mens-soccer/roster/felipe-schwartz/20521
-813,Yale,2024,I,18,Luke Renforth,M,6-0,Jr.,,"Aberdeen, Scotland",Aberdeen Grammar School,,https://yalebulldogs.com/sports/mens-soccer/roster/luke-renforth/20751
-813,Yale,2024,I,19,Salif Leintu,F,6-1,Fy.,,"Burtonsville, Md.",Winston Churchill,,https://yalebulldogs.com/sports/mens-soccer/roster/salif-leintu/20574
-813,Yale,2024,I,20,George Stamboulidis,M,6-0,Sr.,,"Melbourne, Australia",Carey Baptist School,,https://yalebulldogs.com/sports/mens-soccer/roster/george-stamboulidis/20566
-813,Yale,2024,I,21,Andrew Seidman,M,5-10,Jr.,,"Chappaqua, N.Y.",Horace Greeley,,https://yalebulldogs.com/sports/mens-soccer/roster/andrew-seidman/20564
-813,Yale,2024,I,22,TJ Presthus,D,6-0,Sr.,,"New Albany, Ohio",New Albany,,https://yalebulldogs.com/sports/mens-soccer/roster/tj-presthus/20562
-813,Yale,2024,I,23,Simon Adjakple,F/M,6-1,So.,,"Kings Point, N.Y.",Great Neck North,,https://yalebulldogs.com/sports/mens-soccer/roster/simon-adjakple/20548
-813,Yale,2024,I,26,Justin Harris,D/M,6-2,Sr.,,"Superior Township, Mich.",Detroit Country Day School,,https://yalebulldogs.com/sports/mens-soccer/roster/justin-harris/20554
-813,Yale,2024,I,28,Lior Gurion,D,5-11,Jr.,,"Rye, N.Y.",Rye Country Day,,https://yalebulldogs.com/sports/mens-soccer/roster/lior-gurion/20575
-813,Yale,2024,I,29,Marco Borrego,GK,5-11,Jr.,,"Buford, Ga.",Buford,,https://yalebulldogs.com/sports/mens-soccer/roster/marco-borrego/20752
-813,Yale,2024,I,30,Ryder Mills,F,5-10,So.,,"West Chester, Ohio",Lakota East,,https://yalebulldogs.com/sports/mens-soccer/roster/ryder-mills/20517
-813,Yale,2024,I,34,Diego Zaffanella,M,5-11,Jr.,,"Ellington, Conn.",Ellington,,https://yalebulldogs.com/sports/mens-soccer/roster/diego-zaffanella/20568
+588120,North Greenville,2024,II,0,Collin Dahlman,GK,6-0,Fr.,Accounting,"Summerville, SC",Summerville High School,,https://nguathletics.com/sports/msoc/roster/collin-dahlman/7447
+588120,North Greenville,2024,II,00,Kaleb Craig,GK,5-11,Fr.,Sports management,"Greer, SC",,Johnson University,https://nguathletics.com/sports/msoc/roster/kaleb-craig/7446
+588120,North Greenville,2024,II,1,Ricardo Marques,GK,6-4,Gr.,MBA,"Lisboa, Portugal",,Coimbra Business School,https://nguathletics.com/sports/msoc/roster/ricardo-marques/7456
+588120,North Greenville,2024,II,2,Jacob Marino,RB/WB,5-10,So.,Exercise and Health Science,"Miami, FL",Christopher Columbus High School,,https://nguathletics.com/sports/msoc/roster/jacob-marino/7432
+588120,North Greenville,2024,II,3,Ethan Sudsberry,D,6-2,Sr.,Biology,"Bradenton, FL",Lakewood Ranch High School,,https://nguathletics.com/sports/msoc/roster/ethan-sudsberry/7439
+588120,North Greenville,2024,II,4,Matteo Galeotti,CB,6-0,Gr.,MBA,"Parma, Italy",,Viterbo University,https://nguathletics.com/sports/msoc/roster/matteo-galeotti/7427
+588120,North Greenville,2024,II,5,Bhassakon Songvejkasem,CDM/CM,6-2,R-Sr.,Business,"Bangkok, Thailand",,Warner University,https://nguathletics.com/sports/msoc/roster/bhassakon-songvejkasem/7422
+588120,North Greenville,2024,II,6,Hale Ottman,CDM/CM,5-10,So.,Sports management,"Lakeland, FL",Lakeland Christian School,,https://nguathletics.com/sports/msoc/roster/hale-ottman/7435
+588120,North Greenville,2024,II,7,Ömer Gülmez,F,6-4,Fr.,Buisiness,"Instanbul, Turkey",Özel Sezin High School,,https://nguathletics.com/sports/msoc/roster/-mer-g-lmez/7450
+588120,North Greenville,2024,II,8,Florian Schütt,CB,6-4,So.,Sports Managment,"Buchholz, Germany",Albert Einstein Gymnasium,,https://nguathletics.com/sports/msoc/roster/florian-sch-tt/7438
+588120,North Greenville,2024,II,9,Renan Macuglia,F,5-11,Sr.,Sport Management,"Balneário Camboriú, Brazil",Montverde Academy,,https://nguathletics.com/sports/msoc/roster/renan-macuglia/7431
+588120,North Greenville,2024,II,10,Vinicius Silva,F/CAM,5-7,Jr.,Cybersecurity,"Juiz de Fora, Minas Gerais",,Cleveland State University,https://nguathletics.com/sports/msoc/roster/vinicius-silva/7460
+588120,North Greenville,2024,II,11,Caio Barretta,CAM/RM,5-11,Jr.,International Business,"São Paulo, Brazil",,American International College,https://nguathletics.com/sports/msoc/roster/caio-barretta/7423
+588120,North Greenville,2024,II,12,Jasper Clapp,M,5-8,Jr.,Business,"Knoxville,TN",Home School (played for Bearden High School),,https://nguathletics.com/sports/msoc/roster/jasper-clapp/7425
+588120,North Greenville,2024,II,13,Ethan Jayne,F/Winger,5-9,Jr.,Physical Education,"Addis Ababa, Ethiopia",Nashoba Regional High School,,https://nguathletics.com/sports/msoc/roster/ethan-jayne/7430
+588120,North Greenville,2024,II,14,William Jackson,LW/RW/ST,6-1,Jr.,Political science,"Hamilton, New Zealand",,Garden City Community College,https://nguathletics.com/sports/msoc/roster/william-jackson/7453
+588120,North Greenville,2024,II,15,Haitham Touma,CB,6-4,Gr.,MBA,"Rabat, Morocco",,Bloomfield College,https://nguathletics.com/sports/msoc/roster/haitham-touma/7461
+588120,North Greenville,2024,II,16,Ognjen Vrkic,CDM/CM/CAM,6-1,Jr.,Business,"Novi Sad, Serbia",,Truett McConnell University,https://nguathletics.com/sports/msoc/roster/ognjen-vrkic/7466
+588120,North Greenville,2024,II,17,Emmanuel Orihuela,CAM/CM/RW,5-8,Fr.,Accounting,"Taylors, SC",Wade Hampton High School,,https://nguathletics.com/sports/msoc/roster/emmanuel-orihuela/7457
+588120,North Greenville,2024,II,18,Luke Porazzo,RB,6-1,Jr.,Business Management,"Lake Wylie, SC",Clover High School,,https://nguathletics.com/sports/msoc/roster/luke-porazzo/7436
+588120,North Greenville,2024,II,19,Enrico Onzi,ST/FW/AM,6-0,R-Sr.,Exercise Science,"Caxias Do Sul. Rio Grande Do Sul",,St. Mary's University,https://nguathletics.com/sports/msoc/roster/enrico-onzi/7434
+588120,North Greenville,2024,II,20,Nicholas Vital,F/LW/Rw,6-0,Jr.,Sports Management,"Bellport, NY",,American International College,https://nguathletics.com/sports/msoc/roster/nicholas-vital/7465
+588120,North Greenville,2024,II,21,Cooper Tyler,RB/LB,5-10,Jr.,Psychology,"Auckland, New Zealand",,Eastern New Mexico University,https://nguathletics.com/sports/msoc/roster/cooper-tyler/7463
+588120,North Greenville,2024,II,22,Shaun Martinez,CM/CAM,5-10,So.,Buisness Management,"Arvada, CO",Ralston Valley High School,,https://nguathletics.com/sports/msoc/roster/shaun-martinez/7433
+588120,North Greenville,2024,II,23,Lucas Di Pasquale,CB,6-2,Gr.,MBA,"Metabief, France",,HEC Lausanne,https://nguathletics.com/sports/msoc/roster/lucas-di-pasquale/7426
+588120,North Greenville,2024,II,24,Jack Hinton,LB,6-0,Fr.,Engineering,"Lake Wylie, SC",Clover High School,,https://nguathletics.com/sports/msoc/roster/jack-hinton/7452
+588120,North Greenville,2024,II,25,Hunter Wilton,RB/LB,6-0,Fr.,Sports Management,"Flowery Branch, GA",Cherokee Bluff High School,,https://nguathletics.com/sports/msoc/roster/hunter-wilton/7468
+588120,North Greenville,2024,II,26,Kanon Tebo,RB/LB,5-8,R-Sr.,Cybersecurity/Criminal justice,"Belgrade, MT",,Fort Lewis College/Russell Sage College,https://nguathletics.com/sports/msoc/roster/kanon-tebo/7440
+588120,North Greenville,2024,II,27,Hayes Porsche,F/Winger,5-8,Jr.,Engineering,"Huntley, IL",Huntley High School,,https://nguathletics.com/sports/msoc/roster/hayes-porsche/7437
+588120,North Greenville,2024,II,28,Charlie Bozard,RW/LW,5-6,Sr.,Business,"St. Matthews, SC",,Coker University,https://nguathletics.com/sports/msoc/roster/charlie-bozard/7424
+588120,North Greenville,2024,II,29,Bernardo Vieira,F,6-2,Fr.,Business,"Porto Alegre, Brazil",Putnam Science Academy,,https://nguathletics.com/sports/msoc/roster/bernardo-vieira/7464
+588120,North Greenville,2024,II,30,Rodrigo (Roi) Ponte de Peñalosa,RW/LW,5-8,Fr.,Political Science,"Madrid, Spain",Colegio Madrid Fundación Santa Maria High School,,https://nguathletics.com/sports/msoc/roster/rodrigo-roi-ponte-de-pe-alosa/7458
+588120,North Greenville,2024,II,31,Nicolas Felix,CM,5-6,Fr.,Business,"Gainesville, FL",Chestatee High School,,https://nguathletics.com/sports/msoc/roster/nicolas-felix/7448
+588120,North Greenville,2024,II,32,Gabriel Agostini,CB,6-2,Fr.,Business,"Florianopolis, Brazil",Putnam Science Academy,,https://nguathletics.com/sports/msoc/roster/gabriel-agostini/7443
+588120,North Greenville,2024,II,33,Caleb Wells,LB,5-9,So.,Mathematics / Engineering,"Spartanburg, SC",Dorman High School,,https://nguathletics.com/sports/msoc/roster/caleb-wells/7441
+588120,North Greenville,2024,II,34,Kyle Havican,CM/RB,5-6,Fr.,Christian Studies,"Monroe, NC",,King University,https://nguathletics.com/sports/msoc/roster/kyle-havican/7429
+588120,North Greenville,2024,II,35,Jacob Coman,CDM/CM/CAM/ST,5-10,Fr.,Business Management,"Greer, SC",Byrnes High School,,https://nguathletics.com/sports/msoc/roster/jacob-coman/7445
+588120,North Greenville,2024,II,36,Kai Lindsey,CDM/CM,5-8,Fr.,Business,"Palm Harbor, FL",Palm Harbor University High School,,https://nguathletics.com/sports/msoc/roster/kai-lindsey/7455
+588120,North Greenville,2024,II,37,Jaxon Gunn,CB/LB,6-2,So.,exercise and Health Science,"Conyers, GA",Young Americans Christian School,,https://nguathletics.com/sports/msoc/roster/jaxon-gunn/7428
+588120,North Greenville,2024,II,38,Lucas Bender,CB/RB,6-0,Fr.,Exercise Science,"Midland, NC",Hickory Ridge High School,,https://nguathletics.com/sports/msoc/roster/lucas-bender/7444
+588120,North Greenville,2024,II,39,Quinten Gray,CB,6-0,Fr.,Engineering,"Orlando, FL",East River High School,,https://nguathletics.com/sports/msoc/roster/quinten-gray/7449
+588120,North Greenville,2024,II,40,Daniel Henao,CM/CB,5-10,Fr.,Business,"Simpsonville, SC",J.L. Mann High School,,https://nguathletics.com/sports/msoc/roster/daniel-henao/7451
+588120,North Greenville,2024,II,41,Hezekiah Weeks,CM,6-1,Fr.,International Business,"Muscle Shoals, AL",Muscle Shoals High School,,https://nguathletics.com/sports/msoc/roster/hezekiah-weeks/7467
+588120,North Greenville,2024,II,42,Bolutife Adegboye,CM/CDM,5-8,Fr.,Digital Media/Pyschology,"Wylie, TX",,Adams State University,https://nguathletics.com/sports/msoc/roster/bolutife-adegboye/7442
+588120,North Greenville,2024,II,43,Riley Kiniry,CDM/RB/Striker,5-8,Fr.,Engineering,"Southport, NC",South Brunswick High School,,https://nguathletics.com/sports/msoc/roster/riley-kiniry/7454
+588120,North Greenville,2024,II,99,Nolan Trout,GK,6-0,Fr.,Business IS,"Harrisburg, NC",Hickory Ridge High School,,https://nguathletics.com/sports/msoc/roster/nolan-trout/7462
+597491,Point Park,2024,II,00,Zachary Mills,GK,6-3,So.,,"Greenwood, Ind.",,IUPUC,https://pointparksports.com/sports/msoc/2024-25/bios/mills_zachary_2dr6
+597491,Point Park,2024,II,0,Ryan Croushore,GK,6-5,Fr.,,"Lower Burrell, Pa.",Burell HS,,https://pointparksports.com/sports/msoc/2024-25/bios/croushore_ryan_0nlm
+597491,Point Park,2024,II,1,David Ali,GK,6-0,Gr.,,"Metz, France",,University of Lorraine,https://pointparksports.com/sports/msoc/2024-25/bios/ali_david_g91r
+597491,Point Park,2024,II,2,Adel Bouriah,D,5-8,Gr.,,"Marseille, France",,Aix-Marseille Universite,https://pointparksports.com/sports/msoc/2024-25/bios/bouriah_adel_wqbe
+597491,Point Park,2024,II,3,Edward Bowers,D,5-11,Sr.,,"Cornwall, United Kingdom",,Blue Mountain Christian University,https://pointparksports.com/sports/msoc/2024-25/bios/bowers_edward_u24r
+597491,Point Park,2024,II,4,Alejandro Perez,D,5-9,Gr.,,"Bogota, Colombia",,Blue Mountain Christian University,https://pointparksports.com/sports/msoc/2024-25/bios/perez_alejandro_6jlj
+597491,Point Park,2024,II,5,Baptiste Gaume,D,5-11,Jr.,,"Perpignan, France",Lycee Rosa Luxemburg,,https://pointparksports.com/sports/msoc/2024-25/bios/gaume_baptiste_7dxn
+597491,Point Park,2024,II,6,Finn Syson,M,6-0,Jr.,,"Birmingham, United Kingdom",,Keiser University,https://pointparksports.com/sports/msoc/2024-25/bios/syson_finn_2ezm
+597491,Point Park,2024,II,7,Javier Morejon,F,5-9,Gr.,,"Havana, Cuba",,Dalton State College,https://pointparksports.com/sports/msoc/2024-25/bios/morejon_javier_jugz
+597491,Point Park,2024,II,8,Giovanni Pezzi,M,5-8,Sr.,,"Sestri Levante, Italy",,Heartland CC,https://pointparksports.com/sports/msoc/2024-25/bios/pezzi_giovanni_eze0
+597491,Point Park,2024,II,9,Moritz Sarfert,F,6-1,Sr.,,"Vaterstetten, Germany",Humboldt-Gymnasium Vaterstetten,,https://pointparksports.com/sports/msoc/2024-25/bios/sarfert_moritz_qdw0
+597491,Point Park,2024,II,10,Cheroky Briard,M,5-11,Gr.,,"Normandy, France",,Saint Peter's University,https://pointparksports.com/sports/msoc/2024-25/bios/briard_cheroky_ir5q
+597491,Point Park,2024,II,11,Nils Benning,M,5-10,So.,,"Kiel, Germany",Hoffmann-von-Fallersleben Gymnasium,,https://pointparksports.com/sports/msoc/2024-25/bios/benning_nils_8cpe
+597491,Point Park,2024,II,12,Dominic Thieler,M,5-7,Fr.,,"Voerde, Germany",Berufskolleg Konigstabe,,https://pointparksports.com/sports/msoc/2024-25/bios/thieler_dominic_icr6
+597491,Point Park,2024,II,13,Ruben Kuypers,F/M,6-0,Jr.,,"Tilburg, Netherlands",,Blue Mountain Christian University,https://pointparksports.com/sports/msoc/2024-25/bios/kuypers_ruben_2cb1
+597491,Point Park,2024,II,14,Ethan Villa,D,5-11,Sr.,,"Harker Heights, Texas",,PSU-Greater Allegheny,https://pointparksports.com/sports/msoc/2024-25/bios/villa_ethan_ie2m
+597491,Point Park,2024,II,15,Agustin Rodriguez,D,5-8,Gr.,,"Montevideo, Uruguay",,Missouri Valley College,https://pointparksports.com/sports/msoc/2024-25/bios/rodriguez_agustin_vlm5
+597491,Point Park,2024,II,16,Ran Arad,D,5-10,So.,,"Ramat Gan, Israel",,Davis & Elkins University,https://pointparksports.com/sports/msoc/2024-25/bios/arad_ran_bz5c
+597491,Point Park,2024,II,17,Felipe Menezes,F,5-8,Jr.,,"Rio de Janeiro, Brazil",,Johnson University,https://pointparksports.com/sports/msoc/2024-25/bios/menezes_felipe_0uw6
+597491,Point Park,2024,II,18,Ofek Bachar,D,6-0,So.,,"Givatayim, Israel",,Lee University,https://pointparksports.com/sports/msoc/2024-25/bios/bachar_ofek_s0bc
+597491,Point Park,2024,II,19,Daniel Salas,M,5-6,Sr.,,"Madrid, Spain",The Macduffie School,,https://pointparksports.com/sports/msoc/2024-25/bios/salas_daniel_k8kv
+597491,Point Park,2024,II,20,Bruno Lancellotti,D,6-0,Sr.,,"Ceuta, Spain",,Erskine College,https://pointparksports.com/sports/msoc/2024-25/bios/lancellotti_bruno_5pxf
+597491,Point Park,2024,II,21,Dylan Metz,D,6-0,Gr.,,"Mansfield, Ohio",,Malone University,https://pointparksports.com/sports/msoc/2024-25/bios/metz_dylan_bx2k
+597491,Point Park,2024,II,22,Tyler Wellman,M,5-11,Jr.,,"Munhall, Pa.",Steel Valley HS,,https://pointparksports.com/sports/msoc/2024-25/bios/wellman_tyler_ys0k
+597491,Point Park,2024,II,23,Alexis Lamontagne,M,6-2,Sr.,,"Quebec City, Canada",,Old Dominion University,https://pointparksports.com/sports/msoc/2024-25/bios/lamontagne_alexis_c7q7
+597491,Point Park,2024,II,24,Ido Chalamish,F,6-0,Fr.,,"Herut, Israel",Dror,,https://pointparksports.com/sports/msoc/2024-25/bios/chalamish_ido_jhzh
+597491,Point Park,2024,II,25,Aaron Rich,D,6-2,Gr.,,"Norwich, United Kingdom",,Texas A&M International University,https://pointparksports.com/sports/msoc/2024-25/bios/rich_aaron_us9k
+597491,Point Park,2024,II,26,Abdalrahman Almassri,M,5-9,Fr.,,"Amman, Jordan",De La Salle College,,https://pointparksports.com/sports/msoc/2024-25/bios/jean_mupeta_kasungu_kcda
+597491,Point Park,2024,II,27,Ian Thomas,F,5-10,Jr.,,"Southaven, Miss.",,Itawamba CC,https://pointparksports.com/sports/msoc/2024-25/bios/thomas_ian_ra4s
+597491,Point Park,2024,II,28,Saif Greco,M,5-9,Gr.,,"Pittsburgh, Pa.",CCAC-Boyce,,https://pointparksports.com/sports/msoc/2024-25/bios/greco_saif_fnh0
+597491,Point Park,2024,II,29,Aidan McFarlane,F,5-10,Jr.,,"Wilkes-Barre, Pa.",Wilkes-Barre Area STEM Academy,,https://pointparksports.com/sports/msoc/2024-25/bios/mcfarlane_aidan_awwx
+597491,Point Park,2024,II,30,Fridolin Gefrorer,F,5-10,Jr.,,"Berlin, Germany",,Westcliff University,https://pointparksports.com/sports/msoc/2024-25/bios/gerfoer_fridolin_2k0k
+597491,Point Park,2024,II,32,Francisco Martin,F,5-10,Jr.,,"Valladolid, Spain",,Grace College,https://pointparksports.com/sports/msoc/2024-25/bios/martin_francisco_4dlh
+597491,Point Park,2024,II,33,Nathan Lastreto,D,5-10,Jr.,,"Paris, France",,Missouri Valley College,https://pointparksports.com/sports/msoc/2024-25/bios/lastreto_nathan_n5sq
+597491,Point Park,2024,II,34,Maurice Gajic,D,5-10,So.,,"Frankfurt, Germany",,Bacone College,https://pointparksports.com/sports/msoc/2024-25/bios/gajic_maurice_fd2h
+597491,Point Park,2024,II,38,Kasungu Jean Mupeta,F,5-11,Fr.,,"Pittsburgh, Pa.",Taylor Allderdice HS,,https://pointparksports.com/sports/msoc/2024-25/bios/jean_mupeta_kasungu_icl9
+597491,Point Park,2024,II,39,Gabin Caillavet,M,6-0,Fr.,,"Paris, France",Diagonal College,,https://pointparksports.com/sports/msoc/2024-25/bios/caillavet_gabin_mgf8
+597491,Point Park,2024,II,42,Al Baraa Ali,F,5-9,Fr.,,"Khartoum, Sudan",International School of Choueifat Dubain,,https://pointparksports.com/sports/msoc/2024-25/bios/baraa_ali_al_1tci
+597491,Point Park,2024,II,43,Edouard Gagnon,M,5-10,Fr.,,"Quebec, Canada",Escole Secondaire Privee Francois-Bourin,,https://pointparksports.com/sports/msoc/2024-25/bios/gagnon_edouard_sx2m
+597491,Point Park,2024,II,44,Yehia Elswefy,F,6-0,Fr.,,"Cairo, Egypt",Raffles International School,,https://pointparksports.com/sports/msoc/2024-25/bios/elswefy_yehia_igpt
+597491,Point Park,2024,II,45,Adam Zellmer,M,6-2,Fr.,,"Barcelona, Spain",Hamelin-Laie International School,,https://pointparksports.com/sports/msoc/2024-25/bios/zellmer_adam_ng1k
+597491,Point Park,2024,II,46,Isaiah Johnson,D,5-9,Fr.,,"Pittsburgh, Pa.",Mckeesport Area HS,,https://pointparksports.com/sports/msoc/2024-25/bios/johnson_isaiah_31li
+597491,Point Park,2024,II,48,Sebastian Rojas,M,5-10,Fr.,,"La Paz, Bolivia",Colegio San Ignacio,,https://pointparksports.com/sports/msoc/2024-25/bios/rojas_sebastian_9e1g
+597491,Point Park,2024,II,49,Thomas Bova,F,5-9,Fr.,,"Bethel Park, Pa.",Bethel Park HS,,https://pointparksports.com/sports/msoc/2024-25/bios/bova_thomas_ew5a
+597491,Point Park,2024,II,50,Francisco Bergas Jaume,D,6-2,Fr.,,"Palma de Mallorca, Spain",IES Madina Mayurga,,https://pointparksports.com/sports/msoc/2024-25/bios/bergas_jaume_francisco_pxeg
+597491,Point Park,2024,II,51,Brady Volstad,M,6-0,Fr.,,"Pittsburgh, Pa",Trinity Christian School,,https://pointparksports.com/sports/msoc/2024-25/bios/volstad_brady_uk1m
+597491,Point Park,2024,II,88,Abel Ang,GK,5-9,Jr.,,"Kuala Lumpur, Malaysia",,Union Commonwealth University,https://pointparksports.com/sports/msoc/2024-25/bios/ang_abel_lt8z
+597491,Point Park,2024,II,99,Gus Wytcherley,GK,6-2,Fr.,,"Evans City, Pa.",Seneca Valley HS,,https://pointparksports.com/sports/msoc/2024-25/bios/wytcherley_gus_gs67
+588199,"American Int'l",2024,II,1,Lucas Morales-Fernandez,Goalkeeper,5-11,Gr.,,"Amherst, MA",Amherst Regional,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/morales-fernandez_lucas_ccxw
+588199,"American Int'l",2024,II,2,Nicholas Chapman,Defense,6-1,Gr.,,"Sheffield, England",Dinnington,Quincy (GLVC),https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/chapman_nicholas_pck0
+588199,"American Int'l",2024,II,3,Cornelius Christensen,Midfield,6-2,Jr.,,"Sandefjord, Norway",SVGS,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/christensen_cornelius_ishk
+588199,"American Int'l",2024,II,4,Guilherme Afonso,Defense,6-2,So.,,"Cascais, Portugal",Escola Secundária de Tondela,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/afonso_guilherme_sxal
+588199,"American Int'l",2024,II,5,Leonard Riby-Williams,Defense,6-3,Jr.,,"Montpelier, VT",Montpelier,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/riby-williams_leonard_6jq7
+588199,"American Int'l",2024,II,6,Anton Granholm,Defense,6-1,So.,,"Stockholm, Sweden",Sjolins Gymnasium Nacka,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/granholm_anton_3bp2
+588199,"American Int'l",2024,II,7,Thomas Lafayette,Midfield,5-9,Jr.,,"Somers, CT",Somers,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/lafayette_thomas_yh4s
+588199,"American Int'l",2024,II,8,Renford Morgan,Midfield,6-7,So.,,"Windsor, CT",Jamaica College,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/morgan_renford_dni2
+588199,"American Int'l",2024,II,9,Pietro Botasso,Forward,6-1,Fr.,,"Cuneo, Italy",Liceo Peano Pellico,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/botasso_pietro_8f2j
+588199,"American Int'l",2024,II,10,Christian Torres,Midfield,5-8,Jr.,,"Port Chester, NY",Port Chester Senior,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/torres_christian_dj4z
+588199,"American Int'l",2024,II,11,Giorgos Nikolettides,Forward,5-8,Fr.,,"Limassol, Cyprus",American Academy Limassol,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/nikolettides_giorgos_1enz
+588199,"American Int'l",2024,II,12,Tyler Ferreira,Midfield/Defense,5-8,So.,,"Newington, CT",Newington,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/ferreira_tyler_bvvp
+588199,"American Int'l",2024,II,13,Sean Menacho,Midfield,5-11,Jr.,,"Arlington, VA","St. John's College HS",,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/menacho_sean_z4n6
+588199,"American Int'l",2024,II,14,Fernando Ramirez,Midfield,5-7,Jr.,,"New Rochelle, NY",New Rochelle,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/ramirez_fernando_fobj
+588199,"American Int'l",2024,II,15,Santiago Carmona,Defense,5-11,Jr.,,"Boston, MA",Fenway,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/carmona_santiago_h7il
+588199,"American Int'l",2024,II,16,Axel Sundberg,Midfield,5-8,Fr.,,"Lulea, Sweden",Lulea Gymnasieskola,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/sundberg_axel_8czx
+588199,"American Int'l",2024,II,17,Nicholas Mauro,Midfield/Forward,5-6,So.,,"York, ME",York,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/mauro_nicholas_14uh
+588199,"American Int'l",2024,II,18,Leo Consoloni,Midfield,6-2,Fr.,,"Lecco, Italy",Liceo Scientifico Grassi Lecco,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/consoloni_leo_wtbn
+588199,"American Int'l",2024,II,19,Christian M. Torres,,5-6,Fr.,,"Deerfield Beach, FL",,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/torres_christian_m._ypmg
+588199,"American Int'l",2024,II,20,Hannes Vidstrom,Defense,6-4,Fr.,,"Karlstad, Sweden",Sundsta Aelvkullegymnasietet,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/vidstrom_hannes_zcbv
+588199,"American Int'l",2024,II,21,Lois Vanhoutte Matton,Midfield,5-9,So.,,"Costa Rica",Nueva Esperanza,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/vanhoutte_matton_lois_3bo2
+588199,"American Int'l",2024,II,22,Javier Simms,Forward,5-11,So.,,"Holyoke, MA",Easthampton,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/simms_javier_aljw
+588199,"American Int'l",2024,II,23,Sam Cahill,Defense,6-0,Jr.,,"Northfield, MA",Pioneer Valley Regional,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/cahill_sam_mn95
+588199,"American Int'l",2024,II,24,Dollby St. Louis,Midfield,5-4,So.,,"Manchester, NH",Manchester Memorial,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/st.louis_dollby_twzz
+588199,"American Int'l",2024,II,25,Lucas Cardoso,Midfield,6-0,So.,,"Brockton, MA",Brockton,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/cardoso_lucas_5ldu
+588199,"American Int'l",2024,II,26,Keegan McGonigle,Forward/Midfield,6-0,So.,,"Brooklyn, NY","St. Andrews",,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/mcgonigle_keegan_b6x0
+588199,"American Int'l",2024,II,27,Havilah Wanaba,Forward,5-7,Jr.,,"Lowell, MA",Greater Lowell Technical,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/wanaba_havilah_6qqq
+588199,"American Int'l",2024,II,28,Tyler Napoletano,Forward/Midfield,6-0,So.,,"Newmarket, NH",Newmarket Junior Senior,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/napoletano_tyler_oxcy
+588199,"American Int'l",2024,II,29,Michael Tuba,,5-8,So.,,"Rye Brook, NY",Port Chester,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/tuba_michael_75zr
+588199,"American Int'l",2024,II,30,Sebastyan Torres,Midfield,5-11,So.,,"Windsor Locks, CT",Windsor Locks,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/torres_sebastyan_62xx
+588199,"American Int'l",2024,II,31,Aidan Loignon,Forward,5-8,So.,,"Gray, ME",Gray/New Gloucester,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/loignon_aidan_toqg
+588199,"American Int'l",2024,II,32,Sean Shapiro,Midfield,5-7,Fr.,,"Mount Laurel, NJ",Cherokee,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/shapiro_sean_1v5h
+588199,"American Int'l",2024,II,33,Guillermo Jimenez,Midfield,5-10,Fr.,,"Miami Playa, Spain",Institucio Tarragona,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/jimenez_guillermo_0iov
+588199,"American Int'l",2024,II,34,Phillip Muller-Stromberg,,5-9,Fr.,,"Bonn, Germany",,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/muller-stromberg_phillip_nvgs
+588199,"American Int'l",2024,II,35,Elias Persson,Midfield,6-0,Fr.,,"Linkoping, Sweden",Linkoping Fria Laeroverk,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/persson_elias_1sxy
+588199,"American Int'l",2024,II,36,Ramaul Morgan,Forward,5-9,Fr.,,"Port Chester, NY",Port Chester,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/morgan_ramaul_uobc
+588199,"American Int'l",2024,II,37,George Darbyshire,Forward,5-11,Fr.,,"Farnham Common, England",Millfield,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/darbyshire_george_62kv
+588199,"American Int'l",2024,II,38,Stefan Sandu,,6-2,Fr.,,"Vatra Dornei, Romania",,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/sandu_stefan_mu9o
+588199,"American Int'l",2024,II,39,Jack McKinnon,,5-9,Fr.,,,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/mckinnon_jack_hsm0
+588199,"American Int'l",2024,II,40,Andrew Ranieri,,5-7,Fr.,,"Danbury, CT",,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/ranieri_andrew_ezw5
+588199,"American Int'l",2024,II,41,Cole Rodriguez,Defense/Forward,5-9,Fr.,,"Windsor Locks, CT",Windsor Locks,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/rodriguez_cole_8yjn
+588199,"American Int'l",2024,II,42,David Dennis,Forward,5-7,Fr.,,"Troy, NY",KIPP Troy Prep,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/dennis_david_bj92
+588199,"American Int'l",2024,II,43,Nasir Hibbert,,5-11,Fr.,,"Bridgewater, MA",,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/hibbert_nasir_1w8m
+588199,"American Int'l",2024,II,44,Asadbek Bokjinov,,6-0,Fr.,,"London, England",,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/bokjinov_asadbek_735f
+588199,"American Int'l",2024,II,45,Peter Miro,Forward,5-7,Fr.,,"Marlborough, MA",Marlborough,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/miro_peter_puja
+588199,"American Int'l",2024,II,46,Kyle Anderson,Midfield,5-9,Jr.,,"Manchester, CT",Manchester,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/anderson_kyle_ay1v
+588199,"American Int'l",2024,II,47,Lucas Damon,Defense,6-0,Fr.,,"Miller Place, NY",Miller Place,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/damon_lucas_n55c
+588199,"American Int'l",2024,II,48,Diego Chavez,,,,,"Meriden, CT",,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/chavez_diego_aygl
+588199,"American Int'l",2024,II,49,Paul Sesay,,5-11,Fr.,,"Worcester, MA",,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/sesay_paul_c85k
+588199,"American Int'l",2024,II,61,Justus Wetzel,Goalie,6-1,Gr.,,"Gleichen, Germany",Max Planck Gymnasium Göttingen,,https://www.aicyellowjackets.com/sports/msoc/2024-25/bios/wetzel_justus_scm5
+588199,"American Int'l",2024,II,71,Nicholas Kuehl,Goalie,6-0,So.,,"Ashburnham, MA",Oakmont Regional,,https://www.aicyellowjackets.com/sports/
+588155,"Texas A&M International",2024,II,1,Ioannis Koupepides,GK,6-1,Fr.,,"Lakatemeia, Cyprus",,,https://godustdevils.com/sports/mens-soccer/roster/ioannis-koupepides/5969
+588155,"Texas A&M International",2024,II,2,Stone Strongin,,-,So.,,"Hicksville, New York",,,https://godustdevils.com/sports/mens-soccer/roster/stone-strongin/5944
+588155,"Texas A&M International",2024,II,3,Daniel Galindo,,-,So.,,"Bogota, Colombia",,,https://godustdevils.com/sports/mens-soccer/roster/daniel-galindo/5925
+588155,"Texas A&M International",2024,II,4,Saul Fernandez,,-,Sr.,,"Gijon, Asturias, Spain",,,https://godustdevils.com/sports/mens-soccer/roster/saul-fernandez/5923
+588155,"Texas A&M International",2024,II,5,Yahir Gallardo,M,5-6,Sr.,,"Dallas, Texas",,,https://godustdevils.com/sports/mens-soccer/roster/yahir-gallardo/5948
+588155,"Texas A&M International",2024,II,6,Chris Fuentes,,5-10,Jr.,,"Dallas, Texas",,,https://godustdevils.com/sports/mens-soccer/roster/chris-fuentes/5949
+588155,"Texas A&M International",2024,II,7,Dereck Espinal,,5-10,Jr.,,"Austin, Texas",,,https://godustdevils.com/sports/mens-soccer/roster/dereck-espinal/5950
+588155,"Texas A&M International",2024,II,8,Guy Lehrer,M,5-8,So.,,"Tel Aviv, Israel",,,https://godustdevils.com/sports/mens-soccer/roster/guy-lehrer/5951
+588155,"Texas A&M International",2024,II,9,Byron Aguilar,M,5-8,Jr.,,"Dallas, Texas",,,https://godustdevils.com/sports/mens-soccer/roster/byron-aguilar/5952
+588155,"Texas A&M International",2024,II,10,Jonathan Cervantes,,-,So.,,"Houston, Texas",,,https://godustdevils.com/sports/mens-soccer/roster/jonathan-cervantes/5880
+588155,"Texas A&M International",2024,II,11,Felipe Garcia,,-,R-Fr.,,"Irvine, Texas",,,https://godustdevils.com/sports/mens-soccer/roster/felipe-garcia/5927
+588155,"Texas A&M International",2024,II,12,Patrice Emagueu,M,5-6,Jr.,,"Pflugerville, Texas",,,https://godustdevils.com/sports/mens-soccer/roster/patrice-emagueu/5953
+588155,"Texas A&M International",2024,II,13,Nicklas Berg-Eriksen,GK,6-2,So.,,"Loerenskog, Norway",,,https://godustdevils.com/sports/mens-soccer/roster/nicklas-berg-eriksen/5970
+588155,"Texas A&M International",2024,II,14,Andres Herrera,,-,Sr.,,"Laredo, Texas",St. Augustine HS,,https://godustdevils.com/sports/mens-soccer/roster/andres-herrera/5894
+588155,"Texas A&M International",2024,II,15,Estevan Da Cruz,,5-10,So.,,"Frisco, Texas",,,https://godustdevils.com/sports/mens-soccer/roster/estevan-da-cruz/5954
+588155,"Texas A&M International",2024,II,16,Luis Gonzalez,D,6-2,So.,,"Madrid, Spain",,,https://godustdevils.com/sports/mens-soccer/roster/luis-gonzalez/5955
+588155,"Texas A&M International",2024,II,17,Gustavo Andres Suarez,M,5-9,Jr.,,"Guayaquil, Ecuador",,,https://godustdevils.com/sports/mens-soccer/roster/gustavo-andres-suarez/5956
+588155,"Texas A&M International",2024,II,18,Tiziano Klamer,M,5-7,Fr.,,"Graz, Austria",,,https://godustdevils.com/sports/mens-soccer/roster/tiziano-klamer/5957
+588155,"Texas A&M International",2024,II,19,Richard Casso,M,5-9,Jr.,,"Laredo, Texas",,,https://godustdevils.com/sports/mens-soccer/roster/richard-casso/5958
+588155,"Texas A&M International",2024,II,20,Alessandro Mendez,D,6-1,Fr.,,"Laredo, Texas",,,https://godustdevils.com/sports/mens-soccer/roster/alessandro-mendez/5959
+588155,"Texas A&M International",2024,II,22,Andrea Iemmi,F,5-8,Fr.,,"Pavia, Italy",,,https://godustdevils.com/sports/mens-soccer/roster/andrea-iemmi/5960
+588155,"Texas A&M International",2024,II,23,Juan Perez de Vargas,F,5-10,So.,,"Madrid, Spain",,,https://godustdevils.com/sports/mens-soccer/roster/juan-perez-de-vargas/5961
+588155,"Texas A&M International",2024,II,24,Abenezer Jabir,M,5-11,Fr.,,"Wylie, Texas",,,https://godustdevils.com/sports/mens-soccer/roster/abenezer-jabir/5968
+588155,"Texas A&M International",2024,II,25,Ryan Bondesson,F,5-10,Fr.,,"Stenungsund, Sweden",,,https://godustdevils.com/sports/mens-soccer/roster/ryan-bondesson/5963
+588155,"Texas A&M International",2024,II,26,Alan Flores,,-,Jr.,,,,,,https://godustdevils.com/sports/mens-soccer/roster/alan-flores/5972
+588155,"Texas A&M International",2024,II,27,Bernhard Hornegger,D,6-1,Fr.,,"Kematen in Tirol, Austria",,,https://godustdevils.com/sports/mens-soccer/roster/bernhard-hornegger/5965
+588155,"Texas A&M International",2024,II,28,Inaki Solabarrieta,,-,Jr.,,"Santiago de Chile",,Lautari de Buin,https://godustdevils.com/sports/mens-soccer/roster/inaki-solabarrieta/5907
+588155,"Texas A&M International",2024,II,29,Abner Trevino,,5-10,Fr.,,"Laredo, Texas",,,https://godustdevils.com/sports/mens-soccer/roster/abner-trevino/5966
+588155,"Texas A&M International",2024,II,31,Nico Weigandt,,6-0,So.,,"Dortmund, Germany",,Rot-Weiss Essen,https://godustdevils.com/sports/mens-soccer/roster/nico-weigandt/5910
+588155,"Texas A&M International",2024,II,32,Elvis Rask,GK,6-2,Fr.,,"Lindingo, Sweden",,,https://godustdevils.com/sports/mens-soccer/roster/elvis-rask/5971
+588155,"Texas A&M International",2024,II,,Jose Uvalle,M,5-8,Rs.,,"Laredo, Texas",,,https://godustdevils.com/sports/mens-soccer/roster/jose-uvalle/5964
+588150,King (TN),2024,II,1,Gauthier Lumale,Goalkeeper,"6'0""",Sr.,,"Biscarrosse, France",Dodge City CC,,https://www.kingtornado.com/sports/mens-soccer/roster/gauthier-lumale/7948
+588150,King (TN),2024,II,2,Francisco Alvarez,Defender,"5'7""",Jr.,,"Santiago, Chile",Coastal Bend College,,https://www.kingtornado.com/sports/mens-soccer/roster/francisco-alvarez/7939
+588150,King (TN),2024,II,3,Chris Neal,Forward,"5'9""",Jr.,,"Christiansburg, Va.",Mars Hill University,,https://www.kingtornado.com/sports/mens-soccer/roster/chris-neal/7958
+588150,King (TN),2024,II,4,Kirk Rahill,Defender,"6'3""",Sr.,,"Ardee, Ireland",College of the Siskiyous,,https://www.kingtornado.com/sports/mens-soccer/roster/kirk-rahill/7959
+588150,King (TN),2024,II,5,Josh Clements,Midfielder,"5'10""",Sr.,,"Redcar, England",Prior Pursglove College,,https://www.kingtornado.com/sports/mens-soccer/roster/josh-clements/7943
+588150,King (TN),2024,II,6,Ben Dalglish,Defender,"6'0""",Sr.,,"Aberdeen, Scotland",Harlaw Academy,,https://www.kingtornado.com/sports/mens-soccer/roster/ben-dalglish/7945
+588150,King (TN),2024,II,7,Weston Joyner,Forward,"5'10""",Sr.,,"Lewisville, N.C.",Ronald Wilson Reagan HS,,https://www.kingtornado.com/sports/mens-soccer/roster/weston-joyner/7947
+588150,King (TN),2024,II,8,Pedro Herrera,Midfielder,"5'10""",Gr.,,"Cali, Colombia",Carl Sandburg College,,https://www.kingtornado.com/sports/mens-soccer/roster/pedro-herrera/7946
+588150,King (TN),2024,II,9,Renan Caruso,Midfielder,"5'9""",Sr.,,"Caxambu, Brazil",Hawkeye CC,,https://www.kingtornado.com/sports/mens-soccer/roster/renan-caruso/7941
+588150,King (TN),2024,II,10,Tijani Ali Khelifaoui,Forward,"5'11""",Gr.,,"Saint Étienne, France",Dodge City CC,,https://www.kingtornado.com/sports/mens-soccer/roster/tijani-ali-khelifaoui/7938
+588150,King (TN),2024,II,11,Leonardo Mercondes,Midfielder,,Sr.,,,,,https://www.kingtornado.com/sports/mens-soccer/roster/leonardo-mercondes/7953
+588150,King (TN),2024,II,12,Jake Moriarty,Defender,"5'10""",Sr.,,"East Longmeadow, Mass.",Longmeadow HS,,https://www.kingtornado.com/sports/mens-soccer/roster/jake-moriarty/7957
+588150,King (TN),2024,II,13,Toby Thomas,Defender,"5'10""",Fr.,,"Barlett, Tenn.",Homeschool,,https://www.kingtornado.com/sports/mens-soccer/roster/toby-thomas/7974
+588150,King (TN),2024,II,14,Dan Hill,Forward,,Sr.,,"Tewkesbury, England",Eastern Nazarene College,,https://www.kingtornado.com/sports/mens-soccer/roster/dan-hill/7969
+588150,King (TN),2024,II,15,Bay Moore,Defender,"6'1""",Jr.,,"Dublin, Va.",Pulaski County HS,,https://www.kingtornado.com/sports/mens-soccer/roster/bay-moore/7955
+588150,King (TN),2024,II,17,Erick Manirakiza,Forward,"5'7""",Sr.,,"Chattanooga, Tenn.",Chattanooga Christian School,,https://www.kingtornado.com/sports/mens-soccer/roster/erick-manirakiza/7949
+588150,King (TN),2024,II,18,Leeroy Matarutse,Defender/Midfielder,"5'9""",Sr.,,"Harare, Zimbabwe",St. Ignatius College,,https://www.kingtornado.com/sports/mens-soccer/roster/leeroy-matarutse/7950
+588150,King (TN),2024,II,19,Anderson Moore,Midfielder,"6'1""",Jr.,,"Dublin, Va.",Pulaski County HS,,https://www.kingtornado.com/sports/mens-soccer/roster/anderson-moore/7954
+588150,King (TN),2024,II,20,Paul Ogynboye,Defender,"6'6""",Jr.,,"London, England",Bryant & Stratton College,,https://www.kingtornado.com/sports/mens-soccer/roster/paul-ogynboye/7971
+588150,King (TN),2024,II,21,Ryan Aliam,Forward,"6'4""",Sr.,,"Banner Elk, N.C.",Lees-McRae College,,https://www.kingtornado.com/sports/mens-soccer/roster/ryan-aliam/7963
+588150,King (TN),2024,II,22,Ricky Sexton,Forward,"6'0""",Jr.,,"Mobile, Ala.",Pfeiffer University,,https://www.kingtornado.com/sports/mens-soccer/roster/ricky-sexton/7961
+588150,King (TN),2024,II,23,Campbell Moore,Midfielder,"6'1""",Jr.,,"Dublin, Va.",Pulaski County HS,,https://www.kingtornado.com/sports/mens-soccer/roster/campbell-moore/7956
+588150,King (TN),2024,II,24,Ben Bullock,Midfielder,"6'1""",Fr.,,"Athens, Ala",Athens HS,,https://www.kingtornado.com/sports/mens-soccer/roster/ben-bullock/7966
+588150,King (TN),2024,II,25,Jimmy Pacheco,Midfielder,"5'5""",Fr.,,"Canton, Ga.",Cherokee HS,,https://www.kingtornado.com/sports/mens-soccer/roster/jimmy-pacheco/7972
+588150,King (TN),2024,II,26,Eric Swain,Midfielder,"5'9""",So.,,"Marietta, Ga.",Hillgrove HS,,https://www.kingtornado.com/sports/mens-soccer/roster/eric-swain/7962
+588150,King (TN),2024,II,27,Anthony Crisafulli,Midfielder,"5'9""",Jr.,,"Oak Ridge, N.C.",Pfeiffer University,,https://www.kingtornado.com/sports/mens-soccer/roster/anthony-crisafulli/7944
+588150,King (TN),2024,II,28,Devin Bodnarescu,Defender,"6'2""",Jr.,,"Lawrenceville, Ga.",Archer HS,,https://www.kingtornado.com/sports/mens-soccer/roster/devin-bodnarescu/7965
+588150,King (TN),2024,II,29,Bryan Wallace,Forward / Midfielder,,Fr.,,"Dekalb, Ga.",Cherokee HS,,https://www.kingtornado.com/sports/mens-soccer/roster/bryan-wallace/7975
+588150,King (TN),2024,II,31,John Clark,Forward,"6'0""",So.,,"Lucedale, Miss.",George County HS,,https://www.kingtornado.com/sports/mens-soccer/roster/john-clark/7942
+588150,King (TN),2024,II,32,Anthony Bernardi,Goalkeeper,"5'10""",Sr.,,"Dandridge, Tenn.",Jefferson County HS,,https://www.kingtornado.com/sports/mens-soccer/roster/anthony-bernardi/7940
+588150,King (TN),2024,II,33,Sean McDermott,Goalkeeper,"5'9""",Sr.,,"Suffolk, Va.",Isle of Wight Academy,,https://www.kingtornado.com/sports/mens-soccer/roster/sean-mcdermott/7952
+588150,King (TN),2024,II,34,Gavin Roux,Goalkeeper,"6'3""",Sr.,,"East London, England",Jamestown CC,,https://www.kingtornado.com/sports/mens-soccer/roster/gavin-roux/7960
+588150,King (TN),2024,II,35,Jack Bode,Goal Keeper,,So.,,"Gallatin, Tenn.",Tennessee Wesleyan University,,https://www.kingtornado.com/sports/mens-soccer/roster/jack-bode/7964
+588150,King (TN),2024,II,37,Cayden Sheets,Forward,"5'9""",Fr.,,"Talbott, Tenn.",Lakeway Christian Academy,,https://www.kingtornado.com/sports/mens-soccer/roster/cayden-sheets/7973
+588150,King (TN),2024,II,38,Alex Eastman,Forward,"5'9""",Fr.,,"Weber City, Va.",Gate City HS,,https://www.kingtornado.com/sports/mens-soccer/roster/alex-eastman/7967
+588150,King (TN),2024,II,39,Conrado Mate Rothgerber,Midfielder,"5'10""",Sr.,,"Buenos Aires, Argentina",Portland CC,,https://www.kingtornado.com/sports/mens-soccer/roster/conrado-mate-rothgerber/7951
+588150,King (TN),2024,II,40,Joseph Elliott,Midfielder,"5'10""",Jr.,,"Tewkesbury, England",Bryant & Stratton College,,https://www.kingtornado.com/sports/mens-soccer/roster/joseph-elliott/7968
+588150,King (TN),2024,II,41,Erick Martinez,Defender,"5'8""",Jr.,,"Punta Cana, Dominican Republic",Midway University,,https://www.kingtornado.com/sports/mens-soccer/roster/erick-martinez/7970
+598,"St. Cloud St.",2024,II,0,Owen Johnson,GK,6' 3'',Jr.,,"Des Moines, IA",WDM Valley High School,,https://scsuhuskies.com/sports/mens-soccer/roster/owen-johnson/18898
+598,"St. Cloud St.",2024,II,1,Max Subra,GK,6' 1'',Jr.,,"Montpellier, France",Lycée Champollion High School,,https://scsuhuskies.com/sports/mens-soccer/roster/max-subra/18899
+598,"St. Cloud St.",2024,II,2,Austin Plumhoff,MF,5' 9'',Sr.,,"Lenexa, Kan.",St. James Academy,,https://scsuhuskies.com/sports/mens-soccer/roster/austin-plumhoff/18482
+598,"St. Cloud St.",2024,II,3,Noah Eklund,D,5' 8'',Sr.,,"Andover, Minn.",Andover,,https://scsuhuskies.com/sports/mens-soccer/roster/noah-eklund/18470
+598,"St. Cloud St.",2024,II,4,Drew Macoritti,MF,6' 0'',Fr.,,"Georgetown, Ontario",Christ the King SS,,https://scsuhuskies.com/sports/mens-soccer/roster/drew-macoritti/18900
+598,"St. Cloud St.",2024,II,5,Amayo Bardeguez-Barrera,MF,5' 8'',Fr.,,"Boyne City, Mi.",Boyne City High School,,https://scsuhuskies.com/sports/mens-soccer/roster/amayo-bardeguezbarrera/18901
+598,"St. Cloud St.",2024,II,6,Will Cooley,D,6' 2'',Jr.,,"Kansas City, Mo.",Staley High School,,https://scsuhuskies.com/sports/mens-soccer/roster/will-cooley/18902
+598,"St. Cloud St.",2024,II,7,Yanis Smeg,F,6' 0'',Sr.,,"Argenteuil, France",Lycée Saint Joseph,,https://scsuhuskies.com/sports/mens-soccer/roster/yanis-smeg/18903
+598,"St. Cloud St.",2024,II,8,Nolan Pratumwon,MF,5' 7'',Sr.,,"Mahtomedi, Minn.",Mahtomedi,,https://scsuhuskies.com/sports/mens-soccer/roster/nolan-pratumwon/18483
+598,"St. Cloud St.",2024,II,9,Andrés García,F,6' 3'',Sr.,,"Austin, Minn.",Austin,,https://scsuhuskies.com/sports/mens-soccer/roster/andrs-garca/18472
+598,"St. Cloud St.",2024,II,10,Philip Caputo,MF,5' 7'',Sr.,,"Eagan, Minn.",Eagan,,https://scsuhuskies.com/sports/mens-soccer/roster/philip-caputo/18468
+598,"St. Cloud St.",2024,II,11,Mika Folstad,MF,5' 11'',5th.,,"St. Paul, Minn.",St. Paul Central,,https://scsuhuskies.com/sports/mens-soccer/roster/mika-folstad/18471
+598,"St. Cloud St.",2024,II,12,William Gonzalez,D,5' 7'',Jr.,,"Bordeaux, France",Sainte-Marie Grand Lebrun,,https://scsuhuskies.com/sports/mens-soccer/roster/william-gonzalez/18904
+598,"St. Cloud St.",2024,II,13,Abdi Isse,MF,6' 2'',Fr.,,"Saint Cloud, Minn.",Apollo High School,,https://scsuhuskies.com/sports/mens-soccer/roster/abdi-isse/18905
+598,"St. Cloud St.",2024,II,14,Mahmood Maldonado,D,6' 3'',5th.,,"Mankato, Minn.",Mankato East,,https://scsuhuskies.com/sports/mens-soccer/roster/mahmood-maldonado/18480
+598,"St. Cloud St.",2024,II,15,Max Binder,MF,5' 8'',So.,,"Bad Fischau-Brunn, Austria",HLA Baden,,https://scsuhuskies.com/sports/mens-soccer/roster/max-binder/18467
+598,"St. Cloud St.",2024,II,16,Owen Wasmund,F,6' 0'',Fr.,,"Hudson, Wis.",Hudson High School,,https://scsuhuskies.com/sports/mens-soccer/roster/owen-wasmund/18906
+598,"St. Cloud St.",2024,II,17,Yuken Harmon,MF,5' 9'',Jr.,,"Coon Rapids, Minn.",Coon Rapids,,https://scsuhuskies.com/sports/mens-soccer/roster/yuken-harmon/18474
+598,"St. Cloud St.",2024,II,18,Eduardo Balduino,F,5' 9'',So.,,"Brasília, Brazil",Centro Educacional Leonardo da Vinci,,https://scsuhuskies.com/sports/mens-soccer/roster/eduardo-balduino/18907
+598,"St. Cloud St.",2024,II,19,Noah Kantorowicz,MF,6' 2'',5th.,,"Minneapolis, Minn.",St. Anthony,,https://scsuhuskies.com/sports/mens-soccer/roster/noah-kantorowicz/18477
+598,"St. Cloud St.",2024,II,20,Rhys Ward,MF,6' 2'',Jr.,,"Bettendorf, Iowa",Pleasant Valley,,https://scsuhuskies.com/sports/mens-soccer/roster/rhys-ward/18485
+598,"St. Cloud St.",2024,II,21,Matt Greenland,MF,6' 2'',Jr.,,"Cairns, Australia",Saint Augustine's,,https://scsuhuskies.com/sports/mens-soccer/roster/matt-greenland/18908
+598,"St. Cloud St.",2024,II,22,Owen Worsdell,D,6' 1'',Jr.,,"Brighton, England",Steyning Grammar School,,https://scsuhuskies.com/sports/mens-soccer/roster/owen-worsdell/18486
+598,"St. Cloud St.",2024,II,23,Ziad Kaddah,D,5' 9'',So.,,"Cairo, Egypt",New Cairo British International School,,https://scsuhuskies.com/sports/mens-soccer/roster/ziad-kaddah/18909
+598,"St. Cloud St.",2024,II,25,Yannick Langerhuizen,D,6' 2'',So.,,"Rotterdam, Netherlands",Dalton Lyceum Barendrecht,,https://scsuhuskies.com/sports/mens-soccer/roster/yannick-langerhuizen/18910
+598,"St. Cloud St.",2024,II,26,Finn Mankowski,D,6' 1'',Fr.,,"Traverse City, Mi.",Suttons Bay,,https://scsuhuskies.com/sports/mens-soccer/roster/finn-mankowski/18911
+598,"St. Cloud St.",2024,II,30,Jalen Joshua Rueter,D,6' 4'',Fr.,,"Datteln, Germany",Shattuck-St. Mary's,,https://scsuhuskies.com/sports/mens-soccer/roster/jalen-joshua-rueter/18912
+598,"St. Cloud St.",2024,II,31,Elliot Hadley,D,6' 3'',Jr.,,"Shrewsbury, England",Meole Brace,,https://scsuhuskies.com/sports/mens-soccer/roster/elliot-hadley/18913
+598,"St. Cloud St.",2024,II,33,Andrew Holmes,MF,6' 4'',R-So.,,"St. Cloud, Minn.",St. Cloud Tech,,https://scsuhuskies.com/sports/mens-soccer/roster/andrew-holmes/18475
+598,"St. Cloud St.",2024,II,34,Ramy Atia,GK,6' 2'',Sr.,,"Des Plaines, IL.",Maine East,,https://scsuhuskies.com/sports/mens-soccer/roster/ramy-atia/18914
+588141,"Clayton St.",2024,II,0,Rodrigo Julian,GK,6-3,Fr.,,"Norcross, Ga.",,,"https://claytonstatesports.com/sports/msoc/roster/rodrigo-julian/4256"
+588141,"Clayton St.",2024,II,1,Mauricio Uribe,GK,6-1,Sr.,,"Miami, Fla.",,Georgia Southwestern State Univ.,"https://claytonstatesports.com/sports/msoc/roster/mauricio-uribe/4289"
+588141,"Clayton St.",2024,II,2,Isami Takeuchi,D,5-8,Sr.,,"Atlanta, Ga.",,,"https://claytonstatesports.com/sports/msoc/roster/isami-takeuchi/4258"
+588141,"Clayton St.",2024,II,3,Aaron Overmars,D,6-3,Gr.,,"Amsterdam, The Netherlands",,Life Univ.,"https://claytonstatesports.com/sports/msoc/roster/aaron-overmars/4259"
+588141,"Clayton St.",2024,II,4,Mohamed Mahrous,D,6-4,Gr.,,"Marrakech, Morocco",,Georgia Southwestern State Univ.,"https://claytonstatesports.com/sports/msoc/roster/mohamed-mahrous/4260"
+588141,"Clayton St.",2024,II,5,Othmane Chagour,D,6-4,Gr.,,"Casablanca, Morocco",,Tusculum Univ.,"https://claytonstatesports.com/sports/msoc/roster/othmane-chagour/4261"
+588141,"Clayton St.",2024,II,6,Miguel Torrecillas,MF,6-0,Jr.,,"Albacete, Spain",,Southern Nazarene Univ.,"https://claytonstatesports.com/sports/msoc/roster/miguel-torrecillas/4262"
+588141,"Clayton St.",2024,II,7,Hector Nieto,MF,6-0,So.,,"Venta de Baños, Spain",,Lenoir-Rhyne Univ.,"https://claytonstatesports.com/sports/msoc/roster/hector-nieto/4263"
+588141,"Clayton St.",2024,II,8,Fallah Johnson,F,6-1,So.,,"Monrovia, Liberia",,Methodist Episcopal Univ.,"https://claytonstatesports.com/sports/msoc/roster/fallah-johnson/4264"
+588141,"Clayton St.",2024,II,9,Gonzalo LaChica,F,6-1,Sr.,,"Malaga, Spain",,Univ. of Northwestern Ohio,"https://claytonstatesports.com/sports/msoc/roster/gonzalo-lachica/4265"
+588141,"Clayton St.",2024,II,10,Alexis Iturria,MF,5-9,Sr.,,"Hampton, Ga.",,,"https://claytonstatesports.com/sports/msoc/roster/alexis-iturria/4266"
+588141,"Clayton St.",2024,II,11,Camilo Velez,MF,5-9,So.,,"Peachtree City, Ga.",,,"https://claytonstatesports.com/sports/msoc/roster/camilo-velez/4267"
+588141,"Clayton St.",2024,II,12,Andree Jimenez,D,5-9,Jr.,,"Flowery Branch, Ga.",,,"https://claytonstatesports.com/sports/msoc/roster/andree-jimenez/4268"
+588141,"Clayton St.",2024,II,14,Erick Ferreira Rodriguez,D,6-2,Sr.,,"Marietta, Ga.",,Evangel University,"https://claytonstatesports.com/sports/msoc/roster/erick-ferreira-rodriguez/4343"
+588141,"Clayton St.",2024,II,15,Camilo Montero,MF,5-8,Jr.,,"Roswell, Ga.",,,"https://claytonstatesports.com/sports/msoc/roster/camilo-montero/4270"
+588141,"Clayton St.",2024,II,17,Dylan Cabrera,MF,5-9,Fr.,,"Stephenville,Texas",,,"https://claytonstatesports.com/sports/msoc/roster/dylan-cabrera/4272"
+588141,"Clayton St.",2024,II,18,Gustavo Canas,MF,5-10,So.,,"Atlanta, Ga.",,,"https://claytonstatesports.com/sports/msoc/roster/gustavo-canas/4273"
+588141,"Clayton St.",2024,II,19,Alex Rodriguez,MF,5-10,So.,,"Valladolid, Spain",,Indian Hills CC,"https://claytonstatesports.com/sports/msoc/roster/alex-rodriguez/4274"
+588141,"Clayton St.",2024,II,20,Charlie Longino,MF,6-0,Jr.,,"College Park, Ga.",,,"https://claytonstatesports.com/sports/msoc/roster/charlie-longino/4275"
+588141,"Clayton St.",2024,II,21,Manoel Neto,MF,5-7,Fr.,,"Anápolis, Brazil",,,"https://claytonstatesports.com/sports/msoc/roster/manoel-neto/4276"
+588141,"Clayton St.",2024,II,22,Brock Williams,F,6-0,Fr.,,"Bainbridge, Ga.",,,"https://claytonstatesports.com/sports/msoc/roster/brock-williams/4277"
+588141,"Clayton St.",2024,II,23,Aaron Diaz,MF,6-1,So.,,"Winder, Ga.",,,"https://claytonstatesports.com/sports/msoc/roster/aaron-diaz/4278"
+588141,"Clayton St.",2024,II,24,Vic Delgado Miller,MF,5-9,Sr.,,"Atlanta, GA",,,"https://claytonstatesports.com/sports/msoc/roster/vic-delgado-miller/4279"
+588141,"Clayton St.",2024,II,26,Emmanuel Alerte,F,6-0,Sr.,,"Dallas, Ga.",,Shorter Univ.,"https://claytonstatesports.com/sports/msoc/roster/emmanuel-alerte/4281"
+588141,"Clayton St.",2024,II,28,Hamsel Gallegos,MF,5-9,So.,,"Fayetteville, Ga.",,,"https://claytonstatesports.com/sports/msoc/roster/hamsel-gallegos/4282"
+588141,"Clayton St.",2024,II,29,David Magala,GK,5-10,Sr.,,"Tucker, Ga.",,,"https://claytonstatesports.com/sports/msoc/roster/david-magala/4283"
+588141,"Clayton St.",2024,II,30,Edgar Nunez,MF,5-8,Fr.,,"Jonesboro, Ga.",,,"https://claytonstatesports.com/sports/msoc/roster/edgar-nunez/4284"
+588141,"Clayton St.",2024,II,33,Rhys Pollard,D,6-1,So.,,"Atlanta, Ga.",,Berry Univ.,"https://claytonstatesports.com/sports/msoc/roster/rhys-pollard/4286"
+588141,"Clayton St.",2024,II,66,Khame Tip,D,5-11,Fr.,,"Chonburi, Thailand",,,"https://claytonstatesports.com/sports/msoc/roster/khame-tip/4287"
+588141,"Clayton St.",2024,II,71,Jussi Gerbeding,D,6-4,Jr.,,"Gottingen, Germany",,Westcliff Univ.,"https://claytonstatesports.com/sports/msoc/roster/jussi-gerbeding/4288"
+588117,"Dominican (NY)",2024,II,00,Miguel Hernandez,GK,5-10,So,Health Sciences,"North Bergen, N.J.",North Bergen,Rutgers University-Newark,https://www.chargerathletics.com/sports/msoc/2024-25/bios/hernandez_miguel_5i3h
+588117,"Dominican (NY)",2024,II,0,Alessandro Guzzinati,GK,6-0,Jr,Communication Studies,"Ferrara, Italy",Liceo Classico Ariosto,Bologna University,https://www.chargerathletics.com/sports/msoc/2024-25/bios/guzzinati_alessandro_0o78
+588117,"Dominican (NY)",2024,II,1,Joshua Kaandorp,GK,6-1,Sr,MBA,"Tilburg, Netherlands",St. Odulphus Lyceum,Middle Georgia State University,https://www.chargerathletics.com/sports/msoc/2024-25/bios/kaandorp_joshua_hhjd
+588117,"Dominican (NY)",2024,II,2,Gaetan Mainaud,D,5-8,Jr,Business Management,"Troyes, Aube, France",Saint Francois De Sales,Wenatchee Valley College,https://www.chargerathletics.com/sports/msoc/2024-25/bios/mainaud_gaetan_alid
+588117,"Dominican (NY)",2024,II,3,Carlos Diogo,D,5-11,So,Sports Management,"Viseu, Portugal",Escola Secundaria Emidio Navarro,University of Tennessee Southern,https://www.chargerathletics.com/sports/msoc/2024-25/bios/diogo_carlos_jylg
+588117,"Dominican (NY)",2024,II,4,Derek Martinez,D,5-10,Sr,Management,"Bronx, N.Y.",Manhattan Center for Science & Mathematics,St. Francis Brooklyn,https://www.chargerathletics.com/sports/msoc/2024-25/bios/martinez_derek_jbli
+588117,"Dominican (NY)",2024,II,5,Breki Egilsson,D,6-1,Fr,Business Management,"Gardabaer, Iceland",Fjolbrautaskolinn,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/egilsson_breki_0tkc
+588117,"Dominican (NY)",2024,II,6,Henrique Zachello,M,5-6,Jr,Business,"Recife, Brazil",,KCKCC,https://www.chargerathletics.com/sports/msoc/2024-25/bios/zachello_henrique_2rw9
+588117,"Dominican (NY)",2024,II,7,Niccolo Moretti,F,6-0,Sr,Finance,"Lecce, Italy",Liceo Scientifico G. Banzi Bazoli,Monroe Community College,https://www.chargerathletics.com/sports/msoc/2024-25/bios/moretti_niccolo_v1wd
+588117,"Dominican (NY)",2024,II,8,Armando Morales,D,5-8,r-Jr,Information Technology,"Jupiter, Fla.",Jupiter,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/morales_armando_0ehg
+588117,"Dominican (NY)",2024,II,9,Oscar Chazalet,F,5-9,Jr,Business/Finance,"Lyon, France",Notre Dame de Bellegarde,Wenatchee Valley College,https://www.chargerathletics.com/sports/msoc/2024-25/bios/chazalet_oscar_yp0f
+588117,"Dominican (NY)",2024,II,10,Pedro Diegues,M,5-11,Fr,Digital Marketing,"Sao Paulo, Brazil",St. Thomas More School,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/diegues_pedro_vwa2
+588117,"Dominican (NY)",2024,II,11,Alex Garcia Buil,F,5-11,Sr,Business Management,"Vilassar de Dalt, Spain",INS Jaume Almera,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/garcia_buil_alex_edxw
+588117,"Dominican (NY)",2024,II,12,Thiago Micki,M,5-6,r-Sr,Information Technology,"Sao Paulo, Brazil",Colegio Agostiniani Mendel,Faulkner University,https://www.chargerathletics.com/sports/msoc/2024-25/bios/micki_thiago_lruf
+588117,"Dominican (NY)",2024,II,13,Justin Buzzele,D,6-0,So,Marketing,"Brooklyn, N.Y.",Bedford Academy High,Monroe College,https://www.chargerathletics.com/sports/msoc/2024-25/bios/buzzele_lustin_tx6l
+588117,"Dominican (NY)",2024,II,14,Jackson Martinez,D,6-1,Fr,Sports Management,"Nyack, N.Y.",Nyack,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/martinez_jackson_kgk9
+588117,"Dominican (NY)",2024,II,15,Simon Ostrowski,M,6-2,Sr,Business,"Wyckoff, N.J.",Ramapo,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/ostrowski_simon_8mnt
+588117,"Dominican (NY)",2024,II,16,Matheus Xavier,M,6-2,Fr,Technology,"Belo Horizonte, Brazil",St. Thomas More School,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/carneiro_xavier_matheus_1b1z
+588117,"Dominican (NY)",2024,II,17,Sebastian Marquez,M,5-8,Fr,Nursing,"Lindenhurst, N.Y.",Lindenhurst,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/marquez_sebastian_lxam
+588117,"Dominican (NY)",2024,II,18,Eduardo Moreno Silva,M,5-7,Jr,Business Management,"Sorocaba, Sao Paulo, Brazil",Tip Toe Discovery,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/phillip_moreno_silva_eduardo_ijac
+588117,"Dominican (NY)",2024,II,19,Brandon Chacon,M,5-7,Jr,Business Management,"Haverstraw, N.Y.",North Rockland,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/chacon_brandon_1tga
+588117,"Dominican (NY)",2024,II,20,Derek Fisher,D,5-6,So,Hiostory,"Suffern, N.Y.",Suffern Senior High School,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/fisher_derek_l9tu
+588117,"Dominican (NY)",2024,II,21,Guglielmemo Picariello,M,5-5,Fr,Business Management,"Ridgefield Park, N.J.",Bergen Catholic,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/picariello_memo_j5fx
+588117,"Dominican (NY)",2024,II,22,Waqas Hagali,D,5-11,So,Business,"Latham, N.Y.",Shaker High School,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/hagali_waqas_tz84
+588117,"Dominican (NY)",2024,II,23,Anthony Guaman,F,5-6,Fr,Finance,"Spring Valley, N.Y.",Nanuet Senior High,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/guaman_anthony_fqqc
+588117,"Dominican (NY)",2024,II,24,Nolan Hess,D,5-10,Fr,Undecided,"Yonkers, N.Y.",Archbishop Stepinac,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/hess_nolan_ee1i
+588117,"Dominican (NY)",2024,II,25,Lucas Arouca,M,5-6,Fr,Business Management,"East Fishkill, N.Y.",John Jay East-Fishkill,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/arouca_lucas_7nf1
+588117,"Dominican (NY)",2024,II,27,Aidan Guzik,M,5-9,So,FInance,"Medford, N.Y.",Patchogue-Medford,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/guzik_aidan_7897
+588117,"Dominican (NY)",2024,II,28,Jason Chacha,M,5-6,Fr,Physical Therapy,"West Haverstraw, N.Y.",North Rockland,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/chacha_jason_6kt6
+588117,"Dominican (NY)",2024,II,29,Justin Odoemene,F,6-3,Jr,Business,"Sicklerville, N.J.",Overbrook,Pennsylvania State University-Beaver,https://www.chargerathletics.com/sports/msoc/2024-25/bios/odoemene_justin_k8bi
+588117,"Dominican (NY)",2024,II,31,Joshua Reyes,D,5-6,Fr,Health Sciences,"Haverstraw, N.Y.",North Rockland,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/reyes_joshua_iqci
+588117,"Dominican (NY)",2024,II,32,Mikey Doyle,D,6-1,Fr,Physical Therapy,"New City , N.Y.",Albertus Magnus,,https://www.chargerathletics.com/sports/msoc/2024-25/bios/doyle_mikey_i4q4
+588117,"Dominican (NY)",2024,II,35,Patrick Gillen,GK,6-3,Jr,Health Sciences,"Greenwood Lake, N.Y.",Monroe Woodbury,LeMoyne College,https://www.chargerathletics.com/sports/msoc/2024-25/bios/gillen_patrick_ht4l
+588117,"Dominican (NY)",2024,II,41,Lorenz Utz,D,6-2,Jr,Business Management,"Bamberg, Germany",E.T.A.- Hoffmann,Monroe College,https://www.chargerathletics.com/sports/msoc/2024-25/bios/utz_lorenz_2rpl
+588092,Mars Hill,2024,II,0,Parker Davis,GK,6-2,Sr.,,,"Yorktown, Va.",,"Warren Wilson",https://www.marshilllions.com/sports/msoc/2024-25/bios/davis_parker_ou53
+588092,Mars Hill,2024,II,1,James Price,GK,6-0,Sr,,,"Wigan, England",,"Middle Georgia State",https://www.marshilllions.com/sports/msoc/2024-25/bios/price_james_8vg5
+588092,Mars Hill,2024,II,2,Ross Collier,D,6-0,Jr.,,,"Dublin, Ireland",,"Oakland City",https://www.marshilllions.com/sports/msoc/2024-25/bios/collier_ross_i3si
+588092,Mars Hill,2024,II,3,Matti Pickel,D,6-8,So.,,,"Bochum, Germany","Markische Schule Wattenscheid",,https://www.marshilllions.com/sports/msoc/2024-25/bios/pickel_matti_lc8t
+588092,Mars Hill,2024,II,4,Frederik Marten,D,6-3,Sr.,,,"Stukenbrock, Germany",,"Northwest University",https://www.marshilllions.com/sports/msoc/2024-25/bios/marten_frederik_od1c
+588092,Mars Hill,2024,II,5,Cam Watts,D,6-4,Sr.,,,"Bromsgrove, England",,"Neosho CC",https://www.marshilllions.com/sports/msoc/2024-25/bios/watts_cam_k0ul
+588092,Mars Hill,2024,II,6,Ben Harvey,D,6-6,Jr,,,"Walsall, England","Ormiston Shelfield Community Academy",,https://www.marshilllions.com/sports/msoc/2024-25/bios/harvey_ben_takm
+588092,Mars Hill,2024,II,7,Peter Plougmand,F,6-2,Sr,,,"Odense, Denmark","Tietgen Handelsgymnasium",,https://www.marshilllions.com/sports/msoc/2024-25/bios/plougmand_peter_7e0a
+588092,Mars Hill,2024,II,8,Carrick Bromage,M,5-10,Jr,,,"Neath, Wales","Pro Direct Academy Northampton",,https://www.marshilllions.com/sports/msoc/2024-25/bios/bromage_carrick_r3rr
+588092,Mars Hill,2024,II,9,Adrian Faus,F,5-9,Jr.,,,"Valencia, Spain",,"Eastern Oklahoma State College",https://www.marshilllions.com/sports/msoc/2024-25/bios/faus_adrian_3ayy
+588092,Mars Hill,2024,II,10,Diego Fernandez,F,5-7,So.,,,"Segovia, Spain","Carlos III University of Madrid",,https://www.marshilllions.com/sports/msoc/2024-25/bios/fernandez_diego_heqc
+588092,Mars Hill,2024,II,11,Leonardo Sanches,M,5-9,Jr.,,,"Presidente Epitacio, Brazil",,"Lincoln Trail CC",https://www.marshilllions.com/sports/msoc/2024-25/bios/sanches_leonardo_ghog
+588092,Mars Hill,2024,II,12,Brycen Kuhns,D,5-7,So.,,,"Chambersburg, Pa.","Chambersburg Area Senior",,https://www.marshilllions.com/sports/msoc/2024-25/bios/kuhns_brycen_4bkb
+588092,Mars Hill,2024,II,13,Henry Jolland,M,5-8,Fr.,,,"Dullingham, England","Bottisham Village College",,https://www.marshilllions.com/sports/msoc/2024-25/bios/jolland_henry_t0n8
+588092,Mars Hill,2024,II,14,Max Gaither,F,5-11,Sr,,,"Harrisburg, N.C.","Hickory Ridge",,https://www.marshilllions.com/sports/msoc/2024-25/bios/gaither_max_qcfc
+588092,Mars Hill,2024,II,15,Ajani Wade,M,5-7,Jr,,,"Athens, Ga.","Clarke Central",,https://www.marshilllions.com/sports/msoc/2024-25/bios/wade_ajani_fpix
+588092,Mars Hill,2024,II,16,Luke Kelly,M/F,5-9,Fr.,,,"Colleraine, Northern Ireland","North Coast Integrated College",,https://www.marshilllions.com/sports/msoc/2024-25/bios/kelly_luke_bnh9
+588092,Mars Hill,2024,II,17,Sam Bayly,M,5-9,Sr.,,,"Lincolnshire, England",,"CSU Pueblo",https://www.marshilllions.com/sports/msoc/2024-25/bios/bayly_sam_6z5k
+588092,Mars Hill,2024,II,18,Nicholas Graves,F,5-8,Fr.,,,"Athlelstone, Australia",,,https://www.marshilllions.com/sports/msoc/2024-25/bios/graves_nicholas_eep9
+588092,Mars Hill,2024,II,19,Brandon Mawdsley,M,5-10,So.,,,"Hendersonville, Tenn.","Merrol Hyde Magnet",,https://www.marshilllions.com/sports/msoc/2024-25/bios/mawdsley_brandon_byw7
+588092,Mars Hill,2024,II,20,Liam Walden,D,6-0,So.,,,"Rolesville, N.C.","Needham B. Broughton",,https://www.marshilllions.com/sports/msoc/2024-25/bios/walden_liam_lm3b
+588092,Mars Hill,2024,II,21,Braxton Robinson,M/F,5-11,Sr,,,"Murfreesboro, Tenn.","Oakland",,https://www.marshilllions.com/sports/msoc/2024-25/bios/robinson_braxton_e566
+588092,Mars Hill,2024,II,22,Jordan Alexander,D,5-11,So.,,,"Royal Palm Beach, Fla.","Seminole Ridge County",,https://www.marshilllions.com/sports/msoc/2024-25/bios/alexander_jordan_ybdl
+588092,Mars Hill,2024,II,23,Bruno Fornes,D/M,5-9,Jr.,,,"Sao Paulo, Brazil",,"Cowley College",https://www.marshilllions.com/sports/msoc/2024-25/bios/fornes_bruno_h815
+588092,Mars Hill,2024,II,25,Omololu Olugbemi,M,5-11,So.,,,"Suffolk, Va.","Nanesmond River",,https://www.marshilllions.com/sports/msoc/2024-25/bios/olugbemi_omololu_4rpj
+588092,Mars Hill,2024,II,26,Kai Stolp,M,5-10,So.,,,"Fort Payne, Ala.","Fort Payne",,https://www.marshilllions.com/sports/msoc/2024-25/bios/stolp_kai_o26s
+588092,Mars Hill,2024,II,27,Noah Backes,F,6-2,Fr.,,,"Brevard, N.C.","Brevard",,https://www.marshilllions.com/sports/msoc/2024-25/bios/backes_noah_51d0
+588092,Mars Hill,2024,II,28,Kohnor Ennis,D/M,5-5,Fr.,,,"Bradenton, Fla.","IMG Academy",,https://www.marshilllions.com/sports/msoc/2024-25/bios/ennis_kohnor_kts6
+588092,Mars Hill,2024,II,29,Jeffrey Hamm,M,5-10,Jr,,,"Orlando, Fla.","Cypress Creek",,https://www.marshilllions.com/sports/msoc/2024-25/bios/hamm_jeffrey_wrtw
+588092,Mars Hill,2024,II,30,Kyle Blake,D,6-0,Fr.,,,"Harrisburg, N.C.","Hickory Ridge",,https://www.marshilllions.com/sports/msoc/2024-25/bios/blake_kyle_8z18
+588092,Mars Hill,2024,II,31,Cameron Canard,M/F,5-11,Fr.,,,"Tampa, Fla.","Cypress Creek",,https://www.marshilllions.com/sports/msoc/2024-25/bios/canard_cameron_qyxo
+588092,Mars Hill,2024,II,32,David Diaz,M/F,5-4,Jr,,,"Concord, N.C.","Northwest Cabarrus",,https://www.marshilllions.com/sports/msoc/2024-25/bios/diaz_david_a37d
+588092,Mars Hill,2024,II,33,Justin Williams,GK,6-1,Jr,,,"Columbia, S.C.","Cardinal Newman School",,https://www.marshilllions.com/sports/msoc/2024-25/bios/williams_justin_xchd
+588092,Mars Hill,2024,II,34,Nolan McMillen,D,5-10,Sr,,,"Dobson, N.C.","Surrey Central",,https://www.marshilllions.com/sports/msoc/2024-25/bios/mcmillen_nolan_o3e9
+588092,Mars Hill,2024,II,35,Owen Bothwell,M,6-0,So.,,,"Huntsville, Ala.","Homeschool",,https://www.marshilllions.com/sports/msoc/2024-25/bios/bothwell_owen_iodq
+588092,Mars Hill,2024,II,36,Carson Russell,M,5-10,Fr.,,,"Dalton, Ga.","Christian Heritage",,https://www.marshilllions.com/sports/msoc/2024-25/bios/russell_carson_6t0e
+588092,Mars Hill,2024,II,37,Noah Davis,D,5-10,Fr.,,,"Johnson City, Tenn.","Science Hill",,https://www.marshilllions.com/sports/msoc/2024-25/bios/davis_noah_mv78
+588092,Mars Hill,2024,II,38,Erik Wasendorf,M,5-9,Fr.,,,"Orlando, Fla.","Dr. Phillips",,https://www.marshilllions.com/sports/msoc/2024-25/bios/wasendorf_erik_89ak
+588092,Mars Hill,2024,II,39,Nick Sims,D,5-8,Fr.,,,"Highlands Ranch, Colo.","Rock Canyon",,https://www.marshilllions.com/sports/msoc/2024-25/bios/sims_nick_7uq9
+588092,Mars Hill,2024,II,40,Gavin Moore,M/F,5-5,Fr.,,,"Apex, N.C.","Apex",,https://www.marshilllions.com/sports/msoc/2024-25/bios/moore_gavin_rz1p
+588092,Mars Hill,2024,II,41,Connor Higgs,D/M,6-1,Fr.,,,"Vidalia, Ga.","Vidalia",,https://www.marshilllions.com/sports/msoc/2024-25/bios/higgs_connor_r3za
+588092,Mars Hill,2024,II,42,Finn Lambe,M,5-11,Fr.,,,"Wilmington, N.C.","John T. Hoggard",,https://www.marshilllions.com/sports/msoc/2024-25/bios/lambe_finn_f5nr
+588092,Mars Hill,2024,II,43,Adrian Mojica,M,5-7,So.,,,"Lake Placid, Fla.","Lake Placid",,https://www.marshilllions.com/sports/msoc/2024-25/bios/mojica_adrian_n93r
+588092,Mars Hill,2024,II,44,Diego Merida Guillen,D,5-11,Fr.,,,"LaGrange, Ga.","Troup County",,https://www.marshilllions.com/sports/msoc/2024-25/bios/merida_guillen_diego_uioq
+588092,Mars Hill,2024,II,45,Matthew Vargas-Oyuela,D,6-1,So.,,,"Orlando, Fla.","NeoCity Academy",,https://www.marshilllions.com/sports/msoc/2024-25/bios/vargas-oyuela_matthew_k68l
+588092,Mars Hill,2024,II,46,Gabe Rollins,D,5-11,Fr.,,,"Hendersonville, N.C.","Hendersonville",,https://www.marshilllions.com/sports/msoc/2024-25/bios/rollins_gabe_32ro
+588092,Mars Hill,2024,II,47,Kyle Williams,D/M,5-10,Jr.,,,"Greensboro, N.C.","Lake Oconee Academy",,https://www.marshilllions.com/sports/msoc/2024-25/bios/williams_kyle_xfaq
+588092,Mars Hill,2024,II,48,Navy Ott,M,6-1,So.,,,"Toccoa, Ga.","Truett McConnell University",,https://www.marshilllions.com/sports/msoc/2024-25/bios/ott_navy_zc7r
+588092,Mars Hill,2024,II,49,Luis Merida Guillen,D,5-11,Fr.,,,"LaGrange, Ga.","Troup County",,https://www.marshilllions.com/sports/msoc/2024-25/bios/merida_guillen_luis_9tvw
+588092,Mars Hill,2024,II,50,Manato Arndall,D,5-8,So.,,,"Suwanee, Ga.","Lambert",,https://www.marshilllions.com/sports/msoc/2024-25/bios/arndall_manato_3tz9
+588092,Mars Hill,2024,II,51,Daniel Garcia,D,5-8,Fr.,,,"Troutman, N.C.","North Iredell",,https://www.marshilllions.com/sports/msoc/2024-25/bios/garcia_daniel_d15q
+588092,Mars Hill,2024,II,52,Landon Matz,F,5-9,So.,,,"Bryson City, N.C.","Swain County",,https://www.marshilllions.com/sports/msoc/2024-25/bios/matz_landon_71uf
+588092,Mars Hill,2024,II,53,Brewer Osteen,M,6-0,So.,,,"Franklin, Tenn.","Centennial",,https://www.marshilllions.com/sports/msoc/2024-25/bios/osteen_brewer_id1e
+588092,Mars Hill,2024,II,54,Anthony Dymtruk,D/F,5-8,Fr.,,,"Huntersville, N.C.","William Amos Hough",,https://www.marshilllions.com/sports/msoc/2024-25/bios/dymtruk_anthony_p9dk
+588092,Mars Hill,2024,II,55,Kai Runyon,GK,5-10,So.,,,"Asheville, N.C.",,"SMC",https://www.marshilllions.com/sports/msoc/2024-25/bios/runyon_kai_hxkw
+588092,Mars Hill,2024,II,66,Cesar Guerrero,M,5-11,Fr.,,,"Dobson, N.C.","Surry Central",,https://www.marshilllions.com/sports/msoc/2024-25/bios/guerrero_cesar_j1xg
+588092,Mars Hill,2024,II,77,Lukas Kunz,GK,6-1,Jr,,,"Franklin, Tenn.","Centennial",,https://www.marshilllions.com/sports/msoc/2024-25/bios/kunz_lukas_y1gz
+588092,Mars Hill,2024,II,88,Noah Fasel,GK,6-2,So.,,,"Matthews, N.C.","David W. Butler",,https://www.marshilllions.com/sports/msoc/2024-25/bios/fasel_noah_x8hu
+588092,Mars Hill,2024,II,99,Logan Cassel,GK,6-4,So.,,,"Zurich, Switzerland","Zurich International",,https://www.marshilllions.com/sports/msoc/2024-25/bios/cassel_logan_d2dv
+588077,Coker,2024,II,0,Carter Nunnery,GK,,Jr.,,"Lancaster, SC",,Furman University,https://www.cokercobras.com/sports/msoc/2024-25/bios/nunnery_carter_yr9h
+588077,Coker,2024,II,1,Charlie Walker,GK,,Jr.,,"Whitstable, England",,Walsh University,https://www.cokercobras.com/sports/msoc/2024-25/bios/walker_charlie_iblb
+588077,Coker,2024,II,2,Leo Souza,D,5-9,So.,,"Maringa, Parana",Colegio Integral de Maringa,,https://www.cokercobras.com/sports/msoc/2024-25/bios/souza_leonardo_owbx
+588077,Coker,2024,II,3,Jonathan Burr,M,,Sr.,,"Hartsville, SC",Hartsville HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/burr_josh_7esd
+588077,Coker,2024,II,4,Yvan Malarte,D,,Fr.,,"Martigues, France",Istres SC,,https://www.cokercobras.com/sports/msoc/2024-25/bios/malarte_yvan_n99s
+588077,Coker,2024,II,5,Tom Dixon,M,6-3,So.,,"Wolverhampton, England",Thomas Telford School,,https://www.cokercobras.com/sports/msoc/2024-25/bios/dixon_tom_ahpt
+588077,Coker,2024,II,6,Jesper Schierholz,M,5-11,So.,,"Walsrode, Germany",Gymnasium Walsrode,,https://www.cokercobras.com/sports/msoc/2024-25/bios/schierholz_jesper_6rxf
+588077,Coker,2024,II,7,Lukas Berntsson,D,6-0,Sr.,,"Gothenburg, Sweden",Agneberg,,https://www.cokercobras.com/sports/msoc/2024-25/bios/berntsson_lukas_alik
+588077,Coker,2024,II,8,Nikola Sotra,M,6-0,Sr.,,"Norrkoumlping, Sweden",,Georgia Southern University,https://www.cokercobras.com/sports/msoc/2024-25/bios/sotra_nikola_bkpt
+588077,Coker,2024,II,9,Ayoub Ben Amar,F,6-1,Fr.,,"Reims, France",Universite de Reims Champagne Ardenne,,https://www.cokercobras.com/sports/msoc/2024-25/bios/benamar_ayoub_d9rf
+588077,Coker,2024,II,10,Youri Keijser,M,5-7,Jr.,,"Eindhoven, Netherlands","Rodenborch and Sint-Joris College",,https://www.cokercobras.com/sports/msoc/2024-25/bios/keijser_youri_4q0d
+588077,Coker,2024,II,11,Frederic Benedix,F,5-8,Jr.,,"Riesa, Germany",Apian Gymnasium Ingolstadt,,https://www.cokercobras.com/sports/msoc/2024-25/bios/benedix_frederic_uz5m
+588077,Coker,2024,II,12,Luis Aragon Sosa,D,5-11,Jr.,,"Queretaro, Mexico",,Freed-Hardeman University,https://www.cokercobras.com/sports/msoc/2024-25/bios/aragon_sosa_luis_p0jq
+588077,Coker,2024,II,13,Tobi White,D,6-3,So.,,"Pensacola, FL",,Auburn University - Montgomery,https://www.cokercobras.com/sports/msoc/2024-25/bios/white_fatobi_lbji
+588077,Coker,2024,II,14,Connor Duggan,F,5-11,So.,,"Oxford, England",Heyford Park School,,https://www.cokercobras.com/sports/msoc/2024-25/bios/duggan_connor_yact
+588077,Coker,2024,II,15,Matty Tricker,D,6-1,Sr.,,"Ipswich, England",Westbourne Academy,,https://www.cokercobras.com/sports/msoc/2024-25/bios/tricker_matty_q0q4
+588077,Coker,2024,II,16,Oskar Kaufmann,F,6-2,Fr.,,"Stockholm, Sweden",Sjolins Gymnasium Sickla,,https://www.cokercobras.com/sports/msoc/2024-25/bios/kaufmann_oskar_erik_johannes_42z8
+588077,Coker,2024,II,17,Rafa Reno,F,6-1,Jr.,,"Rio de Janeiro, Brazil",Colegio Cruzeiro Centro,,https://www.cokercobras.com/sports/msoc/2024-25/bios/reno_rafa_r5yu
+588077,Coker,2024,II,18,Rodrigo Tostado,F,,Jr.,,"Mexico City, Mexico",,Freed-Hardeman University,https://www.cokercobras.com/sports/msoc/2024-25/bios/tostado_rodrigo_k87i
+588077,Coker,2024,II,19,Vitalis Takawira Jr.,F,,Jr.,,"Harare, Zimbabwe",,Davenport University,https://www.cokercobras.com/sports/msoc/2024-25/bios/takawira_jr._vitalis_sx2k
+588077,Coker,2024,II,20,Jacob DeAntonio,M,5-10,Sr.,,"Charleston, SC",West Ashley HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/deantonio_jacob_xrnn
+588077,Coker,2024,II,21,Tyler Schwartz,M,,Fr.,,"Indian Land, SC",Charlotte Soccer Academy,,https://www.cokercobras.com/sports/msoc/2024-25/bios/schwartz_tyler_41of
+588077,Coker,2024,II,22,Anthony Eugenio,M,5-8,So.,,"Sarasota, FL",Florida Virtual School,,https://www.cokercobras.com/sports/msoc/2024-25/bios/eugenio_anthony_9niz
+588077,Coker,2024,II,23,Myles Jackson,M,6-4,Jr.,,"York, England",Queen Ethelburgas,,https://www.cokercobras.com/sports/msoc/2024-25/bios/jackson_myles_1kef
+588077,Coker,2024,II,24,Jagar Love,M,5-9,Fr.,,"Jacksonville, FL",Creekside HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/love_jagar_ifhu
+588077,Coker,2024,II,25,Andres Abril,M,5-9,Fr.,,"Bluffton, SC",Bluffton High School,,https://www.cokercobras.com/sports/msoc/2024-25/bios/abril_andres_c48g
+588077,Coker,2024,II,26,Tanner Williams,D,5-6,Sr.,,"Little River, SC",North Myrtle Beach HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/williams_tanner_g2gx
+588077,Coker,2024,II,27,Jorhan Chopin,M,6-2,Jr.,,"Rennes, France",,Campbell University,https://www.cokercobras.com/sports/msoc/2024-25/bios/chopin_jorhan_2oaa
+588077,Coker,2024,II,28,Juan Diego Millan,M,5-8,Jr.,,"Okatie, SC",Hilton Head High School,,https://www.cokercobras.com/sports/msoc/2024-25/bios/millan_juan_07ns
+588077,Coker,2024,II,29,George Cobb IV,D,5-10,Jr.,,"Easley, SC",Easley HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/cobb_iv_george_wqe9
+588077,Coker,2024,II,30,Ben Lewis,M,5-10,Jr.,,"Little River, SC",North Myrtle Beach HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/lewis_ben_n2tz
+588077,Coker,2024,II,31,Christian Utley,M,5-7,Sr.,,"Charlotte, NC",Olympic HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/uttley_christian_sxfw
+588077,Coker,2024,II,32,Kai Fennell,M,5-10,Fr.,,"Columbia, SC",Chapin HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/fennell_kai_yrxa
+588077,Coker,2024,II,33,Soso Bongweni,F,5-6,So.,,"Pfafftown, NC",Reagan High School,,https://www.cokercobras.com/sports/msoc/2024-25/bios/bongweni_esona_71jo
+588077,Coker,2024,II,34,Michael Newton,D,5-8,So.,,"Greer, SC",Riverside High School,,https://www.cokercobras.com/sports/msoc/2024-25/bios/newton_michael_lqrw
+588077,Coker,2024,II,35,Jackson Yager,M,5-6,Sr.,,"Mount Pleasant, SC",Oceanside Collegiate Academy,,https://www.cokercobras.com/sports/msoc/2024-25/bios/yager_jackson_n079
+588077,Coker,2024,II,36,Wyatt Grantham,F,6-0,Sr.,,"Rock Hill, SC",South Pointe HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/grantham_wyatt_c3xy
+588077,Coker,2024,II,37,Mason Quarles,M,5-7,So.,,"Cleveland, NC",West Rowan High School,,https://www.cokercobras.com/sports/msoc/2024-25/bios/quarles_mason_3ux4
+588077,Coker,2024,II,38,Owen Horn,F,6-3,Jr.,,"Easley, SC",Easley HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/horn_owen_2tmt
+588077,Coker,2024,II,40,Nick Hallis,M,5-10,Jr.,,"Hope Mills, NC",Grays Creek HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/hallis_nick_0vzh
+588077,Coker,2024,II,41,Yahir Perez-Lora,M,5-10,Jr.,,"Raleigh, NC",Millbrook HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/perez-lora_yahir_0inw
+588077,Coker,2024,II,42,Neb Sneath,F,5-10,Jr.,,"Little Mountain, SC",Heathwood Hall Episcopal School,,https://www.cokercobras.com/sports/msoc/2024-25/bios/sneath_nebeyou_he2b
+588077,Coker,2024,II,43,Plamedi Warsinsky,D,6-0,Fr.,,"Gastonia, NC",Forestview High School,,https://www.cokercobras.com/sports/msoc/2024-25/bios/warsinsky_plamedi_yiaq
+588077,Coker,2024,II,44,Paul Woods,D,,Fr.,,"Indian Trail, NC",Charlotte Soccer Academy,,https://www.cokercobras.com/sports/msoc/2024-25/bios/woods_paul_sys6
+588077,Coker,2024,II,45,Jacky Hong,M,,Fr.,,"Edmonton, Canada",First Class Academy,,https://www.cokercobras.com/sports/msoc/2024-25/bios/hong_jacky_sr4m
+588077,Coker,2024,II,46,Kolden Nigro,M,5-9,So.,,"Monroe, NC",Lee Park Prep,,https://www.cokercobras.com/sports/msoc/2024-25/bios/nigro_kolden_11gq
+588077,Coker,2024,II,47,Marcus DaCosta,F,5-8,Jr.,,"Charlotte, NC",Mount Saint Agnes Academy,,https://www.cokercobras.com/sports/msoc/2024-25/bios/dacosta_marcus_jg45
+588077,Coker,2024,II,48,Matthew Goodale,D,5-9,So.,,"Fort Mill, SC",Carmel Christian School,,https://www.cokercobras.com/sports/msoc/2024-25/bios/goodale_matthew_nvui
+588077,Coker,2024,II,49,Mitchel Starrs,F,5-7,Sr.,,"Stirling, Scotland",Dunblane HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/starrs_mitchel_wujm
+588077,Coker,2024,II,50,Mason Hill,D,,Fr.,,"Swanzey, NH",New England FC,,https://www.cokercobras.com/sports/msoc/2024-25/bios/hill_mason_hk0a
+588077,Coker,2024,II,51,Juan Andres Millan,F,,Fr.,,"Hilton Head Island, SC",Tormenta FC,,https://www.cokercobras.com/sports/msoc/2024-25/bios/millan_juan_andres_0a0a
+588077,Coker,2024,II,52,Jaymes Hayward,M,6-1,Jr.,,"Moncks Corner, SC",Berkeley HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/hayward_jaymes_gljc
+588077,Coker,2024,II,53,Chase Kepner,D,6-6,Fr.,,"Hanahan, SC",Hanahan High School,,https://www.cokercobras.com/sports/msoc/2024-25/bios/kepner_chase_xekv
+588077,Coker,2024,II,54,Aaron Feinberg,D,5-8,So.,,"Cornelius, NC",Hickory Ridge HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/feinberg_aaron_cg7y
+588077,Coker,2024,II,55,Patrick Slater,D,,Fr.,,"Hilton Head Island, SC",Tormenta FC,,https://www.cokercobras.com/sports/msoc/2024-25/bios/slater_patrick_2f44
+588077,Coker,2024,II,56,Diego Campo,M,5-7,,,"Pageland, SC",Central HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/campo_diego_tnvq
+588077,Coker,2024,II,57,Drew Martinez,M,5-11,Jr.,,"Bennettsville, SC",Marlboro County HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/martinez_drew_9nqv
+588077,Coker,2024,II,58,Prince Elenwo,D,,Fr.,,"Summerville, SC",Fort Dorchester HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/elenwo_prince_gsnk
+588077,Coker,2024,II,59,Wade Vaught,D,5-7,Fr.,,"Conway, SC",Conway HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/vaught_wade_ubly
+588077,Coker,2024,II,60,Robert Spence,D,5-10,Sr.,,"Florence, SC",West Florence HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/spence_robert_nsdy
+588077,Coker,2024,II,97,Lucca Denardi,GK,6-0,So.,,"Sao Paulo, Brazil",Neuse Christian Academy,,https://www.cokercobras.com/sports/msoc/2024-25/bios/denardi_lucca_bvsh
+588077,Coker,2024,II,98,Braeden Rasco,GK,6-2,Jr.,,"Easley, SC",Pickens HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/rasco_braeden_xrpj
+588077,Coker,2024,II,99,Brice Fuleihan,GK,6-2,Fr.,,"Florence, SC",South Florence HS,,https://www.cokercobras.com/sports/msoc/2024-25/bios/fuleihan_brice_ieb8
+588074,Catawba,2024,II,00,Joe Whitney,Goalkeeper,6-1,Fr.,,"Essex, England",Southend HS for Boys,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/whitney_joe_78cm
+588074,Catawba,2024,II,0,Nick Allen,Goalkeeper,6-3,Jr.,,"Gastonia, N.C.",Ashbrook HS,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/allen_nick_z47j
+588074,Catawba,2024,II,1,Zak Stiffler,Goalkeeper,6-4,Gr.,,"Hamburg, Germany",White Oak HS,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/stiffler_zak_x39c
+588074,Catawba,2024,II,2,Jacopo Suagher,Defense,5-9,Jr.,,"Bergamo, Italy",Liceo Scientifico E. Amaldi,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/suagher_jacopo_xtvr
+588074,Catawba,2024,II,3,Thomas Boinet,Defense,5-11,Fr.,,"Trebeurden, France",Accelerator School,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/boinet_thomas_hjei
+588074,Catawba,2024,II,4,Jaime Serrano,Defense,5-9,Sr.,,"Illescas, Spain",Colegio Virgen de la Caridad,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/serrano_jaime_jy5e
+588074,Catawba,2024,II,5,Callum Hudson,Defense,6-3,So.,,"Bexleyheath, England",Wilmington Grammar School for Boys,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/hudson_callum_rppy
+588074,Catawba,2024,II,6,Rodrigo Albayeros,Midfield,6-2,Gr.,,"San Salvador, El Salvador",Atlantic Community HS,Florida Atlantic / Duquesne,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/albayeros_rodrigo_wzqn
+588074,Catawba,2024,II,7,Kheynne Ona-Vera,Midfield,5-8,Jr.,,"Charlotte, N.C.",South Mecklenburg HS,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/ona-vera_kheynne_r7at
+588074,Catawba,2024,II,8,Vito Venaria,Midfield,5-6,R-So.,,"Rosario, Argentina",Colegio Parque España,Iowa Western,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/venaria_vito_apan
+588074,Catawba,2024,II,9,Sebastia Cerda-Tous,Forward,5-11,Jr.,,"Mallorca, Spain",IES Joan Maria Thomàs,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/cerda-tous_sebastia_yvpt
+588074,Catawba,2024,II,10,Juan Pablo Nicoletti,Forward,5-8,R-Jr.,,"El Colorado, Uruguay",Colegio Seminario,Bethel College,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/nicoletti_juan_pablo_6u1c
+588074,Catawba,2024,II,11,Caleb Christner,Forward,5-9,Jr.,,"Lebanon, Ore.",Lebanon HS,Park University,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/christner_caleb_4wow
+588074,Catawba,2024,II,12,Sioni Benham,Midfield,5-8,So.,,"Cardiff, Wales",Ysgol Gyfun Gymraeg Glantaf,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/benham_sioni_iaba
+588074,Catawba,2024,II,13,Garrett Alban,Midfield,6-0,Fr.,,"Forest Hill, Md.",Bel Air HS,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/alban_garrett_kgt5
+588074,Catawba,2024,II,14,Kenny Hassler,Midfield,5-11,Gr.,,"Charlotte, N.C.",Bradford Prep,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/hassler_kenny_x2s5
+588074,Catawba,2024,II,15,Ty Vohland,Forward,6-0,Jr.,,"Sherwood, Ore.",Sherwood HS,Montana State Billings,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/vohland_ty_4g6c
+588074,Catawba,2024,II,16,Steven Lozano,Midfield,5-8,Sr.,,"Concord, N.C.",Concord HS,Pfeiffer,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/lozano_steven_yxdp
+588074,Catawba,2024,II,17,Noah Sapsford,Midfield,5-8,Jr.,,"Weybridge, England",Esher College,Oklahoma Panhandle State,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/sapsford_noah_duq8
+588074,Catawba,2024,II,19,Bautista Vecchi-Ramello,Forward,6-0,So.,,"Rosario, Argentina",Colegio del Sagrado Corazon,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/vecchi-ramello_bautista_wfpi
+588074,Catawba,2024,II,20,Peter Majer,Midfield,5-11,Gr.,,"Budapest, Hungary",Bajza Gyermekház,Lincoln Memorial,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/majer_peter_y175
+588074,Catawba,2024,II,21,Tomas Kelly,Midfield,5-11,Jr.,,"Manchester, England",Wade Deacon HS,Concord University,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/kelly_tomas_pkf2
+588074,Catawba,2024,II,22,Greg Chatzopoulos,Defense,6-0,Fr.,,"Thessaloniki, Greece",1st HS of Panorama,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/chatzopolous_grigorios_g2tz
+588074,Catawba,2024,II,23,Gage Bernard,Defense,5-9,Gr.,,"Southern Shores, N.C.",First Flight HS,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/bernard_gage_3ker
+588074,Catawba,2024,II,24,Richard Leon,Defense,6-0,So.,,"Concord, N.C.",Concord HS,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/leon_richard_wa8h
+588074,Catawba,2024,II,25,Salano Birch,Midfield,5-8,Sr.,,"Montego Bay, Jamaica",Cornwall College,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/birch_salano_iika
+588074,Catawba,2024,II,26,August Joensson,Defense,5-11,Gr.,,"Malmö, Sweden",Polhemskolan,Newman,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/joensson_august_tuks
+588074,Catawba,2024,II,27,Trey Jones,Forward,6-0,Fr.,,"Pawleys Island, S.C.",Waccamaw HS,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/jones_trey_e5oa
+588074,Catawba,2024,II,28,Tomas Noya,Defense,6-7,Sr.,,"Buenos Aires, Argentina",Escuela Argentina Modelo,Jacksonville College,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/noya_tomas_elt9
+588074,Catawba,2024,II,29,Mate Kenyeres,Forward,6-0,Jr.,,"Budapest, Hungary",Altisz Alapítványi Gimnázium,Cowley College,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/kenyeres_mate_2qve
+588074,Catawba,2024,II,31,Agostino Quadrio Curzio,Midfield,6-0,Gr.,,"Lecco, Italy",Collegio Alessandro Volta,Bethany Lutheran College,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/curzio_agostino_n6tg
+588074,Catawba,2024,II,32,Reed Ostendorf,Defense,6-0,Fr.,,"Boca Raton, Fla.",Boca Raton Community HS,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/ostendorf_reed_qo9k
+588074,Catawba,2024,II,33,Joe Bennett,Midfield,5-9,Gr.,,"Bognor Regis, England",The Regis School,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/bennett_joe_qgjc
+588074,Catawba,2024,II,34,Tino Lira,Midfield,5-8,Fr.,,"Concord, N.C.",Concord Academy,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/lira_tino_vxlg
+588074,Catawba,2024,II,35,Hugo Tejera,Midfield,5-9,Fr.,,"Las Palmas, Canary Islands",IES Santo Tomás de Aquino,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/tejera_hugo_so37
+588074,Catawba,2024,II,37,Lidor Nachshon,Defense,6-4,Fr.,,"Rosh HaAyin, Israel",Begin School,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/nachshon_lidor_jzhh
+588074,Catawba,2024,II,45,Fletcher Harris,Goalkeeper,6-0,So.,,"Catawba, N.C.",Bandys HS,,https://www.catawbaathletics.com/sports/msoc/2024-25/bios/harris_fletcher_1g3i
+588074,Catawba,2024,II,99,Adis Salihovic,Goalkeeper,6-2,Jr.,,"Dallas, Texas",Lake Highlands HS,Bethany (W.Va.),https://www.catawbaathletics.com/sports/msoc/2024-25/bios/salihovic_adis_ey5a
+588073,Carson-Newman,2024,II,1,Federico Simonetti,GK,5-10,Graduate Student,,"Crema, Italy",,Concordia University Nebraska,https://www.cneagles.com/sports/m-soccer/2024-25/bios/simonetti_federico_pqzq
+588073,Carson-Newman,2024,II,3,Tobias Hager,D,6-1,Freshman,,"Vienna, Austria",,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/hager_tobias_wkck
+588073,Carson-Newman,2024,II,4,Jakob Lechner,D/M,6-2,Senior,,"Enzesfeld-Lindabrunn, Austria",Ballsportgymnasium Wien,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/lechner_jakob_gsri
+588073,Carson-Newman,2024,II,5,Jonas Friedl,D,6-0,Sophomore,,"Feldbach, Styria",Hak Fledbach,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/friedl_jonas_p8zy
+588073,Carson-Newman,2024,II,6,Dan Coles,D,6-2,Sophomore,,"Rugby, England",Rugby Borough Academy,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/coles_dan_lg1q
+588073,Carson-Newman,2024,II,8,Rhydian Williams,M,5-10,Sophomore,,"Llannerfydd, Conwy, Wales",Moth Shropshire College Oswestry,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/williams_rhydian_q552
+588073,Carson-Newman,2024,II,9,Antoine Torrent,F,5-9,Freshman,,"Clermont ferrand, France",,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/torrent_antoine_im8g
+588073,Carson-Newman,2024,II,12,Jay Wyatt,D,5-9,Graduate Student,,"Petersborough, England",,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/wyatt_jay_xl4j
+588073,Carson-Newman,2024,II,14,Paul Csmarich,M,5-8,Junior,,"Vienna, Austria",HAK Mattersburg,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/csmarich_paul_oguz
+588073,Carson-Newman,2024,II,15,Isaac Pascal,D/M,5-8,Junior,,"Southend-on-Sea, England",Southend High School for Boys,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/pascal_isaac_hfse
+588073,Carson-Newman,2024,II,16,Cooper Cross,M,5-10,Junior,,"Knoxville, TN",Bearden High School,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/cross_cooper_2w1i
+588073,Carson-Newman,2024,II,17,Thomas Lachapelle,M,6-1,Graduate Student,,"Brussels, Belgium",,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/lachapelle_thomas_8ne8
+588073,Carson-Newman,2024,II,18,Daniel Vennesland,D,6-0,Senior,,"Tananger, Norway",St. Svithun,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/vennesland_daniel_ezyd
+588073,Carson-Newman,2024,II,21,Sam Shelling,D,6-2,Sophomore,,"Nelson, New Zealand",Christ's College,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/shelling_sam_ee0n
+588073,Carson-Newman,2024,II,22,Lucas Trull,M,5-7,Freshman,,"Johnson City, Tenn",Science Hill,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/trull_lucas_5p3f
+588073,Carson-Newman,2024,II,23,Mac Hickman,D,5-8,Sophomore,,"Chattanooga, TN",Baylor High School,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/hickman_mac_w0am
+588073,Carson-Newman,2024,II,24,Tim Haans,M,5-10,Sophomore,,"Tilburg, Netherlands",Havo,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/haans_tim_zvsq
+588073,Carson-Newman,2024,II,25,Wylder Lee,F,5-8,Freshman,,"Knoxville, Tenn",,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/lee_wylder_gz2d
+588073,Carson-Newman,2024,II,27,Palmer Dangerfield,M,6-0,Freshman,,"Asheville, N.C",,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/dangerfield_palmer_jxmp
+588073,Carson-Newman,2024,II,29,Corey Pennington,M,6-0,Freshman,,"Newnan, Ga",,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/pendington_corey_q3ld
+588073,Carson-Newman,2024,II,31,Levi Burdette,GK,5-10,Senior,,"Seymour, Tenn.",Seymour HS,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/burdette_levi_cwc3
+588073,Carson-Newman,2024,II,33,Mitchell Honcoop,M,6-1,Senior,,"Nieuw-Vennep, Netherlands",Herbert Vissers College,Hogeschool van Amsterdam,https://www.cneagles.com/sports/m-soccer/2024-25/bios/honcoop_mitchell_itro
+588073,Carson-Newman,2024,II,36,Ben Dukes,F,5-10,Junior,,"Southampton, England",,University of Connecticut,https://www.cneagles.com/sports/m-soccer/2024-25/bios/dukes_ben_c71i
+588073,Carson-Newman,2024,II,44,Maxime Wester,M,5-9,Sophomore,,"Brussel, Belgium",College Don Bosco,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/wester_maxime_v9wg
+588073,Carson-Newman,2024,II,77,Paul Moser,GK,6-4,Graduate Student,,"Vienna, Austria",,,https://www.cneagles.com/sports/m-soccer/2024-25/bios/moser_paul_sef5
+588064,Tampa,2024,II,1,Alex Hare,GK,6-4,Jr.,,"Derby, England",Ecclesbourne School,Coastal Carolina University,https://www.tampaspartans.com/sports/msoc/2024-25/bios/hare_alex_t7ay
+588064,Tampa,2024,II,2,Tarek Ghamraoui,Def.,6-0,Fr.,,"Brossard, Quebec",Centennial Regional HS,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/ghamraoui_tarek_6cwr
+588064,Tampa,2024,II,3,Pol Aldabó,Def.,6-3,Grad.,,"Barcelona, Spain",Oak House British School,Universitat Politecnica de Catalunya,https://www.tampaspartans.com/sports/msoc/2024-25/bios/aldabo_pol_9fvj
+588064,Tampa,2024,II,4,Bryan Marshall,Def.,6-3,Grad.,,"Wake Forest, N.C.",Wake Forest HS,Winthrop University,https://www.tampaspartans.com/sports/msoc/2024-25/bios/marshall_bryan_quh2
+588064,Tampa,2024,II,5,Andy Obregon,Mid.,6-0,Jr.,,"Apopka, Fla.",Wekiva HS,Webber International University,https://www.tampaspartans.com/sports/msoc/2024-25/bios/obregon_andy_3u8z
+588064,Tampa,2024,II,6,Cherif Tammar,Mid.,6-0,Jr.,,"Paris, France",Lycée Lakanal,Georgian Court University,https://www.tampaspartans.com/sports/msoc/2024-25/bios/tammar_cherif_93ug
+588064,Tampa,2024,II,7,Alexandre Badji,For.,6-1,Sr.,,"Montreal, Quebec",College Français,LSU-Eunice,https://www.tampaspartans.com/sports/msoc/2024-25/bios/badji_alexandre_pebg
+588064,Tampa,2024,II,8,Viggo Svedin,Mid.,6-3,Jr.,,"Örebro Sweden",Thoren Business School Örebro,Long Island University,https://www.tampaspartans.com/sports/msoc/2024-25/bios/svedin_viggo_mrqu
+588064,Tampa,2024,II,9,Pablo Marques,For.,6-3,Grad.,,"João Pessoa, Brazil",Colégio Meta,Indian Hills CC/Camden County College,https://www.tampaspartans.com/sports/msoc/2024-25/bios/marques_pablo_136q
+588064,Tampa,2024,II,10,Theo Maye,Mid.,5-11,Sr.,,"London, England",Hartpury College,Missouri State University,https://www.tampaspartans.com/sports/msoc/2024-25/bios/maye_theo_esg6
+588064,Tampa,2024,II,11,Leonard Bogeskär,Mid.,6-2,Fr.,,"Alingsås, Sweden",Alstromergymnasiet,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/bogeskar_leonard_o7s6
+588064,Tampa,2024,II,12,Lorenz Offner,For.,6-1,Grad.,,"Vienna, Austria",Walz - Wiener Lernzentrum,Privatuniversität Schloss Seeburg,https://www.tampaspartans.com/sports/msoc/2024-25/bios/offner_lorenz_k6qe
+588064,Tampa,2024,II,13,Gabriel Ariza,Mid.,6-2,Jr.,,"Maracaibo, Venezuela",Montverde Academy,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/ariza_gabriel_lzra
+588064,Tampa,2024,II,14,Daffa Taylor,For.,5-10,So.,,"Monrovia, Liberia",Calvary Mission School,African Methodist Episcopal University,https://www.tampaspartans.com/sports/msoc/2024-25/bios/taylor_daffa_dlvn
+588064,Tampa,2024,II,15,Juancarlos Rodriguez,Def.,5-10,Grad.,,"Alta Loma, Calif.",Alta Loma HS,Azusa Pacific University,https://www.tampaspartans.com/sports/msoc/2024-25/bios/rodriguez_juancarlos_2pec
+588064,Tampa,2024,II,16,Joan Castells,Mid.,6-0,Grad.,,"Sant Cugat del Vallés, Spain",Europa International School,University of Missouri-Kansas City,https://www.tampaspartans.com/sports/msoc/2024-25/bios/castells_joan_grt1
+588064,Tampa,2024,II,17,Alex Dollard,For.,5-8,Fr.,,"Orlando, Fla.",Lake Nona HS,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/dollard_alex_y0j9
+588064,Tampa,2024,II,18,Rodrigo Lopes,For.,6-2,Grad.,,"Lisbon, Portugal",Escola Secundária Miguel Torga,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/lopes_rodrigo_km0l
+588064,Tampa,2024,II,19,Jack Hartford,For.,6-0,Sr.,,"Crofton, Md.",Arundel HS,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/hartford_jack_qpm1
+588064,Tampa,2024,II,20,Gabriel Herrera,Def.,5-11,Sr.,,"Talca, Chile",Athletic Study Center,Lindenwood University,https://www.tampaspartans.com/sports/msoc/2024-25/bios/herrera_gabriel_f1ki
+588064,Tampa,2024,II,21,William Waters,Mid.,6-0,So.,,"Clinton, N.C.",Accelerator School,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/waters_william_1086
+588064,Tampa,2024,II,22,Luca Bergmann,Def.,6-4,Grad.,,"Aschaffenburg, Germany",FOSBOS Aschaffenburg,Technische Hochschule Aschaffenburg,https://www.tampaspartans.com/sports/msoc/2024-25/bios/bergmann_luca_gnrb
+588064,Tampa,2024,II,23,Zachary Welch,Mid.,5-8,Sr.,,"Diego Martin, Trinidad",Fatima College,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/welch_zachary_h2wd
+588064,Tampa,2024,II,24,Pablo Carnicer,Def.,5-11,Fr.,,"Madrid, Spain",The Pennington School,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/carnicer_pablo_bqrl
+588064,Tampa,2024,II,25,Dylan Connolly,Def.,6-2,Fr.,,"Chandler, Ariz.",Arizona College Prep HS,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/connolly_dylan_c3tj
+588064,Tampa,2024,II,26,Brady Nessler,Def.,5-9,Fr.,,"Tampa, Fla.",Jesuit HS,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/nessler_brady_rsvt
+588064,Tampa,2024,II,27,Nico Cubas,Mid.,5-8,Fr.,,"Tampa, Fla.",Jesuit HS,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/cubas_nico_k6ux
+588064,Tampa,2024,II,28,Dom Hart,For.,5-8,Fr.,,"Tuscaloosa, Ala.",Northridge HS,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/hart_dom_3o5z
+588064,Tampa,2024,II,29,Charlie Curtis,Def.,5-11,Sr.,,"Sheffield, United Kingdom",Wickersley School / Sports College,Lander University,https://www.tampaspartans.com/sports/msoc/2024-25/bios/curtis_charlie_lc8l
+588064,Tampa,2024,II,30,Christian Fairchild,Def.,5-8,So.,,"Tampa, Fla.",Jesuit HS,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/fairchild_christian_rx0z
+588064,Tampa,2024,II,31,Steele Arlasky,GK,6-4,Jr.,,"Orange County, Calif.",Aliso Niguel HS,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/arlasky_steele_dsxl
+588064,Tampa,2024,II,32,Jacob Entlich,Mid.,5-6,Fr.,,"Columbus, Ga.",Columbus HS,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/entlich_jacob_0278
+588064,Tampa,2024,II,33,Zay McDonald,For.,6-1,Fr.,,"Atlanta, Ga.",Johns Creek HS,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/mcdonald_zay_wymm
+588064,Tampa,2024,II,34,Michael Diaz,GK,6-1,Grad.,,"Frisco, Texas",Frisco HS,Cal State Fullerton,https://www.tampaspartans.com/sports/msoc/2024-25/bios/diaz_michael_2ajz
+588064,Tampa,2024,II,35,William Gardiner,Def.,5-10,Fr.,,"Nassau, The Bahamas",Darlington School,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/gardiner_william_1i11
+588064,Tampa,2024,II,40,Connor Allen,GK,5-10,Fr.,,"Madisonville, La.",Saint Paul's School,,https://www.tampaspartans.com/sports/msoc/2024-25/bios/allen_connor_cvx2
