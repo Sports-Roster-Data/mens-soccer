@@ -91,7 +91,7 @@ def extract_roster(soup, team_name, division, season, er, ncaa_id):
     return roster
 
 # Main function to iterate through CSV and extract rosters
-def process_teams_csv(csv_file_path, season=2024):
+def process_teams_csv(csv_file_path, season=2025):
     rosters = []
 
     # Open and read the CSV file
@@ -108,7 +108,7 @@ def process_teams_csv(csv_file_path, season=2024):
             # Only process rows with URLs that contain '/msoc/index'
             if '/msoc/index' in team_url:
                 # Replace "/index" with "/2024-25/roster"
-                roster_url = team_url.replace('/index', '/2024-25/roster')
+                roster_url = team_url.replace('/index', '/2025-26/roster')
                 er = tldextract.extract(roster_url)
                 print(f"Processing roster for {team_name} from {roster_url}...")
                 
@@ -119,7 +119,7 @@ def process_teams_csv(csv_file_path, season=2024):
                         roster = extract_roster(soup, team_name, division, season, er, ncaa_id)
                         rosters.extend(roster)
                     else:
-                        roster_url = team_url.replace('/index', '/roster/2024')
+                        roster_url = team_url.replace('/index', '/roster/2025')
                         response = requests.get(roster_url, headers=headers)
                         if response.status_code == 200:
                             soup = BeautifulSoup(response.content, 'html.parser')

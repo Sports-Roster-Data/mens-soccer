@@ -33,7 +33,7 @@ def json_to_csv(json_file, csv_file):
         print(f"Error: {e}")
 
 # Example usage
-season = 2024
+season = 2025
 json_file = f'rosters_msoc.json'
 csv_file = f'rosters_msoc_{season}.csv'
 json_to_csv(json_file, csv_file)

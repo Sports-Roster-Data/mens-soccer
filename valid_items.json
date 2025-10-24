@@ -83,6 +83,13 @@
         "stats_name": "Clemson"
     },
     {
+        "team": "Central Michigan",
+        "twitter": "cmuwbball",
+        "url": "https://cmuchippewas.com/sports/mens-soccer",
+        "ncaa_id": 129,
+        "stats_name": "Central Mich."
+    },
+    {
         "team": "Creighton",
         "twitter": "creightonwbb",
         "url": "https://gocreighton.com/sports/mens-soccer",
@@ -232,13 +239,6 @@
         "stats_name": "Kansas St."
     },
     {
-        "team": "Hampton",
-        "twitter": "ladypirateswbb",
-        "url": "https://hamptonpirates.com/sports/mens-soccer",
-        "ncaa_id": 270,
-        "stats_name": "Hampton University"
-    },
-    {
         "team": "Tennessee",
         "twitter": "LadyVol_Hoops",
         "url": "https://utsports.com/sports/mens-soccer",
@@ -337,13 +337,6 @@
         "stats_name": "Saint Peter's"
     },
     {
-        "team": "Pennsylvania",
-        "twitter": "pennwbb",
-        "url": "https://pennathletics.com/sports/mens-soccer",
-        "ncaa_id": 540,
-        "stats_name": "Penn"
-    },
-    {
         "team": "Pittsburgh",
         "twitter": "pitt_wbb",
         "url": "https://pittsburghpanthers.com/sports/mens-soccer",
@@ -365,25 +358,11 @@
         "stats_name": "Providence"
     },
     {
-        "team": "Purdue",
-        "twitter": "purduewbb",
-        "url": "https://purduesports.com/sports/mens-soccer",
-        "ncaa_id": 559,
-        "stats_name": "Purdue"
-    },
-    {
         "team": "Robert Morris",
         "twitter": "RMUWBasketball",
         "url": "https://rmucolonials.com/sports/mens-soccer",
         "ncaa_id": 579,
         "stats_name": "Rmu"
-    },
-    {
-        "team": "Rutgers",
-        "twitter": "rutgerswbb",
-        "url": "https://scarletknights.com/sports/mens-soccer",
-        "ncaa_id": 587,
-        "stats_name": "Rutgers"
     },
     {
         "team": "Seton Hall",
@@ -398,13 +377,6 @@
         "url": "https://redstormsports.com/sports/mens-soccer",
         "ncaa_id": 603,
         "stats_name": "St. John's (NY)"
-    },
-    {
-        "team": "Arizona State",
-        "twitter": "sundevilwbb",
-        "url": "https://thesundevils.com/sports/mens-soccer",
-        "ncaa_id": 28,
-        "stats_name": "Arizona St."
     },
     {
         "team": "Temple",
@@ -547,6 +519,13 @@
         "stats_name": "Xavier"
     },
     {
+        "team": "Abilene Christian",
+        "twitter": "acuwbb",
+        "url": "https://acusports.com/sports/mens-soccer",
+        "ncaa_id": 2,
+        "stats_name": "Abilene Christian"
+    },
+    {
         "team": "Alcorn State",
         "twitter": "alcornwbb",
         "url": "https://alcornsports.com/sports/mens-soccer",
@@ -560,13 +539,6 @@
         "ncaa_id": 27,
         "private": false,
         "stats_name": "Appalachian St."
-    },
-    {
-        "team": "Austin Peay",
-        "twitter": "GovsWBB",
-        "url": "https://letsgopeay.com/sports/mens-soccer",
-        "ncaa_id": 43,
-        "stats_name": "Austin Peay"
     },
     {
         "team": "San Diego State",
@@ -825,6 +797,13 @@
         "ncaa_id": 207
     },
     {
+        "team": "Florida Atlantic",
+        "twitter": "FAUWBB",
+        "url": "https://fausports.com/sports/mens-soccer",
+        "ncaa_id": 229,
+        "stats_name": "Fla. Atlantic"
+    },
+    {
         "team": "Fairleigh Dickinson",
         "twitter": "fduknightswbb",
         "url": "https://fduknights.com/sports/mens-soccer",
@@ -963,13 +942,6 @@
         "url": "https://gocrimson.com/sports/mens-soccer",
         "ncaa_id": 275,
         "stats_name": "Harvard"
-    },
-    {
-        "team": "Hawaii",
-        "twitter": "hawaiiwbb",
-        "url": "https://hawaiiathletics.com/sports/mens-soccer",
-        "ncaa_id": 277,
-        "stats_name": "Hawaii"
     },
     {
         "team": "Houston Christian",
@@ -1143,6 +1115,20 @@
         "twitter": "meangreenwbb",
         "url": "https://meangreensports.com/sports/mens-soccer",
         "ncaa_id": 497
+    },
+    {
+        "team": "Merrimack",
+        "twitter": "merrimackwbb",
+        "url": "https://merrimackathletics.com/sports/mens-soccer",
+        "ncaa_id": 410,
+        "stats_name": "Merrimack"
+    },
+    {
+        "team": "Miami Ohio",
+        "twitter": "miamioh_wbb",
+        "url": "https://miamiredhawks.com/sports/mens-soccer",
+        "ncaa_id": 414,
+        "stats_name": "Miami (OH)"
     },
     {
         "team": "Milwaukee",
@@ -1466,13 +1452,6 @@
         "url": "https://sfajacks.com/sports/mens-soccer",
         "ncaa_id": 676,
         "stats_name": "Sfa"
-    },
-    {
-        "team": "St. Francis College Brooklyn",
-        "twitter": "sfbk_wbb",
-        "url": "https://sfcathletics.com/sports/mens-soccer",
-        "ncaa_id": 599,
-        "stats_name": "St. Francis Brooklyn"
     },
     {
         "team": "Saint Francis (PA)",
@@ -1827,6 +1806,13 @@
         "stats_name": "Cal State LA"
     },
     {
+        "team": "Catawba",
+        "twitter": "catawba_wbb",
+        "url": "https://www.catawbaathletics.com/sports/msoc/index",
+        "ncaa_id": 1001,
+        "stats_name": "Catawba"
+    },
+    {
         "team": "Central Okla.",
         "twitter": "UCOWBB",
         "url": "https://bronchosports.com/sports/mens-soccer",
@@ -1839,6 +1825,13 @@
         "url": "https://gomatadors.com/sports/mens-soccer",
         "ncaa_id": 101,
         "stats_name": "Csun"
+    },
+    {
+        "team": "Central Wash.",
+        "twitter": "cwu_wbb",
+        "url": "https://wildcatsports.com/sports/mens-soccer",
+        "ncaa_id": 1010,
+        "stats_name": "Central Wash."
     },
     {
         "team": "Charleston (WV)",
@@ -1862,11 +1855,25 @@
         "stats_name": "Concord"
     },
     {
+        "team": "Concordia Wisconsin",
+        "twitter": "CUWWBB",
+        "url": "https://www.cuwfalcons.com/sports/msoc/index",
+        "ncaa_id": 1036,
+        "stats_name": "Concordia Wisconsin"
+    },
+    {
         "team": "USC Upstate",
         "twitter": "upstateWBB",
         "url": "https://upstatespartans.com/sports/mens-soccer",
         "ncaa_id": 10411,
         "stats_name": "USC Upstate"
+    },
+    {
+        "team": "Drury",
+        "twitter": "DULadyPanthers",
+        "url": "https://drurypanthers.com/sports/mens-soccer",
+        "ncaa_id": 1057,
+        "stats_name": "Drury"
     },
     {
         "team": "D'Youville",
@@ -2105,13 +2112,6 @@
         "twitter": "LRUWBB",
         "url": "https://lrbears.com/sports/mens-soccer",
         "ncaa_id": 1170
-    },
-    {
-        "team": "Limestone",
-        "twitter": "LCWBB",
-        "url": "https://golimestonesaints.com/sports/mens-soccer",
-        "ncaa_id": 1174,
-        "stats_name": "Limestone"
     },
     {
         "team": "West Florida",
@@ -2566,12 +2566,6 @@
         "stats_name": "Connecticut Col."
     },
     {
-        "team": "Cornell College",
-        "twitter": "CornellRamsWBB",
-        "url": "https://cornellrams.com/sports/mens-soccer",
-        "ncaa_id": 166
-    },
-    {
         "team": "William Peace",
         "twitter": "gopeacewbb",
         "url": "https://gopeacepacers.com/sports/mens-soccer",
@@ -2796,6 +2790,12 @@
         "ncaa_id": 21852
     },
     {
+        "team": "American International",
+        "twitter": "AICWBB",
+        "url": "https://aicyellowjackets.com/sports/msoc/index",
+        "ncaa_id": 22
+    },
+    {
         "team": "FDU-Florham",
         "twitter": "DevilsWBB",
         "url": "https://fdudevils.com/sports/mens-soccer",
@@ -2870,10 +2870,10 @@
         "stats_name": "Florida"
     },
     {
-        "team": "Franklin & Marshall",
-        "twitter": "FandMWBB",
-        "url": "https://godiplomats.com/sports/mens-soccer",
-        "ncaa_id": 239
+        "team": "Franklin Pierce",
+        "twitter": "FPURavensWBB",
+        "url": "https://www.fpuravens.com/sports/msoc/index",
+        "ncaa_id": 241
     },
     {
         "team": "Fredonia",
@@ -2901,6 +2901,13 @@
         "url": "https://gannonsports.com/sports/mens-soccer",
         "ncaa_id": 246,
         "stats_name": "Gannon"
+    },
+    {
+        "team": "Nova Southeastern",
+        "twitter": "NSU_WBasketball",
+        "url": "https://nsusharks.com/sports/mens-soccer",
+        "ncaa_id": 24639,
+        "stats_name": "Nova Southeastern"
     },
     {
         "team": "SUNY Geneseo",
@@ -3023,6 +3030,12 @@
         "stats_name": "Colorado St.-Pueblo"
     },
     {
+        "team": "Hartwick",
+        "twitter": "hartwickwbb",
+        "url": "https://www.hartwickhawks.com/sports/mens-soccer",
+        "ncaa_id": 273
+    },
+    {
         "team": "Howard Payne",
         "twitter": "HPUWBasketball",
         "url": "https://hpusports.com/sports/mens-soccer",
@@ -3088,6 +3101,12 @@
         "url": "https://athletics.hamilton.edu/sports/mens-soccer",
         "ncaa_id": 267,
         "stats_name": "Hamilton College"
+    },
+    {
+        "team": "St. Thomas (TX)",
+        "twitter": "USTWBB",
+        "url": "https://ustcelts.com/sports/msoc/index",
+        "ncaa_id": 2810
     },
     {
         "team": "Washburn",
@@ -3633,13 +3652,6 @@
         "ncaa_id": 30219
     },
     {
-        "team": "Biola",
-        "twitter": "biolawbb",
-        "url": "https://athletics.biola.edu/sports/mens-soccer",
-        "ncaa_id": 30220,
-        "stats_name": "Biola"
-    },
-    {
         "team": "Purdue Northwest",
         "twitter": "PNWWBB",
         "url": "https://pnwathletics.com/sports/mens-soccer",
@@ -3961,13 +3973,6 @@
         "stats_name": "Maryville (MO)"
     },
     {
-        "team": "Marywood",
-        "twitter": "MarywoodWBB",
-        "url": "https://marywoodpacers.com/sports/mens-soccer",
-        "ncaa_id": 397,
-        "stats_name": "Marywood"
-    },
-    {
         "team": "MIT",
         "twitter": "mitwbball",
         "url": "https://mitathletics.com/sports/mens-soccer",
@@ -4026,12 +4031,6 @@
         "stats_name": "Aurora University"
     },
     {
-        "team": "Middlebury",
-        "twitter": "middwbball",
-        "url": "https://athletics.middlebury.edu/sports/msoc",
-        "ncaa_id": 420
-    },
-    {
         "team": "Miles",
         "twitter": "Miles_wbb",
         "url": "https://milesgoldenbears.com/sports/mens-soccer",
@@ -4051,13 +4050,6 @@
         "url": "https://athletics.millikin.edu/sports/mens-soccer",
         "ncaa_id": 424,
         "stats_name": "Millikin"
-    },
-    {
-        "team": "Millsaps",
-        "twitter": "MillsapsWBB",
-        "url": "https://gomajors.com/sports/mens-soccer",
-        "ncaa_id": 426,
-        "stats_name": "Millsaps"
     },
     {
         "team": "Minn. Duluth",
@@ -4111,6 +4103,13 @@
         "twitter": "PSUA_WBB",
         "url": "https://abingtonsports.com/sports/mens-soccer",
         "ncaa_id": 30114
+    },
+    {
+        "team": "Morgan St.",
+        "url": "https://morganstatebears.com/sports/mens-soccer",
+        "ncaa_id": 446,
+        "private": true,
+        "stats_name": "Morgan St."
     },
     {
         "team": "Babson",
@@ -4209,6 +4208,13 @@
         "twitter": "ncbison_wbball",
         "url": "https://nicholsathletics.com/sports/mens-soccer",
         "ncaa_id": 484
+    },
+    {
+        "team": "North Alabama",
+        "twitter": "UNAHOOPS",
+        "url": "http://www.roarlions.com/sports/mens-soccer",
+        "ncaa_id": 487,
+        "stats_name": "North Ala."
     },
     {
         "team": "N.C. A&T",
@@ -4385,6 +4391,13 @@
         "ncaa_id": 552
     },
     {
+        "team": "Prairie View A&M",
+        "twitter": "PVAMUwbb",
+        "url": "https://pvpanthers.com/sports/mens-soccer",
+        "ncaa_id": 553,
+        "stats_name": "Prairie View"
+    },
+    {
         "team": "Puget Sound",
         "twitter": "PSwbasketball",
         "url": "https://loggerathletics.com/sports/mens-soccer",
@@ -4396,6 +4409,12 @@
         "twitter": "BentleyWBball",
         "url": "https://www.bentleyfalcons.com/sports/msoc/index",
         "ncaa_id": 56
+    },
+    {
+        "team": "Queens (NY)",
+        "twitter": "QCKNIGHTS_WBB",
+        "url": "https://queensknights.com/sports/mens-soccer",
+        "ncaa_id": 560
     },
     {
         "team": "Quincy",
@@ -4504,6 +4523,12 @@
         "ncaa_id": 589
     },
     {
+        "team": "Bethany (WV)",
+        "twitter": "BCWBB",
+        "url": "https://www.bethanybison.com/sports/msoc/index",
+        "ncaa_id": 59
+    },
+    {
         "team": "St. Anselm",
         "twitter": "STAHawksWBB",
         "url": "https://saintanselmhawks.com/sports/mens-soccer",
@@ -4528,13 +4553,6 @@
         "twitter": "SCSUHUSKIES_WBB",
         "url": "https://scsuhuskies.com/sports/mens-soccer",
         "ncaa_id": 598
-    },
-    {
-        "team": "Alabama A&M",
-        "twitter": "aamuwbb",
-        "url": "https://aamusports.com/sports/mens-soccer",
-        "ncaa_id": 6,
-        "stats_name": "Alabama A&M"
     },
     {
         "team": "Bethel (MN)",
@@ -4768,6 +4786,13 @@
         "url": "https://csidolphins.com/sports/mens-soccer",
         "ncaa_id": 675,
         "stats_name": "Staten Island"
+    },
+    {
+        "team": "Texas Lutheran",
+        "twitter": "TLUwbb",
+        "url": "https://tlubulldogs.com/sports/msoc/index",
+        "ncaa_id": 1400,
+        "stats_name": "Texas Lutheran"
     },
     {
         "team": "Stonehill",
@@ -5121,6 +5146,12 @@
         "stats_name": "Brown"
     },
     {
+        "team": "Wis.-Platteville",
+        "twitter": "UWPLATTWBB",
+        "url": "https://letsgopioneers.com/sports/msoc/index",
+        "ncaa_id": 800
+    },
+    {
         "team": "Wisconsin-River Falls",
         "twitter": "UWRFWomensBball",
         "url": "https://uwrfsports.com/sports/mens-soccer",
@@ -5152,6 +5183,12 @@
         "url": "https://uwwsports.com/sports/mens-soccer",
         "ncaa_id": 805,
         "stats_name": "Wis.-Whitewater"
+    },
+    {
+        "team": "Wooster",
+        "twitter": "WoosterWBB",
+        "url": "https://www.woosterathletics.com/sports/msoc/index",
+        "ncaa_id": 807
     },
     {
         "team": "WPI",
@@ -5230,6 +5267,12 @@
         "url": "https://ubbulls.com/sports/mens-soccer",
         "ncaa_id": 86,
         "stats_name": "Buffalo"
+    },
+    {
+        "team": "St. Mary's (IN)",
+        "twitter": "SMC_Basketball",
+        "url": "https://belles.saintmarys.edu/sports/msoc/index",
+        "ncaa_id": 8688
     },
     {
         "team": "Southwest Minn. St.",
@@ -5331,6 +5374,13 @@
         "url": "https://arkansastechsports.com/sports/mens-soccer",
         "ncaa_id": 947,
         "stats_name": "Arkansas Tech"
+    },
+    {
+        "team": "Chico St.",
+        "twitter": "ChicoWbb",
+        "url": "https://chicowildcats.com/sports/mens-soccer",
+        "ncaa_id": 95,
+        "stats_name": "Chico St."
     },
     {
         "team": "Bard",

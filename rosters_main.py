@@ -3,6 +3,7 @@ import tldextract
 from bs4 import BeautifulSoup
 import json
 import csv
+import argparse
 
 def scrape_roster(team_name, season, roster_url, division, ncaa_id):
     """
@@ -100,7 +101,7 @@ def scrape_roster(team_name, season, roster_url, division, ncaa_id):
         print(f"Error scraping {team_name}: {e}")
         return []
 
-def scrape_all_teams(season):
+def scrape_all_teams(season, division=None):
     """
     Loads the teams from teams.csv, scrapes the roster for teams with '/mens-soccer' in the URL,
     and writes the data to a JSON file.
@@ -120,22 +121,33 @@ def scrape_all_teams(season):
         for row in reader:
             team_name = row['team']
             roster_url = row['url'] + f'/roster/{season}'
-            division = row['division']
-            ncaa_id = row['ncaa_id']
+            row_division = row.get('division', '').strip()
+            ncaa_id = row.get('ncaa_id')
 
-            # Only scrape teams with '/mens-soccer' in the URL
-            if '/mens-soccer' in roster_url:
-                print(f"Scraping {team_name}...")
-                team_roster = scrape_roster(team_name, season, roster_url, division, ncaa_id)
-                rosters.extend(team_roster)
+            # If a division filter was provided, skip rows that don't match (case-insensitive)
+            if division:
+                if row_division.lower() != str(division).strip().lower():
+                    continue
+
+            # Only scrape teams with '/mens-soccer' in the original URL
+            if '/mens-soccer' in row.get('url', ''):
+                print(f"Scraping {team_name} ({row_division})...")
+                team_roster = scrape_roster(team_name, season, roster_url, row_division, ncaa_id)
+                # scrape_roster returns a list; extend safely
+                if team_roster:
+                    rosters.extend(team_roster)
     
     # Write the collected rosters to a JSON file
-    output_file = f'rosters_{season}.json'
+    if division:
+        safe_div = str(division).replace(' ', '_')
+        output_file = f'rosters_{season}_{safe_div}.json'
+    else:
+        output_file = f'rosters_{season}.json'
     with open(output_file, 'w') as f:
         json.dump(rosters, f, indent=4)
 
     print(f"All rosters saved to {output_file}")
 
 # Example usage
-#season = 2024
-#scrape_all_teams(season)
+season = 2025
+scrape_all_teams(season, "I")
