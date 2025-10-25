@@ -646,79 +646,283 @@ class StandardScraper:
         return players
 
 
+
+# ============================================================================
+# ROSTER MANAGER
+# ============================================================================
+
+class RosterManager:
+    """Manages batch scraping of rosters with error tracking"""
+
+    def __init__(self, season: str = '2025', output_dir: str = 'data/raw'):
+        """
+        Initialize RosterManager
+
+        Args:
+            season: Season string (e.g., '2025')
+            output_dir: Base output directory
+        """
+        self.season = season
+        self.output_dir = Path(output_dir)
+        self.scraper = StandardScraper()
+
+        # Error tracking
+        self.zero_player_teams = []
+        self.failed_teams = []
+        self.successful_teams = []
+
+    def load_teams(self, csv_path: str, division: Optional[str] = None) -> List[Dict]:
+        """
+        Load teams from CSV, optionally filtered by division
+
+        Args:
+            csv_path: Path to teams.csv
+            division: Optional division filter ('I', 'II', 'III')
+
+        Returns:
+            List of team dictionaries
+        """
+        teams = []
+        with open(csv_path, 'r') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                if division is None or row['division'] == division:
+                    teams.append(row)
+
+        logger.info(f"Loaded {len(teams)} teams" + (f" (Division {division})" if division else ""))
+        return teams
+
+    def scrape_teams(self, teams: List[Dict], max_teams: Optional[int] = None) -> List[Player]:
+        """
+        Scrape rosters for multiple teams
+
+        Args:
+            teams: List of team dictionaries from CSV
+            max_teams: Optional limit on number of teams to scrape
+
+        Returns:
+            List of all Player objects
+        """
+        all_players = []
+        teams_to_scrape = teams[:max_teams] if max_teams else teams
+
+        logger.info(f"Starting scrape of {len(teams_to_scrape)} teams")
+        logger.info("=" * 80)
+
+        for i, team in enumerate(teams_to_scrape, 1):
+            team_id = int(team['ncaa_id'])
+            team_name = team['team']
+            team_url = team['url']
+            division = team['division']
+
+            logger.info(f"[{i}/{len(teams_to_scrape)}] {team_name} (Division {division})")
+
+            try:
+                players = self.scraper.scrape_team(
+                    team_id=team_id,
+                    team_name=team_name,
+                    base_url=team_url,
+                    season=self.season,
+                    division=division
+                )
+
+                if len(players) == 0:
+                    logger.warning(f"  ⚠️  Zero players found")
+                    self.zero_player_teams.append({
+                        'team': team_name,
+                        'ncaa_id': team_id,
+                        'division': division,
+                        'url': team_url
+                    })
+                else:
+                    logger.info(f"  ✓ {len(players)} players")
+                    all_players.extend(players)
+                    self.successful_teams.append({
+                        'team': team_name,
+                        'ncaa_id': team_id,
+                        'division': division,
+                        'player_count': len(players)
+                    })
+
+            except Exception as e:
+                logger.error(f"  ✗ Error: {e}")
+                self.failed_teams.append({
+                    'team': team_name,
+                    'ncaa_id': team_id,
+                    'division': division,
+                    'url': team_url,
+                    'error': str(e)
+                })
+
+        logger.info("=" * 80)
+        logger.info(f"Scraping complete:")
+        logger.info(f"  Successful: {len(self.successful_teams)} teams, {len(all_players)} players")
+        logger.info(f"  Zero players: {len(self.zero_player_teams)} teams")
+        logger.info(f"  Failed: {len(self.failed_teams)} teams")
+
+        return all_players
+
+    def save_results(self, players: List[Player], division: Optional[str] = None):
+        """
+        Save results to JSON and CSV, plus error reports
+
+        Args:
+            players: List of Player objects
+            division: Optional division for filename
+        """
+        # Determine filenames
+        div_suffix = f"_{division}" if division else ""
+        json_file = self.output_dir / 'json' / f'rosters_{self.season}{div_suffix}.json'
+        csv_file = self.output_dir / 'csv' / f'rosters_{self.season}{div_suffix}.csv'
+
+        # Create directories
+        json_file.parent.mkdir(parents=True, exist_ok=True)
+        csv_file.parent.mkdir(parents=True, exist_ok=True)
+
+        # Save JSON
+        players_dicts = [p.to_dict() for p in players]
+        with open(json_file, 'w') as f:
+            json.dump(players_dicts, f, indent=2)
+        logger.info(f"✓ Saved JSON: {json_file} ({len(players)} players)")
+
+        # Save CSV
+        if players_dicts:
+            fieldnames = players_dicts[0].keys()
+            with open(csv_file, 'w', newline='') as f:
+                writer = csv.DictWriter(f, fieldnames=fieldnames)
+                writer.writeheader()
+                writer.writerows(players_dicts)
+            logger.info(f"✓ Saved CSV: {csv_file}")
+
+        # Save error reports
+        self._save_error_reports(division)
+
+    def _save_error_reports(self, division: Optional[str] = None):
+        """Save error reports for zero player and failed teams"""
+        div_suffix = f"_{division}" if division else ""
+
+        # Zero player teams
+        if self.zero_player_teams:
+            zero_file = self.output_dir / 'csv' / f'rosters_{self.season}{div_suffix}_zero_players.csv'
+            with open(zero_file, 'w', newline='') as f:
+                writer = csv.DictWriter(f, fieldnames=['team', 'ncaa_id', 'division', 'url'])
+                writer.writeheader()
+                writer.writerows(self.zero_player_teams)
+            logger.warning(f"⚠️  Saved zero-player report: {zero_file} ({len(self.zero_player_teams)} teams)")
+
+        # Failed teams
+        if self.failed_teams:
+            failed_file = self.output_dir / 'csv' / f'rosters_{self.season}{div_suffix}_failed.csv'
+            with open(failed_file, 'w', newline='') as f:
+                writer = csv.DictWriter(f, fieldnames=['team', 'ncaa_id', 'division', 'url', 'error'])
+                writer.writeheader()
+                writer.writerows(self.failed_teams)
+            logger.error(f"✗ Saved failure report: {failed_file} ({len(self.failed_teams)} teams)")
+
+
 # ============================================================================
 # MAIN ENTRY POINT (Placeholder for now)
 # ============================================================================
 
 def main():
-    """Main entry point - Phase 1 testing"""
-    parser = argparse.ArgumentParser(description='NCAA Men\'s Soccer Roster Scraper')
-    parser.add_argument('-season', required=False, default='2024-25', help='Season (e.g., "2024-25")')
-    parser.add_argument('--test', action='store_true', help='Run Phase 1 tests')
+    """Main CLI entry point"""
+    parser = argparse.ArgumentParser(
+        description='NCAA Men\'s Soccer Roster Scraper',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  # Scrape all Division I teams
+  python src/soccer_roster_scraper.py --division I --season 2025
+
+  # Scrape first 10 Division II teams (testing)
+  python src/soccer_roster_scraper.py --division II --limit 10 --season 2025
+
+  # Scrape all teams
+  python src/soccer_roster_scraper.py --season 2025
+
+  # Scrape specific team
+  python src/soccer_roster_scraper.py --team 14 --season 2025
+        """
+    )
+
+    parser.add_argument(
+        '--season',
+        default='2025',
+        help='Season year (default: 2025)'
+    )
+
+    parser.add_argument(
+        '--division',
+        choices=['I', 'II', 'III'],
+        help='Filter by division (I, II, or III)'
+    )
+
+    parser.add_argument(
+        '--team',
+        type=int,
+        help='Scrape specific team by NCAA ID'
+    )
+
+    parser.add_argument(
+        '--limit',
+        type=int,
+        help='Limit number of teams to scrape (for testing)'
+    )
+
+    parser.add_argument(
+        '--teams-csv',
+        default='data/input/teams.csv',
+        help='Path to teams.csv (default: data/input/teams.csv)'
+    )
+
+    parser.add_argument(
+        '--output-dir',
+        default='data/raw',
+        help='Output directory (default: data/raw)'
+    )
 
     args = parser.parse_args()
 
-    if args.test:
-        # Phase 1 testing
-        logger.info("=== Phase 1: Testing Player Dataclass ===")
+    # Initialize manager
+    manager = RosterManager(season=args.season, output_dir=args.output_dir)
 
-        # Create sample player
-        player = Player(
-            team_id=457,
-            team="North Carolina",
-            season="2024-25",
-            division="I",
-            name="Test Player",
-            jersey="10",
-            position="M",
-            height="6'0\"",
-            year="Junior",
-            major="Computer Science",
-            hometown="Chapel Hill, NC",
-            high_school="Chapel Hill High School",
-            url="https://goheels.com/sports/mens-soccer/roster/test-player"
-        )
-
-        logger.info(f"Created player: {player.name}")
-        logger.info(f"Position: {player.position} (soccer-specific)")
-        logger.info(f"Major: {player.major} (soccer-specific field)")
-
-        # Test to_dict conversion
-        player_dict = player.to_dict()
-        logger.info(f"Converted to dict with {len(player_dict)} fields")
-        logger.info(f"CSV schema: {', '.join(player_dict.keys())}")
-
-        # Test field extractors
-        logger.info("\n=== Testing Field Extractors ===")
-
-        test_cases = [
-            ("Position extraction", "Midfielder", FieldExtractors.extract_position),
-            ("Position extraction (abbr)", "M", FieldExtractors.extract_position),
-            ("Position extraction (GK)", "Goalkeeper", FieldExtractors.extract_position),
-            ("Height extraction", "6'2\"", FieldExtractors.extract_height),
-            ("Height extraction (dash)", "6-2", FieldExtractors.extract_height),
-            ("Jersey extraction", "#10", FieldExtractors.extract_jersey_number),
-            ("Academic year", "Jr", FieldExtractors.normalize_academic_year),
-        ]
-
-        for name, test_input, func in test_cases:
-            result = func(test_input)
-            logger.info(f"✓ {name}: '{test_input}' → '{result}'")
-
-        # Test hometown/school parser
-        hometown_test = "Chapel Hill, NC / Chapel Hill High School"
-        result = FieldExtractors.parse_hometown_school(hometown_test)
-        logger.info(f"✓ Hometown parsing: '{hometown_test}'")
-        logger.info(f"  → Hometown: '{result['hometown']}'")
-        logger.info(f"  → High School: '{result['high_school']}'")
-
-        logger.info("\n=== Phase 1 Complete ===")
-        logger.info("Player dataclass and FieldExtractors are working!")
-        logger.info("Ready for Phase 2: Implementing scrapers")
-
+    # Load teams
+    if args.team:
+        # Scrape specific team
+        teams = manager.load_teams(args.teams_csv)
+        teams = [t for t in teams if int(t['ncaa_id']) == args.team]
+        if not teams:
+            logger.error(f"Team {args.team} not found in {args.teams_csv}")
+            return
+        logger.info(f"Scraping specific team: {teams[0]['team']}")
     else:
-        logger.info("Phase 1: Data structure implemented")
-        logger.info("Run with --test to test Player dataclass")
+        # Load all teams, optionally filtered by division
+        teams = manager.load_teams(args.teams_csv, division=args.division)
+
+    if not teams:
+        logger.error("No teams to scrape")
+        return
+
+    # Scrape teams
+    players = manager.scrape_teams(teams, max_teams=args.limit)
+
+    # Save results
+    if players:
+        manager.save_results(players, division=args.division)
+    else:
+        logger.warning("No players scraped - no output files generated")
+
+    # Summary
+    print("\n" + "=" * 80)
+    print("SCRAPING SUMMARY")
+    print("=" * 80)
+    print(f"Season: {args.season}")
+    print(f"Teams attempted: {len(teams) if not args.limit else min(len(teams), args.limit)}")
+    print(f"Successful: {len(manager.successful_teams)} teams")
+    print(f"Total players: {len(players)}")
+    print(f"Zero players: {len(manager.zero_player_teams)} teams")
+    print(f"Failed: {len(manager.failed_teams)} teams")
+    print("=" * 80)
 
 
 if __name__ == '__main__':
