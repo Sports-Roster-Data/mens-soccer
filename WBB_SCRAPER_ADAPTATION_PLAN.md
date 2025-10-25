@@ -1,10 +1,25 @@
 # WBB Scraper Adaptation Plan for Men's Soccer
 
+**Status:** Track 1 (Reorganization) ✅ COMPLETE | Track 2 (Unified Scraper) ⏳ READY TO START
+
+**Last Updated:** 2025-10-25 (Post Track 1 Reorganization)
+
 ## Executive Summary
 
-The WBB (Women's Basketball) scraper is a **3,089-line production-grade web scraper** with a sophisticated modular architecture. Adapting it for men's soccer would replace the current three separate scrapers (`rosters_main.py`, `roster_msoc.py`, `roster_msoc2.py`) with a single, maintainable, and extensible solution.
+The WBB (Women's Basketball) scraper is a **3,089-line production-grade web scraper** with a sophisticated modular architecture. Adapting it for men's soccer would replace the current three separate scrapers (now in `src/scrapers/`) with a single, maintainable, and extensible solution.
 
-**Recommendation:** Adapt the WBB scraper architecture for men's soccer. The upfront investment (~20-30 hours) will pay dividends in maintainability, reliability, and ease of adding new teams.
+**Current Status:**
+- ✅ **Track 1 Complete:** Repository is now organized with clean directory structure
+- ✅ **Ready for Track 2:** Files are in proper locations (src/, data/, analysis/)
+- ✅ **Git Clean:** ~32MB of generated data excluded from version control
+
+**Recommendation:** Adapt the WBB scraper architecture for men's soccer. The upfront investment (~24-32 hours) will pay dividends in maintainability, reliability, and ease of adding new teams.
+
+**Prerequisites Met:**
+- Repository reorganized ✅
+- Clean directory structure ✅
+- Updated file paths ✅
+- Documentation updated ✅
 
 ---
 
@@ -12,13 +27,20 @@ The WBB (Women's Basketball) scraper is a **3,089-line production-grade web scra
 
 ### Current Men's Soccer Scrapers (3 separate scripts)
 
+**Location:** `src/scrapers/` (after Track 1 reorganization)
+
 | Script | Lines | Approach | Limitations |
 |--------|-------|----------|-------------|
-| `rosters_main.py` | ~150 | Sidearm Sports platform, BeautifulSoup | No season verification, hardcoded in main(), no error tracking |
-| `roster_msoc.py` | ~200 | Table-based scraping, BeautifulSoup | Multiple URL fallbacks, no verification |
-| `roster_msoc2.py` | ~150 | Data-label attributes, BeautifulSoup | Manual CSV input/output, limited error handling |
+| `src/scrapers/rosters_main.py` | ~150 | Sidearm Sports platform, BeautifulSoup | No season verification, hardcoded in main(), no error tracking |
+| `src/scrapers/roster_msoc.py` | ~200 | Table-based scraping, BeautifulSoup | Multiple URL fallbacks, no verification |
+| `src/scrapers/roster_msoc2.py` | ~150 | Data-label attributes, BeautifulSoup | Manual CSV input/output, limited error handling |
 
-**Total:** ~500 lines across 3 files, each with duplicated patterns
+**Total:** ~500 lines across 3 files in `src/scrapers/`, each with duplicated patterns
+
+**Data Flow (Current):**
+- Input: `data/input/teams.csv`
+- Output: `data/raw/json/*.json` → `data/raw/csv/*.csv`
+- Final: `data/output/combined_rosters_2024.csv`
 
 ### WBB Scraper Architecture (single unified script)
 
@@ -417,13 +439,64 @@ def main():
 
 ## Detailed File Mapping
 
-### Files to Create
+### Current Directory Structure (After Track 1)
 
+✅ **Already in place:**
 ```
-src/scrapers/
-├── soccer_roster_scraper.py    # Main unified scraper (adapted from WBB)
-└── soccer_config.py             # TeamConfig split out for maintainability
+mens-soccer/
+├── src/
+│   ├── scrapers/              # Existing scrapers (will move to legacy/)
+│   │   ├── rosters_main.py
+│   │   ├── roster_msoc.py
+│   │   ├── roster_msoc2.py
+│   │   └── rosters.py
+│   ├── converters/            # Keep as-is
+│   └── utils/                 # Keep as-is
+├── data/
+│   ├── input/                 # Source data
+│   ├── raw/json/              # Scraper output
+│   ├── raw/csv/               # Converted data
+│   ├── additions/             # Manual additions
+│   ├── interim/               # need_rosters.csv
+│   └── output/                # Final merged data
+├── analysis/                  # R/Quarto scripts
+└── tests/                     # Test files
 ```
+
+### Files to Create for Unified Scraper
+
+**Option A: Single-file approach** (simpler, faster to implement)
+```
+src/
+└── soccer_roster_scraper.py    # ~2,000-2,500 lines, all-in-one
+```
+
+**Option B: Modular approach** (cleaner, more maintainable)
+```
+src/
+├── soccer_roster_scraper.py    # Main entry point (~200 lines)
+├── soccer_config.py             # TeamConfig (~400 lines)
+│
+├── core/                        # Core components
+│   ├── __init__.py
+│   ├── models.py                # Player dataclass
+│   ├── field_extractors.py     # Parsing utilities
+│   ├── season_verifier.py      # Season validation
+│   ├── url_builder.py           # URL construction
+│   └── header_mapper.py         # Column normalization
+│
+└── scrapers/                    # Scraper classes
+    ├── __init__.py
+    ├── base_scraper.py          # BaseScraper
+    ├── standard_scraper.py      # Sidearm (StandardScraper)
+    ├── table_scraper.py         # Tables (TableScraper)
+    └── legacy/                  # Move existing scrapers here
+        ├── rosters_main.py
+        ├── roster_msoc.py
+        └── roster_msoc2.py
+```
+
+**Recommendation:** Start with **Option A** (single file), can refactor to Option B later if needed.
 
 ### Code Organization
 
@@ -458,13 +531,16 @@ src/scrapers/
 
 1. **Single Command Line Interface**
    ```bash
-   # Old way (3 separate commands):
+   # Old way (3 separate commands from src/scrapers/):
+   cd src/scrapers
    python rosters_main.py
    python roster_msoc.py
    python roster_msoc2.py
 
-   # New way (1 command):
-   python soccer_roster_scraper.py -season 2025 -division I
+   # New way (1 command from project root):
+   python src/soccer_roster_scraper.py -season 2025 -division I
+   # Or from src/:
+   cd src && python soccer_roster_scraper.py -season 2025 -division I
    ```
 
 2. **Automatic Scraper Selection**
@@ -537,17 +613,23 @@ src/scrapers/
 
 ## Implementation Timeline
 
+**✅ Prerequisites Complete:** Track 1 (Reorganization) is done - repository structure is ready!
+
+**Remaining Work for Track 2:**
+
 | Phase | Hours | Tasks |
 |-------|-------|-------|
 | Phase 1: Data Structure | 2-3 | Adapt Player dataclass for soccer |
 | Phase 2: Field Extractors | 3-4 | Soccer positions, major field, height/hometown parsing |
-| Phase 3: URL Patterns | 4-5 | Analyze teams.csv, categorize URL patterns, create config |
+| Phase 3: URL Patterns | 4-5 | Analyze data/input/teams.csv, categorize URL patterns, create config |
 | Phase 4: Scrapers | 5-6 | Adapt StandardScraper, TableScraper, test patterns |
 | Phase 5: URL Builder | 2-3 | Add soccer URL patterns |
-| Phase 6: CLI | 1-2 | Update command-line interface |
+| Phase 6: CLI & Manager | 2-3 | Implement RosterManager, CLI, logging |
 | Phase 7: Testing | 5-6 | Test sample teams, validate output, edge cases |
-| Phase 8: Migration | 2-3 | Documentation, deprecation, cleanup |
-| **Total** | **24-32 hours** | |
+| Phase 8: Migration | 2-3 | Move old scrapers to legacy/, update docs |
+| **Total** | **24-32 hours** | **Ready to start immediately** |
+
+**Note:** No reorganization needed - Track 1 already handled directory structure, file moves, and path updates!
 
 ### Phased Rollout Approach
 
@@ -626,41 +708,48 @@ If 20-30 hours feels like too much upfront, consider **incremental adaptation:**
 
 ## Code Example: Before & After
 
-### Before (Current - 3 separate scripts)
+### Before (Current - 3 separate scripts in src/scrapers/)
 
 **Running scrapers:**
 ```bash
 # Step 1: Figure out which teams use which scraper
 # Step 2: Edit each script to set season
-# Step 3: Run each script separately
+# Step 3: Run each script separately from its directory
 
-python rosters_main.py  # Sidearm teams
-python json2csv.py
+cd src/scrapers
+python rosters_main.py  # Sidearm teams → data/raw/json/
 
-python roster_msoc.py   # msoc teams
-python json2csv_msoc.py
+cd src/converters
+python json2csv.py      # → data/raw/csv/
 
-python roster_msoc2.py  # D-III teams
-# Already outputs CSV
+cd src/scrapers
+python roster_msoc.py   # msoc teams → data/raw/json/
+
+cd src/converters
+python json2csv_msoc.py # → data/raw/csv/
+
+cd src/scrapers
+python roster_msoc2.py  # D-III teams → data/additions/
 ```
 
 **Adding a new team:**
 ```python
 # 1. Manually test URL to determine which scraper to use
-# 2. Verify the team is in teams.csv
+# 2. Verify the team is in data/input/teams.csv
 # 3. Manually verify URL pattern matches expected
-# 4. Run appropriate scraper
+# 4. Run appropriate scraper from src/scrapers/
 # 5. Hope it works
+# 6. Manually check data/raw/ for output
 ```
 
 ### After (Unified WBB-style scraper)
 
 **Running scraper:**
 ```bash
-# One command does everything
-python soccer_roster_scraper.py -season 2025 -division I -output rosters_2025_D1.csv
+# One command from project root
+python src/soccer_roster_scraper.py -season 2025 -division I -output data/output/rosters_2025_D1.csv
 
-# Output includes:
+# Output includes (all in data/output/):
 # - rosters_2025_D1.csv (all successful scrapes)
 # - rosters_2025_D1_zero_players.csv (teams that returned no players)
 # - rosters_2025_D1_failed_year_check.csv (teams with wrong season)
@@ -668,10 +757,13 @@ python soccer_roster_scraper.py -season 2025 -division I -output rosters_2025_D1
 
 **Adding a new team:**
 ```python
-# 1. Add team to teams.csv (or teams.json)
-# 2. Test URL pattern: python soccer_roster_scraper.py -team 999 -url https://newschool.com/mens-soccer/roster -season 2025
-# 3. If it works, add to appropriate TeamConfig dict:
+# 1. Add team to data/input/teams.csv (or teams.json)
+# 2. Test URL pattern:
+python src/soccer_roster_scraper.py -team 999 -url https://newschool.com/mens-soccer/roster -season 2025
+
+# 3. If it works, add to appropriate TeamConfig in src/soccer_config.py:
 #    SIDEARM_TEAMS[999] = 'https://newschool.com'
+
 # 4. Done - team now scraped automatically with others
 ```
 
@@ -871,15 +963,44 @@ diff <(sort rosters_2025.csv) <(sort rosters_2025_new.csv)
 
 ## Conclusion
 
-The WBB scraper represents a **significant architectural upgrade** over the current men's soccer scrapers. While it requires 20-30 hours of upfront investment, the long-term benefits in maintainability, reliability, and extensibility make it worthwhile.
+The WBB scraper represents a **significant architectural upgrade** over the current men's soccer scrapers. While it requires 24-32 hours of upfront investment, the long-term benefits in maintainability, reliability, and extensibility make it worthwhile.
+
+### Current Status: Ready to Begin
+
+✅ **Track 1 Complete (2025-10-25)**
+- Repository reorganized with clean directory structure
+- Files in proper locations (src/, data/, analysis/)
+- All paths updated, scripts working with new structure
+- ~32MB of generated data excluded from git
+- Documentation updated
+
+⏳ **Track 2 Ready to Start**
+- No additional prep work needed
+- Can begin Phase 1 (Data Structure) immediately
+- Directory structure already in place
+- Old scrapers preserved in src/scrapers/ for reference
 
 **Recommended approach:** Full adaptation with phased rollout, starting with Division I teams.
 
-**When to start:** When you have 2-3 consecutive days to focus on the migration, or when you need to add many new teams and the current process feels too manual.
+**When to start:**
+- **Now** - if you have 24-32 hours over next 1-2 weeks
+- **Later** - if current 3-scraper workflow is acceptable for now (revisit in 3-6 months)
+
+**Decision criteria:**
+- Do you frequently add new teams (10+)? → Start now
+- Do you scrape multiple seasons per year? → Start now
+- Current workflow is fine? → Wait and reassess
 
 **Success criteria:**
-- Single command-line tool replaces 3 separate scripts
+- Single command-line tool replaces 3 separate scripts in src/scrapers/
 - 95%+ of teams scrape successfully
-- Zero players and failed year checks are tracked automatically
+- Zero players and failed year checks tracked automatically in data/output/
 - Adding new teams takes < 1 minute
+- All output goes to data/output/ with automatic error tracking
+
+---
+
+**Document Version:** 2.0 (Updated post Track 1 Reorganization)
+**Last Updated:** 2025-10-25
+**Related Documents:** REORGANIZATION_PLAN.md (Track 1 complete), CLAUDE.md
 
