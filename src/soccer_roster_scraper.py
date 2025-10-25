@@ -347,22 +347,19 @@ class URLBuilder:
         base_url = base_url.rstrip('/')
 
         if url_format == 'default':
-            # Most common: Sidearm Sports pattern
-            # Example: https://goheels.com/sports/mens-soccer/roster/2024-25
+            # Most common: Sidearm Sports pattern (87.6% of teams - 719 teams)
+            # Example: https://ualbanysports.com/sports/mens-soccer/roster/2025
             return f"{base_url}/roster/{season}"
 
-        elif url_format == 'msoc':
-            # msoc pattern - try both variations
-            # Returns primary URL (secondary can be tried on failure)
-            return f"{base_url}/2024-25/roster"
-
-        elif url_format == 'msoc_alt':
-            # Alternative msoc pattern
-            return f"{base_url}/roster/2024"
-
-        elif url_format == 'sports_msoc':
-            # Alternative sports/msoc pattern
-            return f"{base_url}/sports/msoc/{season}/roster"
+        elif url_format == 'msoc_index':
+            # msoc/index pattern (11.9% of teams - 98 teams)
+            # teams.csv has /sports/msoc/index, need /sports/msoc/roster/2025
+            # Example: https://aicyellowjackets.com/sports/msoc/roster/2025
+            # These redirect to Sidearm HTML after following redirects
+            if '/index' in base_url:
+                return base_url.replace('/index', f'/roster/{season}')
+            else:
+                return f"{base_url}/roster/{season}"
 
         else:
             # Fallback to default
@@ -414,22 +411,36 @@ class TeamConfig:
     }
 
     @classmethod
-    def get_url_format(cls, team_id: int) -> str:
+    def get_url_format(cls, team_id: int, team_url: str = '') -> str:
         """
         Get URL format for a team
 
+        Can auto-detect from URL pattern if team_url is provided
+
+        Args:
+            team_id: NCAA team ID
+            team_url: Optional team URL for auto-detection
+
         Returns:
-            URL format string ('default', 'msoc', 'sports_msoc', etc.)
+            URL format string ('default', 'msoc_index', etc.)
         """
+        # Check if explicitly configured
         if team_id in cls.STANDARD_TEAMS:
             return cls.STANDARD_TEAMS[team_id].get('url_format', 'default')
         elif team_id in cls.MSOC_TEAMS:
-            return cls.MSOC_TEAMS[team_id].get('url_format', 'msoc')
+            return cls.MSOC_TEAMS[team_id].get('url_format', 'msoc_index')
         elif team_id in cls.TABLE_TEAMS:
             return cls.TABLE_TEAMS[team_id].get('url_format', 'data_label')
-        else:
-            # Default to standard Sidearm pattern for unknown teams
-            return 'default'
+
+        # Auto-detect from URL if provided
+        if team_url:
+            if '/sports/msoc/index' in team_url or '/Sports/msoc' in team_url:
+                return 'msoc_index'
+            elif '/sports/mens-soccer' in team_url or '/sports/m-soccer' in team_url:
+                return 'default'
+
+        # Default to standard Sidearm pattern
+        return 'default'
 
     @classmethod
     def get_scraper_type(cls, team_id: int) -> str:
@@ -483,8 +494,8 @@ class StandardScraper:
             List of Player objects
         """
         try:
-            # Build roster URL
-            url_format = TeamConfig.get_url_format(team_id)
+            # Build roster URL (auto-detect format from base_url)
+            url_format = TeamConfig.get_url_format(team_id, base_url)
             roster_url = URLBuilder.build_roster_url(base_url, season, url_format)
 
             logger.info(f"Scraping {team_name} - {roster_url}")
