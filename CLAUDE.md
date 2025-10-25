@@ -50,7 +50,7 @@ The project uses **multiple scraping strategies** because NCAA teams use differe
 
 ### Running Scrapers
 ```bash
-# Scrape Sidearm Sports platform teams
+# Scrape Sidearm Sports platform teams (all divisions)
 python rosters_main.py
 
 # Scrape msoc/index platform teams
@@ -59,6 +59,12 @@ python roster_msoc.py
 # Scrape D-III or specialized teams
 python roster_msoc2.py
 ```
+
+**Note:** To filter by division, edit the script's final lines to specify division:
+- `scrape_all_teams(2025, "I")` - Division I only
+- `scrape_all_teams(2025, "II")` - Division II only
+- `scrape_all_teams(2025, "III")` - Division III only
+- `scrape_all_teams(2025)` - All divisions
 
 ### JSON to CSV Conversion
 ```bash
@@ -107,12 +113,38 @@ All scrapers implement text normalization:
 - Failed requests print status codes
 - Missing elements return `None` or empty string rather than raising exceptions
 
+## Iterative Scraping Workflow
+
+The scraping process is iterative because not all teams can be scraped at once:
+
+1. Run scrapers to collect roster data into JSON files
+2. Convert JSON to CSV
+3. Run `cleaning.qmd` to merge data and generate `need_rosters.csv`
+4. `need_rosters.csv` identifies teams that still need roster data
+5. Create specialized input CSVs (e.g., `d3teams.csv`) for remaining teams
+6. Run appropriate scraper for those teams
+7. Merge results back into `combined_rosters_2024.csv`
+
+This workflow repeats until all teams have roster data.
+
+## Season Management
+
+The project tracks multiple seasons:
+- JSON/CSV files are named with season years (e.g., `rosters_2024.json`, `rosters_2025_I.json`)
+- Division-specific runs append division to filename (e.g., `rosters_2025_I.json` for Division I only)
+- Scrapers can be filtered by division using the division parameter in `scrape_all_teams(season, division)`
+
 ## Dependencies
 
-Python packages (via Pipfile):
-- `requests` - HTTP requests
-- `beautifulsoup4` - HTML parsing
-- `tldextract` - URL parsing for domain extraction
+Python packages (via `pyproject.toml`, managed with `uv`):
+- `requests>=2.32.5` - HTTP requests
+- `bs4>=0.0.2` - BeautifulSoup for HTML parsing
+- `tldextract>=5.3.0` - URL parsing for domain extraction
+
+Install dependencies:
+```bash
+uv sync
+```
 
 R packages (used in cleaning.qmd):
 - `tidyverse` - Data manipulation and CSV I/O
