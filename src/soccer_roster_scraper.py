@@ -361,6 +361,11 @@ class URLBuilder:
             else:
                 return f"{base_url}/roster/{season}"
 
+        elif url_format == 'msoc_plain':
+            # /sports/msoc without /index (e.g., Rollins)
+            # Example: https://rollinssports.com/sports/msoc/roster/2025
+            return f"{base_url}/roster/{season}"
+
         else:
             # Fallback to default
             logger.warning(f"Unknown url_format '{url_format}', using default")
@@ -436,6 +441,9 @@ class TeamConfig:
         if team_url:
             if '/sports/msoc/index' in team_url or '/Sports/msoc' in team_url:
                 return 'msoc_index'
+            elif '/sports/msoc' in team_url:
+                # /sports/msoc without /index (e.g., Rollins)
+                return 'msoc_plain'
             elif '/sports/mens-soccer' in team_url or '/sports/m-soccer' in team_url:
                 return 'default'
 
