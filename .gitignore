@@ -1,4 +1,45 @@
+# R files
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+
+# Generated data files
+data/raw/
+data/interim/
+data/output/
+
+# Large intermediate files
+*.json
+!data/input/*.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Old dependency management
+Pipfile
+Pipfile.lock
+
+# Temporary files
+*.tmp
+*.bak

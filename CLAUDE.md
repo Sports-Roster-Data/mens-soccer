@@ -6,17 +6,68 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a web scraping and data processing project for NCAA men's soccer team rosters. The project scrapes roster data from college athletic websites and consolidates them into a unified dataset for the 2024 season.
 
+## Repository Structure
+
+The repository follows a standard data science project layout with clear separation between code and data:
+
+```
+mens-soccer/
+├── src/                          # Source code
+│   ├── scrapers/                 # Web scraping scripts
+│   │   ├── rosters_main.py       # Sidearm platform scraper
+│   │   ├── roster_msoc.py        # msoc/index platform scraper
+│   │   ├── roster_msoc2.py       # data-label platform scraper
+│   │   └── rosters.py            # Legacy Selenium scraper
+│   ├── converters/               # Data format converters
+│   │   ├── json2csv.py           # Standard JSON to CSV
+│   │   └── json2csv_msoc.py      # msoc JSON to CSV
+│   └── utils/                    # Utility scripts
+│       └── url_checks.py         # URL validation
+│
+├── data/                         # Data directory (raw/interim/output gitignored)
+│   ├── input/                    # Source data (version controlled)
+│   │   ├── teams.csv             # Master team list
+│   │   ├── teams.json            # JSON version
+│   │   ├── d3teams.csv           # Division III teams
+│   │   └── valid_items.json      # Validated URLs
+│   ├── raw/                      # Raw scraper output (gitignored ~23MB)
+│   │   ├── json/                 # JSON output from scrapers
+│   │   └── csv/                  # CSV conversions
+│   ├── additions/                # Manual additions (version controlled)
+│   │   ├── adds.csv              # Manual roster additions
+│   │   └── d3adds.csv            # Division III additions
+│   ├── interim/                  # Intermediate files (gitignored)
+│   │   └── need_rosters.csv      # Teams needing scraping
+│   └── output/                   # Final outputs (gitignored)
+│       └── combined_rosters_2024.csv  # Merged dataset
+│
+├── analysis/                     # Analysis scripts
+│   └── cleaning.qmd              # Data merging and cleaning (R/Quarto)
+│
+├── tests/                        # Test files
+│   └── test.py                   # (empty, ready for future tests)
+│
+└── archive/                      # Deprecated code
+```
+
+**Note:** All paths in scrapers and converters are relative to their location in `src/`. Scripts should be run from within their respective directories.
+
 ## Data Architecture
 
 ### Source Data
-- `teams.csv` - Master list of NCAA teams with columns: `team`, `url`, `ncaa_id`, `division`
+- `data/input/teams.csv` - Master list of NCAA teams with columns: `team`, `url`, `ncaa_id`, `division`
 - Teams are organized by NCAA division (I, II, III)
+- `data/input/d3teams.csv` - Specialized list for Division III teams
+- `data/input/valid_items.json` - Validated team URLs
 
 ### Output Data Flow
-1. Python scrapers generate JSON files (e.g., `rosters_2024.json`, `rosters_msoc.json`)
-2. JSON files are converted to CSV via `json2csv.py` or `json2csv_msoc.py`
-3. R (Quarto) script `cleaning.qmd` merges and reconciles roster data
-4. Final output: `combined_rosters_2024.csv` with standardized roster fields
+1. Python scrapers generate JSON files in `data/raw/json/` (e.g., `rosters_2024.json`, `rosters_msoc.json`)
+2. JSON files are converted to CSV in `data/raw/csv/` via `json2csv.py` or `json2csv_msoc.py`
+3. R (Quarto) script `analysis/cleaning.qmd` merges and reconciles roster data
+4. Interim file `data/interim/need_rosters.csv` tracks teams still needing scraping
+5. Final output: `data/output/combined_rosters_2024.csv` with standardized roster fields
+
+**Note:** Files in `data/raw/`, `data/interim/`, and `data/output/` are gitignored to keep the repository clean (~28MB excluded from version control).
 
 ### Roster Data Schema
 All roster CSVs follow this schema:
@@ -49,7 +100,12 @@ The project uses **multiple scraping strategies** because NCAA teams use differe
 ## Common Development Commands
 
 ### Running Scrapers
+
+All scraper commands should be run from within the `src/scrapers/` directory:
+
 ```bash
+cd src/scrapers
+
 # Scrape Sidearm Sports platform teams (all divisions)
 python rosters_main.py
 
@@ -67,7 +123,12 @@ python roster_msoc2.py
 - `scrape_all_teams(2025)` - All divisions
 
 ### JSON to CSV Conversion
+
+Run from within the `src/converters/` directory:
+
 ```bash
+cd src/converters
+
 # Convert standard rosters
 python json2csv.py
 
@@ -76,13 +137,23 @@ python json2csv_msoc.py
 ```
 
 ### Data Cleaning and Merging
+
+Run from within the `analysis/` directory:
+
 ```bash
+cd analysis
+
 # Use Quarto to render the cleaning notebook
 quarto render cleaning.qmd
 ```
 
 ### URL Validation
+
+Run from within the `src/utils/` directory:
+
 ```bash
+cd src/utils
+
 # Check team URLs for validity
 python url_checks.py
 ```
