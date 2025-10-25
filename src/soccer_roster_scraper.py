@@ -57,6 +57,8 @@ class Player:
         d['class'] = d.pop('year', '')
         # Map team_id to ncaa_id (matches existing schema)
         d['ncaa_id'] = d.pop('team_id')
+        # Remove player_id from CSV output (internal use only)
+        d.pop('player_id', None)
         return d
 
 
@@ -141,7 +143,7 @@ class FieldExtractors:
         text_upper = text.upper()
         if 'GOALKEEPER' in text_upper or 'GOALIE' in text_upper:
             return 'GK'
-        elif 'DEFENDER' in text_upper or 'DEFENCE' in text_upper:
+        elif 'DEFENDER' in text_upper or 'DEFENCE' in text_upper or 'DEFENSE' in text_upper:
             return 'D'
         elif 'MIDFIELDER' in text_upper or 'MIDFIELD' in text_upper:
             return 'M'
