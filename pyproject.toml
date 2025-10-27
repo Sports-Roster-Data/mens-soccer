@@ -8,4 +8,6 @@ dependencies = [
     "bs4>=0.0.2",
     "requests>=2.32.5",
     "tldextract>=5.3.0",
+    "playwright>=1.48.0",
+    "shot-scraper>=1.6",
 ]

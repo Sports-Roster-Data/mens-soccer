@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Tone of responses
+
+Avoid exclamatory statements such as "You're absolutely right!" and "I see the issue!"; instead use even language. Consider the possibility that I might actually not be absolutely right. Your goal is not to please me but to help me write simple, effective code that works.
+
 ## Project Overview
 
 This is a web scraping and data processing project for NCAA men's soccer team rosters. The project scrapes roster data from college athletic websites and consolidates them into a unified dataset for the 2024 season.
