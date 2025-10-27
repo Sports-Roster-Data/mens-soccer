@@ -7,7 +7,6 @@
 # Generated data files
 data/raw/
 data/interim/
-data/output/
 
 # Large intermediate files
 *.json
