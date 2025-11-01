@@ -1,0 +1,212 @@
+rankingItem/idTeam,rankingItem/rank,rankingItem/flag/src,rankingItem/flag/width,rankingItem/flag/height,rankingItem/flag/title,rankingItem/flag/alt,rankingItem/name,rankingItem/totalPoints,rankingItem/active,rankingItem/previousRank,rankingItem/countryURL,rankingItem/countryCode,previousPoints,lastUpdateDate,nextUpdateDate,tag/id,tag/text
+43969,1,https://api.fifa.com/api/v3/picture/flags-sq-2/ESP,70,46,Spain,Spain,Spain,1880.76,false,1,/fifa-world-ranking/ESP,ESP,1875.37,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43922,2,https://api.fifa.com/api/v3/picture/flags-sq-2/ARG,70,46,Argentina,Argentina,Argentina,1872.43,false,3,/fifa-world-ranking/ARG,ARG,1870.32,2025-10-17T10:27:00+00:00,,CONMEBOL,CONMEBOL
+43946,3,https://api.fifa.com/api/v3/picture/flags-sq-2/FRA,70,46,France,France,France,1862.71,false,2,/fifa-world-ranking/FRA,FRA,1870.92,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43942,4,https://api.fifa.com/api/v3/picture/flags-sq-2/ENG,70,46,England,England,England,1824.3,false,4,/fifa-world-ranking/ENG,ENG,1820.44,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43963,5,https://api.fifa.com/api/v3/picture/flags-sq-2/POR,70,46,Portugal,Portugal,Portugal,1778,false,5,/fifa-world-ranking/POR,POR,1779.55,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43960,6,https://api.fifa.com/api/v3/picture/flags-sq-2/NED,70,46,Netherlands,Netherlands,Netherlands,1759.96,false,7,/fifa-world-ranking/NED,NED,1754.17,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43924,7,https://api.fifa.com/api/v3/picture/flags-sq-2/BRA,70,46,Brazil,Brazil,Brazil,1758.85,false,6,/fifa-world-ranking/BRA,BRA,1761.6,2025-10-17T10:27:00+00:00,,CONMEBOL,CONMEBOL
+43935,8,https://api.fifa.com/api/v3/picture/flags-sq-2/BEL,70,46,Belgium,Belgium,Belgium,1740.01,false,8,/fifa-world-ranking/BEL,BEL,1739.54,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43954,9,https://api.fifa.com/api/v3/picture/flags-sq-2/ITA,70,46,Italy,Italy,Italy,1717.15,false,10,/fifa-world-ranking/ITA,ITA,1710.06,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43948,10,https://api.fifa.com/api/v3/picture/flags-sq-2/GER,70,46,Germany,Germany,Germany,1713.3,false,12,/fifa-world-ranking/GER,GER,1704.27,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43938,11,https://api.fifa.com/api/v3/picture/flags-sq-2/CRO,70,46,Croatia,Croatia,Croatia,1710.15,false,9,/fifa-world-ranking/CRO,CRO,1714.2,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43872,12,https://api.fifa.com/api/v3/picture/flags-sq-2/MAR,70,46,Morocco,Morocco,Morocco,1710.11,false,11,/fifa-world-ranking/MAR,MAR,1706.27,2025-10-17T10:27:00+00:00,,CAF,CAF
+43926,13,https://api.fifa.com/api/v3/picture/flags-sq-2/COL,70,46,Colombia,Colombia,Colombia,1695.72,false,13,/fifa-world-ranking/COL,COL,1692.1,2025-10-17T10:27:00+00:00,,CONMEBOL,CONMEBOL
+43911,14,https://api.fifa.com/api/v3/picture/flags-sq-2/MEX,70,46,Mexico,Mexico,Mexico,1682.52,false,14,/fifa-world-ranking/MEX,MEX,1688.38,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43930,15,https://api.fifa.com/api/v3/picture/flags-sq-2/URU,70,46,Uruguay,Uruguay,Uruguay,1677.57,false,15,/fifa-world-ranking/URU,URU,1673.65,2025-10-17T10:27:00+00:00,,CONMEBOL,CONMEBOL
+43921,16,https://api.fifa.com/api/v3/picture/flags-sq-2/USA,70,46,USA,USA,USA,1673.49,false,16,/fifa-world-ranking/USA,USA,1670.04,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43971,17,https://api.fifa.com/api/v3/picture/flags-sq-2/SUI,70,46,Switzerland,Switzerland,Switzerland,1653.32,false,17,/fifa-world-ranking/SUI,SUI,1648.3,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43879,18,https://api.fifa.com/api/v3/picture/flags-sq-2/SEN,70,46,Senegal,Senegal,Senegal,1650.61,false,18,/fifa-world-ranking/SEN,SEN,1645.23,2025-10-17T10:27:00+00:00,,CAF,CAF
+43819,19,https://api.fifa.com/api/v3/picture/flags-sq-2/JPN,70,46,Japan,Japan,Japan,1645.34,false,19,/fifa-world-ranking/JPN,JPN,1640.47,2025-10-17T10:27:00+00:00,,AFC,AFC
+43941,20,https://api.fifa.com/api/v3/picture/flags-sq-2/DEN,70,46,Denmark,Denmark,Denmark,1641.02,false,20,/fifa-world-ranking/DEN,DEN,1627.64,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43817,21,https://api.fifa.com/api/v3/picture/flags-sq-2/IRN,70,46,IR Iran,IR Iran,IR Iran,1618.28,false,21,/fifa-world-ranking/IRN,IRN,1622.61,2025-10-17T10:27:00+00:00,,AFC,AFC
+43822,22,https://api.fifa.com/api/v3/picture/flags-sq-2/KOR,70,46,Korea Republic,Korea Republic,Korea Republic,1593.92,false,23,/fifa-world-ranking/KOR,KOR,1593.19,2025-10-17T10:27:00+00:00,,AFC,AFC
+43927,23,https://api.fifa.com/api/v3/picture/flags-sq-2/ECU,70,46,Ecuador,Ecuador,Ecuador,1589.72,false,24,/fifa-world-ranking/ECU,ECU,1588.04,2025-10-17T10:27:00+00:00,,CONMEBOL,CONMEBOL
+43934,24,https://api.fifa.com/api/v3/picture/flags-sq-2/AUT,70,46,Austria,Austria,Austria,1586.98,false,22,/fifa-world-ranking/AUT,AUT,1601.86,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43976,25,https://api.fifa.com/api/v3/picture/flags-sq-2/AUS,70,46,Australia,Australia,Australia,1584.02,false,25,/fifa-world-ranking/AUS,AUS,1583.49,2025-10-17T10:27:00+00:00,,AFC,AFC
+43972,26,https://api.fifa.com/api/v3/picture/flags-sq-2/TUR,70,46,Türkiye,Türkiye,Türkiye,1570.18,false,27,/fifa-world-ranking/TUR,TUR,1555.72,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43973,27,https://api.fifa.com/api/v3/picture/flags-sq-2/UKR,70,46,Ukraine,Ukraine,Ukraine,1555.36,false,28,/fifa-world-ranking/UKR,UKR,1543.06,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43899,28,https://api.fifa.com/api/v3/picture/flags-sq-2/CAN,70,46,Canada,Canada,Canada,1554.63,false,26,/fifa-world-ranking/CAN,CAN,1558.04,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43961,29,https://api.fifa.com/api/v3/picture/flags-sq-2/NOR,70,46,Norway,Norway,Norway,1532.14,false,31,/fifa-world-ranking/NOR,NOR,1526.23,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43965,30,https://api.fifa.com/api/v3/picture/flags-sq-2/RUS,70,46,Russia,Russia,Russia,1530.95,false,33,/fifa-world-ranking/RUS,RUS,1521.74,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43914,31,https://api.fifa.com/api/v3/picture/flags-sq-2/PAN,70,46,Panama,Panama,Panama,1528.21,false,29,/fifa-world-ranking/PAN,PAN,1529.71,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43855,32,https://api.fifa.com/api/v3/picture/flags-sq-2/EGY,70,46,Egypt,Egypt,Egypt,1525.31,false,35,/fifa-world-ranking/EGY,EGY,1519.18,2025-10-17T10:27:00+00:00,,CAF,CAF
+43962,33,https://api.fifa.com/api/v3/picture/flags-sq-2/POL,70,46,Poland,Poland,Poland,1523.84,false,36,/fifa-world-ranking/POL,POL,1517.3,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43974,34,https://api.fifa.com/api/v3/picture/flags-sq-2/WAL,70,46,Wales,Wales,Wales,1518.81,false,30,/fifa-world-ranking/WAL,WAL,1529.09,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43843,35,https://api.fifa.com/api/v3/picture/flags-sq-2/ALG,70,46,Algeria,Algeria,Algeria,1510.26,false,38,/fifa-world-ranking/ALG,ALG,1500.74,2025-10-17T10:27:00+00:00,,CAF,CAF
+1902465,36,https://api.fifa.com/api/v3/picture/flags-sq-2/SRB,70,46,Serbia,Serbia,Serbia,1507.84,false,34,/fifa-world-ranking/SRB,SRB,1520.9,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43950,37,https://api.fifa.com/api/v3/picture/flags-sq-2/HUN,70,46,Hungary,Hungary,Hungary,1504.92,false,41,/fifa-world-ranking/HUN,HUN,1492.18,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43967,38,https://api.fifa.com/api/v3/picture/flags-sq-2/SCO,70,46,Scotland,Scotland,Scotland,1504.2,false,43,/fifa-world-ranking/SCO,SCO,1485.08,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43928,39,https://api.fifa.com/api/v3/picture/flags-sq-2/PAR,70,46,Paraguay,Paraguay,Paraguay,1498.15,false,37,/fifa-world-ranking/PAR,PAR,1501.01,2025-10-17T10:27:00+00:00,,CONMEBOL,CONMEBOL
+43970,40,https://api.fifa.com/api/v3/picture/flags-sq-2/SWE,70,46,Sweden,Sweden,Sweden,1496.99,false,32,/fifa-world-ranking/SWE,SWE,1524.62,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43876,41,https://api.fifa.com/api/v3/picture/flags-sq-2/NGA,70,46,Nigeria,Nigeria,Nigeria,1495.46,false,45,/fifa-world-ranking/NGA,NGA,1483.86,2025-10-17T10:27:00+00:00,,CAF,CAF
+43854,42,https://api.fifa.com/api/v3/picture/flags-sq-2/CIV,70,46,Côte d'Ivoire,Côte d'Ivoire,Côte d'Ivoire,1491.78,false,44,/fifa-world-ranking/CIV,CIV,1483.9,2025-10-17T10:27:00+00:00,,CAF,CAF
+43888,43,https://api.fifa.com/api/v3/picture/flags-sq-2/TUN,70,46,Tunisia,Tunisia,Tunisia,1490.8,false,46,/fifa-world-ranking/TUN,TUN,1483.02,2025-10-17T10:27:00+00:00,,CAF,CAF
+43995,44,https://api.fifa.com/api/v3/picture/flags-sq-2/CZE,70,46,Czechia,Czechia,Czechia,1484.68,false,39,/fifa-world-ranking/CZE,CZE,1500.29,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43901,45,https://api.fifa.com/api/v3/picture/flags-sq-2/CRC,70,46,Costa Rica,Costa Rica,Costa Rica,1483.74,false,47,/fifa-world-ranking/CRC,CRC,1481.13,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+44002,46,https://api.fifa.com/api/v3/picture/flags-sq-2/SVK,70,46,Slovakia,Slovakia,Slovakia,1483.35,false,42,/fifa-world-ranking/SVK,SVK,1491.87,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43964,47,https://api.fifa.com/api/v3/picture/flags-sq-2/ROU,70,46,Romania,Romania,Romania,1480.13,false,51,/fifa-world-ranking/ROU,ROU,1462.85,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43949,48,https://api.fifa.com/api/v3/picture/flags-sq-2/GRE,70,46,Greece,Greece,Greece,1472.99,false,40,/fifa-world-ranking/GRE,GRE,1494.72,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43929,49,https://api.fifa.com/api/v3/picture/flags-sq-2/PER,70,46,Peru,Peru,Peru,1464.05,false,48,/fifa-world-ranking/PER,PER,1469.31,2025-10-17T10:27:00+00:00,,CONMEBOL,CONMEBOL
+43931,50,https://api.fifa.com/api/v3/picture/flags-sq-2/VEN,70,46,Venezuela,Venezuela,Venezuela,1463.27,false,49,/fifa-world-ranking/VEN,VEN,1465.02,2025-10-17T10:27:00+00:00,,CONMEBOL,CONMEBOL
+43968,51,https://api.fifa.com/api/v3/picture/flags-sq-2/SVN,70,46,Slovenia,Slovenia,Slovenia,1462.93,false,50,/fifa-world-ranking/SVN,SVN,1462.96,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43834,52,https://api.fifa.com/api/v3/picture/flags-sq-2/QAT,70,46,Qatar,Qatar,Qatar,1461.6,false,53,/fifa-world-ranking/QAT,QAT,1453.65,2025-10-17T10:27:00+00:00,,AFC,AFC
+43869,53,https://api.fifa.com/api/v3/picture/flags-sq-2/MLI,70,46,Mali,Mali,Mali,1455.78,false,56,/fifa-world-ranking/MLI,MLI,1445.83,2025-10-17T10:27:00+00:00,,CAF,CAF
+43849,54,https://api.fifa.com/api/v3/picture/flags-sq-2/CMR,70,46,Cameroon,Cameroon,Cameroon,1453.71,false,52,/fifa-world-ranking/CMR,CMR,1455.42,2025-10-17T10:27:00+00:00,,CAF,CAF
+44005,55,https://api.fifa.com/api/v3/picture/flags-sq-2/UZB,70,46,Uzbekistan,Uzbekistan,Uzbekistan,1452.34,false,54,/fifa-world-ranking/UZB,UZB,1453.31,2025-10-17T10:27:00+00:00,,AFC,AFC
+43925,56,https://api.fifa.com/api/v3/picture/flags-sq-2/CHI,70,46,Chile,Chile,Chile,1446.93,false,57,/fifa-world-ranking/CHI,CHI,1441.66,2025-10-17T10:27:00+00:00,,CONMEBOL,CONMEBOL
+43818,57,https://api.fifa.com/api/v3/picture/flags-sq-2/IRQ,70,46,Iraq,Iraq,Iraq,1428.69,false,58,/fifa-world-ranking/IRQ,IRQ,1422.2,2025-10-17T10:27:00+00:00,,AFC,AFC
+43835,58,https://api.fifa.com/api/v3/picture/flags-sq-2/KSA,70,46,Saudi Arabia,Saudi Arabia,Saudi Arabia,1427.37,false,59,/fifa-world-ranking/KSA,KSA,1420.65,2025-10-17T10:27:00+00:00,,AFC,AFC
+43883,59,https://api.fifa.com/api/v3/picture/flags-sq-2/RSA,70,46,South Africa,South Africa,South Africa,1423.17,false,55,/fifa-world-ranking/RSA,RSA,1448.67,2025-10-17T10:27:00+00:00,,CAF,CAF
+20014,60,https://api.fifa.com/api/v3/picture/flags-sq-2/COD,70,46,Congo DR,Congo DR,Congo DR,1421.32,false,60,/fifa-world-ranking/COD,COD,1407.6,2025-10-17T10:27:00+00:00,,CAF,CAF
+43932,61,https://api.fifa.com/api/v3/picture/flags-sq-2/ALB,70,46,Albania,Albania,Albania,1401.34,false,66,/fifa-world-ranking/ALB,ALB,1380.66,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43953,62,https://api.fifa.com/api/v3/picture/flags-sq-2/IRL,70,46,Republic of Ireland,Republic of Ireland,Republic of Ireland,1401.18,false,61,/fifa-world-ranking/IRL,IRL,1397.52,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43847,63,https://api.fifa.com/api/v3/picture/flags-sq-2/BFA,70,46,Burkina Faso,Burkina Faso,Burkina Faso,1398.05,false,64,/fifa-world-ranking/BFA,BFA,1385.37,2025-10-17T10:27:00+00:00,,CAF,CAF
+43909,64,https://api.fifa.com/api/v3/picture/flags-sq-2/HON,70,46,Honduras,Honduras,Honduras,1396.23,false,65,/fifa-world-ranking/HON,HON,1383.98,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+44000,65,https://api.fifa.com/api/v3/picture/flags-sq-2/MKD,70,46,North Macedonia,North Macedonia,North Macedonia,1390.6,false,63,/fifa-world-ranking/MKD,MKD,1388.5,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43820,66,https://api.fifa.com/api/v3/picture/flags-sq-2/JOR,70,46,Jordan,Jordan,Jordan,1380.87,false,62,/fifa-world-ranking/JOR,JOR,1391.33,2025-10-17T10:27:00+00:00,,AFC,AFC
+43840,67,https://api.fifa.com/api/v3/picture/flags-sq-2/UAE,70,46,United Arab Emirates,United Arab Emirates,United Arab Emirates,1379.93,false,67,/fifa-world-ranking/UAE,UAE,1379.86,2025-10-17T10:27:00+00:00,,AFC,AFC
+43910,68,https://api.fifa.com/api/v3/picture/flags-sq-2/JAM,70,46,Jamaica,Jamaica,Jamaica,1367.18,false,69,/fifa-world-ranking/JAM,JAM,1377.22,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43952,69,https://api.fifa.com/api/v3/picture/flags-sq-2/NIR,70,46,Northern Ireland,Northern Ireland,Northern Ireland,1366.27,false,72,/fifa-world-ranking/NIR,NIR,1355.98,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43947,70,https://api.fifa.com/api/v3/picture/flags-sq-2/GEO,70,46,Georgia,Georgia,Georgia,1365.92,false,68,/fifa-world-ranking/GEO,GEO,1377.32,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43850,71,https://api.fifa.com/api/v3/picture/flags-sq-2/CPV,70,46,Cabo Verde,Cabo Verde,Cabo Verde,1364.26,false,70,/fifa-world-ranking/CPV,CPV,1363.21,2025-10-17T10:27:00+00:00,,CAF,CAF
+43945,72,https://api.fifa.com/api/v3/picture/flags-sq-2/FIN,70,46,Finland,Finland,Finland,1360.27,false,71,/fifa-world-ranking/FIN,FIN,1358.72,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43860,73,https://api.fifa.com/api/v3/picture/flags-sq-2/GHA,70,46,Ghana,Ghana,Ghana,1356.4,false,75,/fifa-world-ranking/GHA,GHA,1340.84,2025-10-17T10:27:00+00:00,,CAF,CAF
+43951,74,https://api.fifa.com/api/v3/picture/flags-sq-2/ISL,70,46,Iceland,Iceland,Iceland,1344.84,false,74,/fifa-world-ranking/ISL,ISL,1343.09,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+44037,75,https://api.fifa.com/api/v3/picture/flags-sq-2/BIH,70,46,Bosnia and Herzegovina,Bosnia and Herzegovina,Bosnia and Herzegovina,1341.36,false,73,/fifa-world-ranking/BIH,BIH,1344.25,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43923,76,https://api.fifa.com/api/v3/picture/flags-sq-2/BOL,70,46,Bolivia,Bolivia,Bolivia,1334.55,false,77,/fifa-world-ranking/BOL,BOL,1332.24,2025-10-17T10:27:00+00:00,,CONMEBOL,CONMEBOL
+43858,77,https://api.fifa.com/api/v3/picture/flags-sq-2/GAB,70,46,Gabon,Gabon,Gabon,1329.91,false,79,/fifa-world-ranking/GAB,GAB,1314.06,2025-10-17T10:27:00+00:00,,CAF,CAF
+43984,78,https://api.fifa.com/api/v3/picture/flags-sq-2/ISR,70,46,Israel,Israel,Israel,1324.57,false,76,/fifa-world-ranking/ISR,ISR,1337.4,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43831,79,https://api.fifa.com/api/v3/picture/flags-sq-2/OMA,70,46,Oman,Oman,Oman,1312.32,false,78,/fifa-world-ranking/OMA,OMA,1320.34,2025-10-17T10:27:00+00:00,,AFC,AFC
+43861,80,https://api.fifa.com/api/v3/picture/flags-sq-2/GUI,70,46,Guinea,Guinea,Guinea,1305.22,false,81,/fifa-world-ranking/GUI,GUI,1299.49,2025-10-17T10:27:00+00:00,,CAF,CAF
+1903356,81,https://api.fifa.com/api/v3/picture/flags-sq-2/MNE,70,46,Montenegro,Montenegro,Montenegro,1297.88,false,80,/fifa-world-ranking/MNE,MNE,1314.05,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+1895293,82,https://api.fifa.com/api/v3/picture/flags-sq-2/CUW,70,46,Curaçao,Curaçao,Curaçao,1295.52,false,84,/fifa-world-ranking/CUW,CUW,1282.42,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43889,83,https://api.fifa.com/api/v3/picture/flags-sq-2/UGA,70,46,Uganda,Uganda,Uganda,1287.75,false,82,/fifa-world-ranking/UGA,UGA,1287.61,2025-10-17T10:27:00+00:00,,CAF,CAF
+1942535,84,https://api.fifa.com/api/v3/picture/flags-sq-2/KOS,70,46,Kosovo,Kosovo,Kosovo,1284.73,false,91,/fifa-world-ranking/KOS,KOS,1262.1,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43978,85,https://api.fifa.com/api/v3/picture/flags-sq-2/NZL,70,46,New Zealand,New Zealand,New Zealand,1283.3,false,83,/fifa-world-ranking/NZL,NZL,1283.94,2025-10-17T10:27:00+00:00,,OFC,OFC
+43838,86,https://api.fifa.com/api/v3/picture/flags-sq-2/SYR,70,46,Syria,Syria,Syria,1274.16,false,92,/fifa-world-ranking/SYR,SYR,1259.32,2025-10-17T10:27:00+00:00,,AFC,AFC
+43891,87,https://api.fifa.com/api/v3/picture/flags-sq-2/ZAM,70,46,Zambia,Zambia,Zambia,1268.6,false,85,/fifa-world-ranking/ZAM,ZAM,1273,2025-10-17T10:27:00+00:00,,CAF,CAF
+43908,88,https://api.fifa.com/api/v3/picture/flags-sq-2/HAI,70,46,Haiti,Haiti,Haiti,1268.32,false,87,/fifa-world-ranking/HAI,HAI,1269.24,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43844,89,https://api.fifa.com/api/v3/picture/flags-sq-2/ANG,70,46,Angola,Angola,Angola,1267.45,false,89,/fifa-world-ranking/ANG,ANG,1268.72,2025-10-17T10:27:00+00:00,,CAF,CAF
+43808,90,https://api.fifa.com/api/v3/picture/flags-sq-2/BHR,70,46,Bahrain,Bahrain,Bahrain,1267.16,false,88,/fifa-world-ranking/BHR,BHR,1268.73,2025-10-17T10:27:00+00:00,,AFC,AFC
+43936,91,https://api.fifa.com/api/v3/picture/flags-sq-2/BUL,70,46,Bulgaria,Bulgaria,Bulgaria,1263.07,false,86,/fifa-world-ranking/BUL,BUL,1271.52,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43845,92,https://api.fifa.com/api/v3/picture/flags-sq-2/BEN,70,46,Benin,Benin,Benin,1259.39,false,93,/fifa-world-ranking/BEN,BEN,1257.3,2025-10-17T10:27:00+00:00,,CAF,CAF
+43812,93,https://api.fifa.com/api/v3/picture/flags-sq-2/CHN,70,46,China PR,China PR,China PR,1249.06,false,94,/fifa-world-ranking/CHN,CHN,1249.06,2025-10-17T10:27:00+00:00,,AFC,AFC
+43904,94,https://api.fifa.com/api/v3/picture/flags-sq-2/SLV,70,46,El Salvador,El Salvador,El Salvador,1247.77,false,90,/fifa-world-ranking/SLV,SLV,1267.75,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43906,95,https://api.fifa.com/api/v3/picture/flags-sq-2/GUA,70,46,Guatemala,Guatemala,Guatemala,1241.52,false,98,/fifa-world-ranking/GUA,GUA,1230.73,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43839,96,https://api.fifa.com/api/v3/picture/flags-sq-2/THA,70,46,Thailand,Thailand,Thailand,1235.36,false,101,/fifa-world-ranking/THA,THA,1222.2,2025-10-17T10:27:00+00:00,,AFC,AFC
+43958,97,https://api.fifa.com/api/v3/picture/flags-sq-2/LUX,70,46,Luxembourg,Luxembourg,Luxembourg,1231.8,false,96,/fifa-world-ranking/LUX,LUX,1242.61,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43989,98,https://api.fifa.com/api/v3/picture/flags-sq-2/PLE,70,46,Palestine,Palestine,Palestine,1230.55,false,99,/fifa-world-ranking/PLE,PLE,1230.55,2025-10-17T10:27:00+00:00,,AFC,AFC
+43856,99,https://api.fifa.com/api/v3/picture/flags-sq-2/EQG,70,46,Equatorial Guinea,Equatorial Guinea,Equatorial Guinea,1229.91,false,95,/fifa-world-ranking/EQG,EQG,1248.68,2025-10-17T10:27:00+00:00,,CAF,CAF
+43920,100,https://api.fifa.com/api/v3/picture/flags-sq-2/TRI,70,46,Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,1229.9,false,102,/fifa-world-ranking/TRI,TRI,1220.99,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43873,101,https://api.fifa.com/api/v3/picture/flags-sq-2/MOZ,70,46,Mozambique,Mozambique,Mozambique,1227.53,false,97,/fifa-world-ranking/MOZ,MOZ,1234.04,2025-10-17T10:27:00+00:00,,CAF,CAF
+44003,102,https://api.fifa.com/api/v3/picture/flags-sq-2/TJK,70,46,Tajikistan,Tajikistan,Tajikistan,1220.21,false,104,/fifa-world-ranking/TJK,TJK,1206.15,2025-10-17T10:27:00+00:00,,AFC,AFC
+43937,103,https://api.fifa.com/api/v3/picture/flags-sq-2/BLR,70,46,Belarus,Belarus,Belarus,1212.78,false,100,/fifa-world-ranking/BLR,BLR,1223.54,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43933,104,https://api.fifa.com/api/v3/picture/flags-sq-2/ARM,70,46,Armenia,Armenia,Armenia,1204.7,false,103,/fifa-world-ranking/ARM,ARM,1219.55,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43999,105,https://api.fifa.com/api/v3/picture/flags-sq-2/KGZ,70,46,Kyrgyz Republic,Kyrgyz Republic,Kyrgyz Republic,1201.22,false,106,/fifa-world-ranking/KGZ,KGZ,1201.22,2025-10-17T10:27:00+00:00,,AFC,AFC
+43867,106,https://api.fifa.com/api/v3/picture/flags-sq-2/MAD,70,46,Madagascar,Madagascar,Madagascar,1193.48,false,108,/fifa-world-ranking/MAD,MAD,1187.59,2025-10-17T10:27:00+00:00,,CAF,CAF
+43886,107,https://api.fifa.com/api/v3/picture/flags-sq-2/TAN,70,46,Tanzania,Tanzania,Tanzania,1187.08,false,107,/fifa-world-ranking/TAN,TAN,1199.45,2025-10-17T10:27:00+00:00,,CAF,CAF
+43875,108,https://api.fifa.com/api/v3/picture/flags-sq-2/NIG,70,46,Niger,Niger,Niger,1187,false,117,/fifa-world-ranking/NIG,NIG,1160.33,2025-10-17T10:27:00+00:00,,CAF,CAF
+43863,109,https://api.fifa.com/api/v3/picture/flags-sq-2/KEN,70,46,Kenya,Kenya,Kenya,1185.55,false,111,/fifa-world-ranking/KEN,KEN,1181.64,2025-10-17T10:27:00+00:00,,CAF,CAF
+43825,110,https://api.fifa.com/api/v3/picture/flags-sq-2/LBN,70,46,Lebanon,Lebanon,Lebanon,1184.68,false,113,/fifa-world-ranking/LBN,LBN,1172.3,2025-10-17T10:27:00+00:00,,AFC,AFC
+43841,111,https://api.fifa.com/api/v3/picture/flags-sq-2/VIE,70,46,Vietnam,Vietnam,Vietnam,1183.62,false,114,/fifa-world-ranking/VIE,VIE,1169.92,2025-10-17T10:27:00+00:00,,AFC,AFC
+1896913,112,https://api.fifa.com/api/v3/picture/flags-sq-2/COM,70,46,Comoros,Comoros,Comoros,1180.18,false,105,/fifa-world-ranking/COM,COM,1201.83,2025-10-17T10:27:00+00:00,,CAF,CAF
+43870,113,https://api.fifa.com/api/v3/picture/flags-sq-2/MTN,70,46,Mauritania,Mauritania,Mauritania,1179.2,false,110,/fifa-world-ranking/MTN,MTN,1183.28,2025-10-17T10:27:00+00:00,,CAF,CAF
+43866,114,https://api.fifa.com/api/v3/picture/flags-sq-2/LBY,70,46,Libya,Libya,Libya,1177.77,false,112,/fifa-world-ranking/LBY,LBY,1179.57,2025-10-17T10:27:00+00:00,,CAF,CAF
+44027,115,https://api.fifa.com/api/v3/picture/flags-sq-2/KAZ,70,46,Kazakhstan,Kazakhstan,Kazakhstan,1168.47,false,118,/fifa-world-ranking/KAZ,KAZ,1158.06,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43874,116,https://api.fifa.com/api/v3/picture/flags-sq-2/NAM,70,46,Namibia,Namibia,Namibia,1162.79,false,109,/fifa-world-ranking/NAM,NAM,1183.8,2025-10-17T10:27:00+00:00,,CAF,CAF
+43859,117,https://api.fifa.com/api/v3/picture/flags-sq-2/GAM,70,46,The Gambia,The Gambia,The Gambia,1162.12,false,115,/fifa-world-ranking/GAM,GAM,1165.93,2025-10-17T10:27:00+00:00,,CAF,CAF
+43827,118,https://api.fifa.com/api/v3/picture/flags-sq-2/MAS,70,46,Malaysia,Malaysia,Malaysia,1161.53,false,123,/fifa-world-ranking/MAS,MAS,1148.23,2025-10-17T10:27:00+00:00,,AFC,AFC
+43884,119,https://api.fifa.com/api/v3/picture/flags-sq-2/SDN,70,46,Sudan,Sudan,Sudan,1157.11,false,116,/fifa-world-ranking/SDN,SDN,1163.56,2025-10-17T10:27:00+00:00,,CAF,CAF
+43821,120,https://api.fifa.com/api/v3/picture/flags-sq-2/PRK,70,46,Korea DPR,Korea DPR,Korea DPR,1151.05,false,121,/fifa-world-ranking/PRK,PRK,1151.05,2025-10-17T10:27:00+00:00,,AFC,AFC
+43881,121,https://api.fifa.com/api/v3/picture/flags-sq-2/SLE,70,46,Sierra Leone,Sierra Leone,Sierra Leone,1149.1,false,122,/fifa-world-ranking/SLE,SLE,1150.1,2025-10-17T10:27:00+00:00,,CAF,CAF
+43816,122,https://api.fifa.com/api/v3/picture/flags-sq-2/IDN,70,46,Indonesia,Indonesia,Indonesia,1144.73,false,119,/fifa-world-ranking/IDN,IDN,1157.94,2025-10-17T10:27:00+00:00,,AFC,AFC
+43994,123,https://api.fifa.com/api/v3/picture/flags-sq-2/AZE,70,46,Azerbaijan,Azerbaijan,Azerbaijan,1142.25,false,124,/fifa-world-ranking/AZE,AZE,1148.09,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43887,124,https://api.fifa.com/api/v3/picture/flags-sq-2/TOG,70,46,Togo,Togo,Togo,1140.35,false,120,/fifa-world-ranking/TOG,TOG,1151.08,2025-10-17T10:27:00+00:00,,CAF,CAF
+43939,125,https://api.fifa.com/api/v3/picture/flags-sq-2/CYP,70,46,Cyprus,Cyprus,Cyprus,1137.43,false,128,/fifa-world-ranking/CYP,CYP,1128.1,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43919,126,https://api.fifa.com/api/v3/picture/flags-sq-2/SUR,70,46,Suriname,Suriname,Suriname,1135.89,false,131,/fifa-world-ranking/SUR,SUR,1125.21,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43944,127,https://api.fifa.com/api/v3/picture/flags-sq-2/FRO,70,46,Faroe Islands,Faroe Islands,Faroe Islands,1132.41,false,136,/fifa-world-ranking/FRO,FRO,1094.46,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43868,128,https://api.fifa.com/api/v3/picture/flags-sq-2/MWI,70,46,Malawi,Malawi,Malawi,1129.89,false,126,/fifa-world-ranking/MWI,MWI,1133.6,2025-10-17T10:27:00+00:00,,CAF,CAF
+43892,129,https://api.fifa.com/api/v3/picture/flags-sq-2/ZIM,70,46,Zimbabwe,Zimbabwe,Zimbabwe,1125.55,false,125,/fifa-world-ranking/ZIM,ZIM,1133.75,2025-10-17T10:27:00+00:00,,CAF,CAF
+43943,130,https://api.fifa.com/api/v3/picture/flags-sq-2/EST,70,46,Estonia,Estonia,Estonia,1122.25,false,129,/fifa-world-ranking/EST,EST,1127.2,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43877,131,https://api.fifa.com/api/v3/picture/flags-sq-2/RWA,70,46,Rwanda,Rwanda,Rwanda,1117.78,false,127,/fifa-world-ranking/RWA,RWA,1133.5,2025-10-17T10:27:00+00:00,,CAF,CAF
+43862,132,https://api.fifa.com/api/v3/picture/flags-sq-2/GNB,70,46,Guinea-Bissau,Guinea-Bissau,Guinea-Bissau,1108.09,false,130,/fifa-world-ranking/GNB,GNB,1126.81,2025-10-17T10:27:00+00:00,,CAF,CAF
+43913,133,https://api.fifa.com/api/v3/picture/flags-sq-2/NCA,70,46,Nicaragua,Nicaragua,Nicaragua,1106.83,false,132,/fifa-world-ranking/NCA,NCA,1120.78,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43853,134,https://api.fifa.com/api/v3/picture/flags-sq-2/CGO,70,46,Congo,Congo,Congo,1105.96,false,133,/fifa-world-ranking/CGO,CGO,1119.77,2025-10-17T10:27:00+00:00,,CAF,CAF
+43823,135,https://api.fifa.com/api/v3/picture/flags-sq-2/KUW,70,46,Kuwait,Kuwait,Kuwait,1096.82,false,135,/fifa-world-ranking/KUW,KUW,1100.38,2025-10-17T10:27:00+00:00,,AFC,AFC
+43815,136,https://api.fifa.com/api/v3/picture/flags-sq-2/IND,70,46,India,India,India,1096.65,false,134,/fifa-world-ranking/IND,IND,1113.8,2025-10-17T10:27:00+00:00,,AFC,AFC
+43846,137,https://api.fifa.com/api/v3/picture/flags-sq-2/BOT,70,46,Botswana,Botswana,Botswana,1084.56,false,139,/fifa-world-ranking/BOT,BOT,1087.27,2025-10-17T10:27:00+00:00,,CAF,CAF
+43865,138,https://api.fifa.com/api/v3/picture/flags-sq-2/LBR,70,46,Liberia,Liberia,Liberia,1084.46,false,144,/fifa-world-ranking/LBR,LBR,1065.62,2025-10-17T10:27:00+00:00,,CAF,CAF
+43955,139,https://api.fifa.com/api/v3/picture/flags-sq-2/LVA,70,46,Latvia,Latvia,Latvia,1084.26,false,137,/fifa-world-ranking/LVA,LVA,1088.8,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43851,140,https://api.fifa.com/api/v3/picture/flags-sq-2/CTA,70,46,Central African Republic,Central African Republic,Central African Republic,1083.57,false,140,/fifa-world-ranking/CTA,CTA,1081.36,2025-10-17T10:27:00+00:00,,CAF,CAF
+43833,141,https://api.fifa.com/api/v3/picture/flags-sq-2/PHI,70,46,Philippines,Philippines,Philippines,1081.44,false,143,/fifa-world-ranking/PHI,PHI,1066.35,2025-10-17T10:27:00+00:00,,AFC,AFC
+44004,142,https://api.fifa.com/api/v3/picture/flags-sq-2/TKM,70,46,Turkmenistan,Turkmenistan,Turkmenistan,1078.09,false,138,/fifa-world-ranking/TKM,TKM,1087.96,2025-10-17T10:27:00+00:00,,AFC,AFC
+43903,143,https://api.fifa.com/api/v3/picture/flags-sq-2/DOM,70,46,Dominican Republic,Dominican Republic,Dominican Republic,1073.54,false,142,/fifa-world-ranking/DOM,DOM,1074.46,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43864,144,https://api.fifa.com/api/v3/picture/flags-sq-2/LES,70,46,Lesotho,Lesotho,Lesotho,1069.83,false,153,/fifa-world-ranking/LES,LES,1034.1,2025-10-17T10:27:00+00:00,,CAF,CAF
+43848,145,https://api.fifa.com/api/v3/picture/flags-sq-2/BDI,70,46,Burundi,Burundi,Burundi,1060.22,false,141,/fifa-world-ranking/BDI,BDI,1077.05,2025-10-17T10:27:00+00:00,,CAF,CAF
+43957,146,https://api.fifa.com/api/v3/picture/flags-sq-2/LTU,70,46,Lithuania,Lithuania,Lithuania,1055.58,false,145,/fifa-world-ranking/LTU,LTU,1065.34,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43857,147,https://api.fifa.com/api/v3/picture/flags-sq-2/ETH,70,46,Ethiopia,Ethiopia,Ethiopia,1055.36,false,147,/fifa-world-ranking/ETH,ETH,1046.41,2025-10-17T10:27:00+00:00,,CAF,CAF
+43814,148,https://api.fifa.com/api/v3/picture/flags-sq-2/HKG,70,46,"Hong Kong, China","Hong Kong, China","Hong Kong, China",1052.54,false,146,/fifa-world-ranking/HKG,HKG,1047.36,2025-10-17T10:27:00+00:00,,AFC,AFC
+43980,149,https://api.fifa.com/api/v3/picture/flags-sq-2/SOL,70,46,Solomon Islands,Solomon Islands,Solomon Islands,1045.58,false,148,/fifa-world-ranking/SOL,SOL,1045.58,2025-10-17T10:27:00+00:00,,OFC,OFC
+20010,150,https://api.fifa.com/api/v3/picture/flags-sq-2/NCL,70,46,New Caledonia,New Caledonia,New Caledonia,1042.62,false,150,/fifa-world-ranking/NCL,NCL,1039.55,2025-10-17T10:27:00+00:00,,OFC,OFC
+43916,151,https://api.fifa.com/api/v3/picture/flags-sq-2/SKN,70,46,St Kitts and Nevis,St Kitts and Nevis,St Kitts and Nevis,1041.53,false,149,/fifa-world-ranking/SKN,SKN,1041.53,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43842,152,https://api.fifa.com/api/v3/picture/flags-sq-2/YEM,70,46,Yemen,Yemen,Yemen,1040.13,false,154,/fifa-world-ranking/YEM,YEM,1021.25,2025-10-17T10:27:00+00:00,,AFC,AFC
+43907,153,https://api.fifa.com/api/v3/picture/flags-sq-2/GUY,70,46,Guyana,Guyana,Guyana,1037.34,false,151,/fifa-world-ranking/GUY,GUY,1037.34,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43977,154,https://api.fifa.com/api/v3/picture/flags-sq-2/FIJ,70,46,Fiji,Fiji,Fiji,1035.11,false,152,/fifa-world-ranking/FIJ,FIJ,1035.11,2025-10-17T10:27:00+00:00,,OFC,OFC
+43836,155,https://api.fifa.com/api/v3/picture/flags-sq-2/SGP,70,46,Singapore,Singapore,Singapore,1030.49,false,158,/fifa-world-ranking/SGP,SGP,1013.34,2025-10-17T10:27:00+00:00,,AFC,AFC
+44036,156,https://api.fifa.com/api/v3/picture/flags-sq-2/MDA,70,46,Moldova,Moldova,Moldova,1020.2,false,156,/fifa-world-ranking/MDA,MDA,1019.2,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43915,157,https://api.fifa.com/api/v3/picture/flags-sq-2/PUR,70,46,Puerto Rico,Puerto Rico,Puerto Rico,1020.07,false,155,/fifa-world-ranking/PUR,PUR,1020.44,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43981,158,https://api.fifa.com/api/v3/picture/flags-sq-2/TAH,70,46,Tahiti,Tahiti,Tahiti,1019.04,false,157,/fifa-world-ranking/TAH,TAH,1019.04,2025-10-17T10:27:00+00:00,,OFC,OFC
+43885,159,https://api.fifa.com/api/v3/picture/flags-sq-2/SWZ,70,46,Eswatini,Eswatini,Eswatini,1010.52,false,159,/fifa-world-ranking/SWZ,SWZ,1010.06,2025-10-17T10:27:00+00:00,,CAF,CAF
+1882218,160,https://api.fifa.com/api/v3/picture/flags-sq-2/ATG,70,46,Antigua and Barbuda,Antigua and Barbuda,Antigua and Barbuda,992.38,false,162,/fifa-world-ranking/ATG,ATG,992.38,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43982,161,https://api.fifa.com/api/v3/picture/flags-sq-2/VAN,70,46,Vanuatu,Vanuatu,Vanuatu,991.59,false,163,/fifa-world-ranking/VAN,VAN,991.59,2025-10-17T10:27:00+00:00,,OFC,OFC
+20000,162,https://api.fifa.com/api/v3/picture/flags-sq-2/AFG,70,46,Afghanistan,Afghanistan,Afghanistan,991.19,false,161,/fifa-world-ranking/AFG,AFG,998.88,2025-10-17T10:27:00+00:00,,AFC,AFC
+43829,163,https://api.fifa.com/api/v3/picture/flags-sq-2/MYA,70,46,Myanmar,Myanmar,Myanmar,990.81,false,160,/fifa-world-ranking/MYA,MYA,1004.15,2025-10-17T10:27:00+00:00,,AFC,AFC
+43917,164,https://api.fifa.com/api/v3/picture/flags-sq-2/LCA,70,46,St Lucia,St Lucia,St Lucia,990.69,false,164,/fifa-world-ranking/LCA,LCA,990.69,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43905,165,https://api.fifa.com/api/v3/picture/flags-sq-2/GRN,70,46,Grenada,Grenada,Grenada,986.48,false,168,/fifa-world-ranking/GRN,GRN,978.4,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43959,166,https://api.fifa.com/api/v3/picture/flags-sq-2/MLT,70,46,Malta,Malta,Malta,979.18,false,166,/fifa-world-ranking/MLT,MLT,982.43,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+1935341,167,https://api.fifa.com/api/v3/picture/flags-sq-2/SSD,70,46,South Sudan,South Sudan,South Sudan,978.7,false,169,/fifa-world-ranking/SSD,SSD,976.56,2025-10-17T10:27:00+00:00,,CAF,CAF
+43898,168,https://api.fifa.com/api/v3/picture/flags-sq-2/BER,70,46,Bermuda,Bermuda,Bermuda,976.75,false,165,/fifa-world-ranking/BER,BER,988.72,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43902,169,https://api.fifa.com/api/v3/picture/flags-sq-2/CUB,70,46,Cuba,Cuba,Cuba,975.34,false,167,/fifa-world-ranking/CUB,CUB,980.33,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43979,170,https://api.fifa.com/api/v3/picture/flags-sq-2/PNG,70,46,Papua New Guinea,Papua New Guinea,Papua New Guinea,969.17,false,170,/fifa-world-ranking/PNG,PNG,969.17,2025-10-17T10:27:00+00:00,,OFC,OFC
+43918,171,https://api.fifa.com/api/v3/picture/flags-sq-2/VIN,70,46,St Vincent and the Grenadines,St Vincent and the Grenadines,St Vincent and the Grenadines,962.43,false,172,/fifa-world-ranking/VIN,VIN,962.43,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+20001,172,https://api.fifa.com/api/v3/picture/flags-sq-2/AND,70,46,Andorra,Andorra,Andorra,955.1,false,174,/fifa-world-ranking/AND,AND,954.68,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+43828,173,https://api.fifa.com/api/v3/picture/flags-sq-2/MDV,70,46,Maldives,Maldives,Maldives,954.53,false,171,/fifa-world-ranking/MDV,MDV,968.59,2025-10-17T10:27:00+00:00,,AFC,AFC
+43813,174,https://api.fifa.com/api/v3/picture/flags-sq-2/TPE,70,46,Chinese Taipei,Chinese Taipei,Chinese Taipei,947.64,false,173,/fifa-world-ranking/TPE,TPE,960.81,2025-10-17T10:27:00+00:00,,AFC,AFC
+43896,175,https://api.fifa.com/api/v3/picture/flags-sq-2/BRB,70,46,Barbados,Barbados,Barbados,919.97,false,177,/fifa-world-ranking/BRB,BRB,919.97,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+20009,176,https://api.fifa.com/api/v3/picture/flags-sq-2/MSR,70,46,Montserrat,Montserrat,Montserrat,916.75,false,178,/fifa-world-ranking/MSR,MSR,916.75,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43871,177,https://api.fifa.com/api/v3/picture/flags-sq-2/MRI,70,46,Mauritius,Mauritius,Mauritius,915.51,false,179,/fifa-world-ranking/MRI,MRI,912.24,2025-10-17T10:27:00+00:00,,CAF,CAF
+43852,178,https://api.fifa.com/api/v3/picture/flags-sq-2/CHA,70,46,Chad,Chad,Chad,913.87,false,175,/fifa-world-ranking/CHA,CHA,925.82,2025-10-17T10:27:00+00:00,,CAF,CAF
+44009,179,https://api.fifa.com/api/v3/picture/flags-sq-2/CAM,70,46,Cambodia,Cambodia,Cambodia,910.21,false,180,/fifa-world-ranking/CAM,CAM,910.21,2025-10-17T10:27:00+00:00,,AFC,AFC
+43830,180,https://api.fifa.com/api/v3/picture/flags-sq-2/NEP,70,46,Nepal,Nepal,Nepal,909.32,false,176,/fifa-world-ranking/NEP,NEP,923.02,2025-10-17T10:27:00+00:00,,AFC,AFC
+44011,181,https://api.fifa.com/api/v3/picture/flags-sq-2/BLZ,70,46,Belize,Belize,Belize,904.45,false,181,/fifa-world-ranking/BLZ,BLZ,904.45,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43997,182,https://api.fifa.com/api/v3/picture/flags-sq-2/DMA,70,46,Dominica,Dominica,Dominica,901.37,false,182,/fifa-world-ranking/DMA,DMA,901.37,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43809,183,https://api.fifa.com/api/v3/picture/flags-sq-2/BAN,70,46,Bangladesh,Bangladesh,Bangladesh,894.06,false,184,/fifa-world-ranking/BAN,BAN,899.24,2025-10-17T10:27:00+00:00,,AFC,AFC
+20012,184,https://api.fifa.com/api/v3/picture/flags-sq-2/ASA,70,46,American Samoa,American Samoa,American Samoa,883.17,false,187,/fifa-world-ranking/ASA,ASA,883.17,2025-10-17T10:27:00+00:00,,OFC,OFC
+43810,185,https://api.fifa.com/api/v3/picture/flags-sq-2/BRU,70,46,Brunei Darussalam,Brunei Darussalam,Brunei Darussalam,881.74,false,183,/fifa-world-ranking/BRU,BRU,900.62,2025-10-17T10:27:00+00:00,,AFC,AFC
+20008,186,https://api.fifa.com/api/v3/picture/flags-sq-2/MNG,70,46,Mongolia,Mongolia,Mongolia,879.75,false,188,/fifa-world-ranking/MNG,MNG,879.75,2025-10-17T10:27:00+00:00,,AFC,AFC
+44007,187,https://api.fifa.com/api/v3/picture/flags-sq-2/COK,70,46,Cook Islands,Cook Islands,Cook Islands,877.53,false,189,/fifa-world-ranking/COK,COK,877.53,2025-10-17T10:27:00+00:00,,OFC,OFC
+43824,188,https://api.fifa.com/api/v3/picture/flags-sq-2/LAO,70,46,Laos,Laos,Laos,877.05,false,185,/fifa-world-ranking/LAO,LAO,890.35,2025-10-17T10:27:00+00:00,,AFC,AFC
+20003,189,https://api.fifa.com/api/v3/picture/flags-sq-2/BHU,70,46,Bhutan,Bhutan,Bhutan,876.56,false,186,/fifa-world-ranking/BHU,BHU,888.94,2025-10-17T10:27:00+00:00,,AFC,AFC
+1882637,190,https://api.fifa.com/api/v3/picture/flags-sq-2/SAM,70,46,Samoa,Samoa,Samoa,876.41,false,190,/fifa-world-ranking/SAM,SAM,876.41,2025-10-17T10:27:00+00:00,,OFC,OFC
+43878,191,https://api.fifa.com/api/v3/picture/flags-sq-2/STP,70,46,São Tomé and Príncipe,São Tomé and Príncipe,São Tomé and Príncipe,871.63,false,195,/fifa-world-ranking/STP,STP,854.76,2025-10-17T10:27:00+00:00,,CAF,CAF
+43826,192,https://api.fifa.com/api/v3/picture/flags-sq-2/MAC,70,46,Macau,Macau,Macau,865.29,false,191,/fifa-world-ranking/MAC,MAC,865.29,2025-10-17T10:27:00+00:00,,AFC,AFC
+43837,193,https://api.fifa.com/api/v3/picture/flags-sq-2/SRI,70,46,Sri Lanka,Sri Lanka,Sri Lanka,862.17,false,197,/fifa-world-ranking/SRI,SRI,852.3,2025-10-17T10:27:00+00:00,,AFC,AFC
+43894,194,https://api.fifa.com/api/v3/picture/flags-sq-2/ARU,70,46,Aruba,Aruba,Aruba,861.16,false,192,/fifa-world-ranking/ARU,ARU,861.16,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43900,195,https://api.fifa.com/api/v3/picture/flags-sq-2/CAY,70,46,Cayman Islands,Cayman Islands,Cayman Islands,853.37,false,196,/fifa-world-ranking/CAY,CAY,853.37,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43996,196,https://api.fifa.com/api/v3/picture/flags-sq-2/DJI,70,46,Djibouti,Djibouti,Djibouti,847.89,false,193,/fifa-world-ranking/DJI,DJI,855.91,2025-10-17T10:27:00+00:00,,CAF,CAF
+1890334,197,https://api.fifa.com/api/v3/picture/flags-sq-2/TLS,70,46,Timor-Leste,Timor-Leste,Timor-Leste,840.27,false,194,/fifa-world-ranking/TLS,TLS,855.36,2025-10-17T10:27:00+00:00,,AFC,AFC
+43832,198,https://api.fifa.com/api/v3/picture/flags-sq-2/PAK,70,46,Pakistan,Pakistan,Pakistan,837.09,false,199,/fifa-world-ranking/PAK,PAK,829.41,2025-10-17T10:27:00+00:00,,AFC,AFC
+44039,199,https://api.fifa.com/api/v3/picture/flags-sq-2/TGA,70,46,Tonga,Tonga,Tonga,835.64,false,198,/fifa-world-ranking/TGA,TGA,835.64,2025-10-17T10:27:00+00:00,,OFC,OFC
+1941613,200,https://api.fifa.com/api/v3/picture/flags-sq-2/GIB,70,46,Gibraltar,Gibraltar,Gibraltar,823.32,false,200,/fifa-world-ranking/GIB,GIB,827.19,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+20007,201,https://api.fifa.com/api/v3/picture/flags-sq-2/GUM,70,46,Guam,Guam,Guam,823.08,false,202,/fifa-world-ranking/GUM,GUM,823.08,2025-10-17T10:27:00+00:00,,AFC,AFC
+43882,202,https://api.fifa.com/api/v3/picture/flags-sq-2/SOM,70,46,Somalia,Somalia,Somalia,818.59,false,201,/fifa-world-ranking/SOM,SOM,824.76,2025-10-17T10:27:00+00:00,,CAF,CAF
+43895,203,https://api.fifa.com/api/v3/picture/flags-sq-2/BAH,70,46,Bahamas,Bahamas,Bahamas,807.36,false,205,/fifa-world-ranking/BAH,BAH,807.36,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43880,204,https://api.fifa.com/api/v3/picture/flags-sq-2/SEY,70,46,Seychelles,Seychelles,Seychelles,805.33,false,203,/fifa-world-ranking/SEY,SEY,812.32,2025-10-17T10:27:00+00:00,,CAF,CAF
+20011,205,https://api.fifa.com/api/v3/picture/flags-sq-2/TCA,70,46,Turks and Caicos Islands,Turks and Caicos Islands,Turks and Caicos Islands,803.98,false,206,/fifa-world-ranking/TCA,TCA,803.98,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43956,206,https://api.fifa.com/api/v3/picture/flags-sq-2/LIE,70,46,Liechtenstein,Liechtenstein,Liechtenstein,801.99,false,204,/fifa-world-ranking/LIE,LIE,808.48,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+1881967,207,https://api.fifa.com/api/v3/picture/flags-sq-2/VIR,70,46,US Virgin Islands,US Virgin Islands,US Virgin Islands,779.71,false,207,/fifa-world-ranking/VIR,VIR,779.71,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+20004,208,https://api.fifa.com/api/v3/picture/flags-sq-2/VGB,70,46,British Virgin Islands,British Virgin Islands,British Virgin Islands,765.41,false,208,/fifa-world-ranking/VGB,VGB,768.5,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+20002,209,https://api.fifa.com/api/v3/picture/flags-sq-2/AIA,70,46,Anguilla,Anguilla,Anguilla,758.52,false,209,/fifa-world-ranking/AIA,AIA,758.52,2025-10-17T10:27:00+00:00,,CONCACAF,CONCACAF
+43966,210,https://api.fifa.com/api/v3/picture/flags-sq-2/SMR,70,46,San Marino,San Marino,San Marino,727.95,false,210,/fifa-world-ranking/SMR,SMR,733.23,2025-10-17T10:27:00+00:00,,UEFA,UEFA
+20006,,https://api.fifa.com/api/v3/picture/flags-sq-2/ERI,70,46,Eritrea,Eritrea,Eritrea,855.56,false,,/fifa-world-ranking/ERI,ERI,0,2025-10-17T10:27:00+00:00,,CAF,CAF

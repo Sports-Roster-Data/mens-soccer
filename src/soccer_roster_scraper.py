@@ -87,6 +87,7 @@ class FieldExtractors:
             r'#(\d{1,2})\b',
             r'No\.?[:\s]*(\d{1,2})\b',
             r'\b(\d{1,2})\s+(?=[A-Z])',  # Number followed by capitalized name
+            r'^\s*(\d{1,2})\s*$',  # Plain number (1-2 digits, with optional whitespace)
         ]
 
         for pattern in patterns:
@@ -133,28 +134,47 @@ class FieldExtractors:
         if not text:
             return ''
 
-        # Look for abbreviated position patterns
-        position_match = re.search(r'\b(GK|D|M|F|MF|DF|FW|DEF|MID|FOR)\b', text, re.IGNORECASE)
+        # Clean the text
+        text = text.strip()
+
+        # Look for abbreviated position patterns (most common first)
+        # Expanded to include more variations: ST, A, ATT, W, LW, RW, CB, LB, RB, CM, CDM, CAM, B (Back), etc.
+        position_match = re.search(
+            r'\b(GK|G|GOALKEEPER|'  # Goalkeeper variations
+            r'D|DEF|DF|DEFENDER|B|BACK|CB|LB|RB|LCB|RCB|FB|LWB|RWB|'  # Defender variations (B=Back)
+            r'M|MF|MID|MIDFIELDER|CM|CDM|CAM|DM|AM|LM|RM|'  # Midfielder variations
+            r'F|FW|FOR|FORWARD|ST|STRIKER|A|ATT|ATTACKER|W|WING|WINGER|LW|RW)\b',
+            text,
+            re.IGNORECASE
+        )
         if position_match:
             pos = position_match.group(1).upper()
-            # Normalize variations
-            if pos in ('DEF', 'DF'):
+
+            # Normalize variations to standard positions (GK, D, M, F)
+            # Goalkeeper
+            if pos in ('GK', 'G', 'GOALKEEPER'):
+                return 'GK'
+            # Defender (including B for Back)
+            elif pos in ('DEF', 'DF', 'DEFENDER', 'B', 'BACK', 'CB', 'LB', 'RB', 'LCB', 'RCB', 'FB', 'LWB', 'RWB'):
                 return 'D'
-            elif pos in ('MID', 'MF'):
+            # Midfielder
+            elif pos in ('MID', 'MF', 'MIDFIELDER', 'CM', 'CDM', 'CAM', 'DM', 'AM', 'LM', 'RM'):
                 return 'M'
-            elif pos in ('FOR', 'FW'):
+            # Forward
+            elif pos in ('FOR', 'FW', 'FORWARD', 'ST', 'STRIKER', 'A', 'ATT', 'ATTACKER', 'W', 'WING', 'WINGER', 'LW', 'RW'):
                 return 'F'
+            # Return as-is if it's one of the standard forms
             return pos
 
-        # Look for full position names
+        # Look for full position names (fallback)
         text_upper = text.upper()
-        if 'GOALKEEPER' in text_upper or 'GOALIE' in text_upper:
+        if 'GOALKEEPER' in text_upper or 'GOALIE' in text_upper or 'KEEPER' in text_upper:
             return 'GK'
-        elif 'DEFENDER' in text_upper or 'DEFENCE' in text_upper or 'DEFENSE' in text_upper:
+        elif 'DEFENDER' in text_upper or 'DEFENCE' in text_upper or 'DEFENSE' in text_upper or 'BACK' in text_upper:
             return 'D'
         elif 'MIDFIELDER' in text_upper or 'MIDFIELD' in text_upper:
             return 'M'
-        elif 'FORWARD' in text_upper or 'STRIKER' in text_upper:
+        elif 'FORWARD' in text_upper or 'STRIKER' in text_upper or 'ATTACKER' in text_upper or 'ATTACK' in text_upper:
             return 'F'
 
         return ''
@@ -616,6 +636,15 @@ class StandardScraper:
                     response = self.session.get(alternative_url, headers=self.headers, timeout=30)
                     roster_url = alternative_url  # Update for logging
 
+            # If still not 200, try /roster/ without season (some sites don't use season in URL)
+            if response.status_code != 200:
+                logger.info(f"Trying roster URL without season for {team_name}")
+                no_season_url = f"{base_url.rstrip('/')}/roster/"
+                if no_season_url != roster_url:
+                    logger.info(f"Trying URL: {no_season_url}")
+                    response = self.session.get(no_season_url, headers=self.headers, timeout=30)
+                    roster_url = no_season_url  # Update for logging
+
             if response.status_code != 200:
                 logger.warning(f"Failed to retrieve {team_name} - Status: {response.status_code}")
                 return []
@@ -631,10 +660,29 @@ class StandardScraper:
             # Extract players
             players = self._extract_players(html, team_id, team_name, season, division, base_url)
 
+            # If no players found and we haven't tried /roster/ yet, try it
+            if len(players) == 0 and not roster_url.endswith('/roster/'):
+                no_season_url = f"{base_url.rstrip('/')}/roster/"
+                if no_season_url != roster_url:
+                    logger.info(f"No players found, trying roster URL without season: {no_season_url}")
+                    response = self.session.get(no_season_url, headers=self.headers, timeout=30)
+                    if response.status_code == 200:
+                        html = BeautifulSoup(response.content, 'html.parser')
+                        players = self._extract_players(html, team_id, team_name, season, division, base_url)
+                        roster_url = no_season_url  # Update for logging
+
             # Enhance Kentucky players with bio page data (hometown, high school, class, url)
             if team_id == 334:  # Kentucky
                 logger.info(f"Enhancing Kentucky players with bio page data...")
                 players = self._enhance_kentucky_player_data(players)
+
+            # Enhance positions from individual bio pages if many are missing
+            # (Some Sidearm sites don't have positions on roster list page)
+            missing_positions = sum(1 for p in players if not p.position and p.url)
+            if missing_positions > 0 and len(players) > 0:
+                missing_ratio = missing_positions / len(players)
+                if missing_ratio > 0.2:  # If >20% of players are missing positions
+                    players = self._enhance_sidearm_positions_from_bios(players, team_name)
 
             logger.info(f"✓ {team_name}: Found {len(players)} players")
             return players
@@ -658,6 +706,10 @@ class StandardScraper:
             Alternative roster URL with season range
         """
         base_url = base_url.rstrip('/')
+
+        # Remove /index suffix if present (e.g., /sports/msoc/index -> /sports/msoc)
+        if base_url.endswith('/index'):
+            base_url = base_url[:-6]  # Remove '/index'
 
         # Convert single year to range (2025 -> 2025-26)
         try:
@@ -698,6 +750,13 @@ class StandardScraper:
                 # Use the alternate extraction method
                 return self._extract_players_from_list_items(html, team_id, team_name, season, division, base_url)
 
+        # Check for sidearm-list-card-item format (used by Elmira and similar)
+        if not roster_items:
+            card_items = html.find_all('li', class_='sidearm-list-card-item')
+            if card_items:
+                logger.info(f"Found {len(card_items)} players using sidearm-list-card-item format for {team_name}")
+                return self._extract_players_from_card_items(html, team_id, team_name, season, division, base_url)
+
         if not roster_items:
             logger.warning(f"No roster items found for {team_name} (expected class='sidearm-roster-player')")
 
@@ -732,6 +791,12 @@ class StandardScraper:
             if person_cards:
                 logger.info(f"Detected Sidearm card-based layout for {team_name}, using s-person-card parser")
                 return self._extract_players_from_cards(html, team_id, team_name, season, division, base_url)
+
+            # Check if this is a generic card-based layout (player-card)
+            generic_cards = html.find_all('div', class_='player-card')
+            if generic_cards:
+                logger.info(f"Detected generic card-based layout for {team_name}, using player-card parser")
+                return self._extract_players_from_generic_cards(html, team_id, team_name, season, division, base_url)
 
             # Check if this is a WMT Digital roster (roster__item)
             wmt_items = html.find_all('div', class_='roster__item')
@@ -788,7 +853,35 @@ class StandardScraper:
 
                 # Position
                 pos_elem = item.find('span', class_='sidearm-roster-player-position-long-short')
-                position = FieldExtractors.extract_position(pos_elem.get_text()) if pos_elem else ''
+                if not pos_elem:
+                    # Alternative: position in text-bold span within sidearm-roster-player-position div
+                    pos_div = item.find('div', class_='sidearm-roster-player-position')
+                    if pos_div:
+                        pos_elem = pos_div.find('span', class_='text-bold')
+
+                # Extract position text
+                if pos_elem:
+                    position = FieldExtractors.extract_position(pos_elem.get_text())
+                else:
+                    # Fallback: look for any span with position-related class name
+                    position = ''
+                    all_spans = item.find_all('span')
+                    for span in all_spans:
+                        span_class = ' '.join(span.get('class', [])).lower()
+                        if 'position' in span_class or 'pos' in span_class:
+                            position = FieldExtractors.extract_position(span.get_text())
+                            if position:  # Found valid position
+                                break
+
+                    # If still no position, look for any div with position-related class
+                    if not position:
+                        all_divs = item.find_all('div')
+                        for div in all_divs:
+                            div_class = ' '.join(div.get('class', [])).lower()
+                            if 'position' in div_class or 'pos' in div_class:
+                                position = FieldExtractors.extract_position(div.get_text())
+                                if position:  # Found valid position
+                                    break
 
                 # Height
                 height_elem = item.find('span', class_='sidearm-roster-player-height')
@@ -802,16 +895,22 @@ class StandardScraper:
                 major_elem = item.find('span', class_='sidearm-roster-player-major')
                 major = FieldExtractors.clean_text(major_elem.get_text()) if major_elem else ''
 
-                # Hometown
+                # Hometown (check standard field, then custom2)
                 hometown_elem = item.find('span', class_='sidearm-roster-player-hometown')
+                if not hometown_elem:
+                    hometown_elem = item.find('span', class_='sidearm-roster-player-custom2')
                 hometown = FieldExtractors.clean_text(hometown_elem.get_text()) if hometown_elem else ''
 
-                # High school
+                # High school (check standard field, then custom3)
                 hs_elem = item.find('span', class_='sidearm-roster-player-highschool')
+                if not hs_elem:
+                    hs_elem = item.find('span', class_='sidearm-roster-player-custom3')
                 high_school = FieldExtractors.clean_text(hs_elem.get_text()) if hs_elem else ''
 
-                # Previous school
+                # Previous school (check standard field, then custom1)
                 prev_elem = item.find('span', class_='sidearm-roster-player-previous-school')
+                if not prev_elem:
+                    prev_elem = item.find('span', class_='sidearm-roster-player-custom1')
                 previous_school = FieldExtractors.clean_text(prev_elem.get_text()) if prev_elem else ''
 
                 # Create Player object
@@ -1451,6 +1550,26 @@ class StandardScraper:
                 if pos_elem:
                     position = FieldExtractors.extract_position(pos_elem.get_text())
 
+                # Fallback: look for any span with position-related class name
+                if not position:
+                    all_spans = item.find_all('span')
+                    for span in all_spans:
+                        span_class = ' '.join(span.get('class', [])).lower()
+                        if 'position' in span_class or 'pos' in span_class:
+                            position = FieldExtractors.extract_position(span.get_text())
+                            if position:  # Found valid position
+                                break
+
+                # If still no position, look for any div with position-related class
+                if not position:
+                    all_divs = item.find_all('div')
+                    for div in all_divs:
+                        div_class = ' '.join(div.get('class', [])).lower()
+                        if 'position' in div_class or 'pos' in div_class:
+                            position = FieldExtractors.extract_position(div.get_text())
+                            if position:  # Found valid position
+                                break
+
                 # Year/Class
                 year_elem = item.find('span', class_='sidearm-roster-list-item-year')
                 if year_elem:
@@ -1519,6 +1638,115 @@ class StandardScraper:
 
             except Exception as e:
                 logger.warning(f"Error parsing list-item in {team_name}: {e}")
+                continue
+
+        return players
+
+    def _extract_players_from_card_items(self, html, team_id: int, team_name: str, season: str, division: str, base_url: str) -> List[Player]:
+        """
+        Extract players from sidearm-list-card-item format (used by Elmira and similar schools)
+
+        This format uses <li class="sidearm-list-card-item"> with player data in card structure
+
+        Args:
+            html: BeautifulSoup parsed HTML
+            team_id: NCAA team ID
+            team_name: Team name
+            season: Season string
+            division: Division
+            base_url: Base URL for constructing profile URLs
+
+        Returns:
+            List of Player objects
+        """
+        players = []
+
+        # Find all card items
+        card_items = html.find_all('li', class_='sidearm-list-card-item')
+
+        # Extract base domain for URLs
+        extracted = tldextract.extract(base_url)
+        domain = f"{extracted.domain}.{extracted.suffix}"
+        if extracted.subdomain:
+            domain = f"{extracted.subdomain}.{domain}"
+
+        for item in card_items:
+            try:
+                # Jersey number - in sidearm-roster-player-jersey span
+                jersey = ''
+                jersey_elem = item.find('span', class_='sidearm-roster-player-jersey')
+                if jersey_elem:
+                    jersey_span = jersey_elem.find('span')
+                    if jersey_span:
+                        jersey = FieldExtractors.extract_jersey_number(jersey_span.get_text())
+
+                # Name and URL - in sidearm-roster-player-name link
+                name = ''
+                profile_url = ''
+                name_elem = item.find('a', class_='sidearm-roster-player-name')
+                if name_elem:
+                    name = FieldExtractors.clean_text(name_elem.get_text())
+                    if name_elem.get('href'):
+                        href = name_elem['href']
+                        if href.startswith('http'):
+                            profile_url = href
+                        else:
+                            profile_url = f"https://{domain}{href}" if href.startswith('/') else f"https://{domain}/{href}"
+
+                if not name:
+                    continue
+
+                # Position - in sidearm-roster-player-position-short div
+                position = ''
+                pos_elem = item.find('div', class_='sidearm-roster-player-position-short')
+                if pos_elem:
+                    position = FieldExtractors.extract_position(pos_elem.get_text())
+
+                # Height, weight, year - often in combined div
+                height = ''
+                year = ''
+                hwyr_elem = item.find('div', class_='sidearm-roster-details-height-weight-year-custom')
+                if hwyr_elem:
+                    text = hwyr_elem.get_text()
+                    height = FieldExtractors.extract_height(text)
+                    year = FieldExtractors.normalize_academic_year(text)
+
+                # Hometown and schools - in combined div
+                hometown = ''
+                high_school = ''
+                hs_elem = item.find('div', class_='sidearm-roster-details-hometown-schools')
+                if hs_elem:
+                    text = FieldExtractors.clean_text(hs_elem.get_text())
+                    # Usually format like "City, State / High School"
+                    if '/' in text:
+                        parts = text.split('/', 1)
+                        hometown = parts[0].strip()
+                        high_school = parts[1].strip()
+                    else:
+                        hometown = text
+
+                # Create Player object
+                player = Player(
+                    team_id=team_id,
+                    team=team_name,
+                    season=season,
+                    division=division,
+                    name=name,
+                    jersey=jersey,
+                    position=position,
+                    height=height,
+                    year=year,
+                    major='',
+                    hometown=hometown,
+                    high_school=high_school,
+                    previous_school='',
+                    url=profile_url
+                )
+
+                players.append(player)
+
+            except Exception as e:
+                logger.warning(f"Error parsing card-item in {team_name}: {e}")
                 continue
 
         return players
@@ -1617,7 +1845,7 @@ class StandardScraper:
                 header_map['position'] = i
             elif 'ht' in header_text or 'height' in header_text:
                 header_map['height'] = i
-            elif 'yr' in header_text or 'year' in header_text or 'class' in header_text:
+            elif 'yr' in header_text or 'year' in header_text or 'class' in header_text or 'cl.' in header_text:
                 header_map['year'] = i
             elif 'hometown' in header_text or 'home' in header_text:
                 header_map['hometown'] = i
@@ -1651,7 +1879,18 @@ class StandardScraper:
         for row in table_rows:
             try:
                 # Get all cells (including both td and th for generic tables)
-                cells = row.find_all(['td', 'th'])
+                all_cells = row.find_all(['td', 'th'])
+
+                # Filter out hidden cells used for responsive design (d-md-none, d-none, etc.)
+                # These create duplicate cells that break column index mapping
+                cells = []
+                for cell in all_cells:
+                    cell_classes = cell.get('class', [])
+                    # Skip cells that are hidden on desktop (d-md-none) or always hidden (d-none)
+                    if 'd-md-none' in cell_classes:
+                        continue
+                    cells.append(cell)
+
                 if len(cells) < 3:  # Need at least some basic data
                     continue
 
@@ -1677,28 +1916,48 @@ class StandardScraper:
                 # Extract Jersey
                 jersey = ''
                 if 'jersey' in header_map:
-                    jersey = FieldExtractors.clean_text(cells[header_map['jersey']].get_text())
+                    jersey_cell = cells[header_map['jersey']]
+                    # Remove label spans if they exist
+                    for label_span in jersey_cell.find_all('span', class_='label'):
+                        label_span.decompose()
+                    jersey = FieldExtractors.clean_text(jersey_cell.get_text())
 
                 # Extract Position
                 position = ''
                 if 'position' in header_map:
-                    position = FieldExtractors.extract_position(cells[header_map['position']].get_text())
+                    pos_cell = cells[header_map['position']]
+                    # Remove label spans if they exist
+                    for label_span in pos_cell.find_all('span', class_='label'):
+                        label_span.decompose()
+                    position = FieldExtractors.extract_position(pos_cell.get_text())
 
                 # Extract Height
                 height = ''
                 if 'height' in header_map:
-                    height = FieldExtractors.extract_height(cells[header_map['height']].get_text())
+                    height_cell = cells[header_map['height']]
+                    # Remove label spans if they exist
+                    for label_span in height_cell.find_all('span', class_='label'):
+                        label_span.decompose()
+                    height = FieldExtractors.extract_height(height_cell.get_text())
 
                 # Extract Year/Class
                 year = ''
                 if 'year' in header_map:
-                    year = FieldExtractors.normalize_academic_year(cells[header_map['year']].get_text())
+                    year_cell = cells[header_map['year']]
+                    # Remove label spans if they exist
+                    for label_span in year_cell.find_all('span', class_='label'):
+                        label_span.decompose()
+                    year = FieldExtractors.normalize_academic_year(year_cell.get_text())
 
                 # Extract Hometown / High School
                 hometown = ''
                 high_school = ''
                 if 'hometown' in header_map:
-                    hometown_hs = FieldExtractors.clean_text(cells[header_map['hometown']].get_text())
+                    hometown_cell = cells[header_map['hometown']]
+                    # Remove label spans if they exist
+                    for label_span in hometown_cell.find_all('span', class_='label'):
+                        label_span.decompose()
+                    hometown_hs = FieldExtractors.clean_text(hometown_cell.get_text())
                     if ' / ' in hometown_hs:
                         hometown, high_school = hometown_hs.split(' / ', 1)
                     else:
@@ -1986,6 +2245,203 @@ class StandardScraper:
 
         return players
 
+    def _extract_players_from_generic_cards(self, html, team_id: int, team_name: str, season: str, division: str, base_url: str) -> List[Player]:
+        """
+        Extract players from generic card-based layout (player-card divs)
+
+        Used by schools like Goucher and Carlow that use a simple card structure with
+        <div class="player-card"> containing player information
+
+        Args:
+            html: BeautifulSoup parsed HTML
+            team_id: NCAA team ID
+            team_name: Team name
+            season: Season string
+            division: Division
+            base_url: Base URL for constructing profile URLs
+
+        Returns:
+            List of Player objects
+        """
+        players = []
+
+        # Find all player cards - look for exact class 'player-card' to avoid matching wrapper/footer
+        cards = html.find_all('div', class_=lambda x: 'player-card' in x.split() if x else False)
+
+        # Extract base domain for URLs
+        extracted = tldextract.extract(base_url)
+        domain = f"{extracted.domain}.{extracted.suffix}"
+        if extracted.subdomain:
+            domain = f"{extracted.subdomain}.{domain}"
+
+        for card in cards:
+            try:
+                # Find link first (needed for both name and URL)
+                name_link = card.find('a', href=True)
+
+                # Extract name - check for firstname/lastname structure first
+                name = ''
+                firstname_elem = card.find('span', class_='firstname')
+                lastname_elem = card.find('span', class_='lastname')
+                if firstname_elem and lastname_elem:
+                    firstname = FieldExtractors.clean_text(firstname_elem.get_text())
+                    lastname = FieldExtractors.clean_text(lastname_elem.get_text())
+                    name = f"{firstname} {lastname}"
+
+                # Fallback: look for name in link
+                if not name and name_link:
+                    name_span = name_link.find('span', class_='name')
+                    if name_span:
+                        name = FieldExtractors.clean_text(name_span.get_text())
+                    else:
+                        name = FieldExtractors.clean_text(name_link.get_text())
+
+                # Final fallback: any header element
+                if not name:
+                    for tag in ['h2', 'h3', 'h4']:
+                        name_elem = card.find(tag)
+                        if name_elem:
+                            name = FieldExtractors.clean_text(name_elem.get_text())
+                            if name and len(name) > 3:  # Basic validation
+                                break
+
+                if not name:
+                    continue
+
+                # Extract jersey number - look for specific classes and patterns
+                jersey = ''
+                # Try 'number' class first (Goucher uses this)
+                number_elem = card.find('span', class_='number')
+                if number_elem:
+                    jersey = FieldExtractors.extract_jersey_number(number_elem.get_text())
+                else:
+                    # Try generic jersey class
+                    jersey_elem = card.find(class_=lambda x: x and 'jersey' in x.lower() if x else False)
+                    if jersey_elem:
+                        jersey = FieldExtractors.extract_jersey_number(jersey_elem.get_text())
+                    else:
+                        # Look for any number in the card
+                        card_text = card.get_text()
+                        jersey = FieldExtractors.extract_jersey_number(card_text)
+
+                # Check for bio-attr-short structure (Carlow uses this)
+                # Contains 3 spans in order: position, year, height
+                bio_attr = card.find('div', class_='bio-attr-short')
+                position = ''
+                year = ''
+                height = ''
+
+                if bio_attr:
+                    spans = bio_attr.find_all('span', class_='text-muted')
+                    if len(spans) >= 1:
+                        position = FieldExtractors.extract_position(spans[0].get_text())
+                    if len(spans) >= 2:
+                        year = FieldExtractors.normalize_academic_year(spans[1].get_text())
+                    if len(spans) >= 3:
+                        height = FieldExtractors.extract_height(spans[2].get_text())
+
+                # If bio-attr-short didn't provide data, try individual element extraction
+                if not position:
+                    pos_elem = card.find(class_=lambda x: x and 'position' in x.lower() if x else False)
+                    if pos_elem:
+                        position = FieldExtractors.extract_position(pos_elem.get_text())
+                    else:
+                        # Try to find position in text
+                        card_text = card.get_text()
+                        position = FieldExtractors.extract_position(card_text)
+
+                if not year:
+                    year_elem = card.find(class_=lambda x: x and ('year' in x.lower() or 'class' in x.lower()) if x else False)
+                    if year_elem:
+                        year = FieldExtractors.normalize_academic_year(year_elem.get_text())
+                    else:
+                        # Try to find year in text
+                        card_text = card.get_text()
+                        year = FieldExtractors.normalize_academic_year(card_text)
+
+                if not height:
+                    height_elem = card.find(class_=lambda x: x and 'height' in x.lower() if x else False)
+                    if height_elem:
+                        height = FieldExtractors.extract_height(height_elem.get_text())
+                    else:
+                        # Try to find height in text
+                        card_text = card.get_text()
+                        height = FieldExtractors.extract_height(card_text)
+
+                # Extract hometown and high school from bio-data section (Goucher uses this)
+                hometown = ''
+                high_school = ''
+                previous_school = ''
+
+                bio_data = card.find('div', class_='bio-data')
+                if bio_data:
+                    # Parse list items with labels
+                    list_items = bio_data.find_all('li')
+                    for item in list_items:
+                        item_text = item.get_text()
+                        if 'Hometown:' in item_text:
+                            # Remove the label and get the value
+                            label_span = item.find('span', class_='fw-bold')
+                            if label_span:
+                                label_span.decompose()
+                            hometown = FieldExtractors.clean_text(item.get_text())
+                        elif 'Highschool:' in item_text or 'High School:' in item_text:
+                            label_span = item.find('span', class_='fw-bold')
+                            if label_span:
+                                label_span.decompose()
+                            high_school = FieldExtractors.clean_text(item.get_text())
+                        elif 'Previous School:' in item_text or 'Prior School:' in item_text:
+                            label_span = item.find('span', class_='fw-bold')
+                            if label_span:
+                                label_span.decompose()
+                            previous_school = FieldExtractors.clean_text(item.get_text())
+
+                # Fallback: try class-based search if bio-data didn't work
+                if not hometown:
+                    hometown_elem = card.find(class_=lambda x: x and 'hometown' in x.lower() if x else False)
+                    if hometown_elem:
+                        hometown = FieldExtractors.clean_text(hometown_elem.get_text())
+
+                if not high_school:
+                    hs_elem = card.find(class_=lambda x: x and 'school' in x.lower() if x else False)
+                    if hs_elem:
+                        high_school = FieldExtractors.clean_text(hs_elem.get_text())
+
+                # Extract profile URL
+                profile_url = ''
+                if name_link:
+                    href = name_link['href']
+                    if href.startswith('http'):
+                        profile_url = href
+                    else:
+                        profile_url = f"https://{domain}{href}" if href.startswith('/') else f"https://{domain}/{href}"
+
+                # Create Player object
+                player = Player(
+                    team_id=team_id,
+                    team=team_name,
+                    season=season,
+                    division=division,
+                    name=name,
+                    jersey=jersey,
+                    position=position,
+                    height=height,
+                    year=year,
+                    major='',
+                    hometown=hometown,
+                    high_school=high_school,
+                    previous_school=previous_school,
+                    url=profile_url
+                )
+
+                players.append(player)
+
+            except Exception as e:
+                logger.warning(f"Error parsing generic card in {team_name}: {e}")
+                continue
+
+        return players
+
     def _extract_players_from_wmt(self, html, team_id: int, team_name: str, season: str, division: str, base_url: str) -> List[Player]:
         """
         Extract players from WMT Digital roster format (roster__item divs)
@@ -2227,6 +2683,82 @@ class StandardScraper:
                 logger.debug(f"Could not enhance Kentucky player {player.name}: {e}")
                 enhanced_players.append(player)
         
+        return enhanced_players
+
+    def _enhance_sidearm_positions_from_bios(self, players: List[Player], team_name: str) -> List[Player]:
+        """
+        Enhance Sidearm player data by fetching positions from individual bio pages
+
+        Some Sidearm sites (e.g., Babson, Brandeis, Bentley) don't include position data
+        on the roster list page, but do have it on individual player bio pages.
+
+        Args:
+            players: List of Player objects to enhance
+            team_name: Team name for logging
+
+        Returns:
+            Enhanced list of Player objects with position data from bio pages
+        """
+        if not players or len(players) == 0:
+            return players
+
+        enhanced_players = []
+        missing_count = sum(1 for p in players if not p.position)
+
+        if missing_count == 0:
+            return players  # No need to enhance if all players have positions
+
+        logger.info(f"Enhancing {missing_count} players with bio page position data for {team_name}...")
+
+        for player in players:
+            try:
+                # Skip if player already has position or no URL
+                if player.position or not player.url:
+                    enhanced_players.append(player)
+                    continue
+
+                # Fetch individual bio page
+                response = self.session.get(player.url, headers=self.headers, timeout=10)
+                if response.status_code != 200:
+                    enhanced_players.append(player)
+                    continue
+
+                bio_html = BeautifulSoup(response.text, 'html.parser')
+
+                # Extract position from bio page
+                # Looking for: <span class="sidearm-roster-player-field-label">Position</span>
+                #              <span>M</span> (or other position value)
+                # Often wrapped in a div structure
+
+                # Find all field labels
+                labels = bio_html.find_all('span', class_='sidearm-roster-player-field-label')
+                for label in labels:
+                    label_text = label.get_text().strip().lower()
+                    if 'position' in label_text:
+                        # Get the parent div, then find the value span
+                        parent = label.find_parent('div')
+                        if parent:
+                            # Find span that is NOT the label span
+                            spans = parent.find_all('span')
+                            for span in spans:
+                                if 'sidearm-roster-player-field-label' not in span.get('class', []):
+                                    position_text = span.get_text().strip()
+                                    player.position = FieldExtractors.extract_position(position_text)
+                                    if player.position:
+                                        logger.debug(f"Found position {player.position} for {player.name}")
+                                    break
+                        if player.position:
+                            break
+
+                enhanced_players.append(player)
+
+            except Exception as e:
+                logger.debug(f"Could not enhance player {player.name}: {e}")
+                enhanced_players.append(player)
+
+        enhanced_count = sum(1 for p in enhanced_players if p.position) - (len(players) - missing_count)
+        logger.info(f"Enhanced {enhanced_count} of {missing_count} missing positions from bio pages")
+
         return enhanced_players
 
     def _extract_players_from_wordpress_roster(self, html, team_id: int, team_name: str, season: str, division: str, base_url: str) -> List[Player]:

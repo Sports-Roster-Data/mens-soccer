@@ -1,40 +1,346 @@
 ```{r}
 library(tidyverse)
+library(janitor)
+library(postmastr)
+library(usdata)
+library(rvest)
 ```
 
 ```{r}
 
 teams <- read_csv("../data/input/teams.csv")
-rosters25 <- read_csv("../data/raw/csv/rosters_2025_I.csv")
-rosters_msoc <- read_csv("../data/raw/csv/rosters_msoc_2025.csv") |> mutate(ncaa_id = as.numeric(ncaa_id))
-
-msoc_keep <- rosters_msoc |> filter(!is.na(url))
-
-combined_rosters <- bind_rows(rosters24, msoc_keep)
+rosters25 <- read_csv("../data/raw/csv/rosters_2025.csv")
 
 unique_roster_teams <- rosters25 |> distinct(ncaa_id)
 
-need_rosters <- teams |> anti_join(unique_roster_teams) |> filter(division == "I")
-
-write_csv(combined_with_adds, "../data/output/combined_rosters_2024.csv")
-
-```
-
-
-```{r}
-
-rosters <- read_csv("../data/output/combined_rosters_2024.csv")
-
-adds <- read_csv("../data/additions/adds.csv")
-
-combined_with_adds <- bind_rows(rosters, adds)
-
-unique_roster_teams <- combined_with_adds |> distinct(ncaa_id)
-
 need_rosters <- teams |> anti_join(unique_roster_teams)
 
-write_csv(need_rosters, "../data/interim/need_rosters.csv")
+```
+## Position Cleaning
 
-write_csv(combined_with_adds, "../data/output/combined_rosters_2024.csv")
+Soccer positions need to be standardized to common abbreviations: GK (Goalkeeper), D (Defender), M (Midfielder), F (Forward).
+
+```{r clean-positions}
+rosters25 <- rosters25 %>%
+  mutate(
+    position_clean = case_when(
+      # Goalkeeper variations
+      str_detect(position, regex("^GK$|^G$|Goalkeeper|Goalie", ignore_case = TRUE)) ~ "GK",
+      
+      # Defender variations
+      str_detect(position, regex("^D$|^DEF$|^DF$|Defender|Defence|Defense|Back", ignore_case = TRUE)) ~ "D",
+      
+      # Midfielder variations
+      str_detect(position, regex("^M$|^MF$|^MID$|Midfielder|Midfield", ignore_case = TRUE)) ~ "M",
+      
+      # Forward variations
+      str_detect(position, regex("^F$|^FW$|^FOR$|Forward|Striker|Attacker", ignore_case = TRUE)) ~ "F",
+      
+      # Keep original if already standardized
+      position %in% c("GK", "D", "M", "F") ~ position,
+      
+      # Mark unknown/missing
+      is.na(position) | position == "" ~ NA_character_,
+      
+      # Default: keep original for review
+      TRUE ~ position
+    )
+  )
+
+# Check position distribution
+rosters25 %>% 
+  count(position_clean, sort = TRUE)
+
+# Check any non-standard positions that remain
+need_positions <- rosters25 %>% 
+  filter(is.na(position_clean)) %>%
+  distinct(ncaa_id) |> 
+  arrange(ncaa_id)
 ```
 
+## Class Cleaning
+
+First, let's check what distinct class values exist in the data.
+
+```{r check-class-values}
+# Check all distinct class values
+rosters25 %>% 
+  count(class, sort = TRUE)
+```
+
+Now standardize to full year names: Freshman, Sophomore, Junior, Senior, Graduate, Redshirt Freshman, etc.
+
+```{r clean-class}
+rosters25 <- rosters25 %>%
+  mutate(
+    class_clean = case_when(
+      # Already standardized - keep as is
+      class %in% c("Freshman", "Sophomore", "Junior", "Senior", "Graduate") ~ class,
+      
+      # Freshman variations (including "First Year" and "Fy.")
+      class %in% c("Fr", "Fr.", "FR", "1st", "First", "First Year", "Fy.", "Fy", "FY", "Rf.", "F.Y.", "FY.") ~ "Freshman",
+      
+      # Sophomore variations
+      class %in% c("So", "So.", "SO", "2nd", "Second", "So-RS") ~ "Sophomore",
+      
+      # Junior variations
+      class %in% c("Jr", "Jr.", "JR", "3rd", "Third") ~ "Junior",
+      
+      # Senior variations
+      class %in% c("Sr", "Sr.", "SR", "4th", "Fourth") ~ "Senior",
+      
+      # Graduate variations
+      class %in% c("Gr", "Gr.", "GR", "Grad", "Graduate Student", "5th", "Fifth", "6th", "Grad.") ~ "Graduate",
+      
+      # Redshirt variations
+      class %in% c("Redshirt Freshman", "R-Fr", "R-Fr.", "RS Fr", "Rs. Fr") ~ "Freshman",
+      class %in% c("Redshirt Sophomore", "R-So", "R-So.", "RS So", "Rs. So", "So-RS") ~ "Sophomore",
+      class %in% c("Redshirt Junior", "R-Jr", "R-Jr.", "RS Jr", "Rs. Jr") ~ "Junior",
+      class %in% c("Redshirt Senior", "R-Sr", "R-Sr.", "RS Sr", "Rs. Sr", "Rs.", "Sr-RS") ~ "Senior",
+      
+      # Mark unknown/missing
+      is.na(class) | class == "" ~ NA_character_,
+      
+      # Default: keep original for review
+      TRUE ~ class
+    ),
+    # Create redshirt boolean column
+    redshirt = case_when(
+      str_detect(class, regex("Sr-RS|Redshirt|R-|RS |Rs\\.", ignore_case = TRUE)) ~ 1,
+      is.na(class) | class == "" ~ NA_integer_,
+      TRUE ~ 0
+    )
+  )
+
+# Check class distribution
+rosters25 %>% 
+  count(class_clean, sort = TRUE)
+
+# Check any non-standard classes that remain
+rosters25 %>% 
+  filter(!class_clean %in% c("Freshman", "Sophomore", "Junior", "Senior", "Graduate",
+                              "Redshirt Freshman", "Redshirt Sophomore", 
+                              "Redshirt Junior", "Redshirt Senior") & 
+         !is.na(class_clean)) %>%
+  count(class, class_clean, sort = TRUE)
+```
+
+## Height Cleaning
+
+The roster data contains heights in various formats (6'0", 6-0, 6'0, etc.). We standardize all heights to use hyphens (6-0) and create a total inches column for analysis.
+
+```{r clean-heights}
+rosters25 <- rosters25 %>%
+  mutate(
+    # Standardize height format to use hyphens
+    height_clean = height %>%
+      str_replace_all("'", "-") %>%
+      str_replace_all("''", "") %>%
+      str_replace_all('"', "")
+  ) %>%
+  # Split into feet and inches
+  separate(height_clean, c("height_ft", "height_in"), sep = "-", extra = "merge") %>%
+  mutate(
+    height_ft = as.numeric(height_ft),
+    height_in = as.numeric(height_in),
+    total_inches = (height_ft * 12) + height_in
+  )
+
+# Check results
+rosters25 %>% 
+  select(height, height_ft, height_in, total_inches) %>% 
+  slice_head(n = 5)
+```
+## High School and Previous School Cleaning
+
+Some records list high schools in the previous_school column. We separate these.
+
+```{r clean-schools}
+# Identify high school patterns
+hs_indicators <- c("HS", "H.S.", "High School")
+hs_pattern <- paste(hs_indicators, collapse = "|")
+
+# Find previous schools that are actually high schools
+previous_school_is_hs <- rosters25 %>%
+  filter(
+    is.na(high_school),
+    !is.na(previous_school),
+    str_detect(previous_school, hs_pattern)
+  ) %>%
+  pull(previous_school)
+
+# Clean high school assignments
+rosters25 <- rosters25 %>%
+  mutate(
+    hs_clean = case_when(
+      is.na(high_school) & previous_school %in% previous_school_is_hs ~ previous_school,
+      TRUE ~ high_school
+    ),
+    # Clear previous_school when it matches high school
+    previous_school = ifelse(previous_school == hs_clean, NA, previous_school)
+  )
+```
+
+
+## Geographic Data Cleaning
+
+We clean hometown/homestate data to standardize state abbreviations and identify international players.
+
+```{r clean-geography}
+# Standardize hometown format
+rosters25 <- rosters25 %>%
+  mutate(
+    hometown_cleaned = hometown %>%
+      str_to_upper() %>%
+      str_replace_all("\\.", "") %>%
+      str_replace("/.*", "") %>%
+      str_replace("\\.$", "") %>%
+      # Fix reversed format: "ILLINOIS, CHICAGO" -> "CHICAGO, ILLINOIS"
+      str_replace("^ILLINOIS, CHICAGO$", "CHICAGO, ILLINOIS") %>%
+      str_replace(",", ", ") %>%
+      str_replace("-", " ") %>%
+      str_squish()
+  )
+
+# Create extended state dictionary for postmastr
+states_non_standard <- pm_append(
+  type = "state",
+  input = c("SD.", "MASS", "CALIF", "MICH", "NEB", "IND", "MINN", "ORE", "OHIO", 
+            "FLA", "MISS", "TENN", "ARIZ", "KAN", "ALA", "OKLA", "WIS", "ILL", 
+            "WASH", "ARK", "COLO", "NEV", "CONN", "WISC", "WVA", "DEL", "WYO",
+            "CALI", "LOUIS", "VIRG", "MONT", "PENN", "TEX", "KANS", "NEBR", 
+            "IDA", "COL"),
+  output = c("SD", "MA", "CA", "MI", "NE", "IN", "MN", "OR", "OH", "FL", "MS", 
+             "TN", "AZ", "KS", "AL", "OK", "WI", "IL", "WA", "AR", "CO", "NV", 
+             "CT", "WI", "WV", "DE", "WY", "CA", "LA", "VA", "MT", "PA", "TX", 
+             "KS", "NE", "ID", "CO"),
+  locale = "us"
+)
+
+dict <- pm_dictionary(type = "state", case = c("title", "upper", "lower"), 
+                     append = states_non_standard)
+
+# Identify addresses and parse states using postmastr
+rosters25 <- rosters25 %>%
+  pm_identify(var = "hometown_cleaned")
+
+parsed <- rosters25 %>%
+  pm_prep(var = "hometown_cleaned", type = "street") %>%
+  pm_state_parse(dict)
+
+# Join parsed results
+rosters25 <- rosters25 %>%
+  left_join(parsed, by = "pm.uid") %>%
+  separate(hometown, c("hometown", "homestate"), sep = ",", extra = "merge") %>%
+  mutate(
+    homestate = str_trim(homestate),
+    homestate = str_replace(homestate, "\\.", ""),
+    homestate = case_when(
+      is.na(abbr2state(homestate)) ~ homestate,
+      TRUE ~ abbr2state(homestate)
+    )
+  )
+
+# Handle special state cases
+rosters25 <- rosters25 %>%
+  mutate(
+    pm.state = case_when(
+      homestate %in% c("Hawai'i", "O'ahu") ~ "HI",
+      homestate == "Ken" ~ "KY",
+      homestate %in% c("Caif", "Cal", "Calfiornia", "Califonia") ~ "CA",
+      homestate %in% c("Illi", "IIl", "Illnois") ~ "IL",
+      homestate == "Min" ~ "MN",
+      homestate == "N C." ~ "NC",
+      homestate == "NMex." ~ "NM",
+      homestate == "Oreg" ~ "OR",
+      homestate == "US.V.I." ~ "USVI",
+      homestate == "Ver" ~ "VT",
+      homestate == "Was" ~ "WA",
+      homestate == "WS" ~ "WI",
+      homestate == "NYC" ~ "NY",
+      # Special cases
+      is.na(pm.state) & is.na(homestate) & str_detect(hometown_cleaned, "^ARLINGTON$") ~ "TX",
+      is.na(pm.state) & is.na(homestate) & str_detect(hometown_cleaned, "^LOS ANGELES$") ~ "CA",
+      is.na(pm.state) & is.na(homestate) & str_detect(hometown_cleaned, "^GREENWOOD$") ~ "SC",
+      is.na(pm.state) & is.na(homestate) & str_detect(hometown_cleaned, "^GWYNN PARK$") ~ "MD",
+      is.na(pm.state) & is.na(homestate) & str_detect(hometown_cleaned, "^KING COVE$") ~ "AK",
+      TRUE ~ pm.state
+    )
+  )
+```
+
+## Country Identification
+
+We identify international players using FIBA nations list and handle special cases for countries not in FIBA.
+
+```{r clean-countries}
+# Load FIFA nations
+nations <- read_csv("../data/input/fifa_teams.csv")
+
+nations_df <- nations %>%
+  rename(country = `rankingItem/name`) |> 
+  select(country)
+
+# Extract potential country from last part of hometown
+rosters25 <- rosters25 %>%
+  mutate(
+    country = case_when(!is.na(pm.state) ~ "USA"),
+    temp = map_chr(strsplit(hometown_cleaned, ", ", fixed = TRUE), function(x) {
+      if (length(x) == 0) return(NA_character_)
+      tail(x, 1)
+    }),
+    temp = if_else(temp %in% c("NA", ""), NA_character_, temp)
+  ) %>%
+  left_join(nations_df, by = c("temp" = "country")) %>%
+  mutate(
+    country = case_when(
+      is.na(country) ~ temp,
+      !is.na(country) ~ country,
+      country == "USA" ~ "USA"
+    )
+  )
+
+# Standardize country names
+rosters25 <- rosters25 %>%
+  mutate(
+    country = case_when(
+      # Canadian provinces
+      country %in% c("BC", "QUEBEC", "BRITISH COLUMBIA", "ALBERTA", "ONTARIO", 
+                    "NOVA SCOTIA", "ONT", "QUÉBEC", "MANITOBA", "QUE", "ON", 
+                    "QC", "ALBERTA (AB)", "ONT CANADA", "BC CANADA", "BC,CANADA", 
+                    "ON CANADA", "ALBERTA CANADA", "SASKATCHEWAN", "CN", "AB", 
+                    "ALTA") ~ "CANADA",
+      # Australian states
+      country %in% c("VICTORIA", "SOUTH AUSTRALIA", "WESTERN AUSTRALIA", 
+                    "TASMANIA", "AUSTRAILA", "AU", "AUS", 
+                    "QUEENSLAND AUSTRALIA") ~ "AUSTRALIA",
+      # UK variations
+      country %in% c("GREAT BRITAIN", "ENGLAND", "ENG", "UK", "WALES", 
+                    "EAST MIDLANDS", "LONDON") ~ "UNITED KINGDOM",
+      # Other standardizations
+      country == "BARCELONA" ~ "SPAIN",
+      country == "HAWAI'I" ~ "USA",
+      country == 'UAE' ~ 'UNITED ARAB EMIRATES',
+      country == "SWEEDEN" ~ "SWEDEN",
+      country == 'HUDIKSVALL' ~ 'SWEDEN',
+      country == 'KEFLAVIK ICELAND' ~ 'ICELAND',
+      country == "CZECHIA" ~ "CZECH REPUBLIC",
+      country == "DR" ~ "DOMINICAN REPUBLIC",
+      country %in% c('THE NETHERLANDS', 'NETHLERLANDS', 'NOORD HOLLAND') ~ 'NETHERLANDS',
+      country == 'MÉXICO' ~ 'MEXICO',
+      country == 'NZ' ~ 'NEW ZEALAND',
+      country == 'BRASIL' ~ 'BRAZIL',
+      country == 'SÉNÉGAL' ~ 'SENEGAL',
+      country %in% c('DR CONGO', 'DEMOCRATIC REPUBLIC OF CONGO', 'CONGO') ~ 'DEMOCRATIC REPUBLIC OF THE CONGO',
+      country %in% c("TURKIYE", "TÜRKIYE") ~ "TURKEY",
+      TRUE ~ country
+    )
+  ) %>%
+  select(-temp)
+
+# Show country distribution
+rosters25 %>% 
+  count(country, sort = TRUE) 
+
+rosters25 |> filter(country == 'NEW')
+```
