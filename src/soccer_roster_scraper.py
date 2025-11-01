@@ -426,6 +426,21 @@ class URLBuilder:
                 # Fallback to just using season as-is
                 return f"{base_url}/roster/season/{season}/"
 
+        elif url_format == 'msoc_season_range':
+            # /sports/msoc/{season-range}/roster format (used by some schools like Emory & Henry)
+            # Example: https://gowasps.com/sports/msoc/2025-26/roster
+            # Convert single year to range (2025 -> 2025-26)
+            # First, remove /index if present in base_url
+            clean_url = base_url.replace('/index', '')
+            try:
+                year = int(season)
+                next_year = str(year + 1)[-2:]  # Get last 2 digits
+                season_range = f"{year}-{next_year}"
+                return f"{clean_url}/{season_range}/roster"
+            except ValueError:
+                # If season is already a range, use as-is
+                return f"{clean_url}/{season}/roster"
+
         else:
             # Fallback to default
             logger.warning(f"Unknown url_format '{url_format}', using default")
@@ -462,12 +477,15 @@ class TeamConfig:
     TEAM_CONFIGS = {
         14: {'url_format': 'default', 'requires_js': False, 'notes': 'Albany - Standard Sidearm'},
         72: {'url_format': 'default', 'requires_js': True, 'notes': 'Bradley - Vue.js rendered roster'},
+        74: {'url_format': 'msoc_season_range', 'requires_js': False, 'notes': 'Bridgeport - /sports/msoc/YYYY-YY/roster format with data-field attributes'},
         128: {'url_format': 'ucf_table', 'requires_js': True, 'notes': 'UCF - Custom URL + JS rendering'},
         147: {'url_format': 'clemson_roster', 'requires_js': False, 'notes': 'Clemson - Custom WordPress roster with person__item structure'},
+        216: {'url_format': 'msoc_season_range', 'requires_js': False, 'notes': 'Emory & Henry - /sports/msoc/YYYY-YY/roster format'},
         248: {'url_format': 'default', 'requires_js': True, 'notes': 'George Mason - Sidearm list-item + JS rendering'},
         334: {'url_format': 'kentucky_season', 'requires_js': True, 'notes': 'Kentucky - WMT Digital /roster/season/YYYY/ format (use JS-rendered List view / table)'},
         513: {'url_format': 'virginia_season', 'requires_js': True, 'notes': 'Notre Dame - WMT Digital /roster/season/YYYY-YY/ format (JS-rendered List view)'},
         648: {'url_format': 'kentucky_season', 'requires_js': True, 'notes': 'South Carolina - WMT Digital /roster/season/YYYY/ (use JS-rendered List/table view)'},
+        1023: {'url_format': 'msoc_season_range', 'requires_js': False, 'notes': 'Coker - /sports/msoc/YYYY-YY/roster format'},
         457: {'url_format': 'default', 'requires_js': False, 'notes': 'UNC - Standard Sidearm'},
         523: {'url_format': 'ucf_table', 'requires_js': True, 'notes': 'Old Dominion - Custom URL + JS rendering'},
         539: {'url_format': 'ucf_table', 'requires_js': True, 'notes': 'Penn State - Custom URL + JS rendering'},
@@ -476,7 +494,10 @@ class TeamConfig:
         742: {'url_format': 'ucf_table', 'requires_js': True, 'notes': 'Va Tech - Custom URL + JS rendering'},
         746: {'url_format': 'virginia_season', 'requires_js': False, 'notes': 'Virginia - WMT Digital /roster/season/YYYY-YY/ format'},
         813: {'url_format': 'default', 'requires_js': False, 'notes': 'Yale - Standard Sidearm'},
+        1000: {'url_format': 'msoc_season_range', 'requires_js': False, 'notes': 'Carson-Newman - /sports/m-soccer/YYYY-YY/roster format'},
         1356: {'url_format': 'ucf_table', 'requires_js': True, 'notes': 'Seattle - Custom URL + JS rendering'},
+        186: {'url_format': 'msoc_season_range', 'requires_js': True, 'notes': 'Dist. Columbia - /sports/msoc/YYYY-YY/roster format with JS-rendered player names'},
+        8956: {'url_format': 'msoc_season_range', 'requires_js': False, 'notes': 'Dominican (NY) - /sports/msoc/YYYY-YY/roster format'},
     }
 
     @classmethod
@@ -679,6 +700,20 @@ class StandardScraper:
 
         if not roster_items:
             logger.warning(f"No roster items found for {team_name} (expected class='sidearm-roster-player')")
+
+            # Check if this is a data-field table (Bridgeport style with data-field-label attributes)
+            data_field_table = html.find('table', attrs={'class': lambda x: x and 'table' in x})
+            if data_field_table and data_field_table.find('th', attrs={'data-field-label': True}):
+                logger.info(f"Detected data-field table format for {team_name}, using data-field parser")
+                return self._extract_players_from_data_field_table(html, team_id, team_name, season, division, base_url)
+
+            # Check if this is a mod-roster div (Emory & Henry style) with generic table
+            mod_roster = html.find('div', class_='mod-roster')
+            if mod_roster:
+                roster_table = mod_roster.find('table')
+                if roster_table:
+                    logger.info(f"Detected mod-roster format for {team_name}, using generic table parser")
+                    return self._extract_players_from_generic_roster_table(html, team_id, team_name, season, division, base_url)
 
             # Check if this is a Kentucky-style table (players-table__general) - has all data
             kentucky_table = html.find('table', id='players-table__general')
@@ -937,6 +972,406 @@ class StandardScraper:
                 continue
 
         return players
+    def _extract_players_from_generic_roster_table(self, html, team_id: int, team_name: str, season: str, division: str, base_url: str) -> List[Player]:
+        """
+        Extract players from generic mod-roster HTML table format
+
+        Used by schools like Emory & Henry that have a simple HTML table inside
+        a <div class="mod-roster"> container. The table has a header row with buttons
+        containing column names (sort buttons with aria-labels).
+
+        Args:
+            html: BeautifulSoup parsed HTML
+            team_id: NCAA team ID
+            team_name: Team name
+            season: Season string
+            division: Division
+            base_url: Base URL for constructing profile URLs
+
+        Returns:
+            List of Player objects
+        """
+        players = []
+
+        # Find the mod-roster div and its table
+        mod_roster = html.find('div', class_='mod-roster')
+        if not mod_roster:
+            logger.warning(f"No mod-roster div found for {team_name}")
+            return []
+
+        table = mod_roster.find('table')
+        if not table:
+            logger.warning(f"No table found in mod-roster for {team_name}")
+            return []
+
+        # Extract headers from the header row
+        thead = table.find('thead')
+        if not thead:
+            logger.warning(f"No thead found in mod-roster table for {team_name}")
+            return []
+
+        header_row = thead.find('tr')
+        if not header_row:
+            logger.warning(f"No header row found in mod-roster table for {team_name}")
+            return []
+
+        headers = header_row.find_all('th')
+        if not headers:
+            logger.warning(f"No th headers found in mod-roster table for {team_name}")
+            return []
+
+        # Build header mapping by looking at button aria-labels or button text
+        header_map = {}
+        for i, header in enumerate(headers):
+            # Try to get aria-label from button inside th
+            button = header.find('button')
+            if button:
+                aria_label = button.get('aria-label', '').lower()
+                button_text = button.get_text().strip().lower()
+                text_to_check = aria_label if aria_label else button_text
+            else:
+                text_to_check = header.get_text().strip().lower()
+
+            # Map to fields
+            if 'number' in text_to_check or 'no.' in text_to_check or 'no:' in text_to_check:
+                header_map['jersey'] = i
+            elif 'name' in text_to_check or 'last_name' in text_to_check:
+                header_map['name'] = i
+            elif 'position' in text_to_check or 'pos.' in text_to_check or 'pos:' in text_to_check:
+                header_map['position'] = i
+            elif 'year' in text_to_check or 'yr.' in text_to_check or 'yr:' in text_to_check:
+                header_map['year'] = i
+            elif 'height' in text_to_check or 'ht.' in text_to_check or 'ht:' in text_to_check:
+                header_map['height'] = i
+            elif 'weight' in text_to_check or 'wt.' in text_to_check or 'wt:' in text_to_check:
+                header_map['weight'] = i
+            elif 'hometown' in text_to_check or 'home' in text_to_check or 'hometown/previous' in text_to_check:
+                header_map['hometown'] = i
+
+        logger.info(f"mod-roster headers for {team_name}: {header_map}")
+
+        # Extract base domain for URLs
+        extracted = tldextract.extract(base_url)
+        domain = f"{extracted.domain}.{extracted.suffix}"
+        if extracted.subdomain:
+            domain = f"{extracted.subdomain}.{domain}"
+
+        # Extract rows from tbody
+        tbody = table.find('tbody')
+        if not tbody:
+            logger.warning(f"No tbody found in mod-roster table for {team_name}")
+            return []
+
+        rows = tbody.find_all('tr')
+        logger.info(f"Found {len(rows)} rows in mod-roster table for {team_name}")
+
+        for row in rows:
+            try:
+                cells = row.find_all(['td', 'th'])
+                if not cells or len(cells) < 2:
+                    continue
+
+                # Extract Name (with URL) - name is typically in a th with class="name"
+                name = ''
+                profile_url = ''
+                if 'name' in header_map and header_map['name'] < len(cells):
+                    name_cell = cells[header_map['name']]
+                    name_link = name_cell.find('a', href=True)
+                    if name_link:
+                        name = FieldExtractors.clean_text(name_link.get_text())
+                        href = name_link['href']
+                        if href.startswith('http'):
+                            profile_url = href
+                        else:
+                            profile_url = f"https://{domain}{href}" if href.startswith('/') else f"https://{domain}/{href}"
+
+                if not name or name.lower() == 'null':
+                    continue
+
+                # Extract Jersey
+                jersey = ''
+                if 'jersey' in header_map and header_map['jersey'] < len(cells):
+                    jersey_cell = cells[header_map['jersey']]
+                    # Remove label spans if they exist
+                    for label_span in jersey_cell.find_all('span', class_='label'):
+                        label_span.decompose()
+                    jersey = FieldExtractors.clean_text(jersey_cell.get_text())
+
+                # Extract Position
+                position = ''
+                if 'position' in header_map and header_map['position'] < len(cells):
+                    pos_cell = cells[header_map['position']]
+                    # Remove label spans if they exist
+                    for label_span in pos_cell.find_all('span', class_='label'):
+                        label_span.decompose()
+                    position = FieldExtractors.extract_position(pos_cell.get_text())
+
+                # Extract Height
+                height = ''
+                if 'height' in header_map and header_map['height'] < len(cells):
+                    height_cell = cells[header_map['height']]
+                    # Remove label spans if they exist
+                    for label_span in height_cell.find_all('span', class_='label'):
+                        label_span.decompose()
+                    height = FieldExtractors.extract_height(height_cell.get_text())
+
+                # Extract Year/Class
+                year = ''
+                if 'year' in header_map and header_map['year'] < len(cells):
+                    year_cell = cells[header_map['year']]
+                    # Remove label spans if they exist
+                    for label_span in year_cell.find_all('span', class_='label'):
+                        label_span.decompose()
+                    year = FieldExtractors.normalize_academic_year(year_cell.get_text())
+
+                # Extract Hometown / High School
+                hometown = ''
+                high_school = ''
+                if 'hometown' in header_map and header_map['hometown'] < len(cells):
+                    hometown_cell = cells[header_map['hometown']]
+                    # Remove label spans if they exist
+                    for label_span in hometown_cell.find_all('span', class_='label'):
+                        label_span.decompose()
+                    hometown_hs = FieldExtractors.clean_text(hometown_cell.get_text())
+                    if ' / ' in hometown_hs:
+                        hometown, high_school = hometown_hs.split(' / ', 1)
+                    else:
+                        hometown = hometown_hs
+
+                # Create Player object
+                player = Player(
+                    team_id=team_id,
+                    team=team_name,
+                    season=season,
+                    division=division,
+                    name=name,
+                    jersey=jersey,
+                    position=position,
+                    height=height,
+                    year=year,
+                    major='',
+                    hometown=hometown,
+                    high_school=high_school,
+                    previous_school='',
+                    url=profile_url
+                )
+
+                players.append(player)
+
+            except Exception as e:
+                logger.warning(f"Error parsing mod-roster row for {team_name}: {e}")
+                continue
+
+        return players
+
+    def _extract_players_from_data_field_table(self, html, team_id: int, team_name: str, season: str, division: str, base_url: str) -> List[Player]:
+        """
+        Extract players from data-field table format
+
+        Used by schools like Bridgeport that use data-field-label and data-field attributes
+        on th and td elements. Headers have data-field-label attributes, and data cells
+        have data-field attributes with field names like "number", "first_name:last_name", etc.
+
+        Args:
+            html: BeautifulSoup parsed HTML
+            team_id: NCAA team ID
+            team_name: Team name
+            season: Season string
+            division: Division
+            base_url: Base URL for constructing profile URLs
+
+        Returns:
+            List of Player objects
+        """
+        players = []
+
+        # Find any table with data-field-label headers
+        table = None
+        for t in html.find_all('table'):
+            if t.find('th', attrs={'data-field-label': True}):
+                table = t
+                break
+
+        if not table:
+            logger.warning(f"No data-field table found for {team_name}")
+            return []
+
+        # Extract headers using data-field-label
+        headers = table.find_all('th', attrs={'data-field-label': True})
+        if not headers:
+            logger.warning(f"No data-field headers found for {team_name}")
+            return []
+
+        # Build header mapping
+        header_map = {}
+        for i, header in enumerate(headers):
+            label = header.get('data-field-label', '').strip().lower()
+            if 'no.' in label or 'number' in label:
+                header_map['jersey'] = i
+            elif 'name' in label:
+                header_map['name'] = i
+            elif 'pos' in label:
+                header_map['position'] = i
+            elif 'cl.' in label or 'class' in label or 'year' in label or 'yr' in label:
+                header_map['year'] = i
+            elif 'ht.' in label or 'height' in label:
+                header_map['height'] = i
+            elif 'wt.' in label or 'weight' in label:
+                header_map['weight'] = i
+            elif 'hometown' in label or 'home' in label:
+                header_map['hometown'] = i
+            elif 'high' in label and 'school' in label:
+                header_map['high_school'] = i
+            elif 'previous' in label and ('college' in label or 'school' in label):
+                header_map['previous_school'] = i
+
+        logger.info(f"data-field headers for {team_name}: {header_map}")
+
+        # Extract base domain for URLs
+        extracted = tldextract.extract(base_url)
+        domain = f"{extracted.domain}.{extracted.suffix}"
+        if extracted.subdomain:
+            domain = f"{extracted.subdomain}.{domain}"
+
+        # Extract rows from tbody
+        tbody = table.find('tbody')
+        if not tbody:
+            logger.warning(f"No tbody found in data-field table for {team_name}")
+            return []
+
+        rows = tbody.find_all('tr')
+        logger.info(f"Found {len(rows)} rows in data-field table for {team_name}")
+
+        for row in rows:
+            try:
+                cells = row.find_all(['td', 'th'])
+                if not cells or len(cells) < 2:
+                    continue
+
+                # Extract Name (with URL)
+                name = ''
+                profile_url = ''
+                if 'name' in header_map and header_map['name'] < len(cells):
+                    name_cell = cells[header_map['name']]
+                    # Look for links - there may be multiple (image link, name link, etc.)
+                    # We want the link with actual name text content
+                    name_link = None
+                    for link in name_cell.find_all('a', href=True):
+                        link_text = link.get_text().strip()
+                        # Skip image links and other empty links
+                        if len(link_text) > 2:  # Name should be more than 2 chars
+                            name_link = link
+                            break
+                    
+                    if name_link:
+                        name_text = name_link.get_text()
+                        # Handle multi-line names with whitespace
+                        name = FieldExtractors.clean_text(name_text)
+                        href = name_link['href']
+                        if href.startswith('http'):
+                            profile_url = href
+                        else:
+                            profile_url = f"https://{domain}{href}" if href.startswith('/') else f"https://{domain}/{href}"
+                    else:
+                        # Fallback to cell text if no link found
+                        name = FieldExtractors.clean_text(name_cell.get_text())
+
+                if not name or name.lower() == 'null':
+                    continue
+
+                # Extract Jersey
+                jersey = ''
+                if 'jersey' in header_map and header_map['jersey'] < len(cells):
+                    jersey_cell = cells[header_map['jersey']]
+                    # Remove label spans if they exist
+                    for label_span in jersey_cell.find_all('span', class_='label'):
+                        label_span.decompose()
+                    jersey = FieldExtractors.clean_text(jersey_cell.get_text())
+
+                # Extract Position
+                position = ''
+                if 'position' in header_map and header_map['position'] < len(cells):
+                    pos_cell = cells[header_map['position']]
+                    # Remove label spans if they exist
+                    for label_span in pos_cell.find_all('span', class_='label'):
+                        label_span.decompose()
+                    position = FieldExtractors.extract_position(pos_cell.get_text())
+
+                # Extract Height
+                height = ''
+                if 'height' in header_map and header_map['height'] < len(cells):
+                    height_cell = cells[header_map['height']]
+                    # Remove label spans if they exist
+                    for label_span in height_cell.find_all('span', class_='label'):
+                        label_span.decompose()
+                    height = FieldExtractors.extract_height(height_cell.get_text())
+
+                # Extract Year/Class
+                year = ''
+                if 'year' in header_map and header_map['year'] < len(cells):
+                    year_cell = cells[header_map['year']]
+                    # Remove label spans if they exist
+                    for label_span in year_cell.find_all('span', class_='label'):
+                        label_span.decompose()
+                    year = FieldExtractors.normalize_academic_year(year_cell.get_text())
+
+                # Extract Hometown / High School
+                hometown = ''
+                high_school = ''
+                if 'hometown' in header_map and header_map['hometown'] < len(cells):
+                    hometown_cell = cells[header_map['hometown']]
+                    # Remove label spans if they exist
+                    for label_span in hometown_cell.find_all('span', class_='label'):
+                        label_span.decompose()
+                    hometown_hs = FieldExtractors.clean_text(hometown_cell.get_text())
+                    if ' / ' in hometown_hs:
+                        hometown, high_school = hometown_hs.split(' / ', 1)
+                    else:
+                        hometown = hometown_hs
+
+                # Extract High School (if in separate column)
+                if not high_school and 'high_school' in header_map and header_map['high_school'] < len(cells):
+                    hs_cell = cells[header_map['high_school']]
+                    # Remove label spans if they exist
+                    for label_span in hs_cell.find_all('span', class_='label'):
+                        label_span.decompose()
+                    high_school = FieldExtractors.clean_text(hs_cell.get_text())
+
+                # Extract Previous School
+                previous_school = ''
+                if 'previous_school' in header_map and header_map['previous_school'] < len(cells):
+                    prev_cell = cells[header_map['previous_school']]
+                    # Remove label spans if they exist
+                    for label_span in prev_cell.find_all('span', class_='label'):
+                        label_span.decompose()
+                    previous_school = FieldExtractors.clean_text(prev_cell.get_text())
+
+                # Create Player object
+                player = Player(
+                    team_id=team_id,
+                    team=team_name,
+                    season=season,
+                    division=division,
+                    name=name,
+                    jersey=jersey,
+                    position=position,
+                    height=height,
+                    year=year,
+                    major='',
+                    hometown=hometown,
+                    high_school=high_school,
+                    previous_school=previous_school,
+                    url=profile_url
+                )
+
+                players.append(player)
+
+            except Exception as e:
+                logger.warning(f"Error parsing data-field row for {team_name}: {e}")
+                continue
+
+        return players
+
     def _extract_players_from_list_items(self, html, team_id: int, team_name: str, season: str, division: str, base_url: str) -> List[Player]:
         """
         Extract players from Sidearm list-item format (used by Bradley and similar schools)
@@ -1124,12 +1559,20 @@ class StandardScraper:
             all_tables = html.find_all('table')
             for table in all_tables:
                 # Check if table has header row with roster-like column names
-                header_row = table.find('tr')
+                # First look in thead, then fall back to first row
+                header_row = table.find('thead')
+                if header_row:
+                    header_row = header_row.find('tr')
+                else:
+                    header_row = table.find('tr')
+                
                 if header_row:
                     header_cells = header_row.find_all(['th', 'td'])
                     header_text = ' '.join([cell.get_text().strip().lower() for cell in header_cells])
-                    # Look for roster-like headers
-                    if 'name' in header_text and 'position' in header_text:
+                    # Look for roster-like headers (handle abbreviations like 'pos.' for 'position')
+                    has_name = 'name' in header_text
+                    has_position = 'position' in header_text or 'pos' in header_text
+                    if has_name and has_position:
                         roster_table = table
                         is_generic_table = True
                         logger.info(f"Found generic roster table for {team_name}")
@@ -1142,8 +1585,13 @@ class StandardScraper:
         # Find table headers - different logic for Sidearm vs generic tables
         headers = []
         if is_generic_table:
-            # For generic tables, get headers from first row
-            first_row = roster_table.find('tr')
+            # For generic tables, get headers from thead if available, otherwise first row
+            thead = roster_table.find('thead')
+            if thead:
+                first_row = thead.find('tr')
+            else:
+                first_row = roster_table.find('tr')
+            
             if first_row:
                 headers = first_row.find_all(['th', 'td'])
             if not headers:
@@ -1182,9 +1630,13 @@ class StandardScraper:
 
         # Filter table rows to only those in the roster table
         if is_generic_table:
-            # For generic tables, get all rows except the first (header) row
-            all_rows = roster_table.find_all('tr')
-            table_rows = all_rows[1:] if len(all_rows) > 1 else []
+            # For generic tables, get all rows from tbody if it exists, otherwise all rows except first
+            tbody = roster_table.find('tbody')
+            if tbody:
+                table_rows = tbody.find_all('tr')
+            else:
+                all_rows = roster_table.find_all('tr')
+                table_rows = all_rows[1:] if len(all_rows) > 1 else []
         else:
             # For Sidearm tables, look for specific row class
             table_rows = roster_table.find_all('tr', class_='s-table-body__row')

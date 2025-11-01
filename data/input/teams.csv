@@ -65,7 +65,7 @@ Bowling Green,https://bgsufalcons.com/sports/mens-soccer,71,I
 Bradley,https://bradleybraves.com/sports/mens-soccer,72,I
 Brandeis,https://brandeisjudges.com/sports/mens-soccer,73,III
 Brevard,https://bctornados.com/sports/mens-soccer,588430,III
-Bridgeport,https://www.ubknights.com/sports/msoc/index,588006,II
+Bridgeport,https://www.ubknights.com/sports/msoc/index,74,II
 Bridgewater (VA),https://bridgewatereagles.com/sports/mens-soccer,75,III
 Bridgewater State,https://www.bsubears.com/sports/msoc/index,588455,III
 Brooklyn,https://www.brooklyncollegeathletics.com/sports/mens-soccer,588457,III
@@ -102,7 +102,7 @@ Carleton,https://athletics.carleton.edu/sports/mens-soccer,118,III
 Carlow,https://athletics.carlow.edu/sports/msoc/index,594992,III
 Carnegie Mellon,https://athletics.cmu.edu/sports/msoc/index,588467,III
 Carroll (WI),https://gopios.com/sports/mens-soccer,588468,III
-Carson-Newman,https://www.cneagles.com/sports/m-soccer/index,588073,II
+Carson-Newman,https://www.cneagles.com/sports/m-soccer/index,1000,II
 Carthage,https://athletics.carthage.edu/sports/mens-soccer,121,III
 Catawba,https://www.catawbaathletics.com/sports/msoc/index,588074,II
 Catholic,https://catholicathletics.com/sports/mens-soccer,124,III
@@ -135,7 +135,7 @@ Cleveland State,https://csuvikings.com/sports/mens-soccer,148,I
 Coast Guard,https://coastguardathletics.com/sports/mens-soccer,722,III
 Coastal Carolina,https://goccusports.com/sports/mens-soccer,587923,I
 Coe,https://kohawkathletics.com/sports/mens-soccer,150,III
-Coker,https://www.cokercobras.com/sports/msoc/index,588077,II
+Coker,https://www.cokercobras.com/sports/msoc/index,1023,II
 Colby,https://colbyathletics.com/sports/mens-soccer,151,III
 Colby-Sawyer,https://www.colby-sawyerathletics.com/sports/mens-soccer,588484,III
 Colgate,https://colgateathletics.com/sports/mens-soccer,153,I
@@ -182,10 +182,10 @@ DePauw,https://depauwtigers.com/sports/mens-soccer/,177,III
 DeSales,https://athletics.desales.edu/sports/mens-soccer,20,III
 Detroit Mercy,https://detroittitans.com/sports/mens-soccer,184,I
 Dickinson,https://dickinsonathletics.com/sports/mens-soccer,185,III
-Dist. Columbia,https://www.udcfirebirds.com/sports/msoc/index,588019,II
-Dominican (CA),https://dominicanathletics.com/sports/mens-soccer,588157,II
-Dominican (IL),https://dustars.com/sports/mens-soccer,588314,III
-Dominican (NY),https://www.chargerathletics.com/sports/msoc/index,588117,II
+Dist. Columbia,https://www.udcfirebirds.com/sports/msoc/index,186,II
+Dominican (CA),https://dominicanathletics.com/sports/mens-soccer,30118,II
+Dominican (IL),https://dustars.com/sports/mens-soccer,1332,III
+Dominican (NY),https://www.chargerathletics.com/sports/msoc/index,8956,II
 Drake,https://godrakebulldogs.com/sports/mens-soccer/,189,I
 Drew,https://drewrangers.com/sports/mens-soccer,190,III
 Drexel,https://drexeldragons.com/sports/mens-soccer,191,I
@@ -214,7 +214,7 @@ Emerson,https://emersonlions.com/sports/mens-soccer,214,III
 Emmanuel (GA),https://goeulions.com/sports/mens-soccer,588182,II
 Emmanuel (MA),https://www.goecsaints.com/sports/mens-soccer,215,III
 Emory,https://emoryathletics.com/sports/mens-soccer,217,III
-Emory & Henry,https://www.gowasps.com/sports/msoc/index,588024,II
+Emory & Henry,https://www.gowasps.com/sports/msoc/index,216,II
 Endicott,https://www.ecgulls.com/sports/msoc/index,588375,III
 Erskine,https://erskinesports.com/sports/mens-soccer,1072,II
 Eureka,https://www.eurekareddevils.com/sports/msoc/index,588507,III
@@ -359,7 +359,6 @@ LeTourneau,https://letuathletics.com/sports/mens-soccer,8490,III
 Lewis,https://lewisflyers.com/sports/mens-soccer,354,II
 Lewis & Clark,https://lcpioneers.com/sports/mens-soccer,588613,III
 Liberty,https://libertyflames.com/sports/mens-soccer,355,I
-Limestone,https://golimestonesaints.com/sports/mens-soccer,1174,II
 Lincoln (MO),https://lubluetigers.com/sports/mens-soccer,588201,II
 Lincoln Memorial,https://lmurailsplitters.com/sports/mens-soccer,588091,II
 Lindenwood (MO),https://lindenwoodlions.com/sports/mens-soccer,30136,I
