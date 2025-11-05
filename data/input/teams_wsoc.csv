@@ -1,339 +1,339 @@
-team,team_id
-A&M-Corpus Christi Islanders,26172
-Abilene Christian Wildcats,2
-Air Force Falcons,721
-Akron Zips,5
-Alabama A&M Bulldogs,6
-Alabama Crimson Tide,8
-Alabama St. Lady Hornets,7
-Alcorn Lady Braves,17
-American Eagles,23
-App State Mountaineers,27
-Arizona St. Sun Devils,28
-Arizona Wildcats,29
-Ark.-Pine Bluff Lady Lions,2678
-Arkansas Razorbacks,31
-Arkansas St. Red Wolves,30
-Army West Point Black Knights,725
-Auburn Tigers,37
-Austin Peay Governors,43
-BYU Cougars,77
-Ball St. Cardinals,47
-Baylor Bears,51
-Bellarmine Knights,52
-Belmont Bruins,14927
-Binghamton Bearcats,62
-Boise St. Broncos,66
-Boston College Eagles,67
-Boston U. Terriers,68
-Bowling Green Falcons,71
-Bryant Bulldogs,81
-Bucknell Bison,83
-Buffalo Bulls,86
-Butler Bulldogs,87
-CSU Bakersfield Roadrunners,94
-CSUN Matadors,101
-Cal Poly Mustangs,90
-Cal St. Fullerton Titans,97
-California Baptist Lancers,30135
-California Golden Bears,107
-Campbell Camels,115
-Canisius Golden Griffins,116
-Central Ark. Bears,1004
-Central Conn. St. Blue Devils,127
-Central Mich. Chippewas,129
-Charleston So. Buccaneers,48
-Charlotte 49ers,458
-Chattanooga Mocs,693
-Chicago St. Cougars,136
-Cincinnati Bearcats,140
-Clemson Tigers,147
-Cleveland St. Vikings,148
-Coastal Carolina Chanticleers,149
-Col. of Charleston Cougars,1014
-Colgate Raiders,153
-Colorado Buffaloes,157
-Colorado Col. Tigers,154
-Colorado St. Rams,156
-Creighton Bluejays,169
-Davidson Wildcats,173
-Dayton Flyers,175
-DePaul Blue Demons,176
-Delaware Blue Hens,180
-Delaware St. Hornets,178
-Denver Pioneers,183
-Detroit Mercy Titans,184
-Drake Bulldogs,189
-Drexel Dragons,191
-Duke Blue Devils,193
-Duquesne Dukes,194
-ETSU Buccaneers (Bucs),198
-East Carolina Pirates,196
-Eastern Ill. Panthers,201
-Eastern Ky. Colonels,202
-Eastern Mich. Eagles,204
-Eastern Wash. Eagles,207
-Elon Phoenix,1068
-Evansville Purple Aces,219
-FDU Knights,222
-FGCU Eagles,28755
-FIU Panthers,231
-Fairfield Stags,220
-Fla. Atlantic Owls,229
-Florida Gators,235
-Florida St. Seminoles,234
-Fordham Rams,236
-Fresno St. Bulldogs,96
-Furman Paladins,244
-Ga. Southern Eagles,253
-Gardner-Webb Runnin' Bulldogs,1092
-George Mason Patriots,248
-George Washington Revolutionaries,249
-Georgetown Hoyas,251
-Georgia Bulldogs,257
-Georgia St. Panthers,254
-Gonzaga Bulldogs,260
-Grambling Lady Tigers,261
-Grand Canyon Lopes,1104
-Green Bay Phoenix,794
-Hampton Lady Pirates,270
-Hawaii Rainbow Wahine,277
-High Point Panthers,19651
-Hofstra Pride,283
-Holy Cross Crusaders,285
-Houston Christian Huskies,287
-Houston Cougars,288
-Howard Bison,290
-IU Indy Jaguars,2699
-Idaho St. Bengals,294
-Idaho Vandals,295
-Illinois Fighting Illini,301
-Illinois St. Redbirds,299
-Indiana Hoosiers,306
-Indiana St. Sycamores,305
-Iona Gaels,310
-Iowa Hawkeyes,312
-Iowa St. Cyclones,311
-Jackson St. Lady Tigers,314
-Jacksonville Dolphins,316
-Jacksonville St. Gamecocks,315
-James Madison Dukes,317
-Kansas City Roos,2707
-Kansas Jayhawks,328
-Kansas St. Wildcats,327
-Kennesaw St. Owls,1157
-Kent St. Golden Flashes,331
-Kentucky Wildcats,334
-LIU Sharks,361
-LMU (CA) Lions,370
-LSU Tigers,365
-La Salle Explorers,340
-Lafayette Leopards,342
-Lamar University Cardinals,346
-Le Moyne Dolphins,349
-Lehigh Mountain Hawks,352
-Liberty Lady Flames,355
-Lindenwood Lions,30136
-Lipscomb Bisons,28600
-Little Rock Trojans,32
-Long Beach St. Beach,99
-Longwood Lancers,363
-Louisiana Ragin' Cajuns,671
-Louisiana Tech Lady Techsters,366
-Louisville Cardinals,367
-Loyola Chicago Ramblers,371
-Loyola Maryland Greyhounds,369
-Maine Black Bears,380
-Marist Red Foxes,386
-Marquette Golden Eagles,387
-Marshall Thundering Herd,388
-"Maryland Terrapins, Terps",392
-Massachusetts Minutewomen,400
-McNeese Cowgirls,402
-Memphis Tigers,404
-Mercer Bears,406
-Merrimack Warriors,410
-Miami (FL) Hurricanes,415
-Miami (OH) RedHawks,414
-Michigan St. Spartans,416
-Michigan Wolverines,418
-Middle Tenn. Blue Raiders,419
-Milwaukee Panthers,797
-Minnesota Golden Gophers,428
-Mississippi St. Bulldogs,430
-Mississippi Val. Devilettes,432
-Missouri St. Bears,669
-Missouri Tigers,434
-Monmouth Hawks,439
-Montana Grizzlies,441
-Morehead St. Eagles,444
-Mount St. Mary's Mountaineers,450
-Murray St. Racers,454
-NC State Wolfpack,490
-NIU Huskies,503
-NJIT Highlanders,471
-Navy Midshipmen,726
-Nebraska Huskers,463
-Nevada Wolf Pack,466
-New Hampshire Wildcats,469
-New Mexico Lobos,473
-New Mexico St. Aggies,472
-Niagara Purple Eagles,482
-Nicholls Colonels,483
-North Ala. Lions,487
-North Carolina Tar Heels,457
-North Dakota Fighting Hawks,494
-North Dakota St. Bison,493
-North Florida Ospreys,2711
-North Texas Mean Green,497
-Northeastern Huskies,500
-Northern Ariz. Lumberjacks,501
-Northern Colo. Bears,502
-Northern Ky. Norse,505
-Northwestern St. Lady Demons,508
-Northwestern Wildcats,509
-Notre Dame Fighting Irish,513
-Oakland Golden Grizzlies,514
-Ohio Bobcats,519
-Ohio St. Buckeyes,518
-Oklahoma Sooners,522
-Oklahoma St. Cowgirls,521
-Old Dominion Monarchs,523
-Ole Miss Rebels,433
-Omaha Mavericks,464
-Oral Roberts Golden Eagles,527
-Oregon Ducks,529
-Oregon St. Beavers,528
-Pacific Tigers,534
-Penn St. Nittany Lions,539
-Pepperdine Waves,541
-Pittsburgh Panthers,545
-Portland Pilots,551
-Portland St. Vikings,550
-Prairie View Lady Panthers,553
-Presbyterian Blue Hose,1320
-Providence Friars,556
-Purdue Boilermakers,559
-Purdue Fort Wayne Mastodons,308
-Queens (NC) Royals,11504
-Quinnipiac Bobcats,562
-RPI Ranking - 166,199
-RPI Ranking - 346,600
-Radford Highlanders,563
-Rhode Island Rams,572
-Rice Owls,574
-Richmond Spiders,575
-Rider Broncs,576
-Robert Morris Colonials,579
-Rutgers Scarlet Knights,587
-SFA Lumberjacks,676
-SIUE Cougars,660
-SMU Mustangs,663
-Sacramento St. Hornets,102
-Sacred Heart Pioneers,590
-Saint Joseph's Hawks,606
-Saint Louis Billikens,609
-Saint Mary's (CA) Gaels,610
-Saint Peter's Peacocks,617
-Sam Houston Bearkats,624
-Samford Bulldogs,625
-San Diego St. Aztecs,626
-San Diego Toreros,627
-San Francisco Dons,629
-San Jose St. Spartans,630
-Santa Clara Broncos,631
-Seattle U Redhawks,1356
-Seton Hall Pirates,635
-Siena Saints,639
-South Alabama Jaguars,646
-South Carolina Gamecocks,648
-South Carolina St. Lady Bulldogs,647
-South Dakota Coyotes,650
-South Dakota St. Jackrabbits,649
-South Fla. Bulls,651
-Southeast Mo. St. Redhawks,654
-Southeastern La. Lady Lions,655
-Southern California Trojans,657
-Southern Ill. Salukis,659
-Southern Ind. Screaming Eagles,661
-Southern Miss. Golden Eagles,664
-Southern U. Lady Jaguars,665
-Southern Utah Thunderbirds,667
-St. Bonaventure Bonnies,596
-St. John's (NY) Red Storm,603
-St. Thomas (MN) Tommies,620
-Stanford Cardinal,674
-Stetson Hatters,678
-Stonehill Skyhawks,682
-Stony Brook Seawolves,683
-Syracuse Orange,688
-TCU Horned Frogs,698
-Tarleton St. Texans,1395
-Temple Owls,690
-Tennessee Tech Golden Eagles,692
-Tennessee Volunteers,694
-Texas A&M Aggies,697
-Texas Longhorns,703
-Texas Southern Lady Tigers,699
-Texas St. Bobcats,670
-Texas Tech Red Raiders,700
-"The Citadel Bulldogs, Cadets",141
-Toledo Rockets,709
-Towson Tigers,711
-Troy Trojans,716
-Tulsa Golden Hurricane,719
-UAB Blazers,9
-UAlbany Great Danes,14
-UC Davis Aggies,108
-UC Irvine Anteaters,109
-UC Riverside Highlanders,111
-UC San Diego Tritons,112
-UC Santa Barbara Gauchos,104
-UCF Knights,128
-UCLA Bruins,110
-UConn Huskies,164
-UIC Flames,302
-UIW Cardinals,2743
-ULM Warhawks,498
-UMBC Retrievers,391
-UMass Lowell River Hawks,368
-UNC Asheville Bulldogs,456
-UNC Greensboro Spartans,459
-UNCW Seahawks,460
-UNI Panthers,504
-UNLV Rebels,465
-USC Upstate Spartans,10411
-UT Martin Skyhawks,695
-UTEP Miners,704
-UTRGV Vaqueros,536
-UTSA Roadrunners,706
-Utah St. Aggies,731
-Utah Tech Trailblazers,30095
-Utah Utes,732
-Utah Valley Wolverines,30024
-VCU Rams,740
-VMI,741
-Valparaiso Beacons,735
-Vanderbilt Commodores,736
-Vermont Catamounts,738
-Villanova Wildcats,739
-Virginia Cavaliers,746
-Virginia Tech Hokies,742
-Wagner Seahawks,748
-Wake Forest Demon Deacons,749
-Washington Huskies,756
-Washington St. Cougars,754
-Weber St. Wildcats,758
-West Virginia Mountaineers,768
-Western Caro. Catamounts,769
-Western Ill. Leathernecks,771
-Western Ky. Lady Toppers,772
-Western Mich. Broncos,774
-William & Mary Tribe,786
-Winthrop Eagles,792
-Wisconsin Badgers,796
-Wofford Terriers,2915
-Wright St. Raiders,810
-Wyoming Cowgirls,811
-Xavier Musketeers,812
-Youngstown St. Penguins,817
+team,team_id,url
+A&M-Corpus Christi Islanders,26172,https://goislanders.com/sports/womens-soccer
+Abilene Christian Wildcats,2,https://acusports.com/sports/womens-soccer
+Air Force Falcons,721,https://goairforcefalcons.com/sports/womens-soccer
+Akron Zips,5,https://gozips.com/sports/womens-soccer
+Alabama A&M Bulldogs,6,https://aamusports.com/sports/womens-soccer
+Alabama Crimson Tide,8,https://rolltide.com/sports/womens-soccer
+Alabama St. Lady Hornets,7,https://bamastatesports.com/sports/womens-soccer
+Alcorn Lady Braves,17,https://alcornsports.com/sports/womens-soccer
+American Eagles,23,https://aueagles.com/sports/womens-soccer
+App State Mountaineers,27,https://appstatesports.com/sports/womens-soccer
+Arizona St. Sun Devils,28,https://thesundevils.com/sports/womens-soccer
+Arizona Wildcats,29,https://arizonawildcats.com/sports/womens-soccer
+Ark.-Pine Bluff Lady Lions,2678,https://uapblionsroar.com/sports/womens-soccer
+Arkansas Razorbacks,31,https://arkansasrazorbacks.com/sport/w-soccer
+Arkansas St. Red Wolves,30,https://astateredwolves.com/sports/womens-soccer
+Army West Point Black Knights,725,https://goarmywestpoint.com/sports/womens-soccer
+Auburn Tigers,37,https://auburntigers.com/sports/soccer
+Austin Peay Governors,43,https://letsgopeay.com/sports/womens-soccer
+BYU Cougars,77,https://byucougars.com/sports/womens-soccer
+Ball St. Cardinals,47,https://ballstatesports.com/sports/womens-soccer
+Baylor Bears,51,https://baylorbears.com/sports/womens-soccer
+Bellarmine Knights,52,https://bellarmineathletics.com/sports/womens-soccer
+Belmont Bruins,14927,https://belmontbruins.com/sports/womens-soccer
+Binghamton Bearcats,62,https://binghamtonbearcats.com/sports/womens-soccer
+Boise St. Broncos,66,https://broncosports.com/sports/womens-soccer
+Boston College Eagles,67,https://bceagles.com/sports/womens-soccer
+Boston U. Terriers,68,https://goterriers.com/sports/womens-soccer
+Bowling Green Falcons,71,https://bgsufalcons.com/sports/womens-soccer
+Bryant Bulldogs,81,https://bryantbulldogs.com/sports/womens-soccer
+Bucknell Bison,83,https://bucknellbison.com/sports/womens-soccer
+Buffalo Bulls,86,https://ubbulls.com/sports/womens-soccer
+Butler Bulldogs,87,https://butlersports.com/sports/womens-soccer
+CSU Bakersfield Roadrunners,94,https://gorunners.com/sports/womens-soccer
+CSUN Matadors,101,https://gomatadors.com/sports/womens-soccer
+Cal Poly Mustangs,90,https://gopoly.com/sports/womens-soccer
+Cal St. Fullerton Titans,97,https://fullertontitans.com/sports/womens-soccer
+California Baptist Lancers,30135,https://cbuathletics.com/sports/womens-soccer
+California Golden Bears,107,https://calbears.com/sports/womens-soccer
+Campbell Camels,115,https://gocamels.com/sports/womens-soccer
+Canisius Golden Griffins,116,https://gogriffs.com/sports/womens-soccer
+Central Ark. Bears,1004,https://ucasports.com/sports/womens-soccer
+Central Conn. St. Blue Devils,127,https://ccsubluedevils.com/sports/wsoc/index
+Central Mich. Chippewas,129,https://cmuchippewas.com/sports/womens-soccer
+Charleston So. Buccaneers,48,https://csusports.com/sports/womens-soccer
+Charlotte 49ers,458,https://charlotte49ers.com/sports/womens-soccer
+Chattanooga Mocs,693,https://gomocs.com/sports/womens-soccer
+Chicago St. Cougars,136,https://csuathletics.com/sports/womens-soccer
+Cincinnati Bearcats,140,https://gobearcats.com/sports/womens-soccer
+Clemson Tigers,147,https://clemsontigers.com/sports/womens-soccer
+Cleveland St. Vikings,148,https://csuvikings.com/sports/womens-soccer
+Coastal Carolina Chanticleers,149,https://goccusports.com/sports/womens-soccer
+Col. of Charleston Cougars,1014,https://cofcsports.com/sports/womens-soccer
+Colgate Raiders,153,https://colgateathletics.com/sports/womens-soccer
+Colorado Buffaloes,157,https://cubuffs.com/sports/womens-soccer
+Colorado Col. Tigers,154,https://cctigers.com/sports/womens-soccer
+Colorado St. Rams,156,https://csurams.com/sports/womens-soccer
+Creighton Bluejays,169,https://gocreighton.com/sports/womens-soccer
+Davidson Wildcats,173,https://davidsonwildcats.com/sports/womens-soccer
+Dayton Flyers,175,https://daytonflyers.com/sports/womens-soccer
+DePaul Blue Demons,176,https://depaulbluedemons.com/sports/womens-soccer
+Delaware Blue Hens,180,https://bluehens.com/sports/womens-soccer
+Delaware St. Hornets,178,https://dsuhornetssports.com/sports/womens-soccer
+Denver Pioneers,183,https://denverpioneers.com/sports/womens-soccer
+Detroit Mercy Titans,184,https://detroittitans.com/sports/womens-soccer
+Drake Bulldogs,189,https://godrakebulldogs.com/sports/womens-soccer
+Drexel Dragons,191,https://drexeldragons.com/sports/womens-soccer
+Duke Blue Devils,193,https://goduke.com/sports/womens-soccer
+Duquesne Dukes,194,https://goduquesne.com/sports/womens-soccer
+ETSU Buccaneers (Bucs),198,https://etsubucs.com/sports/womens-soccer
+East Carolina Pirates,196,https://ecupirates.com/sports/womens-soccer
+Eastern Ill. Panthers,201,https://eiupanthers.com/sports/womens-soccer
+Eastern Ky. Colonels,202,https://ekusports.com/sports/womens-soccer
+Eastern Mich. Eagles,204,https://emueagles.com/sports/womens-soccer
+Eastern Wash. Eagles,207,https://goeags.com/sports/womens-soccer
+Elon Phoenix,1068,https://elonphoenix.com/sports/womens-soccer
+Evansville Purple Aces,219,https://gopurpleaces.com/sports/womens-soccer
+FDU Knights,222,https://fduknights.com/sports/womens-soccer
+FGCU Eagles,28755,https://fgcuathletics.com/sports/womens-soccer
+FIU Panthers,231,https://fiusports.com/sports/womens-soccer
+Fairfield Stags,220,https://fairfieldstags.com/sports/womens-soccer
+Fla. Atlantic Owls,229,https://fausports.com/sports/womens-soccer
+Florida Gators,235,https://floridagators.com/sports/womens-soccer
+Florida St. Seminoles,234,https://seminoles.com/sports/womens-soccer
+Fordham Rams,236,https://fordhamsports.com/sports/womens-soccer
+Fresno St. Bulldogs,96,https://gobulldogs.com/sports/womens-soccer
+Furman Paladins,244,https://furmanpaladins.com/sports/womens-soccer
+Ga. Southern Eagles,253,https://gseagles.com/sports/womens-soccer
+Gardner-Webb Runnin' Bulldogs,1092,https://gwusports.com/sports/womens-soccer
+George Mason Patriots,248,https://gomason.com/sports/womens-soccer
+George Washington Revolutionaries,249,https://gwsports.com/sports/womens-soccer
+Georgetown Hoyas,251,https://guhoyas.com/sports/womens-soccer
+Georgia Bulldogs,257,https://georgiadogs.com/sports/womens-soccer
+Georgia St. Panthers,254,https://georgiastatesports.com/sports/womens-soccer
+Gonzaga Bulldogs,260,https://gozags.com/sports/womens-soccer
+Grambling Lady Tigers,261,https://gsutigers.com/sports/womens-soccer
+Grand Canyon Lopes,1104,https://gopelopes.com/sports/womens-soccer
+Green Bay Phoenix,794,https://gbphoenix.com/sports/womens-soccer
+Hampton Lady Pirates,270,https://hamptonpirates.com/sports/womens-soccer
+Hawaii Rainbow Wahine,277,https://hawaiiathletics.com/sports/womens-soccer
+High Point Panthers,19651,https://highpointpanthers.com/sports/womens-soccer
+Hofstra Pride,283,https://gohofstra.com/sports/womens-soccer
+Holy Cross Crusaders,285,https://goholycross.com/sports/womens-soccer
+Houston Christian Huskies,287,https://hbuhuskies.com/sports/womens-soccer
+Houston Cougars,288,https://uhcougars.com/sports/womens-soccer
+Howard Bison,290,https://hubison.com/sports/womens-soccer
+IU Indy Jaguars,2699,https://iuindyjags.com/sports/womens-soccer
+Idaho St. Bengals,294,https://isubengals.com/sports/womens-soccer
+Idaho Vandals,295,https://govandals.com/sports/womens-soccer
+Illinois Fighting Illini,301,https://fightingillini.com/sports/womens-soccer
+Illinois St. Redbirds,299,https://goredbirds.com/sports/womens-soccer
+Indiana Hoosiers,306,https://iuhoosiers.com/sports/womens-soccer
+Indiana St. Sycamores,305,https://gosycamores.com/sports/womens-soccer
+Iona Gaels,310,https://ionagaels.com/sports/womens-soccer
+Iowa Hawkeyes,312,https://hawkeyesports.com/sports/wsoc
+Iowa St. Cyclones,311,https://cyclones.com/sports/womens-soccer
+Jackson St. Lady Tigers,314,https://jsumtigers.com/sports/womens-soccer
+Jacksonville Dolphins,316,https://judolphins.com/sports/womens-soccer
+Jacksonville St. Gamecocks,315,https://jsugamecocksports.com/sports/womens-soccer
+James Madison Dukes,317,https://jmusports.com/sports/womens-soccer
+Kansas City Roos,2707,https://umkckangaroos.com/sports/womens-soccer
+Kansas Jayhawks,328,https://kuathletics.com/sports/womens-soccer
+Kansas St. Wildcats,327,https://kstatesports.com/sports/womens-soccer
+Kennesaw St. Owls,1157,https://ksuowls.com/sports/womens-soccer
+Kent St. Golden Flashes,331,https://kentstatesports.com/sports/womens-soccer
+Kentucky Wildcats,334,https://ukathletics.com/sports/wsoc
+LIU Sharks,361,https://www.liuathletics.com/sports/womens-soccer
+LMU (CA) Lions,370,https://lmulions.com/sports/womens-soccer
+LSU Tigers,365,https://lsusports.net/sports/sc
+La Salle Explorers,340,https://goexplorers.com/sports/womens-soccer
+Lafayette Leopards,342,https://goleopards.com/sports/womens-soccer
+Lamar University Cardinals,346,https://lamarcardinals.com/sports/womens-soccer
+Le Moyne Dolphins,349,https://lemoynedolphins.com/sports/womens-soccer
+Lehigh Mountain Hawks,352,https://lehighsports.com/sports/womens-soccer
+Liberty Lady Flames,355,https://libertyflames.com/sports/womens-soccer
+Lindenwood Lions,30136,https://lindenwoodlions.com/sports/womens-soccer
+Lipscomb Bisons,28600,https://lipscombsports.com/sports/womens-soccer
+Little Rock Trojans,32,https://lrtrojans.com/sports/womens-soccer
+Long Beach St. Beach,99,https://longbeachstate.com/sports/womens-soccer
+Longwood Lancers,363,https://longwoodlancers.com/sports/womens-soccer
+Louisiana Ragin' Cajuns,671,https://ragincajuns.com/sports/womens-soccer
+Louisiana Tech Lady Techsters,366,https://latechsports.com/sports/womens-soccer
+Louisville Cardinals,367,https://gocards.com/sports/womens-soccer
+Loyola Chicago Ramblers,371,https://loyolaramblers.com/sports/womens-soccer
+Loyola Maryland Greyhounds,369,https://loyolagreyhounds.com/sports/womens-soccer
+Maine Black Bears,380,https://goblackbears.com/sports/womens-soccer
+Marist Red Foxes,386,https://goredfoxes.com/sports/womens-soccer
+Marquette Golden Eagles,387,https://gomarquette.com/sports/womens-soccer
+Marshall Thundering Herd,388,https://herdzone.com/sports/womens-soccer
+"Maryland Terrapins, Terps",392,https://umterps.com/sports/womens-soccer
+Massachusetts Minutewomen,400,https://umassathletics.com/sports/womens-soccer
+McNeese Cowgirls,402,https://mcneesesports.com/sports/womens-soccer
+Memphis Tigers,404,https://gotigersgo.com/sports/womens-soccer
+Mercer Bears,406,https://mercerbears.com/sports/womens-soccer
+Merrimack Warriors,410,https://merrimackathletics.com/sports/womens-soccer
+Miami (FL) Hurricanes,415,https://hurricanesports.com/sports/womens-soccer
+Miami (OH) RedHawks,414,https://miamiredhawks.com/sports/womens-soccer
+Michigan St. Spartans,416,https://msuspartans.com/sports/womens-soccer
+Michigan Wolverines,418,https://mgoblue.com/sports/womens-soccer
+Middle Tenn. Blue Raiders,419,https://goblueraiders.com/sports/womens-soccer
+Milwaukee Panthers,797,https://mkepanthers.com/sports/womens-soccer
+Minnesota Golden Gophers,428,https://gophersports.com/sports/womens-soccer
+Mississippi St. Bulldogs,430,https://hailstate.com/sports/womens-soccer
+Mississippi Val. Devilettes,432,https://mvsuathletics.com/sports/womens-soccer
+Missouri St. Bears,669,https://missouristatebears.com/sports/womens-soccer
+Missouri Tigers,434,https://mutigers.com/sports/womens-soccer
+Monmouth Hawks,439,https://monmouthhawks.com/sports/womens-soccer
+Montana Grizzlies,441,https://gogriz.com/sports/womens-soccer
+Morehead St. Eagles,444,https://msueagles.com/sports/womens-soccer
+Mount St. Mary's Mountaineers,450,https://mountathletics.com/sports/womens-soccer
+Murray St. Racers,454,https://goracers.com/sports/womens-soccer
+NC State Wolfpack,490,https://gopack.com/sports/womens-soccer
+NIU Huskies,503,https://niuhuskies.com/sports/womens-soccer
+NJIT Highlanders,471,https://njithighlanders.com/sports/womens-soccer
+Navy Midshipmen,726,https://navysports.com/sports/womens-soccer
+Nebraska Huskers,463,https://huskers.com/sports/soccer
+Nevada Wolf Pack,466,https://nevadawolfpack.com/sports/womens-soccer
+New Hampshire Wildcats,469,https://unhwildcats.com/sports/womens-soccer
+New Mexico Lobos,473,https://golobos.com/sports/wsoc
+New Mexico St. Aggies,472,https://nmstatesports.com/sports/womens-soccer
+Niagara Purple Eagles,482,https://purpleeagles.com/sports/womens-soccer
+Nicholls Colonels,483,https://geauxcolonels.com/sports/womens-soccer
+North Ala. Lions,487,https://roarlions.com/sports/womens-soccer
+North Carolina Tar Heels,457,https://goheels.com/sports/womens-soccer
+North Dakota Fighting Hawks,494,https://fightinghawks.com/sports/womens-soccer
+North Dakota St. Bison,493,https://gobison.com/sports/womens-soccer
+North Florida Ospreys,2711,https://unfospreys.com/sports/womens-soccer
+North Texas Mean Green,497,https://meangreensports.com/sports/womens-soccer
+Northeastern Huskies,500,https://nuhuskies.com/sports/womens-soccer
+Northern Ariz. Lumberjacks,501,https://nauathletics.com/sports/womens-soccer
+Northern Colo. Bears,502,https://uncbears.com/sports/womens-soccer
+Northern Ky. Norse,505,https://nkunorse.com/sports/womens-soccer
+Northwestern St. Lady Demons,508,https://nsudemons.com/sports/womens-soccer
+Northwestern Wildcats,509,https://nusports.com/sports/womens-soccer
+Notre Dame Fighting Irish,513,https://fightingirish.com/sports/wsoc
+Oakland Golden Grizzlies,514,https://goldengrizzlies.com/sports/womens-soccer
+Ohio Bobcats,519,https://ohiobobcats.com/sports/wsoc
+Ohio St. Buckeyes,518,https://ohiostatebuckeyes.com/sports/womens-soccer
+Oklahoma Sooners,522,https://soonersports.com/sports/soccer
+Oklahoma St. Cowgirls,521,https://okstate.com/sports/womens-soccer
+Old Dominion Monarchs,523,https://odusports.com/sports/womens-soccer
+Ole Miss Rebels,433,https://olemisssports.com/sports/womens-soccer
+Omaha Mavericks,464,https://omavs.com/sports/womens-soccer
+Oral Roberts Golden Eagles,527,https://oruathletics.com/sports/womens-soccer
+Oregon Ducks,529,https://goducks.com/sports/womens-soccer
+Oregon St. Beavers,528,https://osubeavers.com/sports/womens-soccer
+Pacific Tigers,534,https://pacifictigers.com/sports/womens-soccer
+Penn St. Nittany Lions,539,https://gopsusports.com/sports/womens-soccer
+Pepperdine Waves,541,https://pepperdinewaves.com/sports/womens-soccer
+Pittsburgh Panthers,545,https://pittsburghpanthers.com/sports/womens-soccer
+Portland Pilots,551,https://portlandpilots.com/sports/womens-soccer
+Portland St. Vikings,550,https://goviks.com/sports/womens-soccer
+Prairie View Lady Panthers,553,https://pvpanthers.com/sports/womens-soccer
+Presbyterian Blue Hose,1320,https://gobluehose.com/sports/womens-soccer
+Providence Friars,556,https://friars.com/sports/womens-soccer
+Purdue Boilermakers,559,https://purduesports.com/sports/soccer
+Purdue Fort Wayne Mastodons,308,https://gomastodons.com/sports/womens-soccer
+Queens (NC) Royals,11504,https://queensroyals.com/sports/womens-soccer
+Quinnipiac Bobcats,562,https://gobobcats.com/sports/womens-soccer
+East Texas A&M Lions,199,https://lionathletics.com/sports/womens-soccer
+Saint Francis The Red Flash,600,https://sfuathletics.com/sports/womens-soccer
+Radford Highlanders,563,https://radfordathletics.com/sports/womens-soccer
+Rhode Island Rams,572,https://gorhody.com/sports/womens-soccer
+Rice Owls,574,https://riceowls.com/sports/womens-soccer
+Richmond Spiders,575,https://richmondspiders.com/sports/womens-soccer
+Rider Broncs,576,https://gobroncs.com/sports/womens-soccer
+Robert Morris Colonials,579,https://rmucolonials.com/sports/womens-soccer
+Rutgers Scarlet Knights,587,https://scarletknights.com/sports/womens-soccer
+SFA Lumberjacks,676,https://sfajacks.com/sports/womens-soccer
+SIUE Cougars,660,https://siuecougars.com/sports/womens-soccer
+SMU Mustangs,663,https://smumustangs.com/sports/womens-soccer
+Sacramento St. Hornets,102,https://hornetsports.com/sports/womens-soccer
+Sacred Heart Pioneers,590,https://sacredheartpioneers.com/sports/womens-soccer
+Saint Joseph's Hawks,606,https://sjuhawks.com/sports/womens-soccer
+Saint Louis Billikens,609,https://slubillikens.com/sports/womens-soccer
+Saint Mary's (CA) Gaels,610,https://smcgaels.com/sports/womens-soccer
+Saint Peter's Peacocks,617,https://saintpeterspeacocks.com/sports/womens-soccer
+Sam Houston Bearkats,624,https://gobearkats.com/sports/womens-soccer
+Samford Bulldogs,625,https://samfordsports.com/sports/womens-soccer
+San Diego St. Aztecs,626,https://goaztecs.com/sports/womens-soccer
+San Diego Toreros,627,https://usdtoreros.com/sports/womens-soccer
+San Francisco Dons,629,https://usfdons.com/sports/womens-soccer
+San Jose St. Spartans,630,https://sjsuspartans.com/sports/womens-soccer
+Santa Clara Broncos,631,https://santaclarabroncos.com/sports/womens-soccer
+Seattle U Redhawks,1356,https://goseattleu.com/sports/womens-soccer
+Seton Hall Pirates,635,https://shupirates.com/sports/womens-soccer
+Siena Saints,639,https://sienasaints.com/sports/womens-soccer
+South Alabama Jaguars,646,https://usajaguars.com/sports/womens-soccer
+South Carolina Gamecocks,648,https://gamecocksonline.com/sports/wsoc
+South Carolina St. Lady Bulldogs,647,https://scsuathletics.com/sports/womens-soccer
+South Dakota Coyotes,650,https://goyotes.com/sports/womens-soccer
+South Dakota St. Jackrabbits,649,https://gojacks.com/sports/womens-soccer
+South Fla. Bulls,651,https://gousfbulls.com/sports/womens-soccer
+Southeast Mo. St. Redhawks,654,https://semoredhawks.com/sports/womens-soccer
+Southeastern La. Lady Lions,655,https://lionsports.net/sports/womens-soccer
+Southern California Trojans,657,https://usctrojans.com/sports/womens-soccer
+Southern Ill. Salukis,659,https://siusalukis.com/sports/womens-soccer
+Southern Ind. Screaming Eagles,661,https://gousieagles.com/sports/womens-soccer
+Southern Miss. Golden Eagles,664,https://southernmiss.com/sports/womens-soccer
+Southern U. Lady Jaguars,665,https://gojagsports.com/sports/womens-soccer
+Southern Utah Thunderbirds,667,https://suutbirds.com/sports/womens-soccer
+St. Bonaventure Bonnies,596,https://gobonnies.com/sports/womens-soccer
+St. John's (NY) Red Storm,603,https://redstormsports.com/index.aspx?path=wsoc
+St. Thomas (MN) Tommies,620,https://tommiesports.com/sports/womens-soccer
+Stanford Cardinal,674,https://gostanford.com/sports/womens-soccer
+Stetson Hatters,678,https://gohatters.com/sports/womens-soccer
+Stonehill Skyhawks,682,https://stonehillskyhawks.com/sports/womens-soccer
+Stony Brook Seawolves,683,https://stonybrookathletics.com/sports/womens-soccer
+Syracuse Orange,688,https://cuse.com/sports/womens-soccer
+TCU Horned Frogs,698,https://gofrogs.com/sports/womens-soccer
+Tarleton St. Texans,1395,https://tarletonsports.com/sports/womens-soccer
+Temple Owls,690,https://owlsports.com/sports/womens-soccer
+Tennessee Tech Golden Eagles,692,https://www.ttusports.com/sports/wsoc/index
+Tennessee Volunteers,694,https://utsports.com/sports/womens-soccer
+Texas A&M Aggies,697,https://12thman.com/sports/womens-soccer
+Texas Longhorns,703,https://texaslonghorns.com/sports/womens-soccer
+Texas Southern Lady Tigers,699,https://tsuball.com/sports/womens-soccer
+Texas St. Bobcats,670,https://txstatebobcats.com/sports/womens-soccer
+Texas Tech Red Raiders,700,https://texastech.com/sports/womens-soccer
+"The Citadel Bulldogs, Cadets",141,https://citadelsports.com/sports/womens-soccer
+Toledo Rockets,709,https://utrockets.com/sports/womens-soccer
+Towson Tigers,711,https://towsontigers.com/sports/womens-soccer
+Troy Trojans,716,https://troytrojans.com/sports/womens-soccer
+Tulsa Golden Hurricane,719,https://tulsahurricane.com/sports/womens-soccer
+UAB Blazers,9,https://uabsports.com/sports/womens-soccer
+UAlbany Great Danes,14,https://ualbanysports.com/sports/womens-soccer
+UC Davis Aggies,108,https://ucdavisaggies.com/sports/womens-soccer
+UC Irvine Anteaters,109,https://ucirvinesports.com/sports/womens-soccer
+UC Riverside Highlanders,111,https://gohighlanders.com/sports/womens-soccer
+UC San Diego Tritons,112,https://ucsdtritons.com/sports/womens-soccer
+UC Santa Barbara Gauchos,104,https://ucsbgauchos.com/sports/womens-soccer
+UCF Knights,128,https://ucfknights.com/sports/womens-soccer
+UCLA Bruins,110,https://uclabruins.com/sports/womens-soccer
+UConn Huskies,164,https://uconnhuskies.com/sports/womens-soccer
+UIC Flames,302,https://uicflames.com/sports/womens-soccer
+UIW Cardinals,2743,https://uiwcardinals.com/sports/womens-soccer
+ULM Warhawks,498,https://ulmwarhawks.com/sports/womens-soccer
+UMBC Retrievers,391,https://umbcretrievers.com/sports/womens-soccer
+UMass Lowell River Hawks,368,https://goriverhawks.com/sports/womens-soccer
+UNC Asheville Bulldogs,456,https://uncabulldogs.com/sports/womens-soccer
+UNC Greensboro Spartans,459,https://uncgspartans.com/sports/womens-soccer
+UNCW Seahawks,460,https://uncwsports.com/sports/womens-soccer
+UNI Panthers,504,https://unipanthers.com/sports/womens-soccer
+UNLV Rebels,465,https://unlvrebels.com/sports/womens-soccer
+USC Upstate Spartans,10411,https://upstatespartans.com/sports/womens-soccer
+UT Martin Skyhawks,695,https://utmsports.com/sports/womens-soccer
+UTEP Miners,704,https://utepminers.com/sports/womens-soccer
+UTRGV Vaqueros,536,https://goutrgv.com/sports/womens-soccer
+UTSA Roadrunners,706,https://goutsa.com/sports/soccer
+Utah St. Aggies,731,https://utahstateaggies.com/sports/womens-soccer
+Utah Tech Trailblazers,30095,https://utahtechtrailblazers.com/sports/womens-soccer
+Utah Utes,732,https://utahutes.com/sports/womens-soccer
+Utah Valley Wolverines,30024,https://gouvu.com/sports/womens-soccer
+VCU Rams,740,https://vcuathletics.com/sports/womens-soccer
+VMI,741,https://vmikeydets.com/sports/womens-soccer
+Valparaiso Beacons,735,https://valpoathletics.com/sports/womens-soccer
+Vanderbilt Commodores,736,https://vucommodores.com/sports/wsoc
+Vermont Catamounts,738,https://uvmathletics.com/sports/womens-soccer
+Villanova Wildcats,739,https://villanova.com/sports/womens-soccer
+Virginia Cavaliers,746,https://virginiasports.com/sports/wsoc
+Virginia Tech Hokies,742,https://hokiesports.com/sports/womens-soccer
+Wagner Seahawks,748,https://wagnerathletics.com/sports/womens-soccer
+Wake Forest Demon Deacons,749,https://godeacs.com/sports/womens-soccer
+Washington Huskies,756,https://gohuskies.com/sports/womens-soccer
+Washington St. Cougars,754,https://wsucougars.com/sports/womens-soccer
+Weber St. Wildcats,758,https://weberstatesports.com/sports/womens-soccer
+West Virginia Mountaineers,768,https://wvusports.com/sports/womens-soccer
+Western Caro. Catamounts,769,https://catamountsports.com/sports/womens-soccer
+Western Ill. Leathernecks,771,https://goleathernecks.com/sports/womens-soccer
+Western Ky. Lady Toppers,772,https://wkusports.com/sports/womens-soccer
+Western Mich. Broncos,774,https://wmubroncos.com/sports/womens-soccer
+William & Mary Tribe,786,https://tribeathletics.com/sports/womens-soccer
+Winthrop Eagles,792,https://winthropeagles.com/sports/womens-soccer
+Wisconsin Badgers,796,https://uwbadgers.com/sports/womens-soccer
+Wofford Terriers,2915,https://woffordterriers.com/sports/womens-soccer
+Wright St. Raiders,810,https://wsuraiders.com/sports/womens-soccer
+Wyoming Cowgirls,811,https://gowyo.com/sports/womens-soccer
+Xavier Musketeers,812,https://goxavier.com/sports/womens-soccer
+Youngstown St. Penguins,817,https://ysusports.com/sports/womens-soccer
