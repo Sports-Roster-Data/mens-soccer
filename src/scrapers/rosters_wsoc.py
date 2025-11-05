@@ -160,5 +160,5 @@ def scrape_all_teams(season):
     print(f"All rosters saved to {output_file}")
 
 # Example usage
-season = 2024
+season = 2025
 scrape_all_teams(season)
