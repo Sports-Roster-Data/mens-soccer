@@ -15,6 +15,9 @@ unique_roster_teams <- rosters25 |> distinct(ncaa_id)
 
 need_rosters <- teams |> anti_join(unique_roster_teams)
 
+rosters25 <- read_csv("../data/raw/csv/rosters_2025.csv") |> filter(division == 'I')
+
+
 ```
 ## Position Cleaning
 
@@ -342,5 +345,8 @@ rosters25 <- rosters25 %>%
 rosters25 %>% 
   count(country, sort = TRUE) 
 
-rosters25 |> filter(country == 'NEW')
+rosters25 %>%
+  count(country, sort = TRUE)
+
+rosters25 |> filter(is.na(country))
 ```
