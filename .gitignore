@@ -5,8 +5,6 @@
 .Ruserdata
 
 # Generated data files
-data/raw/
-data/interim/
 
 # Large intermediate files
 *.json
